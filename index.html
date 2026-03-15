@@ -186,12 +186,14 @@ async function loadData(){
 <div class="bot-stat"><div class="num">${b.closed_trades || 0}</div><div class="label">Closed Trades</div></div>
 <div class="bot-stat"><div class="num ${(b.win_rate||0) >= 50 ? 'green' : 'red'}">${b.win_rate ? b.win_rate.toFixed(1) : '—'}%</div><div class="label">Win Rate</div></div>`;
 
-    if(b.positions && b.positions.length > 0){
+    if((b.positions || b.positions_detail) && (b.positions || b.positions_detail).length > 0){
+      const posList = b.positions || b.positions_detail;
       let ph = '<div class="positions-list"><div style="color:var(--muted);font-size:.8rem;margin-bottom:6px;font-weight:600">Vị thế đang mở:</div>';
-      b.positions.forEach(p => {
-        const pnlC = p.pnl >= 0 ? 'color:var(--green)' : 'color:var(--red)';
-        const pnlS = p.pnl >= 0 ? '+' : '';
-        ph += `<div class="pos"><span>${p.symbol} <span class="badge ${p.side==='SHORT'?'badge-error':'badge-ok'}" style="font-size:.7rem">${p.side}</span></span><span style="${pnlC};font-weight:600">${pnlS}${p.pnl.toFixed(2)} USDT</span></div>`;
+      posList.forEach(p => {
+        const pnlVal = parseFloat(p.pnl || p.unrealized_pnl || 0);
+        const pnlC = pnlVal >= 0 ? 'color:var(--green)' : 'color:var(--red)';
+        const pnlS = pnlVal >= 0 ? '+' : '';
+        ph += `<div class="pos"><span>${p.symbol} <span class="badge ${p.side==='SHORT'?'badge-error':'badge-ok'}" style="font-size:.7rem">${p.side}</span></span><span style="${pnlC};font-weight:600">${pnlS}${pnlVal.toFixed(2)} USDT</span></div>`;
       });
       ph += '</div>';
       document.getElementById('bot-positions').innerHTML = ph;
