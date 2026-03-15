@@ -30,34 +30,48 @@ h1 span{color:var(--cyan)}
 .badge-idle{background:#1c2028;color:var(--muted)}
 .badge-running{background:#0c2d4a;color:var(--cyan)}
 .badge-stopped{background:#3d1518;color:var(--red)}
+.badge-testnet{background:#2d2100;color:var(--orange)}
 table{width:100%;border-collapse:collapse;font-size:.82rem}
 th{text-align:left;color:var(--muted);font-weight:500;padding:6px 8px;border-bottom:1px solid var(--border)}
 td{padding:6px 8px;border-bottom:1px solid #21262d}
 tr:hover{background:#1c2028}
 .full-width{grid-column:1/-1}
-.bot-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
-.bot-stat{text-align:center;padding:12px;background:#0d1117;border-radius:8px;border:1px solid var(--border)}
-.bot-stat .num{font-size:1.4rem;font-weight:700;color:var(--cyan)}
-.bot-stat .label{font-size:.75rem;color:var(--muted);margin-top:2px}
+.half-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.bot-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px}
+.bot-stat{text-align:center;padding:10px 8px;background:#0d1117;border-radius:8px;border:1px solid var(--border)}
+.bot-stat .num{font-size:1.3rem;font-weight:700;color:var(--cyan)}
+.bot-stat .label{font-size:.72rem;color:var(--muted);margin-top:2px}
 .bot-stat .num.green{color:var(--green)}
 .bot-stat .num.red{color:var(--red)}
 .bot-stat .num.orange{color:var(--orange)}
+.bot-stat .num.purple{color:var(--purple)}
 .service-item{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border)}
 .service-item:last-child{border-bottom:none}
 .dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px}
 .dot-green{background:var(--green)}
 .dot-red{background:var(--red)}
+.dot-orange{background:var(--orange)}
 .linux-cron{font-family:monospace;font-size:.78rem;color:var(--muted);line-height:1.6}
 .positions-list{font-size:.82rem}
-.positions-list .pos{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #21262d}
+.positions-list .pos{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid #21262d}
+.positions-list .pos:last-child{border-bottom:none}
+.pos-info{display:flex;flex-direction:column;gap:2px}
+.pos-symbol{font-weight:600}
+.pos-entry{font-size:.75rem;color:var(--muted)}
 .refresh-info{text-align:center;color:var(--muted);font-size:.75rem;padding:16px 0}
+.summary-bar{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:12px}
+.summary-item{display:flex;align-items:center;gap:6px;font-size:.85rem}
+.summary-item .dot{width:10px;height:10px}
+.cron-summary{display:flex;gap:12px;margin-bottom:8px;font-size:.82rem}
+.cron-summary span{display:flex;align-items:center;gap:4px}
 #auth-gate{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--bg);display:flex;align-items:center;justify-content:center;z-index:999}
 #auth-gate .box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:32px;text-align:center;max-width:320px;width:90%}
+#auth-gate h2{color:var(--cyan)}
 #auth-gate input{width:100%;padding:10px;border:1px solid var(--border);border-radius:6px;background:#0d1117;color:var(--text);margin:12px 0;font-size:1rem}
 #auth-gate button{width:100%;padding:10px;border:none;border-radius:6px;background:var(--cyan);color:#0d1117;font-weight:600;cursor:pointer;font-size:.95rem}
 #auth-gate button:hover{opacity:.9}
 #auth-gate .err{color:var(--red);font-size:.85rem;min-height:20px;margin-top:8px}
-@media(max-width:600px){.grid{grid-template-columns:1fr}.bot-stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.bot-stats{grid-template-columns:repeat(3,1fr)}.half-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -76,6 +90,9 @@ tr:hover{background:#1c2028}
 <h1>✨ <span>Shiny Yume</span> — Dashboard</h1>
 <p class="subtitle" id="last-update">Đang tải...</p>
 
+<!-- Quick Summary Bar -->
+<div class="summary-bar" id="summary-bar"></div>
+
 <div class="grid">
 <!-- System -->
 <div class="card">
@@ -89,16 +106,34 @@ tr:hover{background:#1c2028}
 <div id="services-info"></div>
 </div>
 
-<!-- BingX Bot -->
-<div class="card full-width">
-<div class="card-title">🤖 BingX Trading Bot</div>
+<!-- BingX Bot Overview -->
+<div class="card">
+<div class="card-title">🤖 BingX Bot — Tổng quan</div>
 <div class="bot-stats" id="bot-stats"></div>
-<div id="bot-positions" style="margin-top:12px"></div>
+</div>
+
+<!-- BingX Bot Positions -->
+<div class="card">
+<div class="card-title">📊 Vị thế đang mở</div>
+<div id="bot-positions"></div>
+</div>
+
+<!-- BingX Bot Account -->
+<div class="card">
+<div class="card-title">💰 Tài khoản BingX</div>
+<div id="bot-account"></div>
+</div>
+
+<!-- Bot Config -->
+<div class="card">
+<div class="card-title">⚙️ Cấu hình Bot</div>
+<div id="bot-config"></div>
 </div>
 
 <!-- OpenClaw Cron -->
 <div class="card full-width">
 <div class="card-title">⏰ OpenClaw Cron Jobs</div>
+<div class="cron-summary" id="cron-summary"></div>
 <div style="overflow-x:auto"><table id="cron-table"><thead><tr><th>Tên</th><th>Lịch</th><th>Tiếp theo</th><th>Lần cuối</th><th>Status</th></tr></thead><tbody></tbody></table></div>
 </div>
 
@@ -109,41 +144,34 @@ tr:hover{background:#1c2028}
 </div>
 </div>
 
-<div class="refresh-info">Tự động cập nhật mỗi 5 phút • <a href="#" onclick="loadData()" style="color:var(--cyan)">Refresh ngay</a></div>
+<div class="refresh-info">Tự động cập nhật mỗi 5 phút • <a href="#" onclick="loadData()" style="color:var(--cyan)">Refresh ngay</a> • <a href="#" onclick="logout()" style="color:var(--muted)">Đăng xuất</a></div>
 </div>
 
 <script>
-const CORRECT_PW = 'signalhunters2026';
+const CORRECT_PW = 'Phat2511@';
 
 function checkAuth(){
   const pw = document.getElementById('pw-input').value;
   if(pw === CORRECT_PW){
-    localStorage.setItem('yd_auth','1');
+    localStorage.setItem('yd_auth','ok');
     showDash();
   } else {
     document.getElementById('pw-err').textContent = 'Sai mật khẩu!';
   }
 }
-
-document.getElementById('pw-input').addEventListener('keydown', e => {
-  if(e.key === 'Enter') checkAuth();
-});
-
-function showDash(){
-  document.getElementById('auth-gate').style.display = 'none';
-  document.getElementById('main').style.display = 'block';
-  loadData();
-}
-
-if(localStorage.getItem('yd_auth') === '1') showDash();
+function logout(){ localStorage.removeItem('yd_auth'); location.reload(); }
+document.getElementById('pw-input').addEventListener('keydown', e => { if(e.key === 'Enter') checkAuth(); });
+function showDash(){ document.getElementById('auth-gate').style.display='none'; document.getElementById('main').style.display='block'; loadData(); }
+if(localStorage.getItem('yd_auth') === 'ok') showDash();
 
 function progressClass(p){ return p < 60 ? 'low' : p < 85 ? 'mid' : 'high'; }
-
 function statusBadge(s){
-  if(s === 'ok') return '<span class="badge badge-ok">✅ OK</span>';
-  if(s === 'error') return '<span class="badge badge-error">❌ Error</span>';
+  if(s==='ok') return '<span class="badge badge-ok">✅ OK</span>';
+  if(s==='error') return '<span class="badge badge-error">❌ Error</span>';
   return '<span class="badge badge-idle">⏳ Idle</span>';
 }
+function fmt(n,d=2){ return n != null ? parseFloat(n).toFixed(d) : '—'; }
+function fmtK(n){ return n != null ? parseFloat(n).toLocaleString('en',{maximumFractionDigits:2}) : '—'; }
 
 async function loadData(){
   try{
@@ -151,68 +179,121 @@ async function loadData(){
     const d = await r.json();
     document.getElementById('last-update').textContent = 'Cập nhật: ' + d.generated_at_vn + ' (VN)';
 
-    // System
+    const b = d.bingx_bot;
     const s = d.system;
-    const ramPct = s.ram.percent;
-    const diskPct = s.disk.percent;
-    const cpuPct = s.cpu.percent;
+    const sv = d.services;
+    const cronOk = d.openclaw_cron.filter(c=>c.status==='ok').length;
+    const cronErr = d.openclaw_cron.filter(c=>c.status==='error').length;
+    const cronIdle = d.openclaw_cron.filter(c=>c.status==='idle').length;
+
+    // Summary Bar
+    document.getElementById('summary-bar').innerHTML = `
+<div class="summary-item"><span class="dot ${b.status==='running'?'dot-green':'dot-red'}"></span>Bot: ${b.status==='running'?'Running':'Stopped'}</div>
+<div class="summary-item"><span class="dot ${sv.chrome&&sv.chrome.running?'dot-green':'dot-red'}"></span>Chrome: ${sv.chrome&&sv.chrome.running?'ON':'OFF'}</div>
+<div class="summary-item"><span class="dot ${sv.website&&sv.website.online?'dot-green':'dot-red'}"></span>Web: ${sv.website&&sv.website.online?'Online':'Offline'}</div>
+<div class="summary-item"><span class="dot dot-green"></span>Cron: ${cronOk}✅ ${cronErr?cronErr+'❌ ':''}${cronIdle?cronIdle+'⏳':''}</div>
+<div class="summary-item">💰 ${fmtK(b.balance)} USDT</div>
+<div class="summary-item">📊 ${b.open_positions||0} positions</div>
+<div class="summary-item">🧠 RAM ${s.ram.percent}%</div>`;
+
+    // System
+    const ramPct=s.ram.percent, diskPct=s.disk.percent, cpuPct=s.cpu.percent;
     document.getElementById('system-info').innerHTML = `
 <div class="stat-row"><span class="stat-label">Host</span><span class="stat-value">${s.hostname}</span></div>
 <div class="stat-row"><span class="stat-label">Uptime</span><span class="stat-value">${s.uptime}</span></div>
-<div class="stat-row"><span class="stat-label">RAM</span><div style="display:flex;align-items:center"><span class="stat-value">${s.ram.used_gb.toFixed(1)}/${s.ram.total_gb.toFixed(0)} GB (${ramPct}%)</span><div class="progress-wrap"><div class="progress-bar ${progressClass(ramPct)}" style="width:${ramPct}%"></div></div></div></div>
-<div class="stat-row"><span class="stat-label">Disk</span><div style="display:flex;align-items:center"><span class="stat-value">${s.disk.used_gb}/${s.disk.total_gb} GB (${diskPct}%)</span><div class="progress-wrap"><div class="progress-bar ${progressClass(diskPct)}" style="width:${diskPct}%"></div></div></div></div>
-<div class="stat-row"><span class="stat-label">CPU</span><div style="display:flex;align-items:center"><span class="stat-value">${cpuPct}% (${s.cpu.count} cores)</span><div class="progress-wrap"><div class="progress-bar ${progressClass(cpuPct)}" style="width:${cpuPct}%"></div></div></div></div>`;
+<div class="stat-row"><span class="stat-label">RAM</span><div style="display:flex;align-items:center;gap:6px"><span class="stat-value">${s.ram.used_gb.toFixed(1)}/${s.ram.total_gb.toFixed(0)} GB (${ramPct}%)</span><div class="progress-wrap"><div class="progress-bar ${progressClass(ramPct)}" style="width:${ramPct}%"></div></div></div></div>
+<div class="stat-row"><span class="stat-label">Disk</span><div style="display:flex;align-items:center;gap:6px"><span class="stat-value">${s.disk.used_gb}/${s.disk.total_gb} GB (${diskPct}%)</span><div class="progress-wrap"><div class="progress-bar ${progressClass(diskPct)}" style="width:${diskPct}%"></div></div></div></div>
+<div class="stat-row"><span class="stat-label">CPU</span><div style="display:flex;align-items:center;gap:6px"><span class="stat-value">${cpuPct}% (${s.cpu.count} cores)</span><div class="progress-wrap"><div class="progress-bar ${progressClass(cpuPct)}" style="width:${cpuPct}%"></div></div></div></div>`;
 
     // Services
-    const sv = d.services;
-    const chromeRunning = sv.chrome && sv.chrome.running;
-    const websiteOnline = sv.website && sv.website.online;
-    const botRunning = d.bingx_bot.status === 'running';
+    const chromeOn = sv.chrome&&sv.chrome.running;
+    const webOn = sv.website&&sv.website.online;
+    const webMs = sv.website&&sv.website.response_time_ms?sv.website.response_time_ms+'ms':'—';
     document.getElementById('services-info').innerHTML = `
-<div class="service-item"><span><span class="dot ${chromeRunning?'dot-green':'dot-red'}"></span>Chrome</span><span class="badge ${chromeRunning?'badge-running':'badge-stopped'}">${chromeRunning?'Running':'Stopped'}</span></div>
-<div class="service-item"><span><span class="dot ${websiteOnline?'dot-green':'dot-red'}"></span>Website</span><span class="badge ${websiteOnline?'badge-ok':'badge-error'}">${websiteOnline?'Online':'Offline'}</span></div>
-<div class="service-item"><span><span class="dot dot-green"></span>OpenClaw</span><span class="badge badge-running">Running</span></div>
-<div class="service-item"><span><span class="dot ${botRunning?'dot-green':'dot-red'}"></span>BingX Bot</span><span class="badge ${botRunning?'badge-running':'badge-stopped'}">${botRunning?'Running':'Stopped'}</span></div>`;
+<div class="service-item"><span><span class="dot ${chromeOn?'dot-green':'dot-red'}"></span>Chrome Browser</span><span class="badge ${chromeOn?'badge-running':'badge-stopped'}">${chromeOn?'Running':'Stopped'}</span></div>
+<div class="service-item"><span><span class="dot ${webOn?'dot-green':'dot-red'}"></span>daututhongminh24h.com</span><span class="badge ${webOn?'badge-ok':'badge-error'}">${webOn?webMs:'Offline'}</span></div>
+<div class="service-item"><span><span class="dot ${sv.openclaw&&sv.openclaw.running?'dot-green':'dot-red'}"></span>OpenClaw Gateway</span><span class="badge badge-running">Running</span></div>
+<div class="service-item"><span><span class="dot ${b.process_running?'dot-green':'dot-red'}"></span>BingX Bot Process</span><span class="badge ${b.process_running?'badge-running':'badge-stopped'}">${b.process_running?'PID Active':'Stopped'}</span></div>
+<div class="service-item"><span><span class="dot dot-green"></span>GitHub Pages</span><span class="badge badge-ok">Dashboard</span></div>`;
 
-    // BingX Bot
-    const b = d.bingx_bot;
-    const pnlClass = b.unrealized_pnl >= 0 ? 'green' : 'red';
-    const pnlSign = b.unrealized_pnl >= 0 ? '+' : '';
+    // BingX Bot Stats
+    const pnlClass = (b.unrealized_pnl||0) >= 0 ? 'green' : 'red';
+    const pnlSign = (b.unrealized_pnl||0) >= 0 ? '+' : '';
+    const totalPnlClass = (b.total_pnl||0) >= 0 ? 'green' : 'red';
+    const totalPnlSign = (b.total_pnl||0) >= 0 ? '+' : '';
+    const drawdown = b.balance ? ((100000 - b.balance) / 100000 * 100) : 0;
+    const ddClass = drawdown > 5 ? 'red' : drawdown > 2 ? 'orange' : 'green';
     document.getElementById('bot-stats').innerHTML = `
-<div class="bot-stat"><div class="num">${b.mode || 'TESTNET'}</div><div class="label">Mode</div></div>
-<div class="bot-stat"><div class="num">${b.balance ? b.balance.toLocaleString('en',{maximumFractionDigits:0}) : '—'}</div><div class="label">Balance (USDT)</div></div>
-<div class="bot-stat"><div class="num ${pnlClass}">${pnlSign}${b.unrealized_pnl ? b.unrealized_pnl.toFixed(2) : '0.00'}</div><div class="label">Unrealized PnL</div></div>
-<div class="bot-stat"><div class="num orange">${b.open_positions || 0}</div><div class="label">Open Positions</div></div>
-<div class="bot-stat"><div class="num">${b.closed_trades || 0}</div><div class="label">Closed Trades</div></div>
-<div class="bot-stat"><div class="num ${(b.win_rate||0) >= 50 ? 'green' : 'red'}">${b.win_rate ? b.win_rate.toFixed(1) : '—'}%</div><div class="label">Win Rate</div></div>`;
+<div class="bot-stat"><div class="num" style="font-size:1rem"><span class="badge badge-testnet">${b.mode||'TESTNET'}</span></div><div class="label">Mode</div></div>
+<div class="bot-stat"><div class="num">${fmtK(b.balance)}</div><div class="label">Balance</div></div>
+<div class="bot-stat"><div class="num ${pnlClass}">${pnlSign}${fmt(b.unrealized_pnl)}</div><div class="label">Unrealized PnL</div></div>
+<div class="bot-stat"><div class="num ${totalPnlClass}">${totalPnlSign}${fmt(b.total_pnl)}</div><div class="label">Realized PnL</div></div>
+<div class="bot-stat"><div class="num orange">${b.open_positions||0}</div><div class="label">Open</div></div>
+<div class="bot-stat"><div class="num purple">${b.closed_trades||0}</div><div class="label">Closed</div></div>
+<div class="bot-stat"><div class="num ${(b.win_rate||0)>=50?'green':'red'}">${b.win_rate!=null?fmt(b.win_rate,1):'—'}%</div><div class="label">Win Rate</div></div>
+<div class="bot-stat"><div class="num ${ddClass}">${fmt(drawdown,2)}%</div><div class="label">Drawdown</div></div>`;
 
-    if((b.positions || b.positions_detail) && (b.positions || b.positions_detail).length > 0){
-      const posList = b.positions || b.positions_detail;
-      let ph = '<div class="positions-list"><div style="color:var(--muted);font-size:.8rem;margin-bottom:6px;font-weight:600">Vị thế đang mở:</div>';
+    // BingX Positions
+    const posList = b.positions || b.positions_detail || [];
+    if(posList.length > 0){
+      let ph = '';
       posList.forEach(p => {
-        const pnlVal = parseFloat(p.pnl || p.unrealized_pnl || 0);
-        const pnlC = pnlVal >= 0 ? 'color:var(--green)' : 'color:var(--red)';
+        const pnlVal = parseFloat(p.pnl||p.unrealized_pnl||0);
+        const pnlC = pnlVal >= 0 ? 'var(--green)' : 'var(--red)';
         const pnlS = pnlVal >= 0 ? '+' : '';
-        ph += `<div class="pos"><span>${p.symbol} <span class="badge ${p.side==='SHORT'?'badge-error':'badge-ok'}" style="font-size:.7rem">${p.side}</span></span><span style="${pnlC};font-weight:600">${pnlS}${pnlVal.toFixed(2)} USDT</span></div>`;
+        const entry = p.entry_price || p.avgPrice || '—';
+        const size = parseFloat(p.size||p.positionAmt||0);
+        ph += `<div class="pos">
+<div class="pos-info"><span class="pos-symbol">${p.symbol} <span class="badge ${p.side==='SHORT'?'badge-error':'badge-ok'}" style="font-size:.68rem">${p.side}</span></span><span class="pos-entry">Entry: ${entry} | Size: ${size.toLocaleString()}</span></div>
+<span style="color:${pnlC};font-weight:700;font-size:.9rem">${pnlS}${pnlVal.toFixed(2)}</span>
+<span style="color:var(--muted);font-size:.75rem">USDT</span></div>`;
       });
-      ph += '</div>';
-      document.getElementById('bot-positions').innerHTML = ph;
+      document.getElementById('bot-positions').innerHTML = `<div class="positions-list">${ph}</div>`;
     } else {
-      document.getElementById('bot-positions').innerHTML = '';
+      document.getElementById('bot-positions').innerHTML = '<div style="color:var(--muted);text-align:center;padding:20px">Không có vị thế đang mở</div>';
     }
 
-    // OpenClaw Cron
+    // BingX Account Detail
+    const marginUsed = b.balance && b.equity ? (b.balance - (b.available||b.balance)) : 0;
+    const marginPct = b.balance ? (marginUsed / b.balance * 100) : 0;
+    document.getElementById('bot-account').innerHTML = `
+<div class="stat-row"><span class="stat-label">Equity</span><span class="stat-value">${fmtK(b.equity)} USDT</span></div>
+<div class="stat-row"><span class="stat-label">Available</span><span class="stat-value">${fmtK(b.available)} USDT</span></div>
+<div class="stat-row"><span class="stat-label">Margin Used</span><span class="stat-value">${fmtK(marginUsed)} USDT (${fmt(marginPct,1)}%)</span></div>
+<div class="stat-row"><span class="stat-label">Starting Balance</span><span class="stat-value">100,000 USDT</span></div>
+<div class="stat-row"><span class="stat-label">Total Return</span><span class="stat-value" style="color:${b.balance>=100000?'var(--green)':'var(--red)'}">${b.balance?fmt(b.balance-100000):0} USDT (${b.balance?fmt((b.balance-100000)/1000,2):0}%)</span></div>
+<div class="stat-row"><span class="stat-label">Win / Loss</span><span class="stat-value"><span style="color:var(--green)">${b.win_trades||0}W</span> / <span style="color:var(--red)">${b.loss_trades||0}L</span></span></div>`;
+
+    // Bot Config
+    document.getElementById('bot-config').innerHTML = `
+<div class="stat-row"><span class="stat-label">Pairs</span><span class="stat-value">10 coins</span></div>
+<div class="stat-row"><span class="stat-label">Leverage</span><span class="stat-value">20x Cross</span></div>
+<div class="stat-row"><span class="stat-label">Risk/Trade</span><span class="stat-value">1% Balance</span></div>
+<div class="stat-row"><span class="stat-label">Margin/Trade</span><span class="stat-value">≤ 1% Balance</span></div>
+<div class="stat-row"><span class="stat-label">Scan Interval</span><span class="stat-value">120 giây</span></div>
+<div class="stat-row"><span class="stat-label">TP Strategy</span><span class="stat-value">TP1 (R:R 1.5) + TP2 (R:R 3.0)</span></div>
+<div class="stat-row"><span class="stat-label">Method</span><span class="stat-value">Fibonacci + RSI + ATR</span></div>
+<div class="stat-row"><span class="stat-label">Timeframes</span><span class="stat-value">15m, 30m, 1h</span></div>`;
+
+    // Cron Summary
+    document.getElementById('cron-summary').innerHTML = `
+<span style="color:var(--green)">✅ ${cronOk} OK</span>
+<span style="color:var(--red)">❌ ${cronErr} Error</span>
+<span style="color:var(--muted)">⏳ ${cronIdle} Idle</span>
+<span style="color:var(--muted)">📊 ${d.openclaw_cron.length} total</span>`;
+
+    // OpenClaw Cron Table
     const tb = document.querySelector('#cron-table tbody');
     tb.innerHTML = '';
     d.openclaw_cron.forEach(c => {
       const tr = document.createElement('tr');
-      tr.innerHTML = `<td style="font-weight:500">${c.name}</td><td style="font-family:monospace;font-size:.78rem;color:var(--muted)">${c.schedule.replace('(exact)','').trim()}</td><td>${c.next_run}</td><td>${c.last_run}</td><td>${statusBadge(c.status)}</td>`;
+      tr.innerHTML = `<td style="font-weight:500">${c.name}</td><td style="font-family:monospace;font-size:.75rem;color:var(--muted)">${(c.schedule||'').replace('(exact)','').replace('cron ','').trim()}</td><td>${c.next_run||'—'}</td><td>${c.last_run||'—'}</td><td>${statusBadge(c.status)}</td>`;
       tb.appendChild(tr);
     });
 
     // Linux cron
     if(d.linux_cron && d.linux_cron.length > 0){
-      document.getElementById('linux-cron').innerHTML = d.linux_cron.map(c => '<div>' + c.replace(/</g,'&lt;') + '</div>').join('');
+      document.getElementById('linux-cron').innerHTML = d.linux_cron.map(c => '<div style="padding:3px 0;border-bottom:1px solid var(--border)">' + c.replace(/</g,'&lt;') + '</div>').join('');
     }
 
   } catch(e){
