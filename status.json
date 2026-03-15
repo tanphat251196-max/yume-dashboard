@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-15T21:50:01.958897+00:00",
-  "generated_at_vn": "2026-03-16 04:50:01",
+  "generated_at": "2026-03-15T21:55:01.576018+00:00",
+  "generated_at_vn": "2026-03-16 04:55:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "10d 15h 30m",
-    "uptime_seconds": 919821,
+    "uptime": "10d 15h 35m",
+    "uptime_seconds": 920121,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.52,
-      "percent": 35.9
+      "used_gb": 5.57,
+      "percent": 36.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 2.5,
+      "percent": 2.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -27,7 +27,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 2h",
-      "last_run": "5m ago",
+      "last_run": "10m ago",
       "status": "ok"
     },
     {
@@ -187,9 +187,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 96351.9031,
-    "equity": 96076.4185,
-    "available": 93158.2211,
-    "unrealized_pnl": -275.4846,
+    "equity": 96074.8035,
+    "available": 93156.6062,
+    "unrealized_pnl": -277.0995,
     "open_positions": 3,
     "closed_trades": 0,
     "win_trades": 0,
@@ -204,21 +204,21 @@
         "side": "SHORT",
         "size": "73877",
         "entry_price": "0.26415",
-        "unrealized_pnl": "-152.1866"
+        "unrealized_pnl": "-172.9617"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "204887",
         "entry_price": "0.09525",
-        "unrealized_pnl": "-96.3174"
+        "unrealized_pnl": "-94.2275"
       },
       {
         "symbol": "DOT-USDT",
         "side": "SHORT",
         "size": "13558.1",
         "entry_price": "1.426",
-        "unrealized_pnl": "-9.9337"
+        "unrealized_pnl": "-18.3978"
       }
     ],
     "process_running": false
@@ -239,7 +239,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 472
+      "response_time_ms": 319
     },
     "openclaw": {
       "running": true
