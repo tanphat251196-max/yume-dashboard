@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-15T22:10:01.905980+00:00",
-  "generated_at_vn": "2026-03-16 05:10:01",
+  "generated_at": "2026-03-15T22:15:01.824419+00:00",
+  "generated_at_vn": "2026-03-16 05:15:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "10d 15h 50m",
-    "uptime_seconds": 921021,
+    "uptime": "10d 15h 55m",
+    "uptime_seconds": 921321,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.52,
-      "percent": 35.9
+      "used_gb": 5.53,
+      "percent": 36.0
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 0.0,
+      "percent": 2.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,8 +26,8 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 2h",
-      "last_run": "25m ago",
+      "next_run": "in 1h",
+      "last_run": "30m ago",
       "status": "ok"
     },
     {
@@ -187,9 +187,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 95895.9095,
-    "equity": 95922.8901,
+    "equity": 95977.3937,
     "available": 94929.2169,
-    "unrealized_pnl": 26.9806,
+    "unrealized_pnl": 81.4841,
     "open_positions": 1,
     "closed_trades": 0,
     "win_trades": 0,
@@ -204,7 +204,7 @@
         "side": "SHORT",
         "size": "13558.1",
         "entry_price": "1.426",
-        "unrealized_pnl": "21.7417"
+        "unrealized_pnl": "81.4842"
       }
     ],
     "process_running": false
@@ -225,7 +225,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 535
+      "response_time_ms": 469
     },
     "openclaw": {
       "running": true
