@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shiny Yume — Dashboard</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--cyan:#58a6ff;--green:#3fb950;--red:#f85149;--orange:#d29922;--purple:#bc8cff}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:16px}
+.container{max-width:1200px;margin:0 auto}
+h1{font-size:1.5rem;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+h1 span{color:var(--cyan)}
+.subtitle{color:var(--muted);font-size:.85rem;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
+.card-title{font-size:.9rem;font-weight:600;color:var(--muted);margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.stat-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border)}
+.stat-row:last-child{border-bottom:none}
+.stat-label{color:var(--muted);font-size:.85rem}
+.stat-value{font-weight:600;font-size:.9rem}
+.progress-wrap{width:120px;height:6px;background:#21262d;border-radius:3px;overflow:hidden;margin-left:8px}
+.progress-bar{height:100%;border-radius:3px;transition:width .5s}
+.progress-bar.low{background:var(--green)}
+.progress-bar.mid{background:var(--orange)}
+.progress-bar.high{background:var(--red)}
+.badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:.75rem;font-weight:600}
+.badge-ok{background:#1b3a24;color:var(--green)}
+.badge-error{background:#3d1518;color:var(--red)}
+.badge-idle{background:#1c2028;color:var(--muted)}
+.badge-running{background:#0c2d4a;color:var(--cyan)}
+.badge-stopped{background:#3d1518;color:var(--red)}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+th{text-align:left;color:var(--muted);font-weight:500;padding:6px 8px;border-bottom:1px solid var(--border)}
+td{padding:6px 8px;border-bottom:1px solid #21262d}
+tr:hover{background:#1c2028}
+.full-width{grid-column:1/-1}
+.bot-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.bot-stat{text-align:center;padding:12px;background:#0d1117;border-radius:8px;border:1px solid var(--border)}
+.bot-stat .num{font-size:1.4rem;font-weight:700;color:var(--cyan)}
+.bot-stat .label{font-size:.75rem;color:var(--muted);margin-top:2px}
+.bot-stat .num.green{color:var(--green)}
+.bot-stat .num.red{color:var(--red)}
+.bot-stat .num.orange{color:var(--orange)}
+.service-item{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border)}
+.service-item:last-child{border-bottom:none}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px}
+.dot-green{background:var(--green)}
+.dot-red{background:var(--red)}
+.linux-cron{font-family:monospace;font-size:.78rem;color:var(--muted);line-height:1.6}
+.positions-list{font-size:.82rem}
+.positions-list .pos{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #21262d}
+.refresh-info{text-align:center;color:var(--muted);font-size:.75rem;padding:16px 0}
+#auth-gate{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--bg);display:flex;align-items:center;justify-content:center;z-index:999}
+#auth-gate .box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:32px;text-align:center;max-width:320px;width:90%}
+#auth-gate input{width:100%;padding:10px;border:1px solid var(--border);border-radius:6px;background:#0d1117;color:var(--text);margin:12px 0;font-size:1rem}
+#auth-gate button{width:100%;padding:10px;border:none;border-radius:6px;background:var(--cyan);color:#0d1117;font-weight:600;cursor:pointer;font-size:.95rem}
+#auth-gate button:hover{opacity:.9}
+#auth-gate .err{color:var(--red);font-size:.85rem;min-height:20px;margin-top:8px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.bot-stats{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+
+<div id="auth-gate">
+<div class="box">
+<h2 style="margin-bottom:8px">🔒 Dashboard</h2>
+<p style="color:var(--muted);font-size:.85rem">Nhập mật khẩu để truy cập</p>
+<input type="password" id="pw-input" placeholder="Password..." autofocus>
+<button onclick="checkAuth()">Đăng nhập</button>
+<div class="err" id="pw-err"></div>
+</div>
+</div>
+
+<div class="container" id="main" style="display:none">
+<h1>✨ <span>Shiny Yume</span> — Dashboard</h1>
+<p class="subtitle" id="last-update">Đang tải...</p>
+
+<div class="grid">
+<!-- System -->
+<div class="card">
+<div class="card-title">🖥 Hệ thống</div>
+<div id="system-info"></div>
+</div>
+
+<!-- Services -->
+<div class="card">
+<div class="card-title">🌐 Dịch vụ</div>
+<div id="services-info"></div>
+</div>
+
+<!-- BingX Bot -->
+<div class="card full-width">
+<div class="card-title">🤖 BingX Trading Bot</div>
+<div class="bot-stats" id="bot-stats"></div>
+<div id="bot-positions" style="margin-top:12px"></div>
+</div>
+
+<!-- OpenClaw Cron -->
+<div class="card full-width">
+<div class="card-title">⏰ OpenClaw Cron Jobs</div>
+<div style="overflow-x:auto"><table id="cron-table"><thead><tr><th>Tên</th><th>Lịch</th><th>Tiếp theo</th><th>Lần cuối</th><th>Status</th></tr></thead><tbody></tbody></table></div>
+</div>
+
+<!-- Linux Cron -->
+<div class="card full-width">
+<div class="card-title">📋 Linux Crontab</div>
+<div class="linux-cron" id="linux-cron"></div>
+</div>
+</div>
+
+<div class="refresh-info">Tự động cập nhật mỗi 5 phút • <a href="#" onclick="loadData()" style="color:var(--cyan)">Refresh ngay</a></div>
+</div>
+
+<script>
+const CORRECT_PW = 'signalhunters2026';
+
+function checkAuth(){
+  const pw = document.getElementById('pw-input').value;
+  if(pw === CORRECT_PW){
+    localStorage.setItem('yd_auth','1');
+    showDash();
+  } else {
+    document.getElementById('pw-err').textContent = 'Sai mật khẩu!';
+  }
+}
+
+document.getElementById('pw-input').addEventListener('keydown', e => {
+  if(e.key === 'Enter') checkAuth();
+});
+
+function showDash(){
+  document.getElementById('auth-gate').style.display = 'none';
+  document.getElementById('main').style.display = 'block';
+  loadData();
+}
+
+if(localStorage.getItem('yd_auth') === '1') showDash();
+
+function progressClass(p){ return p < 60 ? 'low' : p < 85 ? 'mid' : 'high'; }
+
+function statusBadge(s){
+  if(s === 'ok') return '<span class="badge badge-ok">✅ OK</span>';
+  if(s === 'error') return '<span class="badge badge-error">❌ Error</span>';
+  return '<span class="badge badge-idle">⏳ Idle</span>';
+}
+
+async function loadData(){
+  try{
+    const r = await fetch('./status.json?t=' + Date.now());
+    const d = await r.json();
+    document.getElementById('last-update').textContent = 'Cập nhật: ' + d.generated_at_vn + ' (VN)';
+
+    // System
+    const s = d.system;
+    const ramPct = s.ram.percent;
+    const diskPct = s.disk.percent;
+    const cpuPct = s.cpu.percent;
+    document.getElementById('system-info').innerHTML = `
+<div class="stat-row"><span class="stat-label">Host</span><span class="stat-value">${s.hostname}</span></div>
+<div class="stat-row"><span class="stat-label">Uptime</span><span class="stat-value">${s.uptime}</span></div>
+<div class="stat-row"><span class="stat-label">RAM</span><div style="display:flex;align-items:center"><span class="stat-value">${s.ram.used_gb.toFixed(1)}/${s.ram.total_gb.toFixed(0)} GB (${ramPct}%)</span><div class="progress-wrap"><div class="progress-bar ${progressClass(ramPct)}" style="width:${ramPct}%"></div></div></div></div>
+<div class="stat-row"><span class="stat-label">Disk</span><div style="display:flex;align-items:center"><span class="stat-value">${s.disk.used_gb}/${s.disk.total_gb} GB (${diskPct}%)</span><div class="progress-wrap"><div class="progress-bar ${progressClass(diskPct)}" style="width:${diskPct}%"></div></div></div></div>
+<div class="stat-row"><span class="stat-label">CPU</span><div style="display:flex;align-items:center"><span class="stat-value">${cpuPct}% (${s.cpu.count} cores)</span><div class="progress-wrap"><div class="progress-bar ${progressClass(cpuPct)}" style="width:${cpuPct}%"></div></div></div></div>`;
+
+    // Services
+    const sv = d.services;
+    const chromeRunning = sv.chrome && sv.chrome.running;
+    const websiteOnline = sv.website && sv.website.online;
+    const botRunning = d.bingx_bot.status === 'running';
+    document.getElementById('services-info').innerHTML = `
+<div class="service-item"><span><span class="dot ${chromeRunning?'dot-green':'dot-red'}"></span>Chrome</span><span class="badge ${chromeRunning?'badge-running':'badge-stopped'}">${chromeRunning?'Running':'Stopped'}</span></div>
+<div class="service-item"><span><span class="dot ${websiteOnline?'dot-green':'dot-red'}"></span>Website</span><span class="badge ${websiteOnline?'badge-ok':'badge-error'}">${websiteOnline?'Online':'Offline'}</span></div>
+<div class="service-item"><span><span class="dot dot-green"></span>OpenClaw</span><span class="badge badge-running">Running</span></div>
+<div class="service-item"><span><span class="dot ${botRunning?'dot-green':'dot-red'}"></span>BingX Bot</span><span class="badge ${botRunning?'badge-running':'badge-stopped'}">${botRunning?'Running':'Stopped'}</span></div>`;
+
+    // BingX Bot
+    const b = d.bingx_bot;
+    const pnlClass = b.unrealized_pnl >= 0 ? 'green' : 'red';
+    const pnlSign = b.unrealized_pnl >= 0 ? '+' : '';
+    document.getElementById('bot-stats').innerHTML = `
+<div class="bot-stat"><div class="num">${b.mode || 'TESTNET'}</div><div class="label">Mode</div></div>
+<div class="bot-stat"><div class="num">${b.balance ? b.balance.toLocaleString('en',{maximumFractionDigits:0}) : '—'}</div><div class="label">Balance (USDT)</div></div>
+<div class="bot-stat"><div class="num ${pnlClass}">${pnlSign}${b.unrealized_pnl ? b.unrealized_pnl.toFixed(2) : '0.00'}</div><div class="label">Unrealized PnL</div></div>
+<div class="bot-stat"><div class="num orange">${b.open_positions || 0}</div><div class="label">Open Positions</div></div>
+<div class="bot-stat"><div class="num">${b.closed_trades || 0}</div><div class="label">Closed Trades</div></div>
+<div class="bot-stat"><div class="num ${(b.win_rate||0) >= 50 ? 'green' : 'red'}">${b.win_rate ? b.win_rate.toFixed(1) : '—'}%</div><div class="label">Win Rate</div></div>`;
+
+    if(b.positions && b.positions.length > 0){
+      let ph = '<div class="positions-list"><div style="color:var(--muted);font-size:.8rem;margin-bottom:6px;font-weight:600">Vị thế đang mở:</div>';
+      b.positions.forEach(p => {
+        const pnlC = p.pnl >= 0 ? 'color:var(--green)' : 'color:var(--red)';
+        const pnlS = p.pnl >= 0 ? '+' : '';
+        ph += `<div class="pos"><span>${p.symbol} <span class="badge ${p.side==='SHORT'?'badge-error':'badge-ok'}" style="font-size:.7rem">${p.side}</span></span><span style="${pnlC};font-weight:600">${pnlS}${p.pnl.toFixed(2)} USDT</span></div>`;
+      });
+      ph += '</div>';
+      document.getElementById('bot-positions').innerHTML = ph;
+    } else {
+      document.getElementById('bot-positions').innerHTML = '';
+    }
+
+    // OpenClaw Cron
+    const tb = document.querySelector('#cron-table tbody');
+    tb.innerHTML = '';
+    d.openclaw_cron.forEach(c => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td style="font-weight:500">${c.name}</td><td style="font-family:monospace;font-size:.78rem;color:var(--muted)">${c.schedule.replace('(exact)','').trim()}</td><td>${c.next_run}</td><td>${c.last_run}</td><td>${statusBadge(c.status)}</td>`;
+      tb.appendChild(tr);
+    });
+
+    // Linux cron
+    if(d.linux_cron && d.linux_cron.length > 0){
+      document.getElementById('linux-cron').innerHTML = d.linux_cron.map(c => '<div>' + c.replace(/</g,'&lt;') + '</div>').join('');
+    }
+
+  } catch(e){
+    document.getElementById('last-update').textContent = '⚠️ Lỗi tải dữ liệu: ' + e.message;
+  }
+}
+
+setInterval(loadData, 300000);
+</script>
+</body>
+</html>
