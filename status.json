@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-15T23:45:01.260523+00:00",
-  "generated_at_vn": "2026-03-16 06:45:01",
+  "generated_at": "2026-03-15T23:50:01.820200+00:00",
+  "generated_at_vn": "2026-03-16 06:50:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "10d 17h 25m",
-    "uptime_seconds": 926721,
+    "uptime": "10d 17h 30m",
+    "uptime_seconds": 927021,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.55,
-      "percent": 36.1
+      "used_gb": 5.61,
+      "percent": 36.5
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 4.5,
+      "percent": 1.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
       "name": "daily-analysis",
       "schedule": "cron 0 7 * * * (exact)",
-      "next_run": "in 15m",
+      "next_run": "in 10m",
       "last_run": "24h ago",
       "status": "ok"
     },
@@ -34,7 +34,7 @@
       "id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
       "name": "weekly-analysis",
       "schedule": "cron 20 7 * * 1 (exact)",
-      "next_run": "in 35m",
+      "next_run": "in 30m",
       "last_run": "7d ago",
       "status": "ok"
     },
@@ -42,7 +42,7 @@
       "id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
       "name": "x-post-analysis-am",
       "schedule": "cron 30 7 * * * (exact)",
-      "next_run": "in 45m",
+      "next_run": "in 40m",
       "last_run": "23h ago",
       "status": "ok"
     },
@@ -50,8 +50,16 @@
       "id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
       "name": "x-engage-1",
       "schedule": "cron 30 7 * * * (exact)",
-      "next_run": "in 45m",
+      "next_run": "in 40m",
       "last_run": "23h ago",
+      "status": "ok"
+    },
+    {
+      "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "schedule": "cron 45 */2 * * * (exact)",
+      "next_run": "in 2h",
+      "last_run": "5m ago",
       "status": "ok"
     },
     {
@@ -179,9 +187,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 95895.9095,
-    "equity": 95841.5415,
-    "available": 94874.849,
-    "unrealized_pnl": -54.3679,
+    "equity": 95827.9834,
+    "available": 94861.2909,
+    "unrealized_pnl": -67.926,
     "open_positions": 1,
     "closed_trades": 0,
     "win_trades": 0,
@@ -196,7 +204,7 @@
         "side": "SHORT",
         "size": "13558.1",
         "entry_price": "1.426",
-        "unrealized_pnl": "-63.5388"
+        "unrealized_pnl": "-79.1116"
       }
     ],
     "process_running": false
@@ -217,7 +225,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 371
+      "response_time_ms": 661
     },
     "openclaw": {
       "running": true
