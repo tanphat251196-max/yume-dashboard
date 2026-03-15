@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-15T20:25:01.848870+00:00",
-  "generated_at_vn": "2026-03-16 03:25:01",
+  "generated_at": "2026-03-15T20:30:02.059705+00:00",
+  "generated_at_vn": "2026-03-16 03:30:02",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "10d 14h 5m",
-    "uptime_seconds": 914721,
+    "uptime": "10d 14h 10m",
+    "uptime_seconds": 915022,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.49,
-      "percent": 35.7
+      "used_gb": 5.52,
+      "percent": 35.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 0.8,
+      "percent": 2.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -27,15 +27,15 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 1h",
-      "last_run": "40m ago",
+      "last_run": "45m ago",
       "status": "ok"
     },
     {
       "id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
       "name": "daily-analysis",
       "schedule": "cron 0 7 * * * (exact)",
-      "next_run": "in 4h",
-      "last_run": "20h ago",
+      "next_run": "in 3h",
+      "last_run": "21h ago",
       "status": "ok"
     },
     {
@@ -74,8 +74,8 @@
       "id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
       "name": "x-engage-2",
       "schedule": "cron 0 10 * * * (exact)",
-      "next_run": "in 7h",
-      "last_run": "17h ago",
+      "next_run": "in 6h",
+      "last_run": "18h ago",
       "status": "ok"
     },
     {
@@ -90,8 +90,8 @@
       "id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
       "name": "x-engage-3",
       "schedule": "cron 0 13 * * * (exact)",
-      "next_run": "in 10h",
-      "last_run": "14h ago",
+      "next_run": "in 9h",
+      "last_run": "15h ago",
       "status": "ok"
     },
     {
@@ -114,8 +114,8 @@
       "id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
       "name": "x-engage-4",
       "schedule": "cron 0 16 * * * (exact)",
-      "next_run": "in 13h",
-      "last_run": "11h ago",
+      "next_run": "in 12h",
+      "last_run": "12h ago",
       "status": "error"
     },
     {
@@ -130,8 +130,8 @@
       "id": "93088c93-e520-4685-b54f-33fcb9d0908e",
       "name": "x-engage-5",
       "schedule": "cron 0 19 * * * (exact)",
-      "next_run": "in 16h",
-      "last_run": "8h ago",
+      "next_run": "in 15h",
+      "last_run": "9h ago",
       "status": "error"
     },
     {
@@ -154,8 +154,8 @@
       "id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
       "name": "x-engage-6",
       "schedule": "cron 0 22 * * * (exact)",
-      "next_run": "in 19h",
-      "last_run": "5h ago",
+      "next_run": "in 18h",
+      "last_run": "6h ago",
       "status": "error"
     },
     {
@@ -187,9 +187,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 97499.6137,
-    "equity": 97422.3967,
-    "available": 89620.9331,
-    "unrealized_pnl": -77.2169,
+    "equity": 97307.907,
+    "available": 89506.4433,
+    "unrealized_pnl": -191.7066,
     "open_positions": 8,
     "closed_trades": 0,
     "win_trades": 0,
@@ -204,35 +204,35 @@
         "side": "SHORT",
         "size": "73877",
         "entry_price": "0.26415",
-        "unrealized_pnl": "101.9503"
+        "unrealized_pnl": "92.3462"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "204887",
         "entry_price": "0.09525",
-        "unrealized_pnl": "50.9466"
+        "unrealized_pnl": "45.0956"
       },
       {
         "symbol": "ETH-USDT",
         "side": "SHORT",
         "size": "9.289",
         "entry_price": "2100.78",
-        "unrealized_pnl": "-102.8283"
+        "unrealized_pnl": "-131.2526"
       },
       {
         "symbol": "BNB-USDT",
         "side": "SHORT",
         "size": "29.60",
         "entry_price": "659.04",
-        "unrealized_pnl": "-24.2750"
+        "unrealized_pnl": "-38.7760"
       },
       {
         "symbol": "AVAX-USDT",
         "side": "SHORT",
         "size": "2010",
         "entry_price": "9.703",
-        "unrealized_pnl": "-78.4284"
+        "unrealized_pnl": "-83.6171"
       }
     ],
     "process_running": false
@@ -253,7 +253,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 515
+      "response_time_ms": 439
     },
     "openclaw": {
       "running": true
