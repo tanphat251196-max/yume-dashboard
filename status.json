@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-16T07:40:02.039153+00:00",
-  "generated_at_vn": "2026-03-16 14:40:02",
+  "generated_at": "2026-03-16T07:45:01.147477+00:00",
+  "generated_at_vn": "2026-03-16 14:45:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "11d 1h 20m",
-    "uptime_seconds": 955222,
+    "uptime": "11d 1h 25m",
+    "uptime_seconds": 955521,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.13,
-      "percent": 33.4
+      "used_gb": 5.18,
+      "percent": 33.7
     },
     "disk": {
       "total_gb": 468,
@@ -16,25 +16,17 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 15.2,
+      "percent": 14.8,
       "count": 4,
       "freq_mhz": 0
     }
   },
   "openclaw_cron": [
     {
-      "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 5m",
-      "last_run": "2h ago",
-      "status": "ok"
-    },
-    {
       "id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
       "name": "x-post-insight-2",
       "schedule": "cron 30 15 * * * (exact)",
-      "next_run": "in 50m",
+      "next_run": "in 45m",
       "last_run": "23h ago",
       "status": "error"
     },
@@ -217,7 +209,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 385
+      "response_time_ms": 370
     },
     "openclaw": {
       "running": true
