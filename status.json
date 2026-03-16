@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-16T17:05:01.430133+00:00",
-  "generated_at_vn": "2026-03-17 00:05:01",
+  "generated_at": "2026-03-16T17:10:01.104052+00:00",
+  "generated_at_vn": "2026-03-17 00:10:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "11d 10h 45m",
-    "uptime_seconds": 989121,
+    "uptime": "11d 10h 50m",
+    "uptime_seconds": 989421,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.01,
-      "percent": 19.6
+      "used_gb": 3.07,
+      "percent": 20.0
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 27.3,
+      "percent": 12.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 40m",
+      "next_run": "in 35m",
       "last_run": "1h ago",
       "status": "ok"
     },
@@ -187,9 +187,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 94917.242,
-    "equity": 94507.5627,
-    "available": 91659.6958,
-    "unrealized_pnl": -409.6793,
+    "equity": 94527.1003,
+    "available": 91679.2335,
+    "unrealized_pnl": -390.1416,
     "open_positions": 3,
     "closed_trades": 0,
     "win_trades": 0,
@@ -204,21 +204,21 @@
         "side": "SHORT",
         "size": "0.2600",
         "entry_price": "73105.1",
-        "unrealized_pnl": "-160.6408"
+        "unrealized_pnl": "-154.6755"
       },
       {
         "symbol": "AVAX-USDT",
         "side": "SHORT",
         "size": "1876",
         "entry_price": "10.117",
-        "unrealized_pnl": "-213.3668"
+        "unrealized_pnl": "-209.5772"
       },
       {
         "symbol": "BNB-USDT",
         "side": "SHORT",
         "size": "28.15",
         "entry_price": "673.89",
-        "unrealized_pnl": "-35.1903"
+        "unrealized_pnl": "-25.2311"
       }
     ],
     "process_running": false
@@ -239,7 +239,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 429
+      "response_time_ms": 398
     },
     "openclaw": {
       "running": true
