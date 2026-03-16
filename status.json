@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-16T07:45:01.147477+00:00",
-  "generated_at_vn": "2026-03-16 14:45:01",
+  "generated_at": "2026-03-16T07:50:01.283156+00:00",
+  "generated_at_vn": "2026-03-16 14:50:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "11d 1h 25m",
-    "uptime_seconds": 955521,
+    "uptime": "11d 1h 30m",
+    "uptime_seconds": 955821,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.18,
-      "percent": 33.7
+      "used_gb": 5.21,
+      "percent": 33.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 14.8,
+      "percent": 24.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
       "name": "x-post-insight-2",
       "schedule": "cron 30 15 * * * (exact)",
-      "next_run": "in 45m",
+      "next_run": "in 40m",
       "last_run": "23h ago",
       "status": "error"
     },
@@ -37,6 +37,14 @@
       "next_run": "in 1h",
       "last_run": "23h ago",
       "status": "error"
+    },
+    {
+      "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "schedule": "cron 45 */2 * * * (exact)",
+      "next_run": "in 2h",
+      "last_run": "5m ago",
+      "status": "ok"
     },
     {
       "id": "34cd789a-75a1-414f-ada7-f72817e76244",
@@ -163,7 +171,7 @@
       "name": "weekly-analysis",
       "schedule": "cron 20 7 * * 1 (exact)",
       "next_run": "in 7d",
-      "last_run": "7h ago",
+      "last_run": "8h ago",
       "status": "ok"
     },
     {
@@ -209,7 +217,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 370
+      "response_time_ms": 400
     },
     "openclaw": {
       "running": true
