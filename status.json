@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-16T04:10:02.058282+00:00",
-  "generated_at_vn": "2026-03-16 11:10:02",
+  "generated_at": "2026-03-16T04:15:01.752736+00:00",
+  "generated_at_vn": "2026-03-16 11:15:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "10d 21h 50m",
-    "uptime_seconds": 942622,
+    "uptime": "10d 21h 55m",
+    "uptime_seconds": 942921,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.59,
-      "percent": 36.4
+      "used_gb": 5.39,
+      "percent": 35.1
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 4.5,
+      "percent": 40.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
       "name": "x-post-insight-1",
       "schedule": "cron 30 11 * * * (exact)",
-      "next_run": "in 20m",
+      "next_run": "in 15m",
       "last_run": "24h ago",
       "status": "ok"
     },
@@ -34,8 +34,8 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 2h",
-      "last_run": "25m ago",
+      "next_run": "in 1h",
+      "last_run": "30m ago",
       "status": "ok"
     },
     {
@@ -187,9 +187,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 95507.241,
-    "equity": 95152.6159,
-    "available": 94197.4521,
-    "unrealized_pnl": -354.625,
+    "equity": 95126.3571,
+    "available": 94171.1933,
+    "unrealized_pnl": -380.8838,
     "open_positions": 1,
     "closed_trades": 0,
     "win_trades": 0,
@@ -204,7 +204,7 @@
         "side": "SHORT",
         "size": "13129.4",
         "entry_price": "1.455",
-        "unrealized_pnl": "-368.0668"
+        "unrealized_pnl": "-398.4423"
       }
     ],
     "process_running": false
@@ -225,7 +225,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 562
+      "response_time_ms": 402
     },
     "openclaw": {
       "running": true
