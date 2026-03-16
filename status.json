@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-16T04:30:01.880677+00:00",
-  "generated_at_vn": "2026-03-16 11:30:01",
+  "generated_at": "2026-03-16T04:35:01.479993+00:00",
+  "generated_at_vn": "2026-03-16 11:35:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "10d 22h 10m",
-    "uptime_seconds": 943821,
+    "uptime": "10d 22h 15m",
+    "uptime_seconds": 944121,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.48,
-      "percent": 35.6
+      "used_gb": 5.54,
+      "percent": 36.1
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 3.5,
+      "percent": 15.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -27,7 +27,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 1h",
-      "last_run": "45m ago",
+      "last_run": "50m ago",
       "status": "ok"
     },
     {
@@ -143,6 +143,14 @@
       "status": "ok"
     },
     {
+      "id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
+      "name": "x-post-insight-1",
+      "schedule": "cron 30 11 * * * (exact)",
+      "next_run": "in 24h",
+      "last_run": "5m ago",
+      "status": "ok"
+    },
+    {
       "id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
       "name": "crypto-education",
       "schedule": "cron 0 20 * * 2,4,6 (exact)",
@@ -178,11 +186,11 @@
   "bingx_bot": {
     "mode": "testnet",
     "status": "online",
-    "balance": 95507.241,
-    "equity": 95047.8433,
-    "available": 94092.6795,
-    "unrealized_pnl": -459.3977,
-    "open_positions": 1,
+    "balance": 94945.9789,
+    "equity": 94945.9789,
+    "available": 94945.9789,
+    "unrealized_pnl": 0.0,
+    "open_positions": 0,
     "closed_trades": 0,
     "win_trades": 0,
     "loss_trades": 0,
@@ -190,15 +198,7 @@
     "total_pnl": 0,
     "avg_pnl": 0,
     "api_error": null,
-    "positions_detail": [
-      {
-        "symbol": "DOT-USDT",
-        "side": "SHORT",
-        "size": "13129.4",
-        "entry_price": "1.455",
-        "unrealized_pnl": "-451.4494"
-      }
-    ],
+    "positions_detail": [],
     "process_running": false
   },
   "linux_cron": [
@@ -217,7 +217,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 447
+      "response_time_ms": 581
     },
     "openclaw": {
       "running": true
