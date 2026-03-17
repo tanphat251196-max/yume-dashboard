@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-17T22:05:01.606868+00:00",
-  "generated_at_vn": "2026-03-18 05:05:01",
+  "generated_at": "2026-03-17T22:10:01.405104+00:00",
+  "generated_at_vn": "2026-03-18 05:10:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "12d 15h 45m",
-    "uptime_seconds": 1093521,
+    "uptime": "12d 15h 50m",
+    "uptime_seconds": 1093821,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.32,
-      "percent": 21.6
+      "used_gb": 3.33,
+      "percent": 21.7
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 0.2,
+      "percent": 1.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -27,7 +27,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 2h",
-      "last_run": "20m ago",
+      "last_run": "25m ago",
       "status": "ok"
     },
     {
@@ -211,9 +211,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1991.4797,
-    "equity": 2066.6969,
+    "equity": 2039.8751,
     "available": 1492.7483,
-    "unrealized_pnl": 75.2171,
+    "unrealized_pnl": 48.3953,
     "open_positions": 4,
     "closed_trades": 0,
     "win_trades": 0,
@@ -228,28 +228,28 @@
         "side": "LONG",
         "size": "30098.21",
         "entry_price": "0.09952",
-        "unrealized_pnl": "19.3156"
+        "unrealized_pnl": "7.5773"
       },
       {
         "symbol": "INJ-USDT",
         "side": "LONG",
         "size": "930.000",
         "entry_price": "3.219",
-        "unrealized_pnl": "30.8470"
+        "unrealized_pnl": "22.0027"
       },
       {
         "symbol": "BNB-USDT",
         "side": "LONG",
         "size": "2.96",
         "entry_price": "672.97",
-        "unrealized_pnl": "2.9597"
+        "unrealized_pnl": "1.2881"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "LONG",
         "size": "19851",
         "entry_price": "0.10040",
-        "unrealized_pnl": "22.9836"
+        "unrealized_pnl": "18.1201"
       }
     ],
     "process_running": false
@@ -268,7 +268,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 360
+      "response_time_ms": 465
     },
     "openclaw": {
       "running": true
