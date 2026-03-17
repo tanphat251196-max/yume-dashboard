@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-17T03:10:01.506300+00:00",
-  "generated_at_vn": "2026-03-17 10:10:01",
+  "generated_at": "2026-03-17T03:15:02.054397+00:00",
+  "generated_at_vn": "2026-03-17 10:15:02",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "11d 20h 50m",
-    "uptime_seconds": 1025421,
+    "uptime": "11d 20h 55m",
+    "uptime_seconds": 1025722,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 3.29,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 3.0,
+      "percent": 1.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,8 +26,8 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 35m",
-      "last_run": "1h ago",
+      "next_run": "in 30m",
+      "last_run": "2h ago",
       "status": "ok"
     },
     {
@@ -123,8 +123,8 @@
       "name": "daily-analysis",
       "schedule": "cron 0 7 * * * (exact)",
       "next_run": "in 21h",
-      "last_run": "3h ago",
-      "status": "error"
+      "last_run": "4m ago",
+      "status": "ok"
     },
     {
       "id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
@@ -147,7 +147,7 @@
       "name": "x-post-news-1",
       "schedule": "cron 30 9 * * * (exact)",
       "next_run": "in 23h",
-      "last_run": "40m ago",
+      "last_run": "45m ago",
       "status": "ok"
     },
     {
@@ -155,7 +155,7 @@
       "name": "x-engage-2",
       "schedule": "cron 0 10 * * * (exact)",
       "next_run": "in 24h",
-      "last_run": "10m ago",
+      "last_run": "15m ago",
       "status": "ok"
     },
     {
@@ -218,7 +218,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 430
+      "response_time_ms": 412
     },
     "openclaw": {
       "running": true
