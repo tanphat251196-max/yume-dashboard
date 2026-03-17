@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-17T18:30:01.531857+00:00",
-  "generated_at_vn": "2026-03-18 01:30:01",
+  "generated_at": "2026-03-17T18:35:01.101971+00:00",
+  "generated_at_vn": "2026-03-18 01:35:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "12d 12h 10m",
-    "uptime_seconds": 1080621,
+    "uptime": "12d 12h 15m",
+    "uptime_seconds": 1080921,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.51,
-      "percent": 22.8
+      "used_gb": 3.82,
+      "percent": 24.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 6.2,
+      "percent": 1.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -27,7 +27,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 1h",
-      "last_run": "45m ago",
+      "last_run": "50m ago",
       "status": "ok"
     },
     {
@@ -210,11 +210,11 @@
   "bingx_bot": {
     "mode": "testnet",
     "status": "online",
-    "balance": 92740.841,
-    "equity": 92361.3236,
-    "available": 77326.7349,
-    "unrealized_pnl": -379.5174,
-    "open_positions": 9,
+    "balance": 92154.8849,
+    "equity": 91551.2955,
+    "available": 78399.086,
+    "unrealized_pnl": -603.5894,
+    "open_positions": 8,
     "closed_trades": 0,
     "win_trades": 0,
     "loss_trades": 0,
@@ -228,35 +228,35 @@
         "side": "SHORT",
         "size": "27.79",
         "entry_price": "677.81",
-        "unrealized_pnl": "159.4256"
+        "unrealized_pnl": "111.3280"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "185414",
         "entry_price": "0.10160",
-        "unrealized_pnl": "229.9319"
+        "unrealized_pnl": "172.4536"
       },
       {
         "symbol": "LINK-USDT",
         "side": "SHORT",
         "size": "3838.4",
         "entry_price": "9.809",
-        "unrealized_pnl": "-180.3088"
+        "unrealized_pnl": "-307.1412"
       },
       {
         "symbol": "BTC-USDT",
         "side": "SHORT",
         "size": "0.5080",
         "entry_price": "74216.9",
-        "unrealized_pnl": "-83.2856"
+        "unrealized_pnl": "-170.9923"
       },
       {
         "symbol": "AVAX-USDT",
         "side": "SHORT",
         "size": "3654",
         "entry_price": "10.299",
-        "unrealized_pnl": "110.7315"
+        "unrealized_pnl": "19.6058"
       }
     ],
     "process_running": false
@@ -275,7 +275,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 328
+      "response_time_ms": 299
     },
     "openclaw": {
       "running": true
