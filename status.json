@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-17T20:25:01.373168+00:00",
-  "generated_at_vn": "2026-03-18 03:25:01",
+  "generated_at": "2026-03-17T20:30:01.941744+00:00",
+  "generated_at_vn": "2026-03-18 03:30:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "12d 14h 5m",
-    "uptime_seconds": 1087521,
+    "uptime": "12d 14h 10m",
+    "uptime_seconds": 1087821,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 3.32,
@@ -27,14 +27,14 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 1h",
-      "last_run": "40m ago",
+      "last_run": "45m ago",
       "status": "ok"
     },
     {
       "id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
       "name": "daily-analysis",
       "schedule": "cron 0 7 * * * (exact)",
-      "next_run": "in 4h",
+      "next_run": "in 3h",
       "last_run": "16h ago",
       "status": "ok"
     },
@@ -74,8 +74,8 @@
       "id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
       "name": "x-engage-2",
       "schedule": "cron 0 10 * * * (exact)",
-      "next_run": "in 7h",
-      "last_run": "17h ago",
+      "next_run": "in 6h",
+      "last_run": "18h ago",
       "status": "ok"
     },
     {
@@ -90,8 +90,8 @@
       "id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
       "name": "x-engage-3",
       "schedule": "cron 0 13 * * * (exact)",
-      "next_run": "in 10h",
-      "last_run": "14h ago",
+      "next_run": "in 9h",
+      "last_run": "15h ago",
       "status": "ok"
     },
     {
@@ -114,8 +114,8 @@
       "id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
       "name": "x-engage-4",
       "schedule": "cron 0 15 * * * (exact)",
-      "next_run": "in 13h",
-      "last_run": "11h ago",
+      "next_run": "in 12h",
+      "last_run": "12h ago",
       "status": "ok"
     },
     {
@@ -138,8 +138,8 @@
       "id": "93088c93-e520-4685-b54f-33fcb9d0908e",
       "name": "x-engage-5",
       "schedule": "cron 0 19 * * * (exact)",
-      "next_run": "in 16h",
-      "last_run": "8h ago",
+      "next_run": "in 15h",
+      "last_run": "9h ago",
       "status": "ok"
     },
     {
@@ -162,8 +162,8 @@
       "id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
       "name": "x-engage-6",
       "schedule": "cron 0 22 * * * (exact)",
-      "next_run": "in 19h",
-      "last_run": "5h ago",
+      "next_run": "in 18h",
+      "last_run": "6h ago",
       "status": "ok"
     },
     {
@@ -171,7 +171,7 @@
       "name": "crypto-education",
       "schedule": "cron 0 20 * * 2,4,6 (exact)",
       "next_run": "in 2d",
-      "last_run": "7h ago",
+      "last_run": "8h ago",
       "status": "ok"
     },
     {
@@ -209,49 +209,19 @@
   ],
   "bingx_bot": {
     "mode": "testnet",
-    "status": "online",
-    "balance": 1991.4797,
-    "equity": 1996.889,
-    "available": 1492.7483,
-    "unrealized_pnl": 5.4093,
-    "open_positions": 4,
+    "status": "error",
+    "balance": null,
+    "equity": null,
+    "available": null,
+    "unrealized_pnl": null,
+    "open_positions": 0,
     "closed_trades": 0,
     "win_trades": 0,
     "loss_trades": 0,
     "win_rate": 0.0,
     "total_pnl": 0,
     "avg_pnl": 0,
-    "api_error": null,
-    "positions_detail": [
-      {
-        "symbol": "POL-USDT",
-        "side": "LONG",
-        "size": "30098.21",
-        "entry_price": "0.09952",
-        "unrealized_pnl": "3.4796"
-      },
-      {
-        "symbol": "INJ-USDT",
-        "side": "LONG",
-        "size": "930.000",
-        "entry_price": "3.219",
-        "unrealized_pnl": "3.4027"
-      },
-      {
-        "symbol": "BNB-USDT",
-        "side": "LONG",
-        "size": "2.96",
-        "entry_price": "672.97",
-        "unrealized_pnl": "-2.5456"
-      },
-      {
-        "symbol": "DOGE-USDT",
-        "side": "LONG",
-        "size": "19851",
-        "entry_price": "0.10040",
-        "unrealized_pnl": "1.7846"
-      }
-    ],
+    "api_error": "timestamp is invalid",
     "process_running": false
   },
   "linux_cron": [
@@ -268,7 +238,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 321
+      "response_time_ms": 4192
     },
     "openclaw": {
       "running": true
