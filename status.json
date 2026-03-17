@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-03-17T03:30:01.204762+00:00",
-  "generated_at_vn": "2026-03-17 10:30:01",
+  "generated_at": "2026-03-17T03:35:01.742642+00:00",
+  "generated_at_vn": "2026-03-17 10:35:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "11d 21h 10m",
-    "uptime_seconds": 1026621,
+    "uptime": "11d 21h 15m",
+    "uptime_seconds": 1026921,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.31,
+      "used_gb": 3.3,
       "percent": 21.5
     },
     "disk": {
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 2.8,
+      "percent": 0.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 15m",
+      "next_run": "in 10m",
       "last_run": "2h ago",
       "status": "ok"
     },
@@ -34,7 +34,7 @@
       "id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
       "name": "x-post-insight-1",
       "schedule": "cron 30 11 * * * (exact)",
-      "next_run": "in 60m",
+      "next_run": "in 55m",
       "last_run": "23h ago",
       "status": "ok"
     },
@@ -123,7 +123,7 @@
       "name": "daily-analysis",
       "schedule": "cron 0 7 * * * (exact)",
       "next_run": "in 20h",
-      "last_run": "3m ago",
+      "last_run": "8m ago",
       "status": "ok"
     },
     {
@@ -155,7 +155,7 @@
       "name": "x-engage-2",
       "schedule": "cron 0 10 * * * (exact)",
       "next_run": "in 23h",
-      "last_run": "30m ago",
+      "last_run": "35m ago",
       "status": "ok"
     },
     {
@@ -186,11 +186,11 @@
   "bingx_bot": {
     "mode": "testnet",
     "status": "online",
-    "balance": 94223.6071,
-    "equity": 94223.6071,
-    "available": 94223.6071,
-    "unrealized_pnl": 0.0,
-    "open_positions": 0,
+    "balance": 94204.7706,
+    "equity": 94255.123,
+    "available": 92321.1201,
+    "unrealized_pnl": 50.3523,
+    "open_positions": 1,
     "closed_trades": 0,
     "win_trades": 0,
     "loss_trades": 0,
@@ -198,7 +198,15 @@
     "total_pnl": 0,
     "avg_pnl": 0,
     "api_error": null,
-    "positions_detail": [],
+    "positions_detail": [
+      {
+        "symbol": "BNB-USDT",
+        "side": "SHORT",
+        "size": "55.58",
+        "entry_price": "677.81",
+        "unrealized_pnl": "49.3385"
+      }
+    ],
     "process_running": false
   },
   "linux_cron": [
@@ -218,7 +226,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 364
+      "response_time_ms": 348
     },
     "openclaw": {
       "running": true
