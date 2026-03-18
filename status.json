@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T11:15:01.885090+00:00",
-  "generated_at_vn": "2026-03-18 18:15:01",
+  "generated_at": "2026-03-18T11:20:01.858372+00:00",
+  "generated_at_vn": "2026-03-18 18:20:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 4h 55m",
-    "uptime_seconds": 1140921,
+    "uptime": "13d 5h 0m",
+    "uptime_seconds": 1141221,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 4.92,
-      "percent": 32.0
+      "used_gb": 4.91,
+      "percent": 31.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 5.0,
+      "percent": 4.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 30m",
+      "next_run": "in 25m",
       "last_run": "2h ago",
       "status": "ok"
     },
@@ -34,7 +34,7 @@
       "id": "93088c93-e520-4685-b54f-33fcb9d0908e",
       "name": "x-engage-5",
       "schedule": "cron 0 19 * * * (exact)",
-      "next_run": "in 45m",
+      "next_run": "in 40m",
       "last_run": "23h ago",
       "status": "ok"
     },
@@ -163,7 +163,7 @@
       "name": "x-post-thread",
       "schedule": "cron 30 17 * * * (exact)",
       "next_run": "in 23h",
-      "last_run": "45m ago",
+      "last_run": "50m ago",
       "status": "error"
     },
     {
@@ -210,11 +210,11 @@
   "bingx_bot": {
     "mode": "testnet",
     "status": "online",
-    "balance": 1918.3007,
-    "equity": 1918.3007,
-    "available": 1918.3007,
-    "unrealized_pnl": 0.0,
-    "open_positions": 0,
+    "balance": 1917.9009,
+    "equity": 1917.1129,
+    "available": 1837.1605,
+    "unrealized_pnl": -0.788,
+    "open_positions": 1,
     "closed_trades": 0,
     "win_trades": 0,
     "loss_trades": 0,
@@ -222,7 +222,15 @@
     "total_pnl": 0,
     "avg_pnl": 0,
     "api_error": null,
-    "positions_detail": [],
+    "positions_detail": [
+      {
+        "symbol": "ATOM-USDT",
+        "side": "SHORT",
+        "size": "396.00",
+        "entry_price": "2.019",
+        "unrealized_pnl": "-0.7880"
+      }
+    ],
     "process_running": false
   },
   "linux_cron": [
@@ -239,7 +247,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 459
+      "response_time_ms": 352
     },
     "openclaw": {
       "running": true
