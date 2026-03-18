@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T12:15:01.777040+00:00",
-  "generated_at_vn": "2026-03-18 19:15:01",
+  "generated_at": "2026-03-18T12:20:01.343202+00:00",
+  "generated_at_vn": "2026-03-18 19:20:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 5h 55m",
-    "uptime_seconds": 1144521,
+    "uptime": "13d 6h 0m",
+    "uptime_seconds": 1144821,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.12,
-      "percent": 33.3
+      "used_gb": 5.09,
+      "percent": 33.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 16.8,
+      "percent": 16.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
       "name": "x-post-news-3",
       "schedule": "cron 30 19 * * * (exact)",
-      "next_run": "in 15m",
+      "next_run": "in 10m",
       "last_run": "24h ago",
       "status": "ok"
     },
@@ -35,7 +35,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 1h",
-      "last_run": "30m ago",
+      "last_run": "35m ago",
       "status": "ok"
     },
     {
@@ -163,7 +163,7 @@
       "name": "x-engage-5",
       "schedule": "cron 0 19 * * * (exact)",
       "next_run": "in 24h",
-      "last_run": "15m ago",
+      "last_run": "20m ago",
       "status": "ok"
     },
     {
@@ -194,8 +194,8 @@
       "id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
       "name": "weekly-analysis",
       "schedule": "cron 15 7 * * 1 (exact)",
-      "next_run": "in 5d",
-      "last_run": "2d ago",
+      "next_run": "in 4d",
+      "last_run": "3d ago",
       "status": "ok"
     },
     {
@@ -211,9 +211,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1843.7403,
-    "equity": 1807.7401,
-    "available": 1258.2713,
-    "unrealized_pnl": -36.0001,
+    "equity": 1810.7826,
+    "available": 1261.3138,
+    "unrealized_pnl": -32.9576,
     "open_positions": 6,
     "closed_trades": 0,
     "win_trades": 0,
@@ -228,35 +228,35 @@
         "side": "LONG",
         "size": "0.840",
         "entry_price": "2266.21",
-        "unrealized_pnl": "-5.8551"
+        "unrealized_pnl": "-7.1233"
       },
       {
         "symbol": "POL-USDT",
         "side": "SHORT",
         "size": "19474.47",
         "entry_price": "0.09779",
-        "unrealized_pnl": "-1.8402"
+        "unrealized_pnl": "-3.4556"
       },
       {
         "symbol": "ATOM-USDT",
         "side": "LONG",
         "size": "964.40",
         "entry_price": "1.976",
-        "unrealized_pnl": "-22.1908"
+        "unrealized_pnl": "-16.4044"
       },
       {
         "symbol": "SOL-USDT",
         "side": "LONG",
         "size": "20.66",
         "entry_price": "92.296",
-        "unrealized_pnl": "-9.0452"
+        "unrealized_pnl": "-13.4497"
       },
       {
         "symbol": "OP-USDT",
         "side": "LONG",
         "size": "14029.6",
         "entry_price": "0.1315",
-        "unrealized_pnl": "-0.9400"
+        "unrealized_pnl": "1.0522"
       }
     ],
     "process_running": false
@@ -275,7 +275,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 330
+      "response_time_ms": 321
     },
     "openclaw": {
       "running": true
