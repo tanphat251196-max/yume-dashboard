@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T18:55:01.134143+00:00",
-  "generated_at_vn": "2026-03-19 01:55:01",
+  "generated_at": "2026-03-18T19:00:02.466251+00:00",
+  "generated_at_vn": "2026-03-19 02:00:02",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 12h 35m",
-    "uptime_seconds": 1168521,
+    "uptime": "13d 12h 40m",
+    "uptime_seconds": 1168822,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.27,
-      "percent": 21.3
+      "used_gb": 3.25,
+      "percent": 21.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 16.5,
+      "percent": 23.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 50m",
+      "next_run": "in 45m",
       "last_run": "1h ago",
       "status": "ok"
     },
@@ -42,8 +42,8 @@
       "id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
       "name": "x-post-analysis-am",
       "schedule": "cron 30 7 * * * (exact)",
-      "next_run": "in 6h",
-      "last_run": "18h ago",
+      "next_run": "in 5h",
+      "last_run": "19h ago",
       "status": "ok"
     },
     {
@@ -58,16 +58,16 @@
       "id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
       "name": "commodity-update",
       "schedule": "cron 30 8 * * * (exact)",
-      "next_run": "in 7h",
-      "last_run": "17h ago",
+      "next_run": "in 6h",
+      "last_run": "18h ago",
       "status": "ok"
     },
     {
       "id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
       "name": "x-post-news-1",
       "schedule": "cron 30 9 * * * (exact)",
-      "next_run": "in 8h",
-      "last_run": "16h ago",
+      "next_run": "in 7h",
+      "last_run": "17h ago",
       "status": "error"
     },
     {
@@ -82,8 +82,8 @@
       "id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
       "name": "x-post-insight-1",
       "schedule": "cron 30 11 * * * (exact)",
-      "next_run": "in 10h",
-      "last_run": "14h ago",
+      "next_run": "in 9h",
+      "last_run": "15h ago",
       "status": "error"
     },
     {
@@ -98,8 +98,8 @@
       "id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
       "name": "x-post-news-2",
       "schedule": "cron 30 13 * * * (exact)",
-      "next_run": "in 12h",
-      "last_run": "12h ago",
+      "next_run": "in 11h",
+      "last_run": "13h ago",
       "status": "error"
     },
     {
@@ -114,8 +114,8 @@
       "id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
       "name": "x-post-insight-2",
       "schedule": "cron 30 15 * * * (exact)",
-      "next_run": "in 14h",
-      "last_run": "10h ago",
+      "next_run": "in 13h",
+      "last_run": "11h ago",
       "status": "error"
     },
     {
@@ -130,8 +130,8 @@
       "id": "34cd789a-75a1-414f-ada7-f72817e76244",
       "name": "x-post-thread",
       "schedule": "cron 30 17 * * * (exact)",
-      "next_run": "in 16h",
-      "last_run": "8h ago",
+      "next_run": "in 15h",
+      "last_run": "9h ago",
       "status": "error"
     },
     {
@@ -146,8 +146,8 @@
       "id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
       "name": "x-post-news-3",
       "schedule": "cron 30 19 * * * (exact)",
-      "next_run": "in 18h",
-      "last_run": "6h ago",
+      "next_run": "in 17h",
+      "last_run": "7h ago",
       "status": "error"
     },
     {
@@ -162,8 +162,8 @@
       "id": "aa9e48fe-7215-4955-8091-1049db862b01",
       "name": "x-post-analysis-pm",
       "schedule": "cron 30 21 * * * (exact)",
-      "next_run": "in 20h",
-      "last_run": "4h ago",
+      "next_run": "in 19h",
+      "last_run": "5h ago",
       "status": "ok"
     },
     {
@@ -211,9 +211,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1619.2169,
-    "equity": 1609.1546,
-    "available": 1234.2959,
-    "unrealized_pnl": -10.0623,
+    "equity": 1605.6582,
+    "available": 1230.7996,
+    "unrealized_pnl": -13.5586,
     "open_positions": 5,
     "closed_trades": 0,
     "win_trades": 0,
@@ -228,35 +228,35 @@
         "side": "LONG",
         "size": "20.66",
         "entry_price": "92.296",
-        "unrealized_pnl": "-59.4182"
+        "unrealized_pnl": "-56.9511"
       },
       {
         "symbol": "POL-USDT",
         "side": "SHORT",
         "size": "19474.47",
         "entry_price": "0.09779",
-        "unrealized_pnl": "25.4241"
+        "unrealized_pnl": "20.9450"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "7422",
         "entry_price": "0.09697",
-        "unrealized_pnl": "19.2803"
+        "unrealized_pnl": "18.6787"
       },
       {
         "symbol": "APT-USDT",
         "side": "SHORT",
         "size": "1410.7",
         "entry_price": "0.9572",
-        "unrealized_pnl": "11.9049"
+        "unrealized_pnl": "10.2967"
       },
       {
         "symbol": "DOT-USDT",
         "side": "LONG",
         "size": "1033.1",
         "entry_price": "1.564",
-        "unrealized_pnl": "-7.2420"
+        "unrealized_pnl": "-7.7483"
       }
     ],
     "process_running": false
@@ -275,7 +275,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 362
+      "response_time_ms": 435
     },
     "openclaw": {
       "running": true
@@ -286,5 +286,314 @@
       "dest": "@CallerFOREX",
       "mode": "Telethon MTProto realtime"
     }
-  }
+  },
+  "cron_history": [],
+  "equity_history": [
+    {
+      "ts": "2026-03-19T02:00:02.465825",
+      "equity": 1605.6582
+    }
+  ],
+  "recent_logs": [
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:25:07,048 INFO New message #4361 → UPDATE: 'TP1 Hit +73.0Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:25:07,958 INFO   ✅ UPDATE replied to 9",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:45:06,978 INFO New message #4362 → SIGNAL: '💱 Symbol: EURUSD 📉 Signal: Sell 💠 Entry: 1.14906 ❌SL: 1.15249 🔷 TP1: 1.14735 🔷 T'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:45:07,943 INFO   ✅ SIGNAL posted → dest msg_id=11",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:45:08,741 INFO New message #4363 → SIGNAL: '💱 Symbol: GBPUSD 📉 Signal: Sell 💠 Entry: 1.33109 ❌SL: 1.33499 🔷 TP1: 1.32914 🔷 T'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:45:09,717 INFO   ✅ SIGNAL posted → dest msg_id=12",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:49:12,599 INFO New message #4364 → UPDATE: 'TP2 Hit +146.0Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:49:13,604 INFO   ✅ UPDATE replied to 12",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:50:26,774 INFO New message #4365 → UPDATE: 'TP1 Hit +2062.3Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:50:27,677 INFO   ✅ UPDATE replied to 12",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:54:30,967 INFO New message #4366 → UPDATE: 'TP3 Hit +219.0Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:54:31,861 INFO   ✅ UPDATE replied to 12",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:54:38,061 INFO New message #4367 → UPDATE: 'TP2 Hit +4124.6Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:54:39,055 INFO   ✅ UPDATE replied to 12",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:58:19,638 INFO New message #4368 → UPDATE: 'TP3 Hit +6186.9Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:58:20,640 INFO   ✅ UPDATE replied to 12",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:59:29,128 INFO New message #4369 → UPDATE: 'TP4 Hit +292.0Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:59:30,091 INFO   ✅ UPDATE replied to 12",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:59:54,527 INFO New message #4370 → UPDATE: 'TP1 Hit +19.5Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 01:59:55,543 INFO   ✅ UPDATE replied to 12",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "📝 [7/8] Arthur Hayes nói gì về Bitcoin ở thời điểm hiện......",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 3311 words, 8 headings, CTA=True",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ⚠️ AI thumbnail error: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=90)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Added: arthur-hayes-noi-gi-ve-bitcoin-o-thoi-diem-hien",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "📝 [8/8] Dữ liệu cho thấy cá voi tăng tốc tích lũy Bitcoin......",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 2592 words, 16 headings, CTA=True",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    🎨 AI thumbnail + logo: post-du-lieu-cho-thay-ca-voi-tang-toc-tich-lu.png (2982KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Added: du-lieu-cho-thay-ca-voi-tang-toc-tich-luy-bitcoin",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "💾 Saved 8 new posts (total: 70)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "🚀 Deploying...",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "✅ Deploy successful!",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "📦 Git push...",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "✅ Git push done!",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "✅ DONE: Published 8 bài mới lên daututhongminh24h.com",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   c26f209..5872ea9  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   5872ea9..9eebfe3  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   9eebfe3..c2001da  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   c2001da..8af9030  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   6522c91..7ea72ad  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   7ea72ad..fedc081  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   fedc081..9046a0d  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   9046a0d..e401377  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   b5ddcf4..c418f80  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   78862c4..d7933d8  main -> main",
+      "ts": ""
+    }
+  ]
 }
