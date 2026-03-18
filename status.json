@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-03-17T23:55:01.987735+00:00",
-  "generated_at_vn": "2026-03-18 06:55:01",
+  "generated_at": "2026-03-18T00:00:01.714944+00:00",
+  "generated_at_vn": "2026-03-18 07:00:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "12d 17h 35m",
-    "uptime_seconds": 1100121,
+    "uptime": "12d 17h 40m",
+    "uptime_seconds": 1100421,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.33,
+      "used_gb": 3.34,
       "percent": 21.7
     },
     "disk": {
@@ -16,33 +16,25 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 1.0,
+      "percent": 3.8,
       "count": 4,
       "freq_mhz": 0
     }
   },
   "openclaw_cron": [
     {
-      "id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "schedule": "cron 0 7 * * * (exact)",
-      "next_run": "in 5m",
-      "last_run": "20h ago",
-      "status": "ok"
-    },
-    {
       "id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
       "name": "x-post-analysis-am",
       "schedule": "cron 30 7 * * * (exact)",
-      "next_run": "in 35m",
-      "last_run": "23h ago",
+      "next_run": "in 30m",
+      "last_run": "24h ago",
       "status": "ok"
     },
     {
       "id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
       "name": "x-engage-1",
       "schedule": "cron 45 7 * * * (exact)",
-      "next_run": "in 50m",
+      "next_run": "in 45m",
       "last_run": "7h ago",
       "status": "ok"
     },
@@ -50,7 +42,7 @@
       "id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
       "name": "commodity-update",
       "schedule": "cron 30 8 * * * (exact)",
-      "next_run": "in 2h",
+      "next_run": "in 1h",
       "last_run": "7h ago",
       "status": "ok"
     },
@@ -59,15 +51,15 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 2h",
-      "last_run": "10m ago",
+      "last_run": "15m ago",
       "status": "ok"
     },
     {
       "id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
       "name": "x-post-news-1",
       "schedule": "cron 30 9 * * * (exact)",
-      "next_run": "in 3h",
-      "last_run": "21h ago",
+      "next_run": "in 2h",
+      "last_run": "22h ago",
       "status": "ok"
     },
     {
@@ -82,8 +74,8 @@
       "id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
       "name": "x-post-insight-1",
       "schedule": "cron 30 11 * * * (exact)",
-      "next_run": "in 5h",
-      "last_run": "19h ago",
+      "next_run": "in 4h",
+      "last_run": "20h ago",
       "status": "ok"
     },
     {
@@ -98,16 +90,16 @@
       "id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
       "name": "x-post-news-2",
       "schedule": "cron 30 13 * * * (exact)",
-      "next_run": "in 7h",
-      "last_run": "17h ago",
+      "next_run": "in 6h",
+      "last_run": "18h ago",
       "status": "ok"
     },
     {
       "id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
       "name": "x-post-insight-2",
       "schedule": "cron 30 15 * * * (exact)",
-      "next_run": "in 9h",
-      "last_run": "15h ago",
+      "next_run": "in 8h",
+      "last_run": "16h ago",
       "status": "ok"
     },
     {
@@ -130,8 +122,8 @@
       "id": "34cd789a-75a1-414f-ada7-f72817e76244",
       "name": "x-post-thread",
       "schedule": "cron 30 17 * * * (exact)",
-      "next_run": "in 11h",
-      "last_run": "13h ago",
+      "next_run": "in 10h",
+      "last_run": "14h ago",
       "status": "error"
     },
     {
@@ -146,16 +138,16 @@
       "id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
       "name": "x-post-news-3",
       "schedule": "cron 30 19 * * * (exact)",
-      "next_run": "in 13h",
-      "last_run": "11h ago",
+      "next_run": "in 12h",
+      "last_run": "12h ago",
       "status": "ok"
     },
     {
       "id": "aa9e48fe-7215-4955-8091-1049db862b01",
       "name": "x-post-analysis-pm",
       "schedule": "cron 30 21 * * * (exact)",
-      "next_run": "in 15h",
-      "last_run": "9h ago",
+      "next_run": "in 14h",
+      "last_run": "10h ago",
       "status": "error"
     },
     {
@@ -211,9 +203,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1991.4797,
-    "equity": 1963.5137,
-    "available": 1464.7822,
-    "unrealized_pnl": -27.966,
+    "equity": 1960.3018,
+    "available": 1461.5704,
+    "unrealized_pnl": -31.1778,
     "open_positions": 4,
     "closed_trades": 0,
     "win_trades": 0,
@@ -228,28 +220,28 @@
         "side": "LONG",
         "size": "30098.21",
         "entry_price": "0.09952",
-        "unrealized_pnl": "-12.2644"
+        "unrealized_pnl": "-15.3291"
       },
       {
         "symbol": "INJ-USDT",
         "side": "LONG",
         "size": "930.000",
         "entry_price": "3.219",
-        "unrealized_pnl": "5.6796"
+        "unrealized_pnl": "4.3513"
       },
       {
         "symbol": "BNB-USDT",
         "side": "LONG",
         "size": "2.96",
         "entry_price": "672.97",
-        "unrealized_pnl": "-13.6689"
+        "unrealized_pnl": "-13.9840"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "LONG",
         "size": "19851",
         "entry_price": "0.10040",
-        "unrealized_pnl": "-6.3225"
+        "unrealized_pnl": "-5.7588"
       }
     ],
     "process_running": false
@@ -268,7 +260,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 439
+      "response_time_ms": 330
     },
     "openclaw": {
       "running": true
