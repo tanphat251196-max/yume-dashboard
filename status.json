@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T19:50:02.149663+00:00",
-  "generated_at_vn": "2026-03-19 02:50:02",
+  "generated_at": "2026-03-18T19:55:02.753629+00:00",
+  "generated_at_vn": "2026-03-19 02:55:02",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 13h 30m",
-    "uptime_seconds": 1171822,
+    "uptime": "13d 13h 35m",
+    "uptime_seconds": 1172122,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.48,
-      "percent": 22.6
+      "used_gb": 3.46,
+      "percent": 22.5
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 27.0,
+      "percent": 18.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -27,7 +27,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 2h",
-      "last_run": "5m ago",
+      "last_run": "10m ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
     },
@@ -234,9 +234,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1619.2169,
-    "equity": 1596.9996,
-    "available": 1222.141,
-    "unrealized_pnl": -22.2172,
+    "equity": 1599.5101,
+    "available": 1224.6515,
+    "unrealized_pnl": -19.7067,
     "open_positions": 5,
     "closed_trades": 0,
     "win_trades": 0,
@@ -251,35 +251,35 @@
         "side": "LONG",
         "size": "20.66",
         "entry_price": "92.296",
-        "unrealized_pnl": "-57.7034"
+        "unrealized_pnl": "-55.3688"
       },
       {
         "symbol": "POL-USDT",
         "side": "SHORT",
         "size": "19474.47",
         "entry_price": "0.09779",
-        "unrealized_pnl": "25.4609"
+        "unrealized_pnl": "22.6938"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "7422",
         "entry_price": "0.09697",
-        "unrealized_pnl": "17.6873"
+        "unrealized_pnl": "17.5744"
       },
       {
         "symbol": "APT-USDT",
         "side": "SHORT",
         "size": "1410.7",
         "entry_price": "0.9572",
-        "unrealized_pnl": "6.8975"
+        "unrealized_pnl": "6.7425"
       },
       {
         "symbol": "DOT-USDT",
         "side": "LONG",
         "size": "1033.1",
         "entry_price": "1.564",
-        "unrealized_pnl": "-13.3791"
+        "unrealized_pnl": "-14.0919"
       }
     ],
     "process_running": false
@@ -298,7 +298,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 327
+      "response_time_ms": 444
     },
     "openclaw": {
       "running": true
@@ -379,24 +379,13 @@
     {
       "ts": "2026-03-19T02:50:02.149480",
       "equity": 1596.9996
+    },
+    {
+      "ts": "2026-03-19T02:55:02.753468",
+      "equity": 1599.5101
     }
   ],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:45:08,741 INFO New message #4363 → SIGNAL: '💱 Symbol: GBPUSD 📉 Signal: Sell 💠 Entry: 1.33109 ❌SL: 1.33499 🔷 TP1: 1.32914 🔷 T'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:45:09,717 INFO   ✅ SIGNAL posted → dest msg_id=12",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:49:12,599 INFO New message #4364 → UPDATE: 'TP2 Hit +146.0Pips'",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-03-19 01:49:13,604 INFO   ✅ UPDATE replied to 12",
@@ -480,6 +469,21 @@
     {
       "label": "FOREX",
       "text": "2026-03-19 02:42:05,316 INFO   ✅ SIGNAL posted → dest msg_id=21",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:51:32,265 INFO New message #4373 → UPDATE: 'TP5 Hit +437.9Pips All Target Done!'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:51:33,250 INFO   ✅ UPDATE replied to 21",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:51:33,251 INFO   🔒 Signal 4372 closed",
       "ts": ""
     },
     {
@@ -589,16 +593,6 @@
     },
     {
       "label": "DASH",
-      "text": "   d7933d8..6bd3adb  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   df645bb..bdcbb94  main -> main",
       "ts": ""
     },
@@ -680,6 +674,16 @@
     {
       "label": "DASH",
       "text": "   ba790d2..9cf3f2c  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   1a52113..2cb3937  main -> main",
       "ts": ""
     }
   ],
