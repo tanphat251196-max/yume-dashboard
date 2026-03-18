@@ -332,6 +332,7 @@
   }
   .model-haiku { color: #00aaff; }
   .model-sonnet { color: #00ff00; }
+  .model-opus { color: #cc66ff; }
   .model-gpt { color: #ffaa00; }
   .model-other { color: var(--green-dim); }
 
@@ -543,14 +544,14 @@
       <div class="section-header">// NHÓM CHAT</div>
       <table>
         <thead>
-          <tr><th>Nhóm</th><th>Tiêu đề</th><th style="text-align:right">Thành viên</th><th>Trạng thái</th></tr>
+          <tr><th>Nhóm</th><th>Tiêu đề</th><th>Model</th><th style="text-align:right">Thành viên</th><th>Trạng thái</th></tr>
         </thead>
         <tbody id="tg-groups-table"></tbody>
       </table>
       <div class="section-header">// KÊNH (CHANNEL)</div>
       <table>
         <thead>
-          <tr><th>Kênh</th><th>Tiêu đề</th><th style="text-align:right">Subscribers</th><th>Trạng thái</th></tr>
+          <tr><th>Kênh</th><th>Tiêu đề</th><th>Model</th><th style="text-align:right">Subscribers</th><th>Trạng thái</th></tr>
         </thead>
         <tbody id="tg-channels-table"></tbody>
       </table>
@@ -786,10 +787,17 @@ function renderLogs(logs) {
 }
 
 function renderTelegram(tg) {
+  function modelClass(m) {
+    if (!m || m === '--') return 'model-other';
+    if (m.includes('haiku'))  return 'model-haiku';
+    if (m.includes('sonnet')) return 'model-sonnet';
+    if (m.includes('opus'))   return 'model-opus';
+    return 'model-other';
+  }
   function buildRows(items, tbody) {
     const el = document.getElementById(tbody);
     if (!items || !items.length) {
-      el.innerHTML = '<tr><td colspan="4" style="color:var(--green-dim)">Không có dữ liệu</td></tr>';
+      el.innerHTML = '<tr><td colspan="5" style="color:var(--green-dim)">Không có dữ liệu</td></tr>';
       return;
     }
     el.innerHTML = items.map(c => {
@@ -797,9 +805,12 @@ function renderTelegram(tg) {
       const statusTxt = c.ok ? '● ONLINE' : '● LỖI';
       const members = c.members !== '--' ? Number(c.members).toLocaleString('vi-VN') : '--';
       const username = c.username ? `<span style="color:var(--green-dim);font-size:10px">@${c.username}</span>` : '';
+      const rawModel = (c.model || '--').replace('claude-', '').replace('claudible/', '');
+      const mCls = modelClass(c.model || '');
       return `<tr>
         <td>${c.label}<br>${username}</td>
         <td>${c.title || '--'}</td>
+        <td class="${mCls}" style="font-size:11px">${rawModel}</td>
         <td style="text-align:right;font-weight:bold">${members}</td>
         <td class="${statusCls}">${statusTxt}</td>
       </tr>`;
