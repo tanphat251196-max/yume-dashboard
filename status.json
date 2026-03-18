@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T07:10:01.299557+00:00",
-  "generated_at_vn": "2026-03-18 14:10:01",
+  "generated_at": "2026-03-18T07:15:01.556361+00:00",
+  "generated_at_vn": "2026-03-18 14:15:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 0h 50m",
-    "uptime_seconds": 1126221,
+    "uptime": "13d 0h 55m",
+    "uptime_seconds": 1126521,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.1,
-      "percent": 33.2
+      "used_gb": 5.06,
+      "percent": 32.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 4.5,
+      "percent": 6.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,8 +26,8 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 35m",
-      "last_run": "1h ago",
+      "next_run": "in 30m",
+      "last_run": "2h ago",
       "status": "error"
     },
     {
@@ -114,8 +114,8 @@
       "id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
       "name": "x-engage-1",
       "schedule": "cron 45 7 * * * (exact)",
-      "next_run": "in 18h",
-      "last_run": "6h ago",
+      "next_run": "in 17h",
+      "last_run": "7h ago",
       "status": "ok"
     },
     {
@@ -163,7 +163,7 @@
       "name": "x-post-news-2",
       "schedule": "cron 30 13 * * * (exact)",
       "next_run": "in 23h",
-      "last_run": "40m ago",
+      "last_run": "45m ago",
       "status": "error"
     },
     {
@@ -211,9 +211,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1981.7205,
-    "equity": 1982.6976,
+    "equity": 1979.7615,
     "available": 1901.933,
-    "unrealized_pnl": 0.977,
+    "unrealized_pnl": -1.959,
     "open_positions": 1,
     "closed_trades": 0,
     "win_trades": 0,
@@ -228,7 +228,7 @@
         "side": "SHORT",
         "size": "491.0",
         "entry_price": "1.625",
-        "unrealized_pnl": "0.3798"
+        "unrealized_pnl": "-1.9289"
       }
     ],
     "process_running": false
@@ -247,7 +247,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 458
+      "response_time_ms": 433
     },
     "openclaw": {
       "running": true
