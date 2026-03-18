@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T17:30:01.591760+00:00",
-  "generated_at_vn": "2026-03-19 00:30:01",
+  "generated_at": "2026-03-18T17:35:02.026615+00:00",
+  "generated_at_vn": "2026-03-19 00:35:02",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 11h 10m",
-    "uptime_seconds": 1163421,
+    "uptime": "13d 11h 15m",
+    "uptime_seconds": 1163721,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.61,
-      "percent": 36.5
+      "used_gb": 5.64,
+      "percent": 36.7
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 12.5,
+      "percent": 8.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 15m",
+      "next_run": "in 10m",
       "last_run": "2h ago",
       "status": "ok"
     },
@@ -210,11 +210,11 @@
   "bingx_bot": {
     "mode": "testnet",
     "status": "online",
-    "balance": 1624.627,
-    "equity": 1606.5729,
-    "available": 1339.8893,
-    "unrealized_pnl": -18.054,
-    "open_positions": 4,
+    "balance": 1623.9518,
+    "equity": 1603.7828,
+    "available": 1269.583,
+    "unrealized_pnl": -20.169,
+    "open_positions": 5,
     "closed_trades": 0,
     "win_trades": 0,
     "loss_trades": 0,
@@ -228,28 +228,35 @@
         "side": "LONG",
         "size": "20.66",
         "entry_price": "92.296",
-        "unrealized_pnl": "-58.6315"
+        "unrealized_pnl": "-57.1681"
       },
       {
         "symbol": "POL-USDT",
         "side": "SHORT",
         "size": "19474.47",
         "entry_price": "0.09779",
-        "unrealized_pnl": "18.8860"
+        "unrealized_pnl": "18.6080"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "7422",
         "entry_price": "0.09697",
-        "unrealized_pnl": "21.6871"
+        "unrealized_pnl": "20.5719"
       },
       {
         "symbol": "FIL-USDT",
         "side": "SHORT",
         "size": "881.0",
         "entry_price": "0.911",
-        "unrealized_pnl": "-1.0311"
+        "unrealized_pnl": "-1.4598"
+      },
+      {
+        "symbol": "APT-USDT",
+        "side": "SHORT",
+        "size": "1410.7",
+        "entry_price": "0.9572",
+        "unrealized_pnl": "-0.9861"
       }
     ],
     "process_running": false
@@ -269,7 +276,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 353
+      "response_time_ms": 299
     },
     "openclaw": {
       "running": true
