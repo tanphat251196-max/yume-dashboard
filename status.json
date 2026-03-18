@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-03-18T11:20:01.858372+00:00",
-  "generated_at_vn": "2026-03-18 18:20:01",
+  "generated_at": "2026-03-18T11:25:01.269351+00:00",
+  "generated_at_vn": "2026-03-18 18:25:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 5h 0m",
-    "uptime_seconds": 1141221,
+    "uptime": "13d 5h 5m",
+    "uptime_seconds": 1141521,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 4.91,
+      "used_gb": 4.9,
       "percent": 31.9
     },
     "disk": {
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 4.5,
+      "percent": 3.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 25m",
+      "next_run": "in 20m",
       "last_run": "2h ago",
       "status": "ok"
     },
@@ -34,7 +34,7 @@
       "id": "93088c93-e520-4685-b54f-33fcb9d0908e",
       "name": "x-engage-5",
       "schedule": "cron 0 19 * * * (exact)",
-      "next_run": "in 40m",
+      "next_run": "in 35m",
       "last_run": "23h ago",
       "status": "ok"
     },
@@ -163,7 +163,7 @@
       "name": "x-post-thread",
       "schedule": "cron 30 17 * * * (exact)",
       "next_run": "in 23h",
-      "last_run": "50m ago",
+      "last_run": "55m ago",
       "status": "error"
     },
     {
@@ -211,9 +211,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1917.9009,
-    "equity": 1917.1129,
-    "available": 1837.1605,
-    "unrealized_pnl": -0.788,
+    "equity": 1918.6969,
+    "available": 1837.9485,
+    "unrealized_pnl": 0.7959,
     "open_positions": 1,
     "closed_trades": 0,
     "win_trades": 0,
@@ -228,7 +228,7 @@
         "side": "SHORT",
         "size": "396.00",
         "entry_price": "2.019",
-        "unrealized_pnl": "-0.7880"
+        "unrealized_pnl": "0.7960"
       }
     ],
     "process_running": false
@@ -247,7 +247,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 352
+      "response_time_ms": 534
     },
     "openclaw": {
       "running": true
