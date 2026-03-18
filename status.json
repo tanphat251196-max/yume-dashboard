@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T16:00:01.809868+00:00",
-  "generated_at_vn": "2026-03-18 23:00:01",
+  "generated_at": "2026-03-18T16:05:01.251207+00:00",
+  "generated_at_vn": "2026-03-18 23:05:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 9h 40m",
-    "uptime_seconds": 1158021,
+    "uptime": "13d 9h 45m",
+    "uptime_seconds": 1158321,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.58,
-      "percent": 36.3
+      "used_gb": 5.56,
+      "percent": 36.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 22.0,
+      "percent": 21.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -27,7 +27,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 2h",
-      "last_run": "15m ago",
+      "last_run": "20m ago",
       "status": "ok"
     },
     {
@@ -210,11 +210,11 @@
   "bingx_bot": {
     "mode": "testnet",
     "status": "online",
-    "balance": 1613.6965,
-    "equity": 1601.3716,
-    "available": 1264.5723,
-    "unrealized_pnl": -12.3248,
-    "open_positions": 5,
+    "balance": 1614.4657,
+    "equity": 1602.2976,
+    "available": 1345.4402,
+    "unrealized_pnl": -12.1681,
+    "open_positions": 4,
     "closed_trades": 0,
     "win_trades": 0,
     "loss_trades": 0,
@@ -228,35 +228,28 @@
         "side": "SHORT",
         "size": "654.5",
         "entry_price": "0.926",
-        "unrealized_pnl": "7.8515"
+        "unrealized_pnl": "8.1391"
       },
       {
         "symbol": "POL-USDT",
         "side": "SHORT",
         "size": "19474.47",
         "entry_price": "0.09779",
-        "unrealized_pnl": "23.4165"
+        "unrealized_pnl": "24.6412"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "7422",
         "entry_price": "0.09697",
-        "unrealized_pnl": "20.3577"
+        "unrealized_pnl": "20.6561"
       },
       {
         "symbol": "SOL-USDT",
         "side": "LONG",
         "size": "20.66",
         "entry_price": "92.296",
-        "unrealized_pnl": "-62.9717"
-      },
-      {
-        "symbol": "INJ-USDT",
-        "side": "LONG",
-        "size": "262.000",
-        "entry_price": "3.051",
-        "unrealized_pnl": "-0.0255"
+        "unrealized_pnl": "-66.3393"
       }
     ],
     "process_running": false
@@ -275,7 +268,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 459
+      "response_time_ms": 524
     },
     "openclaw": {
       "running": true
