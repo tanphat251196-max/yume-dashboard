@@ -334,6 +334,7 @@
   .model-sonnet { color: #00ff00; }
   .model-opus { color: #cc66ff; }
   .model-gpt { color: #ffaa00; }
+  .model-gpt5 { color: #ff6600; }
   .model-other { color: var(--green-dim); }
 
   /* ── Cron Heatmap ── */
@@ -792,6 +793,8 @@ function renderTelegram(tg) {
     if (m.includes('haiku'))  return 'model-haiku';
     if (m.includes('sonnet')) return 'model-sonnet';
     if (m.includes('opus'))   return 'model-opus';
+    if (m.includes('gpt-5'))  return 'model-gpt5';
+    if (m.includes('gpt'))    return 'model-gpt';
     return 'model-other';
   }
   function buildRows(items, tbody) {
