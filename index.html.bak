@@ -3,13 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="YUME">
-<meta name="theme-color" content="#00ff00">
-<link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
 <title>YUME_DASHBOARD</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -339,9 +332,7 @@
   }
   .model-haiku { color: #00aaff; }
   .model-sonnet { color: #00ff00; }
-  .model-opus { color: #cc66ff; }
   .model-gpt { color: #ffaa00; }
-  .model-gpt5 { color: #ff6600; }
   .model-other { color: var(--green-dim); }
 
   /* ── Cron Heatmap ── */
@@ -432,16 +423,21 @@
   <!-- SIDEBAR -->
   <div class="sidebar">
     <div class="sidebar-title">YUME<span class="cursor">_</span></div>
-    <div class="sidebar-subtitle" id="txt-subtitle">// TRẠNG THÁI HỆ THỐNG</div>
+    <div class="sidebar-subtitle" id="txt-subtitle">// SYSTEM_STATUS</div>
 
-        <div class="stats-row">
+    <div style="margin-bottom:10px">
+      <button class="log-btn active" id="btn-en" onclick="setLang('en')" style="padding:2px 8px;font-size:10px">EN</button>
+      <button class="log-btn" id="btn-vi" onclick="setLang('vi')" style="padding:2px 8px;font-size:10px;margin-left:4px">VI</button>
+    </div>
+
+    <div class="stats-row">
       <div class="stat-box">
         <span class="stat-num" id="stat-crons">--</span>
-        <span class="stat-label" id="txt-cron-label">TÁC VỤ CRON</span>
+        <span class="stat-label" id="txt-cron-label">CRON JOBS / TÁC VỤ</span>
       </div>
       <div class="stat-box">
         <span class="stat-num" id="stat-services">--</span>
-        <span class="stat-label" id="txt-svc-label">DỊCH VỤ</span>
+        <span class="stat-label" id="txt-svc-label">SERVICES</span>
       </div>
     </div>
 
@@ -449,50 +445,47 @@
 
     <div class="nav">
       <div class="nav-item active" onclick="switchTab('system', this)">
-        <span class="arrow">▶</span> <span data-i18n="nav-system">HỆ THỐNG</span>
+        <span class="arrow">▶</span> <span data-i18n="nav-system">SYSTEM / HỆ THỐNG</span>
       </div>
       <div class="nav-item" onclick="switchTab('cron', this)">
-        <span class="arrow">▸</span> <span data-i18n="nav-cron">TÁC VỤ CRON</span> <span id="cron-badge"></span>
+        <span class="arrow">▸</span> <span data-i18n="nav-cron">CRON JOBS</span> <span id="cron-badge"></span>
       </div>
       <div class="nav-item" onclick="switchTab('bingx', this)">
-        <span class="arrow">▸</span> <span data-i18n="nav-bingx">BOT BINGX</span>
+        <span class="arrow">▸</span> <span data-i18n="nav-bingx">BINGX BOT / BOT GIAO DỊCH</span>
       </div>
       <div class="nav-item" onclick="switchTab('forex', this)">
-        <span class="arrow">▸</span> <span data-i18n="nav-forex">NGOẠI HỐI</span>
+        <span class="arrow">▸</span> <span data-i18n="nav-forex">FOREX / NGOẠI HỐI</span>
       </div>
       <div class="nav-item" onclick="switchTab('model', this)">
-        <span class="arrow">▸</span> <span data-i18n="nav-model">CẤU HÌNH MODEL</span>
-      </div>
-      <div class="nav-item" onclick="switchTab('telegram', this)">
-        <span class="arrow">▸</span> TELEGRAM
+        <span class="arrow">▸</span> <span data-i18n="nav-model">MODEL CFG / CẤU HÌNH MODEL</span>
       </div>
       <div class="nav-item" onclick="switchTab('logs', this)">
-        <span class="arrow">▸</span> <span data-i18n="nav-logs">NHẬT KÝ</span>
+        <span class="arrow">▸</span> <span data-i18n="nav-logs">LOGS / NHẬT KÝ</span>
       </div>
     </div>
 
     <hr class="divider">
 
-    <div class="section-title" data-i18n="svc-title">// DỊCH VỤ</div>
+    <div class="section-title" data-i18n="svc-title">// <span data-i18n="svc-title">SERVICES / DỊCH VỤ</span></div>
     <div id="services-list">
-      <div class="loading">Đang tải...</div>
+      <div class="loading">Loading...</div>
     </div>
 
-    <div class="refresh-info" id="refresh-info">Tự động làm mới: 60s</div>
-    <div class="sidebar-footer" id="txt-footer">Thức dậy, Neo...<br>Ma trận đang ở đây.</div>
+    <div class="refresh-info" id="refresh-info">Auto-refresh: 60s</div>
+    <div class="sidebar-footer" id="txt-footer">Wake up, Neo...<br>The Matrix has you.<br><span style="color:#006600">Thức dậy, Neo...<br>Ma trận đang ở đây.</span></div>
   </div>
 
   <!-- MAIN -->
   <div class="main">
     <div class="main-header">
-      <div class="main-title" id="main-title">[GIÁM SÁT HỆ THỐNG]</div>
-      <div class="timestamp" id="last-updated">[Đang tải...]</div>
+      <div class="main-title" id="main-title">[SYSTEM_MONITOR]</div>
+      <div class="timestamp" id="last-updated">[Loading...]</div>
     </div>
 
     <!-- TAB: SYSTEM -->
     <div class="tab-content active" id="tab-system">
       <div class="cards-row" id="system-cards">
-        <div class="card"><div class="card-label">Đang tải...</div></div>
+        <div class="card"><div class="card-label">Loading...</div></div>
       </div>
       <div class="section-header">// <span data-i18n="bingx-summary-title">BINGX SUMMARY / TÓM TẮT BINGX</span></div>
       <div class="bingx-stats" id="bingx-summary"></div>
@@ -503,7 +496,7 @@
       <div class="section-header">// <span data-i18n="cron-title">CRON JOB STATUS / TRẠNG THÁI CRON</span></div>
       <table>
         <thead>
-          <tr><th data-i18n="th-name">Tên</th><th data-i18n="th-schedule">Lịch chạy</th><th data-i18n="th-model">Model</th><th data-i18n="th-lastrun">Lần cuối</th><th data-i18n="th-status">Trạng thái</th></tr>
+          <tr><th data-i18n="th-name">Name / Tên</th><th data-i18n="th-schedule">Schedule / Lịch</th><th data-i18n="th-model">Model</th><th data-i18n="th-lastrun">Last Run / Lần cuối</th><th data-i18n="th-status">Status / Trạng thái</th></tr>
         </thead>
         <tbody id="cron-table"></tbody>
       </table>
@@ -511,17 +504,17 @@
       <!-- Heatmap -->
       <div class="section-header">// <span data-i18n="heatmap-title">RUN HISTORY (24H) / LỊCH SỬ CHẠY (24H)</span></div>
       <div id="cron-heatmap" style="margin-bottom:20px">
-        <div class="loading">Chưa có lịch sử chạy</div>
+        <div class="loading">No run history available</div>
       </div>
     </div>
 
     <!-- TAB: BINGX -->
     <div class="tab-content" id="tab-bingx">
-      <div class="section-header">// <span data-i18n="positions-title">BOT BINGX — VỊ THẾ ĐANG MỞ</span></div>
+      <div class="section-header">// <span data-i18n="positions-title">BINGX BOT — OPEN POSITIONS / VỊ THẾ ĐANG MỞ</span></div>
       <div class="bingx-stats" id="bingx-cards"></div>
       <table>
         <thead>
-          <tr><th data-i18n="th-symbol">Symbol</th><th data-i18n="th-side">Chiều</th><th data-i18n="th-size">Khối lượng</th><th data-i18n="th-entry">Giá vào</th><th data-i18n="th-pnl">Lãi/Lỗ</th></tr>
+          <tr><th data-i18n="th-symbol">Symbol</th><th data-i18n="th-side">Side / Chiều</th><th data-i18n="th-size">Size / Khối lượng</th><th data-i18n="th-entry">Entry Price / Giá vào</th><th data-i18n="th-pnl">Unrealized PnL / Lãi lỗ</th></tr>
         </thead>
         <tbody id="positions-table"></tbody>
       </table>
@@ -535,46 +528,28 @@
 
     <!-- TAB: FOREX -->
     <div class="tab-content" id="tab-forex">
-      <div class="section-header">// <span data-i18n="forex-title">FOREX REALTIME — THEO DÕI NGOẠI HỐI</span></div>
+      <div class="section-header">// <span data-i18n="forex-title">FOREX LISTENER — TELETHON REALTIME / THEO DÕI FOREX</span></div>
       <div class="forex-panel" id="forex-panel">
-        <div class="loading">Đang tải...</div>
+        <div class="loading">Loading...</div>
       </div>
     </div>
 
     <!-- TAB: MODEL CONFIG -->
     <div class="tab-content" id="tab-model">
-      <div class="section-header">// CẤU HÌNH MODEL — TÁC VỤ CRON</div>
+      <div class="section-header">// <span data-i18n="model-title">MODEL CONFIG — CRON JOBS / CẤU HÌNH MODEL</span></div>
       <div id="model-config-table"></div>
-    </div>
-
-    <!-- TAB: TELEGRAM -->
-    <div class="tab-content" id="tab-telegram">
-      <div class="section-header">// NHÓM CHAT</div>
-      <table>
-        <thead>
-          <tr><th>Nhóm</th><th>Tiêu đề</th><th>Model</th><th style="text-align:right">Thành viên</th><th>Trạng thái</th></tr>
-        </thead>
-        <tbody id="tg-groups-table"></tbody>
-      </table>
-      <div class="section-header">// KÊNH (CHANNEL)</div>
-      <table>
-        <thead>
-          <tr><th>Kênh</th><th>Tiêu đề</th><th>Model</th><th style="text-align:right">Subscribers</th><th>Trạng thái</th></tr>
-        </thead>
-        <tbody id="tg-channels-table"></tbody>
-      </table>
     </div>
 
     <!-- TAB: LOGS -->
     <div class="tab-content" id="tab-logs">
       <div class="section-header">// <span data-i18n="logs-title">LIVE LOG VIEWER / XEM LOG TRỰC TIẾP</span></div>
       <div class="log-toolbar">
-        <button class="log-btn" onclick="clearLogs()">[XÓA]</button>
-        <button class="log-btn" onclick="loadData()">[LÀM MỚI]</button>
-        <span style="font-size:10px;color:var(--green-dim)">Nguồn: FOREX · WEB · DASH</span>
+        <button class="log-btn" onclick="clearLogs()">[CLEAR]</button>
+        <button class="log-btn" onclick="loadData()">[REFRESH]</button>
+        <span style="font-size:10px;color:var(--green-dim)">Sources: FOREX · WEB · DASH</span>
       </div>
       <div class="log-box" id="log-box">
-        <div class="loading">Đang tải nhật ký...</div>
+        <div class="loading">Loading logs...</div>
       </div>
     </div>
   </div>
@@ -583,17 +558,17 @@
 <script>
 let refreshTimer = 60;
 let data = null;
-let currentLang = 'vi';
+let currentLang = 'en';
 
 // ── i18n ──
 const i18n = {
   en: {
-    'nav-system': 'SYSTEM', 'nav-cron': 'TÁC VỤ CRON', 'nav-bingx': 'BINGX BOT',
+    'nav-system': 'SYSTEM', 'nav-cron': 'CRON JOBS', 'nav-bingx': 'BINGX BOT',
     'nav-forex': 'FOREX', 'nav-model': 'MODEL CFG', 'nav-logs': 'LOGS',
-    'svc-title': '// DỊCH VỤ', 'subtitle': '// TRẠNG THÁI HỆ THỐNG',
-    'cron-label': 'TÁC VỤ CRON', 'svc-label': 'DỊCH VỤ',
+    'svc-title': '// SERVICES', 'subtitle': '// SYSTEM_STATUS',
+    'cron-label': 'CRON JOBS', 'svc-label': 'SERVICES',
     'footer': 'Wake up, Neo...<br>The Matrix has you.',
-    'refresh': 'Tự động làm mới: ',
+    'refresh': 'Auto-refresh: ',
     // card labels
     'cpu': 'CPU Usage', 'ram': 'RAM', 'disk': 'Disk', 'uptime': 'Uptime',
     'balance': 'Balance', 'equity': 'Equity', 'pnl': 'Unrealized PnL', 'winrate': 'Win Rate',
@@ -606,16 +581,16 @@ const i18n = {
     'bingx-summary-title': 'BINGX SUMMARY',
     'cron-title': 'CRON JOB STATUS',
     'heatmap-title': 'RUN HISTORY (24H)',
-    'positions-title': 'BOT BINGX — VỊ THẾ ĐANG MỞ',
+    'positions-title': 'BINGX BOT — OPEN POSITIONS',
     'sparkline-title': 'EQUITY SPARKLINE',
-    'forex-title': 'FOREX REALTIME — THEO DÕI NGOẠI HỐI',
-    'model-title': 'MODEL CONFIG — TÁC VỤ CRON',
+    'forex-title': 'FOREX LISTENER — TELETHON REALTIME',
+    'model-title': 'MODEL CONFIG — CRON JOBS',
     'logs-title': 'LIVE LOG VIEWER',
-    'btn-clear': '[XÓA]', 'btn-refresh': '[LÀM MỚI]',
-    'log-sources': 'Nguồn: FOREX · WEB · DASH',
-    'no-history': 'Không có lịch sử chạy trong 24h qua',
-    'no-position': 'Không có vị thế đang mở',
-    'no-equity': 'Chưa đủ dữ liệu vốn (cần ≥ 2 điểm)',
+    'btn-clear': '[CLEAR]', 'btn-refresh': '[REFRESH]',
+    'log-sources': 'Sources: FOREX · WEB · DASH',
+    'no-history': 'No run history in last 24h',
+    'no-position': 'No open positions',
+    'no-equity': 'Insufficient equity history (need ≥ 2 data points)',
     'system-nominal': 'SYSTEM NOMINAL',
     'mode': 'Mode',
   },
@@ -657,6 +632,25 @@ function t(key) {
   return (i18n[currentLang] || i18n.en)[key] || key;
 }
 
+function setLang(lang) {
+  currentLang = lang;
+  document.getElementById('btn-en').style.background = lang === 'en' ? 'var(--green)' : 'transparent';
+  document.getElementById('btn-en').style.color = lang === 'en' ? '#000' : 'var(--green)';
+  document.getElementById('btn-vi').style.background = lang === 'vi' ? 'var(--green)' : 'transparent';
+  document.getElementById('btn-vi').style.color = lang === 'vi' ? '#000' : 'var(--green)';
+  // Update static i18n elements
+  document.getElementById('txt-subtitle').textContent = t('subtitle');
+  document.getElementById('txt-cron-label').textContent = t('cron-label');
+  document.getElementById('txt-svc-label').textContent = t('svc-label');
+  document.getElementById('txt-footer').innerHTML = t('footer');
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const val = t(key);
+    if (val) el.textContent = val;
+  });
+  // Re-render dynamic content with new lang
+  if (data) renderAll(data);
+}
 
 function switchTab(name, el) {
   document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
@@ -667,14 +661,14 @@ function switchTab(name, el) {
   document.getElementById('tab-' + name).classList.add('active');
   el.classList.add('active');
   el.querySelector('.arrow').textContent = '▶';
-  document.getElementById('main-title').textContent = '[' + name.toUpperCase() + ']';
+  document.getElementById('main-title').textContent = '[' + name.toUpperCase() + '_MONITOR]';
 }
 
 // ── Feature 3: Cron History Heatmap ──
 function renderCronHeatmap(history, jobs) {
   const container = document.getElementById('cron-heatmap');
   if (!history || !history.length) {
-    container.innerHTML = '<div style="color:var(--green-dim);font-size:11px;padding:8px">Không có lịch sử chạy trong 24h qua</div>';
+    container.innerHTML = '<div style="color:var(--green-dim);font-size:11px;padding:8px">No run history in last 24h</div>';
     return;
   }
   const byJob = {};
@@ -700,19 +694,19 @@ function renderCronHeatmap(history, jobs) {
       <span class="heatmap-dots">${dots}</span>
     </div>`;
   });
-  container.innerHTML = html || '<div style="color:var(--green-dim);font-size:11px;padding:8px">Chưa có lịch sử chạy</div>';
+  container.innerHTML = html || '<div style="color:var(--green-dim);font-size:11px;padding:8px">No run history</div>';
 }
 
 // ── Feature 2: Model Config Tab ──
 function renderModelConfig(jobs) {
   const container = document.getElementById('model-config-table');
   if (!jobs || !jobs.length) {
-    container.innerHTML = '<div class="loading">Chưa có tác vụ cron</div>';
+    container.innerHTML = '<div class="loading">No cron jobs found</div>';
     return;
   }
   const groups = {};
   jobs.forEach(j => {
-    const rawModel = (j.model || 'unknown').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '').replace('claude-', '');
+    const rawModel = (j.model || 'unknown').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '');
     if (!groups[rawModel]) groups[rawModel] = [];
     groups[rawModel].push(j);
   });
@@ -743,7 +737,7 @@ function renderModelConfig(jobs) {
 function renderSparkline(equityHistory) {
   const box = document.getElementById('equity-sparkline');
   if (!equityHistory || equityHistory.length < 2) {
-    box.innerHTML = '<div class="loading">Chưa đủ dữ liệu vốn (cần ≥ 2 điểm)</div>';
+    box.innerHTML = '<div class="loading">Insufficient equity history (need ≥ 2 data points)</div>';
     return;
   }
   const values = equityHistory.map(e => parseFloat(e.equity) || 0);
@@ -776,7 +770,7 @@ function renderSparkline(equityHistory) {
 function renderLogs(logs) {
   const box = document.getElementById('log-box');
   if (!logs || !logs.length) {
-    box.innerHTML = '<div style="color:var(--green-dim);font-size:11px">Không tìm thấy nhật ký</div>';
+    box.innerHTML = '<div style="color:var(--green-dim);font-size:11px">No log entries found</div>';
     return;
   }
   const html = logs.map(entry => {
@@ -794,45 +788,9 @@ function renderLogs(logs) {
   box.scrollTop = box.scrollHeight;
 }
 
-function renderTelegram(tg) {
-  function modelClass(m) {
-    if (!m || m === '--') return 'model-other';
-    if (m.includes('haiku'))  return 'model-haiku';
-    if (m.includes('sonnet')) return 'model-sonnet';
-    if (m.includes('opus'))   return 'model-opus';
-    if (m.includes('gpt-5'))  return 'model-gpt5';
-    if (m.includes('gpt'))    return 'model-gpt';
-    return 'model-other';
-  }
-  function buildRows(items, tbody) {
-    const el = document.getElementById(tbody);
-    if (!items || !items.length) {
-      el.innerHTML = '<tr><td colspan="5" style="color:var(--green-dim)">Không có dữ liệu</td></tr>';
-      return;
-    }
-    el.innerHTML = items.map(c => {
-      const statusCls = c.ok ? 'status-ok' : 'status-err';
-      const statusTxt = c.ok ? '● ONLINE' : '● LỖI';
-      const members = c.members !== '--' ? Number(c.members).toLocaleString('vi-VN') : '--';
-      const username = c.username ? `<span style="color:var(--green-dim);font-size:10px">@${c.username}</span>` : '';
-      const rawModel = (c.model || '--').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '').replace('claude-', '');
-      const mCls = modelClass(c.model || '');
-      return `<tr>
-        <td>${c.label}<br>${username}</td>
-        <td>${c.title || '--'}</td>
-        <td class="${mCls}" style="font-size:11px">${rawModel}</td>
-        <td style="text-align:right;font-weight:bold">${members}</td>
-        <td class="${statusCls}">${statusTxt}</td>
-      </tr>`;
-    }).join('');
-  }
-  buildRows((tg || {}).groups, 'tg-groups-table');
-  buildRows((tg || {}).channels, 'tg-channels-table');
-}
-
 function clearLogs() {
   const box = document.getElementById('log-box');
-  box.innerHTML = '<div style="color:var(--green-dim);font-size:11px">Đã xóa. Nhấn làm mới để tải lại.</div>';
+  box.innerHTML = '<div style="color:var(--green-dim);font-size:11px">Cleared. Refresh to reload.</div>';
 }
 
 function progressBar(pct, width) {
@@ -934,7 +892,7 @@ function renderBingXSummary(bingx, containerId) {
 // ── Feature 1: renderCron with error badge ──
 function renderCron(jobs) {
   const tbody = document.getElementById('cron-table');
-  if (!jobs || !jobs.length) { tbody.innerHTML = '<tr><td colspan="5" class="loading">Chưa có dữ liệu</td></tr>'; return; }
+  if (!jobs || !jobs.length) { tbody.innerHTML = '<tr><td colspan="5" class="loading">No data</td></tr>'; return; }
   document.getElementById('stat-crons').textContent = jobs.length;
 
   // Update error badge
@@ -946,7 +904,7 @@ function renderCron(jobs) {
     let sc = 'status-idle', sl = '● IDLE';
     if (j.status === 'ok') { sc = 'status-ok'; sl = '● OK'; }
     else if (j.status === 'error') { sc = 'status-err'; sl = '● ERR'; }
-    const model = (j.model || '--').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '').replace('claude-', '');
+    const model = (j.model || '--').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '');
     return `<tr>
       <td>${j.name}</td>
       <td style="color:var(--green-dim);font-size:11px">${j.schedule||'--'}</td>
@@ -960,7 +918,7 @@ function renderCron(jobs) {
 function renderPositions(bingx) {
   const tbody = document.getElementById('positions-table');
   const pos = (bingx || {}).positions_detail || [];
-  if (!pos.length) { tbody.innerHTML = '<tr><td colspan="5" style="color:var(--green-dim)">Không có vị thế đang mở</td></tr>'; return; }
+  if (!pos.length) { tbody.innerHTML = '<tr><td colspan="5" style="color:var(--green-dim)">No open positions</td></tr>'; return; }
   tbody.innerHTML = pos.map(p => {
     const pnl = parseFloat(p.unrealized_pnl || 0);
     const pc = pnl >= 0 ? 'pnl-pos' : 'pnl-neg';
@@ -981,7 +939,7 @@ function renderForex(services) {
   const panel = document.getElementById('forex-panel');
   const isOn = fl.running === true;
   panel.innerHTML = `
-    <div class="forex-row"><span class="forex-key">Status</span><span class="forex-val ${isOn ? 'status-ok' : 'status-err'}">${isOn ? currentLang === 'vi' ? '● ĐANG LẮNG NGHE' : '● TRỰC TUYẾN — ĐANG LẮNG NGHE' : '● NGOẠI TUYẾN'}</span></div>
+    <div class="forex-row"><span class="forex-key">Status</span><span class="forex-val ${isOn ? 'status-ok' : 'status-err'}">${isOn ? currentLang === 'vi' ? '● ĐANG LẮNG NGHE' : '● ONLINE — LISTENING' : '● OFFLINE'}</span></div>
     <div class="forex-row"><span class="forex-key">Source</span><span class="forex-val">${fl.source || '--'}</span></div>
     <div class="forex-row"><span class="forex-key">Destination</span><span class="forex-val">${fl.dest || '--'}</span></div>
     <div class="forex-row"><span class="forex-key">Mode</span><span class="forex-val">${fl.mode || '--'}</span></div>
@@ -1006,7 +964,6 @@ function renderAll(d) {
   renderModelConfig(d.openclaw_cron);
   renderSparkline(d.equity_history);
   renderLogs(d.recent_logs);
-  renderTelegram(d.telegram);
 }
 
 function loadData(retries = 3) {
@@ -1026,24 +983,11 @@ function loadData(retries = 3) {
 // Countdown
 setInterval(() => {
   refreshTimer--;
-  document.getElementById('refresh-info').textContent = 'Tự động làm mới: ' + refreshTimer + 's';
+  document.getElementById('refresh-info').textContent = 'Auto-refresh: ' + refreshTimer + 's';
   if (refreshTimer <= 0) loadData();
 }, 1000);
 
-// Apply Vietnamese on startup
-document.addEventListener('DOMContentLoaded', function() { if(data) renderAll(data); });
-// Apply Vietnamese on startup
-document.addEventListener('DOMContentLoaded', function() { if(data) renderAll(data); });
 loadData();
-
-// Register Service Worker (PWA)
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .then(r => console.log('SW registered:', r.scope))
-      .catch(e => console.log('SW error:', e));
-  });
-}
 </script>
 </body>
 </html>
