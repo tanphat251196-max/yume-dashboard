@@ -808,7 +808,7 @@ function renderTelegram(tg) {
       const statusTxt = c.ok ? '● ONLINE' : '● LỖI';
       const members = c.members !== '--' ? Number(c.members).toLocaleString('vi-VN') : '--';
       const username = c.username ? `<span style="color:var(--green-dim);font-size:10px">@${c.username}</span>` : '';
-      const rawModel = (c.model || '--').replace('claude-', '').replace('claudible/', '');
+      const rawModel = (c.model || '--').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '').replace('claude-', '');
       const mCls = modelClass(c.model || '');
       return `<tr>
         <td>${c.label}<br>${username}</td>
