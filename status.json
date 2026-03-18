@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T19:40:34.313688+00:00",
-  "generated_at_vn": "2026-03-19 02:40:34",
+  "generated_at": "2026-03-18T19:45:01.727247+00:00",
+  "generated_at_vn": "2026-03-19 02:45:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 13h 20m",
-    "uptime_seconds": 1171254,
+    "uptime": "13d 13h 25m",
+    "uptime_seconds": 1171521,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.4,
-      "percent": 22.1
+      "used_gb": 3.44,
+      "percent": 22.4
     },
     "disk": {
       "total_gb": 468,
@@ -16,21 +16,12 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 29.0,
+      "percent": 14.5,
       "count": 4,
       "freq_mhz": 0
     }
   },
   "openclaw_cron": [
-    {
-      "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 4m",
-      "last_run": "2h ago",
-      "status": "ok",
-      "model": "claudible/claude-haiku-4.5"
-    },
     {
       "id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
       "name": "daily-analysis",
@@ -234,9 +225,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1619.2169,
-    "equity": 1595.7881,
-    "available": 1220.9295,
-    "unrealized_pnl": -23.4287,
+    "equity": 1596.9401,
+    "available": 1222.0814,
+    "unrealized_pnl": -22.2767,
     "open_positions": 5,
     "closed_trades": 0,
     "win_trades": 0,
@@ -251,35 +242,35 @@
         "side": "LONG",
         "size": "20.66",
         "entry_price": "92.296",
-        "unrealized_pnl": "-53.5280"
+        "unrealized_pnl": "-54.6250"
       },
       {
         "symbol": "POL-USDT",
         "side": "SHORT",
         "size": "19474.47",
         "entry_price": "0.09779",
-        "unrealized_pnl": "23.1685"
+        "unrealized_pnl": "24.0609"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "7422",
         "entry_price": "0.09697",
-        "unrealized_pnl": "14.9995"
+        "unrealized_pnl": "16.7967"
       },
       {
         "symbol": "APT-USDT",
         "side": "SHORT",
         "size": "1410.7",
         "entry_price": "0.9572",
-        "unrealized_pnl": "2.8200"
+        "unrealized_pnl": "4.1633"
       },
       {
         "symbol": "DOT-USDT",
         "side": "LONG",
         "size": "1033.1",
         "entry_price": "1.564",
-        "unrealized_pnl": "-10.0250"
+        "unrealized_pnl": "-13.2574"
       }
     ],
     "process_running": false
@@ -298,7 +289,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 337
+      "response_time_ms": 282
     },
     "openclaw": {
       "running": true
@@ -371,19 +362,13 @@
     {
       "ts": "2026-03-19T02:40:34.313524",
       "equity": 1595.7881
+    },
+    {
+      "ts": "2026-03-19T02:45:01.727079",
+      "equity": 1596.9401
     }
   ],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:45:06,978 INFO New message #4362 → SIGNAL: '💱 Symbol: EURUSD 📉 Signal: Sell 💠 Entry: 1.14906 ❌SL: 1.15249 🔷 TP1: 1.14735 🔷 T'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:45:07,943 INFO   ✅ SIGNAL posted → dest msg_id=11",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-03-19 01:45:08,741 INFO New message #4363 → SIGNAL: '💱 Symbol: GBPUSD 📉 Signal: Sell 💠 Entry: 1.33109 ❌SL: 1.33499 🔷 TP1: 1.32914 🔷 T'",
@@ -472,6 +457,16 @@
     {
       "label": "FOREX",
       "text": "2026-03-19 02:23:19,805 INFO   ✅ UPDATE replied to 12",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:42:04,326 INFO New message #4372 → SIGNAL: '💱 Symbol: BTCUSD 📉 Signal: Sell 💠 Entry: 71024.38 ❌SL: 71352.88 🔷 TP1: 70860.13 '",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:42:05,316 INFO   ✅ SIGNAL posted → dest msg_id=21",
       "ts": ""
     },
     {
