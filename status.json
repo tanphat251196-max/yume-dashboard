@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T19:10:02.016782+00:00",
-  "generated_at_vn": "2026-03-19 02:10:02",
+  "generated_at": "2026-03-18T19:15:02.568324+00:00",
+  "generated_at_vn": "2026-03-19 02:15:02",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 12h 50m",
-    "uptime_seconds": 1169421,
+    "uptime": "13d 12h 55m",
+    "uptime_seconds": 1169722,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.29,
-      "percent": 21.4
+      "used_gb": 3.64,
+      "percent": 23.7
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 29.5,
+      "percent": 15.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,8 +26,8 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 35m",
-      "last_run": "1h ago",
+      "next_run": "in 30m",
+      "last_run": "2h ago",
       "status": "ok"
     },
     {
@@ -50,8 +50,8 @@
       "id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
       "name": "x-engage-1",
       "schedule": "cron 45 7 * * * (exact)",
-      "next_run": "in 6h",
-      "last_run": "18h ago",
+      "next_run": "in 5h",
+      "last_run": "19h ago",
       "status": "ok"
     },
     {
@@ -211,9 +211,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1619.2169,
-    "equity": 1597.6042,
-    "available": 1222.7455,
-    "unrealized_pnl": -21.6126,
+    "equity": 1595.7133,
+    "available": 1220.8547,
+    "unrealized_pnl": -23.5035,
     "open_positions": 5,
     "closed_trades": 0,
     "win_trades": 0,
@@ -228,35 +228,35 @@
         "side": "LONG",
         "size": "20.66",
         "entry_price": "92.296",
-        "unrealized_pnl": "-49.0468"
+        "unrealized_pnl": "-52.6210"
       },
       {
         "symbol": "POL-USDT",
         "side": "SHORT",
         "size": "19474.47",
         "entry_price": "0.09779",
-        "unrealized_pnl": "13.1513"
+        "unrealized_pnl": "16.0082"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "7422",
         "entry_price": "0.09697",
-        "unrealized_pnl": "13.5310"
+        "unrealized_pnl": "14.3474"
       },
       {
         "symbol": "APT-USDT",
         "side": "SHORT",
         "size": "1410.7",
         "entry_price": "0.9572",
-        "unrealized_pnl": "1.1271"
+        "unrealized_pnl": "0.7093"
       },
       {
         "symbol": "DOT-USDT",
         "side": "LONG",
         "size": "1033.1",
         "entry_price": "1.564",
-        "unrealized_pnl": "2.0559"
+        "unrealized_pnl": "-4.1478"
       }
     ],
     "process_running": false
@@ -270,12 +270,12 @@
   "services": {
     "chrome": {
       "running": true,
-      "process_count": 2
+      "process_count": 4
     },
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 299
+      "response_time_ms": 291
     },
     "openclaw": {
       "running": true
@@ -304,6 +304,10 @@
     {
       "ts": "2026-03-19T02:10:02.016367",
       "equity": 1597.6042
+    },
+    {
+      "ts": "2026-03-19T02:15:02.568115",
+      "equity": 1595.7133
     }
   ],
   "recent_logs": [
@@ -514,16 +518,6 @@
     },
     {
       "label": "DASH",
-      "text": "   9eebfe3..c2001da  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   c2001da..8af9030  main -> main",
       "ts": ""
     },
@@ -605,6 +599,16 @@
     {
       "label": "DASH",
       "text": "   df645bb..bdcbb94  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   81f1209..3bc4e85  main -> main",
       "ts": ""
     }
   ]
