@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T09:10:01.968518+00:00",
-  "generated_at_vn": "2026-03-18 16:10:01",
+  "generated_at": "2026-03-18T09:15:01.703338+00:00",
+  "generated_at_vn": "2026-03-18 16:15:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 2h 50m",
-    "uptime_seconds": 1133421,
+    "uptime": "13d 2h 55m",
+    "uptime_seconds": 1133721,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.15,
-      "percent": 33.5
+      "used_gb": 5.16,
+      "percent": 33.6
     },
     "disk": {
       "total_gb": 468,
@@ -16,26 +16,18 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 7.8,
+      "percent": 12.2,
       "count": 4,
       "freq_mhz": 0
     }
   },
   "openclaw_cron": [
     {
-      "id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-      "name": "daily-news",
-      "schedule": "unknown",
-      "next_run": "-",
-      "last_run": "-",
-      "status": "ok"
-    },
-    {
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 35m",
-      "last_run": "1h ago",
+      "next_run": "in 30m",
+      "last_run": "2h ago",
       "status": "error"
     },
     {
@@ -98,8 +90,8 @@
       "id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
       "name": "x-engage-1",
       "schedule": "cron 45 7 * * * (exact)",
-      "next_run": "in 16h",
-      "last_run": "8h ago",
+      "next_run": "in 15h",
+      "last_run": "9h ago",
       "status": "ok"
     },
     {
@@ -155,7 +147,7 @@
       "name": "x-engage-4",
       "schedule": "cron 0 15 * * * (exact)",
       "next_run": "in 23h",
-      "last_run": "10m ago",
+      "last_run": "15m ago",
       "status": "error"
     },
     {
@@ -163,7 +155,7 @@
       "name": "x-post-insight-2",
       "schedule": "cron 30 15 * * * (exact)",
       "next_run": "in 23h",
-      "last_run": "40m ago",
+      "last_run": "45m ago",
       "status": "error"
     },
     {
@@ -210,10 +202,10 @@
   "bingx_bot": {
     "mode": "testnet",
     "status": "online",
-    "balance": 1949.9814,
-    "equity": 1950.4544,
-    "available": 1870.1184,
-    "unrealized_pnl": 0.473,
+    "balance": 1949.8659,
+    "equity": 1948.8931,
+    "available": 1869.2215,
+    "unrealized_pnl": -0.9728,
     "open_positions": 1,
     "closed_trades": 0,
     "win_trades": 0,
@@ -224,11 +216,11 @@
     "api_error": null,
     "positions_detail": [
       {
-        "symbol": "XRP-USDT",
+        "symbol": "LINK-USDT",
         "side": "LONG",
-        "size": "525",
-        "entry_price": "1.5212",
-        "unrealized_pnl": "0.5958"
+        "size": "81.0",
+        "entry_price": "9.836",
+        "unrealized_pnl": "-1.1071"
       }
     ],
     "process_running": false
@@ -247,7 +239,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 411
+      "response_time_ms": 297
     },
     "openclaw": {
       "running": true
