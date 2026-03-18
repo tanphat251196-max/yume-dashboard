@@ -454,6 +454,9 @@
       <div class="nav-item" onclick="switchTab('model', this)">
         <span class="arrow">▸</span> <span data-i18n="nav-model">CẤU HÌNH MODEL</span>
       </div>
+      <div class="nav-item" onclick="switchTab('telegram', this)">
+        <span class="arrow">▸</span> TELEGRAM
+      </div>
       <div class="nav-item" onclick="switchTab('logs', this)">
         <span class="arrow">▸</span> <span data-i18n="nav-logs">NHẬT KÝ</span>
       </div>
@@ -533,6 +536,24 @@
     <div class="tab-content" id="tab-model">
       <div class="section-header">// CẤU HÌNH MODEL — TÁC VỤ CRON</div>
       <div id="model-config-table"></div>
+    </div>
+
+    <!-- TAB: TELEGRAM -->
+    <div class="tab-content" id="tab-telegram">
+      <div class="section-header">// NHÓM CHAT</div>
+      <table>
+        <thead>
+          <tr><th>Nhóm</th><th>Tiêu đề</th><th style="text-align:right">Thành viên</th><th>Trạng thái</th></tr>
+        </thead>
+        <tbody id="tg-groups-table"></tbody>
+      </table>
+      <div class="section-header">// KÊNH (CHANNEL)</div>
+      <table>
+        <thead>
+          <tr><th>Kênh</th><th>Tiêu đề</th><th style="text-align:right">Subscribers</th><th>Trạng thái</th></tr>
+        </thead>
+        <tbody id="tg-channels-table"></tbody>
+      </table>
     </div>
 
     <!-- TAB: LOGS -->
@@ -764,6 +785,30 @@ function renderLogs(logs) {
   box.scrollTop = box.scrollHeight;
 }
 
+function renderTelegram(tg) {
+  function buildRows(items, tbody) {
+    const el = document.getElementById(tbody);
+    if (!items || !items.length) {
+      el.innerHTML = '<tr><td colspan="4" style="color:var(--green-dim)">Không có dữ liệu</td></tr>';
+      return;
+    }
+    el.innerHTML = items.map(c => {
+      const statusCls = c.ok ? 'status-ok' : 'status-err';
+      const statusTxt = c.ok ? '● ONLINE' : '● LỖI';
+      const members = c.members !== '--' ? Number(c.members).toLocaleString('vi-VN') : '--';
+      const username = c.username ? `<span style="color:var(--green-dim);font-size:10px">@${c.username}</span>` : '';
+      return `<tr>
+        <td>${c.label}<br>${username}</td>
+        <td>${c.title || '--'}</td>
+        <td style="text-align:right;font-weight:bold">${members}</td>
+        <td class="${statusCls}">${statusTxt}</td>
+      </tr>`;
+    }).join('');
+  }
+  buildRows((tg || {}).groups, 'tg-groups-table');
+  buildRows((tg || {}).channels, 'tg-channels-table');
+}
+
 function clearLogs() {
   const box = document.getElementById('log-box');
   box.innerHTML = '<div style="color:var(--green-dim);font-size:11px">Đã xóa. Nhấn làm mới để tải lại.</div>';
@@ -940,6 +985,7 @@ function renderAll(d) {
   renderModelConfig(d.openclaw_cron);
   renderSparkline(d.equity_history);
   renderLogs(d.recent_logs);
+  renderTelegram(d.telegram);
 }
 
 function loadData(retries = 3) {

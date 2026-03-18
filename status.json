@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T19:30:01.971391+00:00",
-  "generated_at_vn": "2026-03-19 02:30:01",
+  "generated_at": "2026-03-18T19:33:17.819279+00:00",
+  "generated_at_vn": "2026-03-19 02:33:17",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 13h 10m",
-    "uptime_seconds": 1170621,
+    "uptime": "13d 13h 13m",
+    "uptime_seconds": 1170817,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.38,
-      "percent": 22.0
+      "used_gb": 3.4,
+      "percent": 22.1
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 34.0,
+      "percent": 14.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 15m",
+      "next_run": "in 12m",
       "last_run": "2h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
@@ -234,9 +234,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1619.2169,
-    "equity": 1600.2154,
-    "available": 1225.3567,
-    "unrealized_pnl": -19.0014,
+    "equity": 1599.805,
+    "available": 1224.9464,
+    "unrealized_pnl": -19.4118,
     "open_positions": 5,
     "closed_trades": 0,
     "win_trades": 0,
@@ -251,35 +251,35 @@
         "side": "LONG",
         "size": "20.66",
         "entry_price": "92.296",
-        "unrealized_pnl": "-51.8487"
+        "unrealized_pnl": "-51.5367"
       },
       {
         "symbol": "POL-USDT",
         "side": "SHORT",
         "size": "19474.47",
         "entry_price": "0.09779",
-        "unrealized_pnl": "21.9187"
+        "unrealized_pnl": "22.1134"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "7422",
         "entry_price": "0.09697",
-        "unrealized_pnl": "15.1474"
+        "unrealized_pnl": "14.7185"
       },
       {
         "symbol": "APT-USDT",
         "side": "SHORT",
         "size": "1410.7",
         "entry_price": "0.9572",
-        "unrealized_pnl": "2.2585"
+        "unrealized_pnl": "1.8216"
       },
       {
         "symbol": "DOT-USDT",
         "side": "LONG",
         "size": "1033.1",
         "entry_price": "1.564",
-        "unrealized_pnl": "-6.2089"
+        "unrealized_pnl": "-6.2847"
       }
     ],
     "process_running": false
@@ -298,7 +298,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 333
+      "response_time_ms": 464
     },
     "openclaw": {
       "running": true
@@ -347,6 +347,14 @@
     {
       "ts": "2026-03-19T02:30:01.971229",
       "equity": 1600.2154
+    },
+    {
+      "ts": "2026-03-19T02:32:02.279571",
+      "equity": 1601.2804
+    },
+    {
+      "ts": "2026-03-19T02:33:17.819114",
+      "equity": 1599.805
     }
   ],
   "recent_logs": [
@@ -557,16 +565,6 @@
     },
     {
       "label": "DASH",
-      "text": "   fedc081..9046a0d  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   9046a0d..e401377  main -> main",
       "ts": ""
     },
@@ -649,6 +647,82 @@
       "label": "DASH",
       "text": "   610bf5d..6b3aaae  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   274075f..4287b61  main -> main",
+      "ts": ""
     }
-  ]
+  ],
+  "telegram": {
+    "groups": [
+      {
+        "id": "-1001568972930",
+        "label": "@x268Chat",
+        "type": "group",
+        "title": "X268 | Tin tức",
+        "members": 593,
+        "ok": true,
+        "username": "x268Chat",
+        "description": "- Thông báo: https://t.me/x268Channel\n- Chia sẻ kiến thức: https://t.me/x268Sign"
+      },
+      {
+        "id": "-1003808756386",
+        "label": "Chị Em Mỹ Gia",
+        "type": "group",
+        "title": "Chị Em Mỹ Gia",
+        "members": 3,
+        "ok": true,
+        "username": "",
+        "description": ""
+      },
+      {
+        "id": "-1003783290422",
+        "label": "Admin Signal Hunters",
+        "type": "group",
+        "title": "Admin Signal Hunters",
+        "members": 4,
+        "ok": true,
+        "username": "",
+        "description": ""
+      },
+      {
+        "id": "-1001891953279",
+        "label": "@SignalHuntersChat",
+        "type": "group",
+        "title": "Signal Hunters Chat",
+        "members": 577,
+        "ok": true,
+        "username": "SignalHuntersChat",
+        "description": "Chào mừng tất cả anh em tới Signal Hunters 🔥\nChannel @SignalHuntersCrypto\nMON AI"
+      }
+    ],
+    "channels": [
+      {
+        "id": "-1001919338716",
+        "label": "@SignalHuntersCrypto",
+        "type": "channel",
+        "title": "Signal Hunters",
+        "members": 4638,
+        "ok": true,
+        "username": "SignalHuntersCrypto",
+        "description": "Chào mừng tất cả anh em tới Signal Hunters 🔥\nChat @SignalHuntersChat\nJoin VIP @J"
+      },
+      {
+        "id": "-1003850136703",
+        "label": "@CallerFOREX",
+        "type": "channel",
+        "title": "Caller FOREX | Signal Hunters",
+        "members": 4,
+        "ok": true,
+        "username": "CallerFOREX",
+        "description": "Signals by Gin: @Gin25z\nGroup chat: @SignalHuntersChat\nChannel: @SignalHuntersCr"
+      }
+    ]
+  }
 }
