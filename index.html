@@ -304,6 +304,118 @@
     .cards-row { grid-template-columns: repeat(2, 1fr); }
     .bingx-stats { grid-template-columns: repeat(2, 1fr); }
   }
+
+  /* ── Alert Badge ── */
+  @keyframes badge-blink { 50% { opacity: 0.3; } }
+  #cron-badge {
+    display: inline-block;
+    background: #ff0000;
+    color: #000;
+    border-radius: 2px;
+    padding: 1px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 4px;
+    animation: badge-blink 1s step-end infinite;
+    vertical-align: middle;
+  }
+  #cron-badge:empty { display: none; }
+
+  /* ── Model Config Tab ── */
+  .model-group-header {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 8px 10px 4px;
+    border-bottom: 1px solid var(--green-dark);
+    margin-bottom: 4px;
+  }
+  .model-haiku { color: #00aaff; }
+  .model-sonnet { color: #00ff00; }
+  .model-gpt { color: #ffaa00; }
+  .model-other { color: var(--green-dim); }
+
+  /* ── Cron Heatmap ── */
+  .heatmap-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 0;
+    font-size: 11px;
+  }
+  .heatmap-label {
+    width: 220px;
+    min-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--green-dim);
+    font-size: 10px;
+  }
+  .heatmap-dots { letter-spacing: 2px; }
+  .dot-ok { color: #00ff00; }
+  .dot-error { color: #ff3333; }
+  .dot-idle { color: #ffff00; }
+  .dot-unknown { color: #444; }
+
+  /* ── Sparkline ── */
+  .sparkline-box {
+    border: var(--border);
+    padding: 12px 16px;
+    background: var(--bg2);
+    margin-bottom: 20px;
+    font-family: 'Courier New', monospace;
+  }
+  .sparkline-chars {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--green);
+    text-shadow: var(--glow-sm);
+    word-break: break-all;
+    line-height: 1.4;
+  }
+  .sparkline-meta {
+    font-size: 10px;
+    color: var(--green-dim);
+    margin-top: 6px;
+  }
+
+  /* ── Log Viewer ── */
+  .log-toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .log-btn {
+    background: transparent;
+    border: 1px solid var(--green-dim);
+    color: var(--green);
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    padding: 4px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.1s;
+  }
+  .log-btn:hover { background: var(--green); color: #000; }
+  .log-box {
+    background: #000;
+    border: var(--border);
+    padding: 12px;
+    height: 420px;
+    overflow-y: auto;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  .log-line { display: flex; gap: 6px; }
+  .log-prefix-forex { color: #00aaff; }
+  .log-prefix-web { color: #ffaa00; }
+  .log-prefix-dash { color: var(--green-dim); }
+  .log-text { color: #aaa; flex: 1; word-break: break-all; }
+  .log-text.is-error { color: #ff3333; }
+  .log-text.is-ok { color: #00ff00; }
 </style>
 </head>
 <body>
@@ -331,13 +443,19 @@
         <span class="arrow">▶</span> SYSTEM
       </div>
       <div class="nav-item" onclick="switchTab('cron', this)">
-        <span class="arrow">▸</span> CRON JOBS
+        <span class="arrow">▸</span> CRON JOBS <span id="cron-badge"></span>
       </div>
       <div class="nav-item" onclick="switchTab('bingx', this)">
         <span class="arrow">▸</span> BINGX BOT
       </div>
       <div class="nav-item" onclick="switchTab('forex', this)">
         <span class="arrow">▸</span> FOREX
+      </div>
+      <div class="nav-item" onclick="switchTab('model', this)">
+        <span class="arrow">▸</span> MODEL CFG
+      </div>
+      <div class="nav-item" onclick="switchTab('logs', this)">
+        <span class="arrow">▸</span> LOGS
       </div>
     </div>
 
@@ -377,6 +495,12 @@
         </thead>
         <tbody id="cron-table"></tbody>
       </table>
+
+      <!-- Heatmap -->
+      <div class="section-header">// RUN HISTORY (24H)</div>
+      <div id="cron-heatmap" style="margin-bottom:20px">
+        <div class="loading">No run history available</div>
+      </div>
     </div>
 
     <!-- TAB: BINGX -->
@@ -389,6 +513,12 @@
         </thead>
         <tbody id="positions-table"></tbody>
       </table>
+
+      <!-- Sparkline -->
+      <div class="section-header">// EQUITY SPARKLINE</div>
+      <div class="sparkline-box" id="equity-sparkline">
+        <div class="loading">No equity history</div>
+      </div>
     </div>
 
     <!-- TAB: FOREX -->
@@ -396,6 +526,25 @@
       <div class="section-header">// FOREX LISTENER — TELETHON REALTIME</div>
       <div class="forex-panel" id="forex-panel">
         <div class="loading">Loading...</div>
+      </div>
+    </div>
+
+    <!-- TAB: MODEL CONFIG -->
+    <div class="tab-content" id="tab-model">
+      <div class="section-header">// MODEL CONFIG — CRON JOBS</div>
+      <div id="model-config-table"></div>
+    </div>
+
+    <!-- TAB: LOGS -->
+    <div class="tab-content" id="tab-logs">
+      <div class="section-header">// LIVE LOG VIEWER</div>
+      <div class="log-toolbar">
+        <button class="log-btn" onclick="clearLogs()">[CLEAR]</button>
+        <button class="log-btn" onclick="loadData()">[REFRESH]</button>
+        <span style="font-size:10px;color:var(--green-dim)">Sources: FOREX · WEB · DASH</span>
+      </div>
+      <div class="log-box" id="log-box">
+        <div class="loading">Loading logs...</div>
       </div>
     </div>
   </div>
@@ -415,6 +564,135 @@ function switchTab(name, el) {
   el.classList.add('active');
   el.querySelector('.arrow').textContent = '▶';
   document.getElementById('main-title').textContent = '[' + name.toUpperCase() + '_MONITOR]';
+}
+
+// ── Feature 3: Cron History Heatmap ──
+function renderCronHeatmap(history, jobs) {
+  const container = document.getElementById('cron-heatmap');
+  if (!history || !history.length) {
+    container.innerHTML = '<div style="color:var(--green-dim);font-size:11px;padding:8px">No run history in last 24h</div>';
+    return;
+  }
+  const byJob = {};
+  history.forEach(h => {
+    if (!byJob[h.job_id]) byJob[h.job_id] = [];
+    byJob[h.job_id].push(h);
+  });
+  const jobNames = {};
+  if (jobs) jobs.forEach(j => { jobNames[j.id] = j.name; });
+  let html = '';
+  Object.entries(byJob).forEach(([jobId, runs]) => {
+    const label = jobNames[jobId] || jobId.slice(0, 20) + '…';
+    const dots = runs.map(r => {
+      const ts = new Date(r.ts * 1000).toLocaleTimeString('vi-VN', {hour:'2-digit', minute:'2-digit'});
+      let cls = 'dot-unknown';
+      if (r.status === 'ok' || r.status === 'success') cls = 'dot-ok';
+      else if (r.status === 'error' || r.status === 'failed') cls = 'dot-error';
+      else if (r.status === 'idle' || r.status === 'running') cls = 'dot-idle';
+      return `<span class="${cls}" title="${ts} [${r.status}] ${r.duration_ms ? r.duration_ms+'ms' : ''}">■</span>`;
+    }).join('');
+    html += `<div class="heatmap-row">
+      <span class="heatmap-label" title="${jobId}">${label}</span>
+      <span class="heatmap-dots">${dots}</span>
+    </div>`;
+  });
+  container.innerHTML = html || '<div style="color:var(--green-dim);font-size:11px;padding:8px">No run history</div>';
+}
+
+// ── Feature 2: Model Config Tab ──
+function renderModelConfig(jobs) {
+  const container = document.getElementById('model-config-table');
+  if (!jobs || !jobs.length) {
+    container.innerHTML = '<div class="loading">No cron jobs found</div>';
+    return;
+  }
+  const groups = {};
+  jobs.forEach(j => {
+    const rawModel = (j.model || 'unknown').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '');
+    if (!groups[rawModel]) groups[rawModel] = [];
+    groups[rawModel].push(j);
+  });
+  function modelClass(m) {
+    if (m.includes('haiku')) return 'model-haiku';
+    if (m.includes('sonnet') || m.includes('opus')) return 'model-sonnet';
+    if (m.includes('gpt')) return 'model-gpt';
+    return 'model-other';
+  }
+  let html = '';
+  Object.entries(groups).forEach(([model, groupJobs]) => {
+    const cls = modelClass(model);
+    html += `<div class="model-group-header ${cls}">▶ ${model.toUpperCase()} (${groupJobs.length} jobs)</div>`;
+    html += `<table style="margin-bottom:12px">
+      <thead><tr><th>Job Name</th><th>Model</th><th>Status</th></tr></thead><tbody>`;
+    groupJobs.forEach(j => {
+      let sc = 'status-idle', sl = '● IDLE';
+      if (j.status === 'ok') { sc = 'status-ok'; sl = '● OK'; }
+      else if (j.status === 'error') { sc = 'status-err'; sl = '● ERR'; }
+      html += `<tr><td>${j.name}</td><td class="${cls}" style="font-size:11px">${model}</td><td class="${sc}">${sl}</td></tr>`;
+    });
+    html += '</tbody></table>';
+  });
+  container.innerHTML = html;
+}
+
+// ── Feature 4: Equity Sparkline ──
+function renderSparkline(equityHistory) {
+  const box = document.getElementById('equity-sparkline');
+  if (!equityHistory || equityHistory.length < 2) {
+    box.innerHTML = '<div class="loading">Insufficient equity history (need ≥ 2 data points)</div>';
+    return;
+  }
+  const values = equityHistory.map(e => parseFloat(e.equity) || 0);
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+  const chars = '▁▂▃▄▅▆▇█';
+  const sparkStr = values.map(v => {
+    const idx = Math.min(Math.floor(((v - min) / range) * (chars.length - 1)), chars.length - 1);
+    return chars[idx];
+  }).join('');
+  const latest = values[values.length - 1];
+  const oldest = values[0];
+  const change = latest - oldest;
+  const changePct = oldest ? ((change / oldest) * 100).toFixed(2) : '0.00';
+  const changeSign = change >= 0 ? '+' : '';
+  const changeColor = change >= 0 ? 'var(--green)' : 'var(--red)';
+  box.innerHTML = `
+    <div class="sparkline-chars">${sparkStr}</div>
+    <div class="sparkline-meta">
+      <span>Low: $${min.toFixed(2)}</span>
+      <span style="margin:0 12px">High: $${max.toFixed(2)}</span>
+      <span>Latest: $${latest.toFixed(2)}</span>
+      <span style="margin-left:12px;color:${changeColor}">${changeSign}$${change.toFixed(2)} (${changeSign}${changePct}%)</span>
+      <span style="margin-left:12px">${equityHistory.length} entries</span>
+    </div>`;
+}
+
+// ── Feature 5: Log Viewer ──
+function renderLogs(logs) {
+  const box = document.getElementById('log-box');
+  if (!logs || !logs.length) {
+    box.innerHTML = '<div style="color:var(--green-dim);font-size:11px">No log entries found</div>';
+    return;
+  }
+  const html = logs.map(entry => {
+    const label = entry.label || '???';
+    let prefixCls = 'log-prefix-dash';
+    if (label === 'FOREX') prefixCls = 'log-prefix-forex';
+    else if (label === 'WEB') prefixCls = 'log-prefix-web';
+    const text = (entry.text || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    let textCls = 'log-text';
+    if (/error|ERROR|CRITICAL|FATAL/i.test(text)) textCls += ' is-error';
+    else if (/✅|OK\b|SUCCESS|success/i.test(text)) textCls += ' is-ok';
+    return `<div class="log-line"><span class="${prefixCls}">[${label}]</span><span class="${textCls}">${text}</span></div>`;
+  }).join('');
+  box.innerHTML = html;
+  box.scrollTop = box.scrollHeight;
+}
+
+function clearLogs() {
+  const box = document.getElementById('log-box');
+  box.innerHTML = '<div style="color:var(--green-dim);font-size:11px">Cleared. Refresh to reload.</div>';
 }
 
 function progressBar(pct, width) {
@@ -513,10 +791,17 @@ function renderBingXSummary(bingx, containerId) {
   `;
 }
 
+// ── Feature 1: renderCron with error badge ──
 function renderCron(jobs) {
   const tbody = document.getElementById('cron-table');
   if (!jobs || !jobs.length) { tbody.innerHTML = '<tr><td colspan="5" class="loading">No data</td></tr>'; return; }
   document.getElementById('stat-crons').textContent = jobs.length;
+
+  // Update error badge
+  const errCount = jobs.filter(j => j.status === 'error').length;
+  const badge = document.getElementById('cron-badge');
+  badge.textContent = errCount > 0 ? String(errCount) : '';
+
   tbody.innerHTML = jobs.map(j => {
     let sc = 'status-idle', sl = '● IDLE';
     if (j.status === 'ok') { sc = 'status-ok'; sl = '● OK'; }
@@ -551,7 +836,7 @@ function renderPositions(bingx) {
   }).join('');
 }
 
-function renderForex(services, model_config) {
+function renderForex(services) {
   const fl = (services || {}).forex_listener || {};
   const panel = document.getElementById('forex-panel');
   const isOn = fl.running === true;
@@ -574,9 +859,13 @@ function renderAll(d) {
   renderSystem(d);
   renderBingXSummary(d.bingx_bot, 'bingx-summary');
   renderCron(d.openclaw_cron);
+  renderCronHeatmap(d.cron_history, d.openclaw_cron);
   renderBingXSummary(d.bingx_bot, 'bingx-cards');
   renderPositions(d.bingx_bot);
-  renderForex(d.services, d.model_config);
+  renderForex(d.services);
+  renderModelConfig(d.openclaw_cron);
+  renderSparkline(d.equity_history);
+  renderLogs(d.recent_logs);
 }
 
 function loadData() {
