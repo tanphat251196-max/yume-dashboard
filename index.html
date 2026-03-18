@@ -318,6 +318,16 @@
     /* Table chung trên mobile: scroll ngang */
     table { display: block; overflow-x: auto; white-space: nowrap; }
     th, td { font-size: 11px; padding: 5px 7px; }
+
+    /* Status bar mobile */
+    .system-status-bar { flex-wrap: wrap; gap: 6px !important; }
+    .status-badge { font-size: 10px !important; padding: 4px 8px !important; }
+
+    /* Linux cron mobile */
+    .linux-cron-table table { display: block; overflow-x: auto; white-space: nowrap; }
+
+    /* BingX 5-col grid: 2 rows on mobile */
+    .bingx-stats-5 { grid-template-columns: repeat(2, 1fr) !important; }
   }
 
   /* ── Telegram Card (mobile) ── */
@@ -422,6 +432,49 @@
     margin-top: 6px;
   }
 
+  /* ── System Quick Status Bar ── */
+  .system-status-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border: 1px solid;
+    font-size: 11px;
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  .status-badge.online {
+    border-color: var(--green);
+    color: var(--green);
+    background: rgba(0,255,0,0.06);
+    box-shadow: var(--glow-sm);
+  }
+  .status-badge.offline {
+    border-color: var(--red);
+    color: var(--red);
+    background: rgba(255,51,51,0.06);
+  }
+
+  /* ── Linux Cron Section ── */
+  .linux-cron-section { margin-top: 8px; }
+
+  /* ── BingX 5-col stats grid ── */
+  .bingx-stats-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
   /* ── Log Viewer ── */
   .log-toolbar {
     display: flex;
@@ -524,6 +577,13 @@
 
     <!-- TAB: SYSTEM -->
     <div class="tab-content active" id="tab-system">
+      <!-- Quick Status Bar -->
+      <div class="system-status-bar" id="system-status-bar">
+        <span class="status-badge offline" id="badge-website">🌐 Website</span>
+        <span class="status-badge offline" id="badge-forex">📡 Forex Listener</span>
+        <span class="status-badge offline" id="badge-openclaw">🤖 OpenClaw</span>
+        <span class="status-badge offline" id="badge-chrome">🖥 Chrome Relay</span>
+      </div>
       <div class="cards-row" id="system-cards">
         <div class="card"><div class="card-label">Đang tải...</div></div>
       </div>
@@ -546,12 +606,23 @@
       <div id="cron-heatmap" style="margin-bottom:20px">
         <div class="loading">Chưa có lịch sử chạy</div>
       </div>
+
+      <!-- Linux Cron Section -->
+      <div class="linux-cron-section">
+        <div class="section-header">// LINUX CRON (CRONTAB)</div>
+        <table>
+          <thead>
+            <tr><th>Lệnh</th><th>Lịch chạy</th><th>Trạng thái</th></tr>
+          </thead>
+          <tbody id="linux-cron-table"></tbody>
+        </table>
+      </div>
     </div>
 
     <!-- TAB: BINGX -->
     <div class="tab-content" id="tab-bingx">
       <div class="section-header">// <span data-i18n="positions-title">BOT BINGX — VỊ THẾ ĐANG MỞ</span></div>
-      <div class="bingx-stats" id="bingx-cards"></div>
+      <div class="bingx-stats-5" id="bingx-cards"></div>
       <table>
         <thead>
           <tr><th data-i18n="th-symbol">Symbol</th><th data-i18n="th-side">Chiều</th><th data-i18n="th-size">Khối lượng</th><th data-i18n="th-entry">Giá vào</th><th data-i18n="th-pnl">Lãi/Lỗ</th></tr>
@@ -929,6 +1000,22 @@ function renderServices(services) {
   });
   list.innerHTML = html;
   document.getElementById('stat-services').textContent = online + '/' + total;
+
+  // Update quick status bar badges
+  function setBadge(id, isOn) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.classList.toggle('online', isOn);
+    el.classList.toggle('offline', !isOn);
+  }
+  const ws = services.website;
+  const fl = services.forex_listener;
+  const oc = services.openclaw;
+  const ch = services.chrome;
+  setBadge('badge-website',  ws && (ws.online === true || ws.running === true));
+  setBadge('badge-forex',    fl && fl.running === true);
+  setBadge('badge-openclaw', oc && oc.running === true);
+  setBadge('badge-chrome',   ch && ch.running === true);
 }
 
 function renderSystem(d) {
@@ -970,7 +1057,9 @@ function renderBingXSummary(bingx, containerId) {
   const pnl = b.unrealized_pnl || 0;
   const pnlClass = pnl >= 0 ? 'pnl-pos' : 'pnl-neg';
   const pnlSign = pnl >= 0 ? '+' : '';
-  document.getElementById(containerId).innerHTML = `
+
+  // Base 4 cards (used on system tab summary & bingx tab)
+  const card4 = `
     <div class="card">
       <div class="card-label">${t('balance')}</div>
       <div class="card-value" style="font-size:18px">$${(b.balance||0).toFixed(2)}</div>
@@ -992,6 +1081,23 @@ function renderBingXSummary(bingx, containerId) {
       <div class="card-sub">W:${b.win_trades||0} / L:${b.loss_trades||0}</div>
     </div>
   `;
+
+  // 5th card: Total PnL — only for bingx-cards container
+  const totalPnl = b.total_pnl || 0;
+  const avgPnl = b.avg_pnl || 0;
+  const totalPnlClass = totalPnl >= 0 ? 'pnl-pos' : 'pnl-neg';
+  const totalPnlSign = totalPnl >= 0 ? '+' : '';
+  const avgPnlClass = avgPnl >= 0 ? 'pnl-pos' : 'pnl-neg';
+  const avgPnlSign = avgPnl >= 0 ? '+' : '';
+  const card5 = containerId === 'bingx-cards' ? `
+    <div class="card">
+      <div class="card-label">TỔNG PnL</div>
+      <div class="card-value ${totalPnlClass}" style="font-size:18px">${totalPnlSign}$${totalPnl.toFixed(4)}</div>
+      <div class="card-sub ${avgPnlClass}">TB/lệnh: ${avgPnlSign}$${avgPnl.toFixed(4)}</div>
+    </div>
+  ` : '';
+
+  document.getElementById(containerId).innerHTML = card4 + card5;
 }
 
 // ── Feature 1: renderCron with error badge ──
@@ -1016,6 +1122,34 @@ function renderCron(jobs) {
       <td style="color:var(--green-dim);font-size:10px">${model}</td>
       <td style="color:var(--green-dim)">${j.last_run||'--'}</td>
       <td class="${sc}">${sl}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ── Linux Cron Renderer ──
+function renderLinuxCron(entries) {
+  const tbody = document.getElementById('linux-cron-table');
+  if (!tbody) return;
+  if (!entries || !entries.length) {
+    tbody.innerHTML = '<tr><td colspan="3" style="color:var(--green-dim)">Không có linux cron job</td></tr>';
+    return;
+  }
+  tbody.innerHTML = entries.map(line => {
+    if (typeof line !== 'string' || line.startsWith('Error')) {
+      return `<tr><td colspan="3" class="status-err">${line}</td></tr>`;
+    }
+    // Parse: first 5 space-separated tokens = schedule, rest = command
+    const parts = line.trim().split(/\s+/);
+    if (parts.length < 6) {
+      return `<tr><td colspan="3" style="color:var(--green-dim);font-size:11px">${line}</td></tr>`;
+    }
+    const schedule = parts.slice(0, 5).join(' ');
+    const command = parts.slice(5).join(' ');
+    const cmdShort = command.length > 60 ? command.slice(0, 57) + '…' : command;
+    return `<tr>
+      <td style="font-size:11px;color:var(--green)" title="${command.replace(/"/g,'&quot;')}">${cmdShort}</td>
+      <td style="color:var(--green-dim);font-size:10px;white-space:nowrap">${schedule}</td>
+      <td class="status-ok">● ACTIVE</td>
     </tr>`;
   }).join('');
 }
@@ -1063,6 +1197,7 @@ function renderAll(d) {
   renderBingXSummary(d.bingx_bot, 'bingx-summary');
   renderCron(d.openclaw_cron);
   renderCronHeatmap(d.cron_history, d.openclaw_cron);
+  renderLinuxCron(d.linux_cron);
   renderBingXSummary(d.bingx_bot, 'bingx-cards');
   renderPositions(d.bingx_bot);
   renderForex(d.services);
