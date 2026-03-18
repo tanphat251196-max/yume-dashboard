@@ -966,12 +966,16 @@ function renderAll(d) {
   renderLogs(d.recent_logs);
 }
 
-function loadData() {
+function loadData(retries = 3) {
   fetch('./status.json?t=' + Date.now())
     .then(r => r.json())
     .then(d => renderAll(d))
     .catch(e => {
-      document.getElementById('last-updated').textContent = '[ERROR: ' + e.message + ']';
+      if (retries > 0) {
+        setTimeout(() => loadData(retries - 1), 2000);
+      } else {
+        document.getElementById('last-updated').textContent = '[ERROR: ' + e.message + ']';
+      }
     });
   refreshTimer = 60;
 }
