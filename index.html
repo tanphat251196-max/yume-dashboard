@@ -705,7 +705,7 @@ function renderModelConfig(jobs) {
   }
   const groups = {};
   jobs.forEach(j => {
-    const rawModel = (j.model || 'unknown').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '');
+    const rawModel = (j.model || 'unknown').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '').replace('claude-', '');
     if (!groups[rawModel]) groups[rawModel] = [];
     groups[rawModel].push(j);
   });
@@ -939,7 +939,7 @@ function renderCron(jobs) {
     let sc = 'status-idle', sl = '● IDLE';
     if (j.status === 'ok') { sc = 'status-ok'; sl = '● OK'; }
     else if (j.status === 'error') { sc = 'status-err'; sl = '● ERR'; }
-    const model = (j.model || '--').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '');
+    const model = (j.model || '--').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '').replace('claude-', '');
     return `<tr>
       <td>${j.name}</td>
       <td style="color:var(--green-dim);font-size:11px">${j.schedule||'--'}</td>
