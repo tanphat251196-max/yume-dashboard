@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T19:55:02.753629+00:00",
-  "generated_at_vn": "2026-03-19 02:55:02",
+  "generated_at": "2026-03-18T20:00:02.006536+00:00",
+  "generated_at_vn": "2026-03-19 03:00:02",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 13h 35m",
-    "uptime_seconds": 1172122,
+    "uptime": "13d 13h 40m",
+    "uptime_seconds": 1172421,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.46,
-      "percent": 22.5
+      "used_gb": 3.5,
+      "percent": 22.8
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 18.0,
+      "percent": 13.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -27,7 +27,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 2h",
-      "last_run": "10m ago",
+      "last_run": "15m ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
     },
@@ -44,8 +44,8 @@
       "id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
       "name": "x-post-analysis-am",
       "schedule": "cron 30 7 * * * (exact)",
-      "next_run": "in 5h",
-      "last_run": "19h ago",
+      "next_run": "in 4h",
+      "last_run": "20h ago",
       "status": "ok",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -62,8 +62,8 @@
       "id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
       "name": "commodity-update",
       "schedule": "cron 30 8 * * * (exact)",
-      "next_run": "in 6h",
-      "last_run": "18h ago",
+      "next_run": "in 5h",
+      "last_run": "19h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
     },
@@ -71,8 +71,8 @@
       "id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
       "name": "x-post-news-1",
       "schedule": "cron 30 9 * * * (exact)",
-      "next_run": "in 7h",
-      "last_run": "17h ago",
+      "next_run": "in 6h",
+      "last_run": "18h ago",
       "status": "error",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -89,8 +89,8 @@
       "id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
       "name": "x-post-insight-1",
       "schedule": "cron 30 11 * * * (exact)",
-      "next_run": "in 9h",
-      "last_run": "15h ago",
+      "next_run": "in 8h",
+      "last_run": "16h ago",
       "status": "error",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -107,8 +107,8 @@
       "id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
       "name": "x-post-news-2",
       "schedule": "cron 30 13 * * * (exact)",
-      "next_run": "in 11h",
-      "last_run": "13h ago",
+      "next_run": "in 10h",
+      "last_run": "14h ago",
       "status": "error",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -125,8 +125,8 @@
       "id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
       "name": "x-post-insight-2",
       "schedule": "cron 30 15 * * * (exact)",
-      "next_run": "in 13h",
-      "last_run": "11h ago",
+      "next_run": "in 12h",
+      "last_run": "12h ago",
       "status": "error",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -143,8 +143,8 @@
       "id": "34cd789a-75a1-414f-ada7-f72817e76244",
       "name": "x-post-thread",
       "schedule": "cron 30 17 * * * (exact)",
-      "next_run": "in 15h",
-      "last_run": "9h ago",
+      "next_run": "in 14h",
+      "last_run": "10h ago",
       "status": "error",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -161,8 +161,8 @@
       "id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
       "name": "x-post-news-3",
       "schedule": "cron 30 19 * * * (exact)",
-      "next_run": "in 17h",
-      "last_run": "7h ago",
+      "next_run": "in 16h",
+      "last_run": "8h ago",
       "status": "error",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -179,8 +179,8 @@
       "id": "aa9e48fe-7215-4955-8091-1049db862b01",
       "name": "x-post-analysis-pm",
       "schedule": "cron 30 21 * * * (exact)",
-      "next_run": "in 19h",
-      "last_run": "5h ago",
+      "next_run": "in 18h",
+      "last_run": "6h ago",
       "status": "ok",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -234,9 +234,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1619.2169,
-    "equity": 1599.5101,
-    "available": 1224.6515,
-    "unrealized_pnl": -19.7067,
+    "equity": 1600.7707,
+    "available": 1225.9121,
+    "unrealized_pnl": -18.4461,
     "open_positions": 5,
     "closed_trades": 0,
     "win_trades": 0,
@@ -251,35 +251,35 @@
         "side": "LONG",
         "size": "20.66",
         "entry_price": "92.296",
-        "unrealized_pnl": "-55.3688"
+        "unrealized_pnl": "-55.2025"
       },
       {
         "symbol": "POL-USDT",
         "side": "SHORT",
         "size": "19474.47",
         "entry_price": "0.09779",
-        "unrealized_pnl": "22.6938"
+        "unrealized_pnl": "24.2699"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "7422",
         "entry_price": "0.09697",
-        "unrealized_pnl": "17.5744"
+        "unrealized_pnl": "17.6623"
       },
       {
         "symbol": "APT-USDT",
         "side": "SHORT",
         "size": "1410.7",
         "entry_price": "0.9572",
-        "unrealized_pnl": "6.7425"
+        "unrealized_pnl": "7.6192"
       },
       {
         "symbol": "DOT-USDT",
         "side": "LONG",
         "size": "1033.1",
         "entry_price": "1.564",
-        "unrealized_pnl": "-14.0919"
+        "unrealized_pnl": "-12.9138"
       }
     ],
     "process_running": false
@@ -298,7 +298,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 444
+      "response_time_ms": 388
     },
     "openclaw": {
       "running": true
@@ -383,59 +383,13 @@
     {
       "ts": "2026-03-19T02:55:02.753468",
       "equity": 1599.5101
+    },
+    {
+      "ts": "2026-03-19T03:00:02.006369",
+      "equity": 1600.7707
     }
   ],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:49:13,604 INFO   ✅ UPDATE replied to 12",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:50:26,774 INFO New message #4365 → UPDATE: 'TP1 Hit +2062.3Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:50:27,677 INFO   ✅ UPDATE replied to 12",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:54:30,967 INFO New message #4366 → UPDATE: 'TP3 Hit +219.0Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:54:31,861 INFO   ✅ UPDATE replied to 12",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:54:38,061 INFO New message #4367 → UPDATE: 'TP2 Hit +4124.6Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:54:39,055 INFO   ✅ UPDATE replied to 12",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:58:19,638 INFO New message #4368 → UPDATE: 'TP3 Hit +6186.9Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:58:20,640 INFO   ✅ UPDATE replied to 12",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-19 01:59:29,128 INFO New message #4369 → UPDATE: 'TP4 Hit +292.0Pips'",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-03-19 01:59:30,091 INFO   ✅ UPDATE replied to 12",
@@ -484,6 +438,56 @@
     {
       "label": "FOREX",
       "text": "2026-03-19 02:51:33,251 INFO   🔒 Signal 4372 closed",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:57:24,374 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:57:24,449 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:57:24,870 INFO ✅ Userbot connected!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:57:24,962 INFO Logged in as: None (Yume)",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:57:24,962 INFO 👂 Listening to @BoBotfxSignals...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:57:44,101 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:57:44,148 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:57:44,558 INFO ✅ Userbot connected!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:57:44,638 INFO Logged in as: None (Yume)",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-19 02:57:44,639 INFO 👂 Listening to @BoBotfxSignals...",
       "ts": ""
     },
     {
@@ -593,16 +597,6 @@
     },
     {
       "label": "DASH",
-      "text": "   df645bb..bdcbb94  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   81f1209..3bc4e85  main -> main",
       "ts": ""
     },
@@ -684,6 +678,16 @@
     {
       "label": "DASH",
       "text": "   1a52113..2cb3937  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   cfe3fca..1b89bf3  main -> main",
       "ts": ""
     }
   ],
