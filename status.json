@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T06:05:01.634190+00:00",
-  "generated_at_vn": "2026-03-18 13:05:01",
+  "generated_at": "2026-03-18T06:10:01.446444+00:00",
+  "generated_at_vn": "2026-03-18 13:10:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "12d 23h 45m",
-    "uptime_seconds": 1122321,
+    "uptime": "12d 23h 50m",
+    "uptime_seconds": 1122621,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 4.65,
-      "percent": 30.2
+      "used_gb": 4.58,
+      "percent": 29.8
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 7.0,
+      "percent": 3.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
       "name": "x-post-news-2",
       "schedule": "cron 30 13 * * * (exact)",
-      "next_run": "in 25m",
+      "next_run": "in 20m",
       "last_run": "24h ago",
       "status": "ok"
     },
@@ -35,7 +35,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 2h",
-      "last_run": "20m ago",
+      "last_run": "25m ago",
       "status": "error"
     },
     {
@@ -163,7 +163,7 @@
       "name": "x-engage-3",
       "schedule": "cron 0 13 * * * (exact)",
       "next_run": "in 24h",
-      "last_run": "5m ago",
+      "last_run": "10m ago",
       "status": "error"
     },
     {
@@ -210,10 +210,10 @@
   "bingx_bot": {
     "mode": "testnet",
     "status": "online",
-    "balance": 103995.7198,
-    "equity": 103993.3094,
-    "available": 100517.7654,
-    "unrealized_pnl": -2.4103,
+    "balance": 103995.7104,
+    "equity": 103993.1756,
+    "available": 100517.7795,
+    "unrealized_pnl": -2.5348,
     "open_positions": 19,
     "closed_trades": 0,
     "win_trades": 0,
@@ -228,35 +228,35 @@
         "side": "SHORT",
         "size": "702",
         "entry_price": "0.29071",
-        "unrealized_pnl": "0.3440"
+        "unrealized_pnl": "0.2387"
       },
       {
         "symbol": "ADA-USDT",
         "side": "LONG",
         "size": "1016",
         "entry_price": "0.29140",
-        "unrealized_pnl": "-1.2004"
+        "unrealized_pnl": "-1.0480"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "5555",
         "entry_price": "0.10048",
-        "unrealized_pnl": "-0.0128"
+        "unrealized_pnl": "-0.5099"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "LONG",
         "size": "4424",
         "entry_price": "0.10053",
-        "unrealized_pnl": "-0.2147"
+        "unrealized_pnl": "0.1812"
       },
       {
         "symbol": "AVAX-USDT",
         "side": "SHORT",
         "size": "48",
         "entry_price": "10.259",
-        "unrealized_pnl": "-0.1256"
+        "unrealized_pnl": "-0.9666"
       }
     ],
     "process_running": false
@@ -275,7 +275,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 478
+      "response_time_ms": 442
     },
     "openclaw": {
       "running": true
