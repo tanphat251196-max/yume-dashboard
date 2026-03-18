@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T16:30:01.403581+00:00",
-  "generated_at_vn": "2026-03-18 23:30:01",
+  "generated_at": "2026-03-18T16:35:01.676349+00:00",
+  "generated_at_vn": "2026-03-18 23:35:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 10h 10m",
-    "uptime_seconds": 1159821,
+    "uptime": "13d 10h 15m",
+    "uptime_seconds": 1160121,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.61,
-      "percent": 36.5
+      "used_gb": 5.66,
+      "percent": 36.8
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 16.2,
+      "percent": 17.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -27,7 +27,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 1h",
-      "last_run": "45m ago",
+      "last_run": "50m ago",
       "status": "ok"
     },
     {
@@ -211,9 +211,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1625.0283,
-    "equity": 1604.6022,
-    "available": 1378.0481,
-    "unrealized_pnl": -20.426,
+    "equity": 1605.584,
+    "available": 1379.0299,
+    "unrealized_pnl": -19.4442,
     "open_positions": 3,
     "closed_trades": 0,
     "win_trades": 0,
@@ -228,21 +228,21 @@
         "side": "LONG",
         "size": "20.66",
         "entry_price": "92.296",
-        "unrealized_pnl": "-71.2563"
+        "unrealized_pnl": "-73.4050"
       },
       {
         "symbol": "POL-USDT",
         "side": "SHORT",
         "size": "19474.47",
         "entry_price": "0.09779",
-        "unrealized_pnl": "25.4241"
+        "unrealized_pnl": "28.9256"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "7422",
         "entry_price": "0.09697",
-        "unrealized_pnl": "25.4062"
+        "unrealized_pnl": "25.0351"
       }
     ],
     "process_running": false
@@ -251,7 +251,8 @@
     "0 6 * * * /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/signal-hunters-web/scripts/auto-web-post.py >> /home/shinyyume/.openclaw/workspace/logs/auto-web-post.log 2>&1",
     "15 7 * * 1 /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/signal-hunters-web/scripts/update-economic-calendar.py && cd /home/shinyyume/.openclaw/workspace/signal-hunters-web && bash scripts/deploy.sh >> /home/shinyyume/.openclaw/workspace/logs/web-econ-update.log 2>&1",
     "*/5 * * * * /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/scripts/dashboard-status.py && cd /home/shinyyume/.openclaw/workspace/yume-dashboard && git add status.json && git commit -m \"status update\" --allow-empty && git push origin main >> /home/shinyyume/.openclaw/workspace/logs/dashboard.log 2>&1",
-    "0 8 * * * cd /home/shinyyume/.openclaw/workspace/signal-hunters-web && python3 scripts/facebook-auto-post.py >> /tmp/fb-autopost.log 2>&1"
+    "0 8 * * * cd /home/shinyyume/.openclaw/workspace/signal-hunters-web && python3 scripts/facebook-auto-post.py >> /tmp/fb-autopost.log 2>&1",
+    "* * * * * /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/forex-forwarder/main.py >> /home/shinyyume/.openclaw/workspace/logs/forex-forwarder.log 2>&1"
   ],
   "services": {
     "chrome": {
@@ -261,7 +262,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 315
+      "response_time_ms": 439
     },
     "openclaw": {
       "running": true
