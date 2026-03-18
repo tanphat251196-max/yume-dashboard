@@ -310,7 +310,40 @@
     .sidebar { width: 100%; min-width: unset; border-right: none; border-bottom: var(--border); }
     .cards-row { grid-template-columns: repeat(2, 1fr); }
     .bingx-stats { grid-template-columns: repeat(2, 1fr); }
+
+    /* Ẩn bảng Telegram trên mobile, hiện card thay thế */
+    .tg-table-wrap { display: none; }
+    .tg-card-list { display: flex !important; }
+
+    /* Table chung trên mobile: scroll ngang */
+    table { display: block; overflow-x: auto; white-space: nowrap; }
+    th, td { font-size: 11px; padding: 5px 7px; }
   }
+
+  /* ── Telegram Card (mobile) ── */
+  .tg-card-list {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .tg-card {
+    border: var(--border);
+    padding: 10px 12px;
+    background: var(--bg2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  .tg-card-left { flex: 1; min-width: 0; }
+  .tg-card-label { font-size: 13px; font-weight: bold; color: var(--green); }
+  .tg-card-title { font-size: 10px; color: var(--green-dim); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .tg-card-model { font-size: 10px; margin-top: 3px; }
+  .tg-card-right { text-align: right; flex-shrink: 0; }
+  .tg-card-members { font-size: 18px; font-weight: bold; text-shadow: var(--glow-sm); }
+  .tg-card-members-label { font-size: 9px; color: var(--green-dim); text-transform: uppercase; letter-spacing: 1px; }
+  .tg-card-status { font-size: 10px; margin-top: 4px; }
 
   /* ── Alert Badge ── */
   @keyframes badge-blink { 50% { opacity: 0.3; } }
@@ -550,19 +583,26 @@
     <!-- TAB: TELEGRAM -->
     <div class="tab-content" id="tab-telegram">
       <div class="section-header">// NHÓM CHAT</div>
-      <table>
-        <thead>
-          <tr><th>Nhóm</th><th>Tiêu đề</th><th>Model</th><th style="text-align:right">Thành viên</th><th>Trạng thái</th></tr>
-        </thead>
-        <tbody id="tg-groups-table"></tbody>
-      </table>
+      <div class="tg-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Nhóm</th><th>Tiêu đề</th><th>Model</th><th style="text-align:right">Thành viên</th><th>Trạng thái</th></tr>
+          </thead>
+          <tbody id="tg-groups-table"></tbody>
+        </table>
+      </div>
+      <div class="tg-card-list" id="tg-groups-cards"></div>
+
       <div class="section-header">// KÊNH (CHANNEL)</div>
-      <table>
-        <thead>
-          <tr><th>Kênh</th><th>Tiêu đề</th><th>Model</th><th style="text-align:right">Subscribers</th><th>Trạng thái</th></tr>
-        </thead>
-        <tbody id="tg-channels-table"></tbody>
-      </table>
+      <div class="tg-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Kênh</th><th>Tiêu đề</th><th>Model</th><th style="text-align:right">Subscribers</th><th>Trạng thái</th></tr>
+          </thead>
+          <tbody id="tg-channels-table"></tbody>
+        </table>
+      </div>
+      <div class="tg-card-list" id="tg-channels-cards"></div>
     </div>
 
     <!-- TAB: LOGS -->
@@ -804,13 +844,16 @@ function renderTelegram(tg) {
     if (m.includes('gpt'))    return 'model-gpt';
     return 'model-other';
   }
-  function buildRows(items, tbody) {
-    const el = document.getElementById(tbody);
+  function buildRows(items, tbodyId, cardListId, memberLabel) {
+    const tbody = document.getElementById(tbodyId);
+    const cardList = document.getElementById(cardListId);
     if (!items || !items.length) {
-      el.innerHTML = '<tr><td colspan="5" style="color:var(--green-dim)">Không có dữ liệu</td></tr>';
+      tbody.innerHTML = `<tr><td colspan="5" style="color:var(--green-dim)">Không có dữ liệu</td></tr>`;
+      cardList.innerHTML = `<div style="color:var(--green-dim);font-size:12px">Không có dữ liệu</div>`;
       return;
     }
-    el.innerHTML = items.map(c => {
+    // Table rows (desktop)
+    tbody.innerHTML = items.map(c => {
       const statusCls = c.ok ? 'status-ok' : 'status-err';
       const statusTxt = c.ok ? '● ONLINE' : '● LỖI';
       const members = c.members !== '--' ? Number(c.members).toLocaleString('vi-VN') : '--';
@@ -825,9 +868,29 @@ function renderTelegram(tg) {
         <td class="${statusCls}">${statusTxt}</td>
       </tr>`;
     }).join('');
+    // Cards (mobile)
+    cardList.innerHTML = items.map(c => {
+      const statusCls = c.ok ? 'status-ok' : 'status-err';
+      const statusTxt = c.ok ? '● ONLINE' : '● LỖI';
+      const members = c.members !== '--' ? Number(c.members).toLocaleString('vi-VN') : '--';
+      const rawModel = (c.model || '--').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '').replace('claude-', '');
+      const mCls = modelClass(c.model || '');
+      return `<div class="tg-card">
+        <div class="tg-card-left">
+          <div class="tg-card-label">${c.label}</div>
+          <div class="tg-card-title">${c.title || '--'}</div>
+          <div class="tg-card-model ${mCls}">${rawModel}</div>
+        </div>
+        <div class="tg-card-right">
+          <div class="tg-card-members">${members}</div>
+          <div class="tg-card-members-label">${memberLabel}</div>
+          <div class="tg-card-status ${statusCls}">${statusTxt}</div>
+        </div>
+      </div>`;
+    }).join('');
   }
-  buildRows((tg || {}).groups, 'tg-groups-table');
-  buildRows((tg || {}).channels, 'tg-channels-table');
+  buildRows((tg || {}).groups,   'tg-groups-table',   'tg-groups-cards',   'thành viên');
+  buildRows((tg || {}).channels, 'tg-channels-table', 'tg-channels-cards', 'subscribers');
 }
 
 function clearLogs() {
