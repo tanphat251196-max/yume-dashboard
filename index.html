@@ -505,7 +505,7 @@
 
     <!-- TAB: BINGX -->
     <div class="tab-content" id="tab-bingx">
-      <div class="section-header">// <span data-i18n="positions-title">BINGX BOT — OPEN POSITIONS / VỊ THẾ ĐANG MỞ</span></div>
+      <div class="section-header">// <span data-i18n="positions-title">BOT BINGX — VỊ THẾ ĐANG MỞ</span></div>
       <div class="bingx-stats" id="bingx-cards"></div>
       <table>
         <thead>
@@ -523,7 +523,7 @@
 
     <!-- TAB: FOREX -->
     <div class="tab-content" id="tab-forex">
-      <div class="section-header">// <span data-i18n="forex-title">FOREX LISTENER — TELETHON REALTIME / THEO DÕI FOREX</span></div>
+      <div class="section-header">// <span data-i18n="forex-title">FOREX REALTIME — THEO DÕI NGOẠI HỐI</span></div>
       <div class="forex-panel" id="forex-panel">
         <div class="loading">Đang tải...</div>
       </div>
@@ -576,9 +576,9 @@ const i18n = {
     'bingx-summary-title': 'BINGX SUMMARY',
     'cron-title': 'CRON JOB STATUS',
     'heatmap-title': 'RUN HISTORY (24H)',
-    'positions-title': 'BINGX BOT — OPEN POSITIONS',
+    'positions-title': 'BOT BINGX — VỊ THẾ ĐANG MỞ',
     'sparkline-title': 'EQUITY SPARKLINE',
-    'forex-title': 'FOREX LISTENER — TELETHON REALTIME',
+    'forex-title': 'FOREX REALTIME — THEO DÕI NGOẠI HỐI',
     'model-title': 'MODEL CONFIG — TÁC VỤ CRON',
     'logs-title': 'LIVE LOG VIEWER',
     'btn-clear': '[XÓA]', 'btn-refresh': '[LÀM MỚI]',
@@ -963,6 +963,8 @@ setInterval(() => {
   if (refreshTimer <= 0) loadData();
 }, 1000);
 
+// Apply Vietnamese on startup
+document.addEventListener('DOMContentLoaded', function() { if(data) renderAll(data); });
 // Apply Vietnamese on startup
 document.addEventListener('DOMContentLoaded', function() { if(data) renderAll(data); });
 loadData();
