@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-18T07:40:01.923697+00:00",
-  "generated_at_vn": "2026-03-18 14:40:01",
+  "generated_at": "2026-03-18T07:45:01.813829+00:00",
+  "generated_at_vn": "2026-03-18 14:45:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 1h 20m",
-    "uptime_seconds": 1128021,
+    "uptime": "13d 1h 25m",
+    "uptime_seconds": 1128321,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 5.1,
@@ -16,25 +16,17 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 10.0,
+      "percent": 18.0,
       "count": 4,
       "freq_mhz": 0
     }
   },
   "openclaw_cron": [
     {
-      "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 5m",
-      "last_run": "2h ago",
-      "status": "error"
-    },
-    {
       "id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
       "name": "x-post-insight-2",
       "schedule": "cron 30 15 * * * (exact)",
-      "next_run": "in 50m",
+      "next_run": "in 45m",
       "last_run": "23h ago",
       "status": "ok"
     },
@@ -53,6 +45,14 @@
       "next_run": "-",
       "last_run": "-",
       "status": "ok"
+    },
+    {
+      "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "schedule": "cron 45 */2 * * * (exact)",
+      "next_run": "in 2h",
+      "last_run": "<1m ago",
+      "status": "error"
     },
     {
       "id": "34cd789a-75a1-414f-ada7-f72817e76244",
@@ -210,9 +210,9 @@
   "bingx_bot": {
     "mode": "testnet",
     "status": "online",
-    "balance": 1973.4622,
-    "equity": 1973.4622,
-    "available": 1973.4622,
+    "balance": 1970.2116,
+    "equity": 1970.2116,
+    "available": 1970.2116,
     "unrealized_pnl": 0.0,
     "open_positions": 0,
     "closed_trades": 0,
@@ -239,7 +239,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 403
+      "response_time_ms": 343
     },
     "openclaw": {
       "running": true
