@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-18T16:40:01.498315+00:00",
-  "generated_at_vn": "2026-03-18 23:40:01",
+  "generated_at": "2026-03-18T16:45:01.777151+00:00",
+  "generated_at_vn": "2026-03-18 23:45:01",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 10h 20m",
-    "uptime_seconds": 1160421,
+    "uptime": "13d 10h 25m",
+    "uptime_seconds": 1160721,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 5.63,
-      "percent": 36.6
+      "used_gb": 5.6,
+      "percent": 36.4
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 12.0,
+      "percent": 13.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,8 +26,8 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 1h",
-      "last_run": "55m ago",
+      "next_run": "in 60m",
+      "last_run": "1h ago",
       "status": "ok"
     },
     {
@@ -211,9 +211,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1625.0283,
-    "equity": 1605.1165,
-    "available": 1378.5624,
-    "unrealized_pnl": -19.9117,
+    "equity": 1604.6363,
+    "available": 1378.0822,
+    "unrealized_pnl": -20.3919,
     "open_positions": 3,
     "closed_trades": 0,
     "win_trades": 0,
@@ -228,21 +228,21 @@
         "side": "LONG",
         "size": "20.66",
         "entry_price": "92.296",
-        "unrealized_pnl": "-69.4383"
+        "unrealized_pnl": "-68.7771"
       },
       {
         "symbol": "POL-USDT",
         "side": "SHORT",
         "size": "19474.47",
         "entry_price": "0.09779",
-        "unrealized_pnl": "26.5887"
+        "unrealized_pnl": "24.4504"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "7422",
         "entry_price": "0.09697",
-        "unrealized_pnl": "23.4750"
+        "unrealized_pnl": "23.5492"
       }
     ],
     "process_running": false
@@ -262,7 +262,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 307
+      "response_time_ms": 351
     },
     "openclaw": {
       "running": true
