@@ -588,10 +588,10 @@ const i18n = {
     'logs-title': 'LIVE LOG VIEWER',
     'btn-clear': '[CLEAR]', 'btn-refresh': '[REFRESH]',
     'log-sources': 'Sources: FOREX · WEB · DASH',
-    'no-history': t('no-history'),
-    'no-position': t('no-position'),
-    'no-equity': t('no-equity'),
-    'system-nominal': '${t('system-nominal')}',
+    'no-history': 'No run history in last 24h',
+    'no-position': 'No open positions',
+    'no-equity': 'Insufficient equity history (need ≥ 2 data points)',
+    'system-nominal': 'SYSTEM NOMINAL',
     'mode': 'Mode',
   },
   vi: {
@@ -855,7 +855,7 @@ function renderSystem(d) {
       <div class="card-label">${t('uptime')}</div>
       <div class="card-value" style="font-size:16px">${sys.uptime||'--'}</div>
       <div class="card-sub">${sys.hostname||''}</div>
-      <div class="progress-bar" style="color:var(--green-dim)">SYSTEM NOMINAL</div>
+      <div class="progress-bar" style="color:var(--green-dim)">${t("system-nominal")}</div>
     </div>
   `;
 }
