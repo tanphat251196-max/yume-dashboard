@@ -3,305 +3,600 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shiny Yume — Dashboard</title>
+<title>YUME_DASHBOARD</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#000000;--card:#0a0e14;--border:#1a1f28;--text:#e6edf3;--muted:#8b949e;--cyan:#58a6ff;--green:#3fb950;--red:#f85149;--orange:#d29922;--purple:#bc8cff}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:#000;color:var(--text);min-height:100vh;padding:16px}
-.container{max-width:1200px;margin:0 auto}
-h1{font-size:1.5rem;margin-bottom:4px;display:flex;align-items:center;gap:8px}
-h1 span{color:var(--cyan)}
-.subtitle{color:var(--muted);font-size:.85rem;margin-bottom:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;margin-bottom:16px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
-.card-title{font-size:.9rem;font-weight:600;color:var(--muted);margin-bottom:12px;display:flex;align-items:center;gap:6px}
-.stat-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border)}
-.stat-row:last-child{border-bottom:none}
-.stat-label{color:var(--muted);font-size:.85rem}
-.stat-value{font-weight:600;font-size:.9rem}
-.progress-wrap{width:120px;height:6px;background:#0f1318;border-radius:3px;overflow:hidden;margin-left:8px}
-.progress-bar{height:100%;border-radius:3px;transition:width .5s}
-.progress-bar.low{background:var(--green)}
-.progress-bar.mid{background:var(--orange)}
-.progress-bar.high{background:var(--red)}
-.badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:.75rem;font-weight:600}
-.badge-ok{background:#1b3a24;color:var(--green)}
-.badge-error{background:#3d1518;color:var(--red)}
-.badge-idle{background:#0a0e14;color:var(--muted)}
-.badge-running{background:#0c2d4a;color:var(--cyan)}
-.badge-stopped{background:#3d1518;color:var(--red)}
-.badge-testnet{background:#2d2100;color:var(--orange)}
-table{width:100%;border-collapse:collapse;font-size:.82rem}
-th{text-align:left;color:var(--muted);font-weight:500;padding:6px 8px;border-bottom:1px solid var(--border)}
-td{padding:6px 8px;border-bottom:1px solid #1a1f28}
-tr:hover{background:#0a0e14}
-.full-width{grid-column:1/-1}
-.half-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.bot-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px}
-.bot-stat{text-align:center;padding:10px 8px;background:#000000;border-radius:8px;border:1px solid var(--border)}
-.bot-stat .num{font-size:1.3rem;font-weight:700;color:var(--cyan)}
-.bot-stat .label{font-size:.72rem;color:var(--muted);margin-top:2px}
-.bot-stat .num.green{color:var(--green)}
-.bot-stat .num.red{color:var(--red)}
-.bot-stat .num.orange{color:var(--orange)}
-.bot-stat .num.purple{color:var(--purple)}
-.service-item{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border)}
-.service-item:last-child{border-bottom:none}
-.dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px}
-.dot-green{background:var(--green)}
-.dot-red{background:var(--red)}
-.dot-orange{background:var(--orange)}
-.linux-cron{font-family:monospace;font-size:.78rem;color:var(--muted);line-height:1.6}
-.positions-list{font-size:.82rem}
-.positions-list .pos{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid #1a1f28}
-.positions-list .pos:last-child{border-bottom:none}
-.pos-info{display:flex;flex-direction:column;gap:2px}
-.pos-symbol{font-weight:600}
-.pos-entry{font-size:.75rem;color:var(--muted)}
-.refresh-info{text-align:center;color:var(--muted);font-size:.75rem;padding:16px 0}
-.summary-bar{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:12px}
-.summary-item{display:flex;align-items:center;gap:6px;font-size:.85rem}
-.summary-item .dot{width:10px;height:10px}
-.cron-summary{display:flex;gap:12px;margin-bottom:8px;font-size:.82rem}
-.cron-summary span{display:flex;align-items:center;gap:4px}
-#auth-gate{position:fixed;top:0;left:0;width:100%;height:100%;background:#000;display:flex;align-items:center;justify-content:center;z-index:999}
-#auth-gate .box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:32px;text-align:center;max-width:320px;width:90%}
-#auth-gate h2{color:var(--cyan)}
-#auth-gate input{width:100%;padding:10px;border:1px solid var(--border);border-radius:6px;background:#000000;color:var(--text);margin:12px 0;font-size:1rem}
-#auth-gate button{width:100%;padding:10px;border:none;border-radius:6px;background:var(--cyan);color:#000;font-weight:600;cursor:pointer;font-size:.95rem}
-#auth-gate button:hover{opacity:.9}
-#auth-gate .err{color:var(--red);font-size:.85rem;min-height:20px;margin-top:8px}
-@media(max-width:700px){.grid{grid-template-columns:1fr}.bot-stats{grid-template-columns:repeat(3,1fr)}.half-grid{grid-template-columns:1fr}}
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --green: #00ff00;
+    --green-dim: #00aa00;
+    --green-dark: #003300;
+    --red: #ff3333;
+    --yellow: #ffff00;
+    --bg: #000000;
+    --bg2: #050505;
+    --border: 1px solid #00ff00;
+    --glow: 0 0 8px #00ff00;
+    --glow-sm: 0 0 4px #00ff00;
+  }
+  body {
+    background: var(--bg);
+    color: var(--green);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  /* Scanline effect */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,255,0,0.015) 2px,
+      rgba(0,255,0,0.015) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* Layout */
+  .container { display: flex; min-height: 100vh; }
+
+  /* SIDEBAR */
+  .sidebar {
+    width: 280px;
+    min-width: 280px;
+    border-right: var(--border);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px;
+    background: var(--bg2);
+  }
+  .sidebar-title {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: var(--glow);
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .cursor {
+    display: inline-block;
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+  .sidebar-subtitle {
+    color: var(--green-dim);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid var(--green-dark);
+    margin: 12px 0;
+  }
+  .stats-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .stat-box {
+    flex: 1;
+    border: var(--border);
+    padding: 8px;
+    text-align: center;
+  }
+  .stat-num {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: var(--glow);
+    display: block;
+  }
+  .stat-label {
+    font-size: 9px;
+    color: var(--green-dim);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* Nav */
+  .nav { margin-bottom: 16px; }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    transition: all 0.1s;
+    border: 1px solid transparent;
+    margin-bottom: 2px;
+  }
+  .nav-item:hover { border-color: var(--green-dim); color: #fff; }
+  .nav-item.active {
+    background: var(--green);
+    color: #000;
+    border-color: var(--green);
+    text-shadow: none;
+    font-weight: bold;
+  }
+  .nav-item .arrow { font-size: 10px; }
+
+  /* Services */
+  .section-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--green-dim);
+    margin-bottom: 8px;
+  }
+  .service-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 12px;
+  }
+  .dot { font-size: 10px; }
+  .dot.online { color: var(--green); text-shadow: var(--glow-sm); }
+  .dot.offline { color: var(--red); }
+  .service-name { flex: 1; color: var(--green-dim); }
+  .service-status { font-size: 10px; text-transform: uppercase; }
+  .service-status.online { color: var(--green); }
+  .service-status.offline { color: var(--red); }
+
+  .sidebar-footer {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid var(--green-dark);
+    font-size: 10px;
+    color: var(--green-dark);
+    font-style: italic;
+  }
+  .refresh-info {
+    font-size: 10px;
+    color: var(--green-dim);
+    margin-top: 8px;
+  }
+
+  /* MAIN */
+  .main {
+    flex: 1;
+    padding: 20px;
+    background:
+      linear-gradient(rgba(0,255,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: var(--border);
+  }
+  .main-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-shadow: var(--glow-sm);
+    letter-spacing: 2px;
+  }
+  .timestamp {
+    font-size: 11px;
+    color: var(--green-dim);
+  }
+
+  /* Tabs */
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* Cards */
+  .cards-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .card {
+    border: var(--border);
+    padding: 14px;
+    background: var(--bg2);
+  }
+  .card-label {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--green-dim);
+    margin-bottom: 6px;
+  }
+  .card-value {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: var(--glow-sm);
+    margin-bottom: 8px;
+  }
+  .card-sub { font-size: 10px; color: var(--green-dim); margin-bottom: 6px; }
+  .progress-bar {
+    font-size: 11px;
+    color: var(--green);
+    letter-spacing: 0;
+    word-break: break-all;
+  }
+
+  /* Tables */
+  .section-header {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--green-dim);
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--green-dark);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  th {
+    text-align: left;
+    padding: 6px 10px;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--green-dim);
+    border-bottom: 1px solid var(--green-dark);
+  }
+  td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #001100;
+    color: var(--green);
+  }
+  tr:hover td { background: #001a00; }
+  .status-ok { color: var(--green); text-shadow: var(--glow-sm); }
+  .status-err { color: var(--red); }
+  .status-idle { color: var(--yellow); }
+  .side-long { color: var(--green); }
+  .side-short { color: var(--red); }
+  .pnl-pos { color: var(--green); }
+  .pnl-neg { color: var(--red); }
+
+  /* BingX panel */
+  .bingx-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  /* Forex panel */
+  .forex-panel {
+    border: var(--border);
+    padding: 16px;
+    background: var(--bg2);
+    margin-bottom: 20px;
+  }
+  .forex-row {
+    display: flex;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: 1px solid #001100;
+    font-size: 12px;
+  }
+  .forex-key { color: var(--green-dim); width: 160px; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+  .forex-val { color: var(--green); }
+
+  .loading { color: var(--green-dim); font-size: 12px; padding: 20px; }
+  .error-msg { color: var(--red); font-size: 12px; padding: 20px; }
+
+  @media (max-width: 768px) {
+    .container { flex-direction: column; }
+    .sidebar { width: 100%; min-width: unset; border-right: none; border-bottom: var(--border); }
+    .cards-row { grid-template-columns: repeat(2, 1fr); }
+    .bingx-stats { grid-template-columns: repeat(2, 1fr); }
+  }
 </style>
 </head>
 <body>
+<div class="container">
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-title">YUME<span class="cursor">_</span></div>
+    <div class="sidebar-subtitle">// SYSTEM_STATUS</div>
 
-<div id="auth-gate">
-<div class="box">
-<h2 style="margin-bottom:8px">🔒 Dashboard</h2>
-<p style="color:var(--muted);font-size:.85rem">Nhập mật khẩu để truy cập</p>
-<input type="password" id="pw-input" placeholder="Password..." autofocus>
-<button onclick="checkAuth()">Đăng nhập</button>
-<div class="err" id="pw-err"></div>
-</div>
-</div>
+    <div class="stats-row">
+      <div class="stat-box">
+        <span class="stat-num" id="stat-crons">--</span>
+        <span class="stat-label">CRON JOBS</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" id="stat-services">--</span>
+        <span class="stat-label">SERVICES</span>
+      </div>
+    </div>
 
-<div class="container" id="main" style="display:none">
-<h1>✨ <span>Shiny Yume</span> — Dashboard</h1>
-<p class="subtitle" id="last-update">Đang tải...</p>
+    <hr class="divider">
 
-<!-- Quick Summary Bar -->
-<div class="summary-bar" id="summary-bar"></div>
+    <div class="nav">
+      <div class="nav-item active" onclick="switchTab('system', this)">
+        <span class="arrow">▶</span> SYSTEM
+      </div>
+      <div class="nav-item" onclick="switchTab('cron', this)">
+        <span class="arrow">▸</span> CRON JOBS
+      </div>
+      <div class="nav-item" onclick="switchTab('bingx', this)">
+        <span class="arrow">▸</span> BINGX BOT
+      </div>
+      <div class="nav-item" onclick="switchTab('forex', this)">
+        <span class="arrow">▸</span> FOREX
+      </div>
+    </div>
 
-<div class="grid">
-<!-- System -->
-<div class="card">
-<div class="card-title">🖥 Hệ thống</div>
-<div id="system-info"></div>
-</div>
+    <hr class="divider">
 
-<!-- Services -->
-<div class="card">
-<div class="card-title">🌐 Dịch vụ</div>
-<div id="services-info"></div>
-</div>
+    <div class="section-title">// SERVICES</div>
+    <div id="services-list">
+      <div class="loading">Loading...</div>
+    </div>
 
-<!-- BingX Bot Overview -->
-<div class="card">
-<div class="card-title">🤖 BingX Bot — Tổng quan</div>
-<div class="bot-stats" id="bot-stats"></div>
-</div>
+    <div class="refresh-info" id="refresh-info">Auto-refresh: 60s</div>
+    <div class="sidebar-footer">Wake up, Neo...<br>The Matrix has you.</div>
+  </div>
 
-<!-- BingX Bot Positions -->
-<div class="card">
-<div class="card-title">📊 Vị thế đang mở</div>
-<div id="bot-positions"></div>
-</div>
+  <!-- MAIN -->
+  <div class="main">
+    <div class="main-header">
+      <div class="main-title" id="main-title">[SYSTEM_MONITOR]</div>
+      <div class="timestamp" id="last-updated">[Loading...]</div>
+    </div>
 
-<!-- BingX Bot Account -->
-<div class="card">
-<div class="card-title">💰 Tài khoản BingX</div>
-<div id="bot-account"></div>
-</div>
+    <!-- TAB: SYSTEM -->
+    <div class="tab-content active" id="tab-system">
+      <div class="cards-row" id="system-cards">
+        <div class="card"><div class="card-label">Loading...</div></div>
+      </div>
+      <div class="section-header">// BINGX SUMMARY</div>
+      <div class="bingx-stats" id="bingx-summary"></div>
+    </div>
 
-<!-- Bot Config -->
-<div class="card">
-<div class="card-title">⚙️ Cấu hình Bot</div>
-<div id="bot-config"></div>
-</div>
+    <!-- TAB: CRON -->
+    <div class="tab-content" id="tab-cron">
+      <div class="section-header">// CRON JOB STATUS</div>
+      <table>
+        <thead>
+          <tr><th>Name</th><th>Schedule</th><th>Model</th><th>Last Run</th><th>Status</th></tr>
+        </thead>
+        <tbody id="cron-table"></tbody>
+      </table>
+    </div>
 
-<!-- OpenClaw Cron -->
-<div class="card full-width">
-<div class="card-title">⏰ OpenClaw Cron Jobs</div>
-<div class="cron-summary" id="cron-summary"></div>
-<div style="overflow-x:auto"><table id="cron-table"><thead><tr><th>Tên</th><th>Lịch</th><th>Tiếp theo</th><th>Lần cuối</th><th>Status</th></tr></thead><tbody></tbody></table></div>
-</div>
+    <!-- TAB: BINGX -->
+    <div class="tab-content" id="tab-bingx">
+      <div class="section-header">// BINGX BOT — OPEN POSITIONS</div>
+      <div class="bingx-stats" id="bingx-cards"></div>
+      <table>
+        <thead>
+          <tr><th>Symbol</th><th>Side</th><th>Size</th><th>Entry Price</th><th>Unrealized PnL</th></tr>
+        </thead>
+        <tbody id="positions-table"></tbody>
+      </table>
+    </div>
 
-<!-- Linux Cron -->
-<div class="card full-width">
-<div class="card-title">📋 Linux Crontab</div>
-<div class="linux-cron" id="linux-cron"></div>
-</div>
-</div>
-
-<div class="refresh-info">Tự động cập nhật mỗi 5 phút • <a href="#" onclick="loadData()" style="color:var(--cyan)">Refresh ngay</a> • <a href="#" onclick="logout()" style="color:var(--muted)">Đăng xuất</a></div>
+    <!-- TAB: FOREX -->
+    <div class="tab-content" id="tab-forex">
+      <div class="section-header">// FOREX LISTENER — TELETHON REALTIME</div>
+      <div class="forex-panel" id="forex-panel">
+        <div class="loading">Loading...</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
-const CORRECT_PW = 'Phat2511@';
+let refreshTimer = 60;
+let data = null;
 
-function checkAuth(){
-  const pw = document.getElementById('pw-input').value;
-  if(pw === CORRECT_PW){
-    localStorage.setItem('yd_auth','ok');
-    showDash();
-  } else {
-    document.getElementById('pw-err').textContent = 'Sai mật khẩu!';
-  }
+function switchTab(name, el) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => {
+    n.classList.remove('active');
+    n.querySelector('.arrow').textContent = '▸';
+  });
+  document.getElementById('tab-' + name).classList.add('active');
+  el.classList.add('active');
+  el.querySelector('.arrow').textContent = '▶';
+  document.getElementById('main-title').textContent = '[' + name.toUpperCase() + '_MONITOR]';
 }
-function logout(){ localStorage.removeItem('yd_auth'); location.reload(); }
-document.getElementById('pw-input').addEventListener('keydown', e => { if(e.key === 'Enter') checkAuth(); });
-function showDash(){ document.getElementById('auth-gate').style.display='none'; document.getElementById('main').style.display='block'; loadData(); }
-if(localStorage.getItem('yd_auth') === 'ok') showDash();
 
-function progressClass(p){ return p < 60 ? 'low' : p < 85 ? 'mid' : 'high'; }
-function statusBadge(s){
-  if(s==='ok') return '<span class="badge badge-ok">✅ OK</span>';
-  if(s==='error') return '<span class="badge badge-error">❌ Error</span>';
-  return '<span class="badge badge-idle">⏳ Idle</span>';
+function progressBar(pct, width) {
+  width = width || 20;
+  const filled = Math.round(pct / 100 * width);
+  const empty = width - filled;
+  return '[' + '█'.repeat(filled) + '░'.repeat(empty) + '] ' + pct.toFixed(1) + '%';
 }
-function fmt(n,d=2){ return n != null ? parseFloat(n).toFixed(d) : '—'; }
-function fmtK(n){ return n != null ? parseFloat(n).toLocaleString('en',{maximumFractionDigits:2}) : '—'; }
 
-async function loadData(){
-  try{
-    const r = await fetch('./status.json?t=' + Date.now());
-    const d = await r.json();
-    document.getElementById('last-update').textContent = 'Cập nhật: ' + d.generated_at_vn + ' (VN)';
+function renderServices(services) {
+  if (!services) return;
+  const list = document.getElementById('services-list');
+  const items = [
+    { key: 'openclaw', label: 'OpenClaw' },
+    { key: 'chrome', label: 'Chrome Relay' },
+    { key: 'website', label: 'Website' },
+    { key: 'forex_listener', label: 'Forex Listener' },
+  ];
+  let total = 0, online = 0;
+  let html = '';
+  items.forEach(item => {
+    const s = services[item.key];
+    const isOn = s && (s.running === true || s.online === true);
+    if (isOn) online++;
+    total++;
+    html += `<div class="service-item">
+      <span class="dot ${isOn ? 'online' : 'offline'}">●</span>
+      <span class="service-name">${item.label}</span>
+      <span class="service-status ${isOn ? 'online' : 'offline'}">${isOn ? 'ON' : 'OFF'}</span>
+    </div>`;
+  });
+  list.innerHTML = html;
+  document.getElementById('stat-services').textContent = online + '/' + total;
+}
 
-    const b = d.bingx_bot;
-    const s = d.system;
-    const sv = d.services;
-    const cronOk = d.openclaw_cron.filter(c=>c.status==='ok').length;
-    const cronErr = d.openclaw_cron.filter(c=>c.status==='error').length;
-    const cronIdle = d.openclaw_cron.filter(c=>c.status==='idle').length;
+function renderSystem(d) {
+  const sys = d.system || {};
+  const ram = sys.ram || {};
+  const disk = sys.disk || {};
+  const cpu = sys.cpu || {};
+  const cards = document.getElementById('system-cards');
+  cards.innerHTML = `
+    <div class="card">
+      <div class="card-label">CPU Usage</div>
+      <div class="card-value">${(cpu.percent||0).toFixed(1)}<span style="font-size:14px">%</span></div>
+      <div class="card-sub">${cpu.count||0} cores</div>
+      <div class="progress-bar">${progressBar(cpu.percent||0, 16)}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">RAM</div>
+      <div class="card-value">${(ram.used_gb||0).toFixed(1)}<span style="font-size:14px">GB</span></div>
+      <div class="card-sub">${(ram.used_gb||0).toFixed(1)} / ${(ram.total_gb||0).toFixed(1)} GB</div>
+      <div class="progress-bar">${progressBar(ram.percent||0, 16)}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Disk</div>
+      <div class="card-value">${disk.used_gb||0}<span style="font-size:14px">GB</span></div>
+      <div class="card-sub">${disk.used_gb||0} / ${disk.total_gb||0} GB</div>
+      <div class="progress-bar">${progressBar(disk.percent||0, 16)}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Uptime</div>
+      <div class="card-value" style="font-size:16px">${sys.uptime||'--'}</div>
+      <div class="card-sub">${sys.hostname||''}</div>
+      <div class="progress-bar" style="color:var(--green-dim)">SYSTEM NOMINAL</div>
+    </div>
+  `;
+}
 
-    // Summary Bar
-    document.getElementById('summary-bar').innerHTML = `
-<div class="summary-item"><span class="dot ${b.status==='running'?'dot-green':'dot-red'}"></span>Bot: ${b.status==='running'?'Running':'Stopped'}</div>
-<div class="summary-item"><span class="dot ${sv.chrome&&sv.chrome.running?'dot-green':'dot-red'}"></span>Chrome: ${sv.chrome&&sv.chrome.running?'ON':'OFF'}</div>
-<div class="summary-item"><span class="dot ${sv.website&&sv.website.online?'dot-green':'dot-red'}"></span>Web: ${sv.website&&sv.website.online?'Online':'Offline'}</div>
-<div class="summary-item"><span class="dot dot-green"></span>Cron: ${cronOk}✅ ${cronErr?cronErr+'❌ ':''}${cronIdle?cronIdle+'⏳':''}</div>
-<div class="summary-item">💰 ${fmtK(b.balance)} USDT</div>
-<div class="summary-item">📊 ${b.open_positions||0} positions</div>
-<div class="summary-item">🧠 RAM ${s.ram.percent}%</div>`;
+function renderBingXSummary(bingx, containerId) {
+  const b = bingx || {};
+  const pnl = b.unrealized_pnl || 0;
+  const pnlClass = pnl >= 0 ? 'pnl-pos' : 'pnl-neg';
+  const pnlSign = pnl >= 0 ? '+' : '';
+  document.getElementById(containerId).innerHTML = `
+    <div class="card">
+      <div class="card-label">Balance</div>
+      <div class="card-value" style="font-size:18px">$${(b.balance||0).toFixed(2)}</div>
+      <div class="card-sub">Mode: ${(b.mode||'--').toUpperCase()}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Equity</div>
+      <div class="card-value" style="font-size:18px">$${(b.equity||0).toFixed(2)}</div>
+      <div class="card-sub">Available: $${(b.available||0).toFixed(2)}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Unrealized PnL</div>
+      <div class="card-value ${pnlClass}" style="font-size:18px">${pnlSign}$${pnl.toFixed(2)}</div>
+      <div class="card-sub">Open: ${b.open_positions||0} positions</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Win Rate</div>
+      <div class="card-value" style="font-size:18px">${(b.win_rate||0).toFixed(1)}<span style="font-size:14px">%</span></div>
+      <div class="card-sub">W:${b.win_trades||0} / L:${b.loss_trades||0}</div>
+    </div>
+  `;
+}
 
-    // System
-    const ramPct=s.ram.percent, diskPct=s.disk.percent, cpuPct=s.cpu.percent;
-    document.getElementById('system-info').innerHTML = `
-<div class="stat-row"><span class="stat-label">Host</span><span class="stat-value">${s.hostname}</span></div>
-<div class="stat-row"><span class="stat-label">Uptime</span><span class="stat-value">${s.uptime}</span></div>
-<div class="stat-row"><span class="stat-label">RAM</span><div style="display:flex;align-items:center;gap:6px"><span class="stat-value">${s.ram.used_gb.toFixed(1)}/${s.ram.total_gb.toFixed(0)} GB (${ramPct}%)</span><div class="progress-wrap"><div class="progress-bar ${progressClass(ramPct)}" style="width:${ramPct}%"></div></div></div></div>
-<div class="stat-row"><span class="stat-label">Disk</span><div style="display:flex;align-items:center;gap:6px"><span class="stat-value">${s.disk.used_gb}/${s.disk.total_gb} GB (${diskPct}%)</span><div class="progress-wrap"><div class="progress-bar ${progressClass(diskPct)}" style="width:${diskPct}%"></div></div></div></div>
-<div class="stat-row"><span class="stat-label">CPU</span><div style="display:flex;align-items:center;gap:6px"><span class="stat-value">${cpuPct}% (${s.cpu.count} cores)</span><div class="progress-wrap"><div class="progress-bar ${progressClass(cpuPct)}" style="width:${cpuPct}%"></div></div></div></div>`;
+function renderCron(jobs) {
+  const tbody = document.getElementById('cron-table');
+  if (!jobs || !jobs.length) { tbody.innerHTML = '<tr><td colspan="5" class="loading">No data</td></tr>'; return; }
+  document.getElementById('stat-crons').textContent = jobs.length;
+  tbody.innerHTML = jobs.map(j => {
+    let sc = 'status-idle', sl = '● IDLE';
+    if (j.status === 'ok') { sc = 'status-ok'; sl = '● OK'; }
+    else if (j.status === 'error') { sc = 'status-err'; sl = '● ERR'; }
+    const model = (j.model || '--').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '');
+    return `<tr>
+      <td>${j.name}</td>
+      <td style="color:var(--green-dim);font-size:11px">${j.schedule||'--'}</td>
+      <td style="color:var(--green-dim);font-size:10px">${model}</td>
+      <td style="color:var(--green-dim)">${j.last_run||'--'}</td>
+      <td class="${sc}">${sl}</td>
+    </tr>`;
+  }).join('');
+}
 
-    // Services
-    const chromeOn = sv.chrome&&sv.chrome.running;
-    const webOn = sv.website&&sv.website.online;
-    const webMs = sv.website&&sv.website.response_time_ms?sv.website.response_time_ms+'ms':'—';
-    document.getElementById('services-info').innerHTML = `
-<div class="service-item"><span><span class="dot ${chromeOn?'dot-green':'dot-red'}"></span>Chrome Browser</span><span class="badge ${chromeOn?'badge-running':'badge-stopped'}">${chromeOn?'Running':'Stopped'}</span></div>
-<div class="service-item"><span><span class="dot ${webOn?'dot-green':'dot-red'}"></span>daututhongminh24h.com</span><span class="badge ${webOn?'badge-ok':'badge-error'}">${webOn?webMs:'Offline'}</span></div>
-<div class="service-item"><span><span class="dot ${sv.openclaw&&sv.openclaw.running?'dot-green':'dot-red'}"></span>OpenClaw Gateway</span><span class="badge badge-running">Running</span></div>
-<div class="service-item"><span><span class="dot ${b.process_running?'dot-green':'dot-red'}"></span>BingX Bot Process</span><span class="badge ${b.process_running?'badge-running':'badge-stopped'}">${b.process_running?'PID Active':'Stopped'}</span></div>
-<div class="service-item"><span><span class="dot dot-green"></span>GitHub Pages</span><span class="badge badge-ok">Dashboard</span></div>`;
+function renderPositions(bingx) {
+  const tbody = document.getElementById('positions-table');
+  const pos = (bingx || {}).positions_detail || [];
+  if (!pos.length) { tbody.innerHTML = '<tr><td colspan="5" style="color:var(--green-dim)">No open positions</td></tr>'; return; }
+  tbody.innerHTML = pos.map(p => {
+    const pnl = parseFloat(p.unrealized_pnl || 0);
+    const pc = pnl >= 0 ? 'pnl-pos' : 'pnl-neg';
+    const ps = pnl >= 0 ? '+' : '';
+    const sc = p.side === 'LONG' ? 'side-long' : 'side-short';
+    return `<tr>
+      <td>${p.symbol}</td>
+      <td class="${sc}">${p.side}</td>
+      <td>${p.size}</td>
+      <td>$${p.entry_price}</td>
+      <td class="${pc}">${ps}$${pnl.toFixed(4)}</td>
+    </tr>`;
+  }).join('');
+}
 
-    // BingX Bot Stats
-    const pnlClass = (b.unrealized_pnl||0) >= 0 ? 'green' : 'red';
-    const pnlSign = (b.unrealized_pnl||0) >= 0 ? '+' : '';
-    const totalPnlClass = (b.total_pnl||0) >= 0 ? 'green' : 'red';
-    const totalPnlSign = (b.total_pnl||0) >= 0 ? '+' : '';
-    const drawdown = b.balance ? ((100000 - b.balance) / 100000 * 100) : 0;
-    const ddClass = drawdown > 5 ? 'red' : drawdown > 2 ? 'orange' : 'green';
-    document.getElementById('bot-stats').innerHTML = `
-<div class="bot-stat"><div class="num" style="font-size:1rem"><span class="badge badge-testnet">${b.mode||'TESTNET'}</span></div><div class="label">Mode</div></div>
-<div class="bot-stat"><div class="num">${fmtK(b.balance)}</div><div class="label">Balance</div></div>
-<div class="bot-stat"><div class="num ${pnlClass}">${pnlSign}${fmt(b.unrealized_pnl)}</div><div class="label">Unrealized PnL</div></div>
-<div class="bot-stat"><div class="num ${totalPnlClass}">${totalPnlSign}${fmt(b.total_pnl)}</div><div class="label">Realized PnL</div></div>
-<div class="bot-stat"><div class="num orange">${b.open_positions||0}</div><div class="label">Open</div></div>
-<div class="bot-stat"><div class="num purple">${b.closed_trades||0}</div><div class="label">Closed</div></div>
-<div class="bot-stat"><div class="num ${(b.win_rate||0)>=50?'green':'red'}">${b.win_rate!=null?fmt(b.win_rate,1):'—'}%</div><div class="label">Win Rate</div></div>
-<div class="bot-stat"><div class="num ${ddClass}">${fmt(drawdown,2)}%</div><div class="label">Drawdown</div></div>`;
+function renderForex(services, model_config) {
+  const fl = (services || {}).forex_listener || {};
+  const panel = document.getElementById('forex-panel');
+  const isOn = fl.running === true;
+  panel.innerHTML = `
+    <div class="forex-row"><span class="forex-key">Status</span><span class="forex-val ${isOn ? 'status-ok' : 'status-err'}">${isOn ? '● ONLINE — LISTENING' : '● OFFLINE'}</span></div>
+    <div class="forex-row"><span class="forex-key">Source</span><span class="forex-val">${fl.source || '--'}</span></div>
+    <div class="forex-row"><span class="forex-key">Destination</span><span class="forex-val">${fl.dest || '--'}</span></div>
+    <div class="forex-row"><span class="forex-key">Mode</span><span class="forex-val">${fl.mode || '--'}</span></div>
+    <div class="forex-row"><span class="forex-key">Protocol</span><span class="forex-val">Telethon MTProto Userbot</span></div>
+    <div class="forex-row"><span class="forex-key">Session</span><span class="forex-val">forex-forwarder/userbot.session</span></div>
+    <div class="forex-row"><span class="forex-key">Service</span><span class="forex-val">forex-listener.service (systemd)</span></div>
+  `;
+}
 
-    // BingX Positions
-    const posList = b.positions || b.positions_detail || [];
-    if(posList.length > 0){
-      let ph = '';
-      posList.forEach(p => {
-        const pnlVal = parseFloat(p.pnl||p.unrealized_pnl||0);
-        const pnlC = pnlVal >= 0 ? 'var(--green)' : 'var(--red)';
-        const pnlS = pnlVal >= 0 ? '+' : '';
-        const entry = p.entry_price || p.avgPrice || '—';
-        const size = parseFloat(p.size||p.positionAmt||0);
-        ph += `<div class="pos">
-<div class="pos-info"><span class="pos-symbol">${p.symbol} <span class="badge ${p.side==='SHORT'?'badge-error':'badge-ok'}" style="font-size:.68rem">${p.side}</span></span><span class="pos-entry">Entry: ${entry} | Size: ${size.toLocaleString()}</span></div>
-<span style="color:${pnlC};font-weight:700;font-size:.9rem">${pnlS}${pnlVal.toFixed(2)}</span>
-<span style="color:var(--muted);font-size:.75rem">USDT</span></div>`;
-      });
-      document.getElementById('bot-positions').innerHTML = `<div class="positions-list">${ph}</div>`;
-    } else {
-      document.getElementById('bot-positions').innerHTML = '<div style="color:var(--muted);text-align:center;padding:20px">Không có vị thế đang mở</div>';
-    }
+function renderAll(d) {
+  data = d;
+  const ts = d.generated_at_vn || d.generated_at || '--';
+  document.getElementById('last-updated').textContent = '[' + ts + ']';
+  renderServices(d.services);
+  renderSystem(d);
+  renderBingXSummary(d.bingx_bot, 'bingx-summary');
+  renderCron(d.openclaw_cron);
+  renderBingXSummary(d.bingx_bot, 'bingx-cards');
+  renderPositions(d.bingx_bot);
+  renderForex(d.services, d.model_config);
+}
 
-    // BingX Account Detail
-    const marginUsed = b.balance && b.equity ? (b.balance - (b.available||b.balance)) : 0;
-    const marginPct = b.balance ? (marginUsed / b.balance * 100) : 0;
-    document.getElementById('bot-account').innerHTML = `
-<div class="stat-row"><span class="stat-label">Equity</span><span class="stat-value">${fmtK(b.equity)} USDT</span></div>
-<div class="stat-row"><span class="stat-label">Available</span><span class="stat-value">${fmtK(b.available)} USDT</span></div>
-<div class="stat-row"><span class="stat-label">Margin Used</span><span class="stat-value">${fmtK(marginUsed)} USDT (${fmt(marginPct,1)}%)</span></div>
-<div class="stat-row"><span class="stat-label">Starting Balance</span><span class="stat-value">100,000 USDT</span></div>
-<div class="stat-row"><span class="stat-label">Total Return</span><span class="stat-value" style="color:${b.balance>=100000?'var(--green)':'var(--red)'}">${b.balance?fmt(b.balance-100000):0} USDT (${b.balance?fmt((b.balance-100000)/1000,2):0}%)</span></div>
-<div class="stat-row"><span class="stat-label">Win / Loss</span><span class="stat-value"><span style="color:var(--green)">${b.win_trades||0}W</span> / <span style="color:var(--red)">${b.loss_trades||0}L</span></span></div>`;
-
-    // Bot Config
-    document.getElementById('bot-config').innerHTML = `
-<div class="stat-row"><span class="stat-label">Pairs</span><span class="stat-value">10 coins</span></div>
-<div class="stat-row"><span class="stat-label">Leverage</span><span class="stat-value">20x Cross</span></div>
-<div class="stat-row"><span class="stat-label">Risk/Trade</span><span class="stat-value">1% Balance</span></div>
-<div class="stat-row"><span class="stat-label">Margin/Trade</span><span class="stat-value">≤ 1% Balance</span></div>
-<div class="stat-row"><span class="stat-label">Scan Interval</span><span class="stat-value">120 giây</span></div>
-<div class="stat-row"><span class="stat-label">TP Strategy</span><span class="stat-value">TP1 (R:R 1.5) + TP2 (R:R 3.0)</span></div>
-<div class="stat-row"><span class="stat-label">Method</span><span class="stat-value">Fibonacci + RSI + ATR</span></div>
-<div class="stat-row"><span class="stat-label">Timeframes</span><span class="stat-value">15m, 30m, 1h</span></div>`;
-
-    // Cron Summary
-    document.getElementById('cron-summary').innerHTML = `
-<span style="color:var(--green)">✅ ${cronOk} OK</span>
-<span style="color:var(--red)">❌ ${cronErr} Error</span>
-<span style="color:var(--muted)">⏳ ${cronIdle} Idle</span>
-<span style="color:var(--muted)">📊 ${d.openclaw_cron.length} total</span>`;
-
-    // OpenClaw Cron Table
-    const tb = document.querySelector('#cron-table tbody');
-    tb.innerHTML = '';
-    d.openclaw_cron.forEach(c => {
-      const tr = document.createElement('tr');
-      tr.innerHTML = `<td style="font-weight:500">${c.name}</td><td style="font-family:monospace;font-size:.75rem;color:var(--muted)">${(c.schedule||'').replace('(exact)','').replace('cron ','').trim()}</td><td>${c.next_run||'—'}</td><td>${c.last_run||'—'}</td><td>${statusBadge(c.status)}</td>`;
-      tb.appendChild(tr);
+function loadData() {
+  fetch('./status.json?t=' + Date.now())
+    .then(r => r.json())
+    .then(d => renderAll(d))
+    .catch(e => {
+      document.getElementById('last-updated').textContent = '[ERROR: ' + e.message + ']';
     });
-
-    // Linux cron
-    if(d.linux_cron && d.linux_cron.length > 0){
-      document.getElementById('linux-cron').innerHTML = d.linux_cron.map(c => '<div style="padding:3px 0;border-bottom:1px solid var(--border)">' + c.replace(/</g,'&lt;') + '</div>').join('');
-    }
-
-  } catch(e){
-    document.getElementById('last-update').textContent = '⚠️ Lỗi tải dữ liệu: ' + e.message;
-  }
+  refreshTimer = 60;
 }
 
-setInterval(loadData, 300000);
+// Countdown
+setInterval(() => {
+  refreshTimer--;
+  document.getElementById('refresh-info').textContent = 'Auto-refresh: ' + refreshTimer + 's';
+  if (refreshTimer <= 0) loadData();
+}, 1000);
+
+loadData();
 </script>
 </body>
 </html>
