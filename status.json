@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-19T01:15:05.993179+00:00",
-  "generated_at_vn": "2026-03-19 08:15:05",
+  "generated_at": "2026-03-19T01:20:05.534251+00:00",
+  "generated_at_vn": "2026-03-19 08:20:05",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 18h 55m",
-    "uptime_seconds": 1191325,
+    "uptime": "13d 19h 0m",
+    "uptime_seconds": 1191625,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.68,
-      "percent": 24.0
+      "used_gb": 3.73,
+      "percent": 24.3
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 3.8,
+      "percent": 13.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
       "name": "commodity-update",
       "schedule": "cron 30 8 * * * (exact)",
-      "next_run": "in 15m",
+      "next_run": "in 10m",
       "last_run": "24h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
@@ -35,7 +35,7 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 30m",
+      "next_run": "in 25m",
       "last_run": "2h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
@@ -180,7 +180,7 @@
       "name": "x-post-analysis-am",
       "schedule": "cron 30 7 * * * (exact)",
       "next_run": "in 23h",
-      "last_run": "45m ago",
+      "last_run": "50m ago",
       "status": "error",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -189,7 +189,7 @@
       "name": "x-engage-1",
       "schedule": "cron 45 7 * * * (exact)",
       "next_run": "in 23h",
-      "last_run": "30m ago",
+      "last_run": "35m ago",
       "status": "error",
       "model": "claudible/claude-haiku-4.5"
     },
@@ -234,9 +234,9 @@
     "mode": "testnet",
     "status": "online",
     "balance": 1619.1474,
-    "equity": 1585.9622,
-    "available": 1211.1035,
-    "unrealized_pnl": -33.1851,
+    "equity": 1585.3499,
+    "available": 1210.4913,
+    "unrealized_pnl": -33.7974,
     "open_positions": 5,
     "closed_trades": 0,
     "win_trades": 0,
@@ -251,35 +251,35 @@
         "side": "LONG",
         "size": "20.66",
         "entry_price": "92.296",
-        "unrealized_pnl": "-46.6503"
+        "unrealized_pnl": "-46.8140"
       },
       {
         "symbol": "POL-USDT",
         "side": "SHORT",
         "size": "19474.47",
         "entry_price": "0.09779",
-        "unrealized_pnl": "29.2217"
+        "unrealized_pnl": "28.3365"
       },
       {
         "symbol": "DOGE-USDT",
         "side": "SHORT",
         "size": "7422",
         "entry_price": "0.09697",
-        "unrealized_pnl": "14.5074"
+        "unrealized_pnl": "15.3761"
       },
       {
         "symbol": "APT-USDT",
         "side": "SHORT",
         "size": "1410.7",
         "entry_price": "0.9572",
-        "unrealized_pnl": "-25.3912"
+        "unrealized_pnl": "-28.5455"
       },
       {
         "symbol": "DOT-USDT",
         "side": "LONG",
         "size": "1033.1",
         "entry_price": "1.564",
-        "unrealized_pnl": "-5.1758"
+        "unrealized_pnl": "-4.1427"
       }
     ],
     "process_running": false
@@ -298,7 +298,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 475
+      "response_time_ms": 299
     },
     "openclaw": {
       "running": true
@@ -312,144 +312,6 @@
   },
   "cron_history": [
     {
-      "job_id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
-      "name": "x-post-insight-1",
-      "status": "error",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
-      "name": "x-engage-3",
-      "status": "error",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
-      "name": "x-post-news-2",
-      "status": "error",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
-      "name": "x-engage-4",
-      "status": "error",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
-      "name": "x-post-insight-2",
-      "status": "error",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-      "name": "daily-news",
-      "status": "ok",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "34cd789a-75a1-414f-ada7-f72817e76244",
-      "name": "x-post-thread",
-      "status": "error",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
-      "name": "x-engage-5",
-      "status": "ok",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
-      "name": "x-post-news-3",
-      "status": "error",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "status": "ok",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "aa9e48fe-7215-4955-8091-1049db862b01",
-      "name": "x-post-analysis-pm",
-      "status": "ok",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
-      "name": "x-engage-6",
-      "status": "error",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "status": "ok",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "status": "error",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-      "name": "weekly-economic-calendar",
-      "status": "error",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "status": "ok",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "status": "idle",
-      "ts": 1773880506.705041
-    },
-    {
-      "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
-      "name": "x-engage-1",
-      "status": "ok",
-      "ts": 1773880806.065664
-    },
-    {
-      "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-      "name": "commodity-update",
-      "status": "ok",
-      "ts": 1773880806.065664
-    },
-    {
-      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "status": "ok",
-      "ts": 1773880806.065664
-    },
-    {
-      "job_id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
-      "name": "x-post-news-1",
-      "status": "error",
-      "ts": 1773880806.065664
-    },
-    {
-      "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-      "name": "x-engage-2",
-      "status": "ok",
-      "ts": 1773880806.065664
-    },
-    {
-      "job_id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
-      "name": "x-post-insight-1",
-      "status": "error",
-      "ts": 1773880806.065664
-    },
-    {
       "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
       "name": "x-engage-3",
       "status": "error",
@@ -1510,13 +1372,147 @@
       "name": "monthly-analysis",
       "status": "idle",
       "ts": 1773882905.991932
+    },
+    {
+      "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
+      "name": "commodity-update",
+      "status": "ok",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "status": "ok",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
+      "name": "x-post-news-1",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
+      "name": "x-engage-2",
+      "status": "ok",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
+      "name": "x-post-insight-1",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
+      "name": "x-engage-3",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
+      "name": "x-post-news-2",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
+      "name": "x-engage-4",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
+      "name": "x-post-insight-2",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
+      "name": "daily-news",
+      "status": "ok",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "34cd789a-75a1-414f-ada7-f72817e76244",
+      "name": "x-post-thread",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
+      "name": "x-engage-5",
+      "status": "ok",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
+      "name": "x-post-news-3",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+      "name": "crypto-education",
+      "status": "ok",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "aa9e48fe-7215-4955-8091-1049db862b01",
+      "name": "x-post-analysis-pm",
+      "status": "ok",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
+      "name": "x-engage-6",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+      "name": "daily-analysis",
+      "status": "ok",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
+      "name": "x-post-analysis-am",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
+      "name": "x-engage-1",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+      "name": "weekly-leaderboard",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
+      "name": "weekly-economic-calendar",
+      "status": "error",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+      "name": "weekly-analysis",
+      "status": "ok",
+      "ts": 1773883205.533131
+    },
+    {
+      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+      "name": "monthly-analysis",
+      "status": "idle",
+      "ts": 1773883205.533131
     }
   ],
   "equity_history": [
-    {
-      "ts": "2026-03-19T04:20:02.230003",
-      "equity": 1569.2987
-    },
     {
       "ts": "2026-03-19T04:25:02.371422",
       "equity": 1566.4998
@@ -1704,6 +1700,10 @@
     {
       "ts": "2026-03-19T08:15:02.270399",
       "equity": 1585.9622
+    },
+    {
+      "ts": "2026-03-19T08:20:01.806899",
+      "equity": 1585.3499
     }
   ],
   "recent_logs": [
@@ -1914,16 +1914,6 @@
     },
     {
       "label": "DASH",
-      "text": "   8a20e6a..4a72daa  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   4a72daa..aceff33  main -> main",
       "ts": ""
     },
@@ -2006,6 +1996,16 @@
       "label": "DASH",
       "text": "   4f030a2..2b5365a  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   2b5365a..73995b7  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -2026,32 +2026,33 @@
         "label": "Chị Em Mỹ Gia",
         "type": "group",
         "title": "Chị Em Mỹ Gia",
-        "members": "--",
+        "members": 3,
         "ok": true,
         "model": "openai-codex/gpt-5.4",
         "username": "",
-        "description": "",
-        "error": "<urlopen error _ssl.c:983: The handshake operation timed out"
+        "description": ""
       },
       {
         "id": "-1003783290422",
         "label": "Admin Signal Hunters",
         "type": "group",
-        "title": "--",
-        "members": "--",
-        "ok": false,
+        "title": "Admin Signal Hunters",
+        "members": 4,
+        "ok": true,
         "model": "openai-codex/gpt-5.4",
-        "error": "The read operation timed out"
+        "username": "",
+        "description": ""
       },
       {
         "id": "-1001891953279",
         "label": "@SignalHuntersChat",
         "type": "group",
-        "title": "--",
-        "members": "--",
-        "ok": false,
+        "title": "Signal Hunters Chat",
+        "members": 578,
+        "ok": true,
         "model": "openai-codex/gpt-5.4",
-        "error": "<urlopen error _ssl.c:983: The handshake operation timed out"
+        "username": "SignalHuntersChat",
+        "description": "Chào mừng tất cả anh em tới Signal Hunters 🔥\nChannel @SignalHuntersCrypto\nMON AI"
       }
     ],
     "channels": [
@@ -2059,23 +2060,23 @@
         "id": "-1001919338716",
         "label": "@SignalHuntersCrypto",
         "type": "channel",
-        "title": "--",
-        "members": "--",
-        "ok": false,
+        "title": "Signal Hunters",
+        "members": 4638,
+        "ok": true,
         "model": "claude-sonnet-4.6",
-        "error": "The read operation timed out"
+        "username": "SignalHuntersCrypto",
+        "description": "Chào mừng tất cả anh em tới Signal Hunters 🔥\nChat @SignalHuntersChat\nJoin VIP @J"
       },
       {
         "id": "-1003850136703",
         "label": "@CallerFOREX",
         "type": "channel",
         "title": "Caller FOREX | Signal Hunters",
-        "members": "--",
+        "members": 6,
         "ok": true,
         "model": "claude-haiku-4.5",
         "username": "CallerFOREX",
-        "description": "Signals by Gin: @Gin25z\nGroup chat: @SignalHuntersChat\nChannel: @SignalHuntersCr",
-        "error": "<urlopen error [Errno 101] Network is unreachable>"
+        "description": "Signals by Gin: @Gin25z\nGroup chat: @SignalHuntersChat\nChannel: @SignalHuntersCr"
       }
     ]
   }
