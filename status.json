@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-20T11:30:09.219085+00:00",
-  "generated_at_vn": "2026-03-20 18:30:09",
+  "generated_at": "2026-03-20T11:35:09.273849+00:00",
+  "generated_at_vn": "2026-03-20 18:35:09",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "15d 5h 10m",
-    "uptime_seconds": 1314629,
+    "uptime": "15d 5h 15m",
+    "uptime_seconds": 1314929,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 9.28,
-      "percent": 60.4
+      "used_gb": 9.29,
+      "percent": 60.5
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 67.2,
+      "percent": 56.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -78,7 +78,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 274
+      "response_time_ms": 378
     },
     "openclaw": {
       "running": true
@@ -1294,10 +1294,6 @@
   ],
   "equity_history": [
     {
-      "ts": "2026-03-20T14:35:01.716555",
-      "equity": 9995.2345
-    },
-    {
       "ts": "2026-03-20T14:40:02.473422",
       "equity": 9995.8792
     },
@@ -1484,6 +1480,10 @@
     {
       "ts": "2026-03-20T18:30:01.817740",
       "equity": 9980.3403
+    },
+    {
+      "ts": "2026-03-20T18:35:02.088680",
+      "equity": 9980.3403
     }
   ],
   "recent_logs": [
@@ -1569,22 +1569,22 @@
     },
     {
       "label": "FOREX",
-      "text": "2026-03-20 18:30:05,430 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-20 18:35:04,917 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-20 18:30:05,430 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-20 18:35:04,917 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-20 18:30:05,477 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-20 18:35:04,961 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-20 18:30:05,477 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-20 18:35:04,961 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
@@ -1694,16 +1694,6 @@
     },
     {
       "label": "DASH",
-      "text": "   33b0e67..b4736a3  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   b4736a3..07f36b9  main -> main",
       "ts": ""
     },
@@ -1785,6 +1775,16 @@
     {
       "label": "DASH",
       "text": "   31afb04..b530ee0  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   b530ee0..e464512  main -> main",
       "ts": ""
     }
   ],
