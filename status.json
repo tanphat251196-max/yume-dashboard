@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-20T11:00:09.098733+00:00",
-  "generated_at_vn": "2026-03-20 18:00:09",
+  "generated_at": "2026-03-20T11:05:09.358784+00:00",
+  "generated_at_vn": "2026-03-20 18:05:09",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "15d 4h 40m",
-    "uptime_seconds": 1312829,
+    "uptime": "15d 4h 45m",
+    "uptime_seconds": 1313129,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 8.57,
-      "percent": 55.8
+      "used_gb": 8.96,
+      "percent": 58.3
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 71.5,
+      "percent": 70.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -25,13 +25,13 @@
   "bingx_bot": {
     "running": true,
     "mode": "demo",
-    "balance": 8783.86,
-    "equity": 9964.7529,
+    "balance": 8763.2986,
+    "equity": 9972.4097,
     "open_positions": 1,
     "closed_trades": 11,
     "winning_trades": 4,
     "losing_trades": 7,
-    "total_pnl": 0.96,
+    "total_pnl": 0.95,
     "win_rate": 36.4,
     "best_trade": 2.02,
     "worst_trade": -0.7,
@@ -39,28 +39,28 @@
       "action": "open",
       "setup": {
         "direction": "long",
-        "entry": 70526.6,
-        "stop_loss": 69821.334,
-        "tp1": 71231.866,
-        "tp1_5": 71584.499,
-        "tp2": 71937.132,
-        "tp3": 72642.398,
-        "risk_per_share": 705.266,
+        "entry": 70379.9,
+        "stop_loss": 69676.101,
+        "tp1": 71083.699,
+        "tp1_5": 71435.5985,
+        "tp2": 71787.498,
+        "tp3": 72491.297,
+        "risk_per_share": 703.799,
         "shares": 0.004,
-        "position_value": 282.11,
+        "position_value": 281.52,
         "max_loss": 2.82,
         "risk_amount": 10.0,
         "risk_reward": 2.0,
         "orb_stage": "ORB60"
       },
-      "order_id": "2034947088346779650",
-      "filled_price": 70532.9,
-      "timestamp": "2026-03-20T17:56:08.072217",
+      "order_id": "2034942055446220800",
+      "filled_price": 70388.7,
+      "timestamp": "2026-03-20T17:36:08.157055",
       "signal_type": "breakout_up",
       "symbol": "BTCUSDT",
       "side": "buy",
       "qty": 0.004,
-      "entry_price": 70532.9,
+      "entry_price": 70388.7,
       "pnl": 0,
       "risk_reward": 2.0
     },
@@ -79,7 +79,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 420
+      "response_time_ms": 402
     },
     "openclaw": {
       "running": true
@@ -1295,10 +1295,6 @@
   ],
   "equity_history": [
     {
-      "ts": "2026-03-20T14:05:02.378459",
-      "equity": 9988.5385
-    },
-    {
       "ts": "2026-03-20T14:10:02.521088",
       "equity": 9991.3441
     },
@@ -1485,29 +1481,13 @@
     {
       "ts": "2026-03-20T18:00:02.014304",
       "equity": 9964.7529
+    },
+    {
+      "ts": "2026-03-20T18:05:02.255674",
+      "equity": 9972.4097
     }
   ],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "    return runner.run(main)",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "           ^^^^^^^^^^^^^^^^",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "  File \"/usr/lib/python3.12/asyncio/runners.py\", line 118, in run",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "    return self._loop.run_until_complete(task)",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
@@ -1586,6 +1566,26 @@
     {
       "label": "FOREX",
       "text": "sqlite3.OperationalError: database is locked",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-20 18:05:09,154 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-20 18:05:09,154 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-20 18:05:09,209 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-20 18:05:09,209 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
@@ -1695,16 +1695,6 @@
     },
     {
       "label": "DASH",
-      "text": "   e17512d..39eef1b  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   39eef1b..684c680  main -> main",
       "ts": ""
     },
@@ -1786,6 +1776,16 @@
     {
       "label": "DASH",
       "text": "   2fe77c5..50860a9  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   50860a9..719f6d4  main -> main",
       "ts": ""
     }
   ],
@@ -1870,32 +1870,74 @@
       "action": "open",
       "setup": {
         "direction": "long",
-        "entry": 70526.6,
-        "stop_loss": 69821.334,
-        "tp1": 71231.866,
-        "tp1_5": 71584.499,
-        "tp2": 71937.132,
-        "tp3": 72642.398,
-        "risk_per_share": 705.266,
+        "entry": 70379.9,
+        "stop_loss": 69676.101,
+        "tp1": 71083.699,
+        "tp1_5": 71435.5985,
+        "tp2": 71787.498,
+        "tp3": 72491.297,
+        "risk_per_share": 703.799,
         "shares": 0.004,
-        "position_value": 282.11,
+        "position_value": 281.52,
         "max_loss": 2.82,
         "risk_amount": 10.0,
         "risk_reward": 2.0,
         "orb_stage": "ORB60"
       },
-      "order_id": "2034947088346779650",
-      "filled_price": 70532.9,
-      "timestamp": "2026-03-20T17:56:08.072217",
+      "order_id": "2034942055446220800",
+      "filled_price": 70388.7,
+      "timestamp": "2026-03-20T17:36:08.157055",
       "signal_type": "breakout_up",
       "symbol": "BTCUSDT",
       "side": "buy",
       "qty": 0.004,
-      "entry_price": 70532.9,
+      "entry_price": 70388.7,
       "pnl": 0,
       "risk_reward": 2.0
     },
     "trades": [
+      {
+        "action": "open",
+        "setup": {
+          "direction": "long",
+          "entry": 71160.4,
+          "stop_loss": 70448.796,
+          "tp1": 71872.004,
+          "tp1_5": 72227.806,
+          "tp2": 72583.608,
+          "tp3": 73295.212,
+          "risk_per_share": 711.604,
+          "shares": 0.004,
+          "position_value": 284.64,
+          "max_loss": 2.85,
+          "risk_amount": 10.0,
+          "risk_reward": 2.0,
+          "orb_stage": "ORB60"
+        },
+        "order_id": "2034908073056800768",
+        "filled_price": 71145.4,
+        "timestamp": "2026-03-20T15:21:06.085739",
+        "signal_type": "breakout_up",
+        "symbol": "BTCUSDT",
+        "side": "buy",
+        "qty": 0.004,
+        "entry_price": 71145.4,
+        "pnl": 0,
+        "risk_reward": 2.0
+      },
+      {
+        "action": "close",
+        "result": "sl_hit",
+        "symbol": "BTCUSDT",
+        "side": "sell",
+        "qty": 0.004,
+        "entry_price": 71160.4,
+        "exit_price": 71101.5,
+        "pnl": -0.24,
+        "risk_reward": 2.0,
+        "timestamp": "2026-03-20T15:33:06.018136",
+        "signal_type": "auto"
+      },
       {
         "action": "open",
         "setup": {
@@ -2297,116 +2339,58 @@
         "risk_reward": 2.0
       },
       {
+        "action": "open",
+        "setup": {
+          "direction": "long",
+          "entry": 70379.9,
+          "stop_loss": 69676.101,
+          "tp1": 71083.699,
+          "tp1_5": 71435.5985,
+          "tp2": 71787.498,
+          "tp3": 72491.297,
+          "risk_per_share": 703.799,
+          "shares": 0.004,
+          "position_value": 281.52,
+          "max_loss": 2.82,
+          "risk_amount": 10.0,
+          "risk_reward": 2.0,
+          "orb_stage": "ORB60"
+        },
+        "order_id": "2034942055446220800",
+        "filled_price": 70388.7,
+        "timestamp": "2026-03-20T17:36:08.157055",
+        "signal_type": "breakout_up",
+        "symbol": "BTCUSDT",
+        "side": "buy",
+        "qty": 0.004,
+        "entry_price": 70388.7,
+        "pnl": 0,
+        "risk_reward": 2.0
+      },
+      {
         "action": "close",
         "result": "sl_hit",
         "symbol": "BTCUSDT",
         "side": "sell",
         "qty": 0.004,
-        "entry_price": 70285.7,
-        "exit_price": 70524.9,
-        "pnl": 0.96,
+        "entry_price": 70379.9,
+        "exit_price": 70617.8,
+        "pnl": 0.95,
         "risk_reward": 2.0,
-        "timestamp": "2026-03-20T17:43:07.905586",
+        "timestamp": "2026-03-20T18:04:08.743122",
         "signal_type": "auto"
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70543.8,
-          "stop_loss": 69838.362,
-          "tp1": 71249.238,
-          "tp1_5": 71601.957,
-          "tp2": 71954.676,
-          "tp3": 72660.114,
-          "risk_per_share": 705.438,
-          "shares": 0.004,
-          "position_value": 282.18,
-          "max_loss": 2.82,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034944564688588802",
-        "filled_price": 70531.7,
-        "timestamp": "2026-03-20T17:46:06.405091",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70531.7,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70550.0,
-          "stop_loss": 69844.5,
-          "tp1": 71255.5,
-          "tp1_5": 71608.25,
-          "tp2": 71961.0,
-          "tp3": 72666.5,
-          "risk_per_share": 705.5,
-          "shares": 0.004,
-          "position_value": 282.2,
-          "max_loss": 2.82,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034945829841670144",
-        "filled_price": 70543.7,
-        "timestamp": "2026-03-20T17:51:08.022219",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70543.7,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70526.6,
-          "stop_loss": 69821.334,
-          "tp1": 71231.866,
-          "tp1_5": 71584.499,
-          "tp2": 71937.132,
-          "tp3": 72642.398,
-          "risk_per_share": 705.266,
-          "shares": 0.004,
-          "position_value": 282.11,
-          "max_loss": 2.82,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034947088346779650",
-        "filled_price": 70532.9,
-        "timestamp": "2026-03-20T17:56:08.072217",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70532.9,
-        "pnl": 0,
-        "risk_reward": 2.0
       }
     ],
     "stats": {
       "total_trades": 11,
       "winning": 4,
       "losing": 7,
-      "total_pnl": 0.96,
+      "total_pnl": 0.95,
       "win_rate": 36.4,
       "best_trade": 2.02,
       "worst_trade": -0.7
     },
-    "last_updated": "2026-03-20 18:00:08",
+    "last_updated": "2026-03-20 18:05:08",
     "orb_levels": {},
     "last_signal": null
   }
