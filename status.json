@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-03-20T12:55:09.222056+00:00",
-  "generated_at_vn": "2026-03-20 19:55:09",
+  "generated_at": "2026-03-20T13:00:09.191088+00:00",
+  "generated_at_vn": "2026-03-20 20:00:09",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "15d 6h 35m",
-    "uptime_seconds": 1319729,
+    "uptime": "15d 6h 40m",
+    "uptime_seconds": 1320029,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 8.89,
+      "used_gb": 8.88,
       "percent": 57.8
     },
     "disk": {
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 11.8,
+      "percent": 9.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -78,7 +78,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 331
+      "response_time_ms": 318
     },
     "openclaw": {
       "running": true
@@ -1294,10 +1294,6 @@
   ],
   "equity_history": [
     {
-      "ts": "2026-03-20T16:00:02.585982",
-      "equity": 9996.0889
-    },
-    {
       "ts": "2026-03-20T16:05:01.544806",
       "equity": 9992.153
     },
@@ -1484,19 +1480,13 @@
     {
       "ts": "2026-03-20T19:55:01.960751",
       "equity": 9980.3403
+    },
+    {
+      "ts": "2026-03-20T20:00:02.281927",
+      "equity": 9980.3403
     }
   ],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "    return runner.run(main)",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "           ^^^^^^^^^^^^^^^^",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "  File \"/usr/lib/python3.12/asyncio/runners.py\", line 118, in run",
@@ -1585,6 +1575,16 @@
     {
       "label": "FOREX",
       "text": "sqlite3.OperationalError: database is locked",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-20 20:00:09,559 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-20 20:00:09,559 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
@@ -1694,16 +1694,6 @@
     },
     {
       "label": "DASH",
-      "text": "   f99097c..820200d  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   820200d..c72531b  main -> main",
       "ts": ""
     },
@@ -1785,6 +1775,16 @@
     {
       "label": "DASH",
       "text": "   801f099..96c18f4  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   96c18f4..89d6bb7  main -> main",
       "ts": ""
     }
   ],
