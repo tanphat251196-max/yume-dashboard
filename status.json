@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-20T17:10:06.359930+00:00",
-  "generated_at_vn": "2026-03-21 00:10:06",
+  "generated_at": "2026-03-20T17:15:05.493977+00:00",
+  "generated_at_vn": "2026-03-21 00:15:05",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "15d 10h 50m",
-    "uptime_seconds": 1335026,
+    "uptime": "15d 10h 55m",
+    "uptime_seconds": 1335325,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 9.12,
-      "percent": 59.3
+      "used_gb": 8.98,
+      "percent": 58.4
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 23.5,
+      "percent": 16.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,10 +26,19 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 35m",
-      "last_run": "1h ago",
+      "next_run": "in 30m",
+      "last_run": "2h ago",
       "status": "error",
       "model": "claudible/claude-haiku-4.5"
+    },
+    {
+      "id": "2ba6fc94-3668-4722-82a2-3567446040e8",
+      "name": "auto-web-post",
+      "schedule": "unknown",
+      "next_run": "-",
+      "last_run": "-",
+      "status": "error",
+      "model": "claudible/claude-sonnet-4.6"
     },
     {
       "id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
@@ -53,8 +62,8 @@
       "id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
       "name": "x-engage-1",
       "schedule": "cron 45 7 * * * (exact)",
-      "next_run": "in 8h",
-      "last_run": "16h ago",
+      "next_run": "in 7h",
+      "last_run": "17h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
     },
@@ -71,8 +80,8 @@
       "id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
       "name": "commodity-update",
       "schedule": "cron 45 8 * * * (exact)",
-      "next_run": "in 9h",
-      "last_run": "15h ago",
+      "next_run": "in 8h",
+      "last_run": "16h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
     },
@@ -233,45 +242,17 @@
   "bingx_bot": {
     "running": true,
     "mode": "demo",
-    "balance": 9980.3403,
-    "equity": 9980.3403,
+    "balance": 0.0,
+    "equity": 0.0,
     "open_positions": 0,
-    "closed_trades": 13,
-    "winning_trades": 5,
-    "losing_trades": 8,
-    "total_pnl": 0.98,
-    "win_rate": 38.5,
-    "best_trade": 2.02,
-    "worst_trade": -0.7,
-    "current_trade": {
-      "action": "open",
-      "setup": {
-        "direction": "long",
-        "entry": 70729.9,
-        "stop_loss": 70022.601,
-        "tp1": 71437.199,
-        "tp1_5": 71790.8485,
-        "tp2": 72144.498,
-        "tp3": 72851.797,
-        "risk_per_share": 707.299,
-        "shares": 0.004,
-        "position_value": 282.92,
-        "max_loss": 2.83,
-        "risk_amount": 10.0,
-        "risk_reward": 2.0,
-        "orb_stage": "ORB60"
-      },
-      "order_id": "2034950866043146242",
-      "filled_price": 70750.9,
-      "timestamp": "2026-03-20T18:11:08.733407",
-      "signal_type": "breakout_up",
-      "symbol": "BTCUSDT",
-      "side": "buy",
-      "qty": 0.004,
-      "entry_price": 70750.9,
-      "pnl": 0,
-      "risk_reward": 2.0
-    },
+    "closed_trades": 0,
+    "winning_trades": 0,
+    "losing_trades": 0,
+    "total_pnl": 0.0,
+    "win_rate": 0.0,
+    "best_trade": 0.0,
+    "worst_trade": 0.0,
+    "current_trade": null,
     "error": null
   },
   "linux_cron": [
@@ -286,7 +267,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 461
+      "response_time_ms": 388
     },
     "openclaw": {
       "running": true
@@ -303,150 +284,6 @@
       "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
       "name": "x-engage-5",
       "status": "ok",
-      "ts": 1774020006.395989
-    },
-    {
-      "job_id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
-      "name": "x-post-news-3",
-      "status": "error",
-      "ts": 1774020006.395989
-    },
-    {
-      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "status": "ok",
-      "ts": 1774020006.395989
-    },
-    {
-      "job_id": "aa9e48fe-7215-4955-8091-1049db862b01",
-      "name": "x-post-analysis-pm",
-      "status": "error",
-      "ts": 1774020006.395989
-    },
-    {
-      "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
-      "name": "x-engage-6",
-      "status": "error",
-      "ts": 1774020006.395989
-    },
-    {
-      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "status": "error",
-      "ts": 1774020006.395989
-    },
-    {
-      "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-      "name": "weekly-economic-calendar",
-      "status": "error",
-      "ts": 1774020006.395989
-    },
-    {
-      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "status": "ok",
-      "ts": 1774020006.395989
-    },
-    {
-      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "status": "idle",
-      "ts": 1774020006.395989
-    },
-    {
-      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "status": "error",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
-      "name": "auto-web-post",
-      "status": "error",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "status": "ok",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
-      "name": "x-post-analysis-am",
-      "status": "ok",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
-      "name": "x-engage-1",
-      "status": "ok",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-      "name": "daily-news",
-      "status": "ok",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-      "name": "commodity-update",
-      "status": "ok",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
-      "name": "x-post-news-1",
-      "status": "error",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-      "name": "x-engage-2",
-      "status": "ok",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
-      "name": "x-post-insight-1",
-      "status": "ok",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
-      "name": "x-engage-3",
-      "status": "error",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
-      "name": "x-post-news-2",
-      "status": "error",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
-      "name": "x-engage-4",
-      "status": "error",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
-      "name": "x-post-insight-2",
-      "status": "ok",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "34cd789a-75a1-414f-ada7-f72817e76244",
-      "name": "x-post-thread",
-      "status": "ok",
-      "ts": 1774021205.802798
-    },
-    {
-      "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
-      "name": "x-engage-5",
-      "status": "ok",
       "ts": 1774021205.802798
     },
     {
@@ -1498,203 +1335,174 @@
       "name": "monthly-analysis",
       "status": "idle",
       "ts": 1774026606.358697
+    },
+    {
+      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "status": "error",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
+      "name": "auto-web-post",
+      "status": "error",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+      "name": "daily-analysis",
+      "status": "ok",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
+      "name": "x-post-analysis-am",
+      "status": "ok",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
+      "name": "x-engage-1",
+      "status": "ok",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
+      "name": "daily-news",
+      "status": "ok",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
+      "name": "commodity-update",
+      "status": "ok",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
+      "name": "x-post-news-1",
+      "status": "error",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
+      "name": "x-engage-2",
+      "status": "ok",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
+      "name": "x-post-insight-1",
+      "status": "ok",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
+      "name": "x-engage-3",
+      "status": "error",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
+      "name": "x-post-news-2",
+      "status": "error",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
+      "name": "x-engage-4",
+      "status": "error",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
+      "name": "x-post-insight-2",
+      "status": "ok",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "34cd789a-75a1-414f-ada7-f72817e76244",
+      "name": "x-post-thread",
+      "status": "ok",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
+      "name": "x-engage-5",
+      "status": "ok",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
+      "name": "x-post-news-3",
+      "status": "error",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+      "name": "crypto-education",
+      "status": "ok",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "aa9e48fe-7215-4955-8091-1049db862b01",
+      "name": "x-post-analysis-pm",
+      "status": "error",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
+      "name": "x-engage-6",
+      "status": "error",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+      "name": "weekly-leaderboard",
+      "status": "error",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
+      "name": "weekly-economic-calendar",
+      "status": "error",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+      "name": "weekly-analysis",
+      "status": "ok",
+      "ts": 1774026905.492767
+    },
+    {
+      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+      "name": "monthly-analysis",
+      "status": "idle",
+      "ts": 1774026905.492767
     }
   ],
-  "equity_history": [
-    {
-      "ts": "2026-03-20T20:15:02.100477",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T20:20:01.899315",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T20:25:01.688488",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T20:30:01.657530",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T20:35:02.041794",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T20:40:02.557422",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T20:45:02.955292",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T20:50:02.203094",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T20:55:01.901069",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T21:00:02.412191",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T21:05:01.620179",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T21:10:01.537756",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T21:15:02.463619",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T21:20:02.530308",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T21:25:02.451638",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T21:30:02.336971",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T21:35:02.780275",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T21:40:02.346996",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T21:45:01.721848",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T21:50:02.414869",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T21:55:01.620477",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T22:00:02.339799",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T22:05:02.022246",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T22:10:01.969193",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T22:15:01.670007",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T22:20:01.682410",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T22:25:02.426368",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T22:30:02.074664",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T22:35:01.740121",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T22:40:01.756065",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T22:45:02.295572",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T22:50:02.075562",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T22:55:01.769744",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T23:00:02.414798",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T23:05:01.800071",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T23:10:01.888048",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T23:15:02.654711",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T23:20:02.019415",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T23:25:01.982969",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T23:30:02.261500",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T23:35:02.920984",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T23:40:01.844472",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T23:45:02.352124",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T23:50:01.846895",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-20T23:55:01.651693",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-21T00:00:02.246931",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-21T00:05:02.093057",
-      "equity": 9980.3403
-    },
-    {
-      "ts": "2026-03-21T00:10:02.452671",
-      "equity": 9980.3403
-    }
-  ],
+  "equity_history": [],
   "recent_logs": [
+    {
+      "label": "FOREX",
+      "text": "    return runner.run(main)",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "           ^^^^^^^^^^^^^^^^",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "  File \"/usr/lib/python3.12/asyncio/runners.py\", line 118, in run",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "    return self._loop.run_until_complete(task)",
+      "ts": ""
+    },
     {
       "label": "FOREX",
       "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
@@ -1773,26 +1581,6 @@
     {
       "label": "FOREX",
       "text": "sqlite3.OperationalError: database is locked",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-21 00:10:01,824 INFO Connecting to 91.108.56.199:443/TcpFull...",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-21 00:10:01,824 INFO Connecting to 91.108.56.199:443/TcpFull...",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-21 00:10:03,889 INFO Connection to 91.108.56.199:443/TcpFull complete!",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-21 00:10:03,889 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
@@ -1902,16 +1690,6 @@
     },
     {
       "label": "DASH",
-      "text": "   241c5a6..4146471  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   4146471..2e80a92  main -> main",
       "ts": ""
     },
@@ -1994,6 +1772,16 @@
       "label": "DASH",
       "text": "   769fa2a..08227d4  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   08227d4..88e9862  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -2069,517 +1857,20 @@
     ]
   },
   "orb_trade": {
-    "mode": "demo",
-    "symbol": "BTC/USDT:USDT",
+    "mode": "paper",
+    "symbol": "BTC/USDT",
     "interval": "5m",
-    "account_size": 10000.0,
-    "current_trade": {
-      "action": "open",
-      "setup": {
-        "direction": "long",
-        "entry": 70729.9,
-        "stop_loss": 70022.601,
-        "tp1": 71437.199,
-        "tp1_5": 71790.8485,
-        "tp2": 72144.498,
-        "tp3": 72851.797,
-        "risk_per_share": 707.299,
-        "shares": 0.004,
-        "position_value": 282.92,
-        "max_loss": 2.83,
-        "risk_amount": 10.0,
-        "risk_reward": 2.0,
-        "orb_stage": "ORB60"
-      },
-      "order_id": "2034950866043146242",
-      "filled_price": 70750.9,
-      "timestamp": "2026-03-20T18:11:08.733407",
-      "signal_type": "breakout_up",
-      "symbol": "BTCUSDT",
-      "side": "buy",
-      "qty": 0.004,
-      "entry_price": 70750.9,
-      "pnl": 0,
-      "risk_reward": 2.0
-    },
-    "trades": [
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 71050.0,
-          "stop_loss": 70339.5,
-          "tp1": 71760.5,
-          "tp1_5": 72115.75,
-          "tp2": 72471.0,
-          "tp3": 73181.5,
-          "risk_per_share": 710.5,
-          "shares": 0.004,
-          "position_value": 284.2,
-          "max_loss": 2.84,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034916881745317896",
-        "filled_price": 71036.6,
-        "timestamp": "2026-03-20T15:56:06.198356",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 71036.6,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "close",
-        "result": "sl_hit",
-        "symbol": "BTCUSDT",
-        "side": "sell",
-        "qty": 0.004,
-        "entry_price": 71050.0,
-        "exit_price": 70874.5,
-        "pnl": -0.7,
-        "risk_reward": 2.0,
-        "timestamp": "2026-03-20T16:08:06.256661",
-        "signal_type": "auto"
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70867.4,
-          "stop_loss": 70158.726,
-          "tp1": 71576.074,
-          "tp1_5": 71930.411,
-          "tp2": 72284.748,
-          "tp3": 72993.422,
-          "risk_per_share": 708.674,
-          "shares": 0.004,
-          "position_value": 283.47,
-          "max_loss": 2.83,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034920657399058432",
-        "filled_price": 70864.8,
-        "timestamp": "2026-03-20T16:11:06.367372",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70864.8,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70769.6,
-          "stop_loss": 70061.904,
-          "tp1": 71477.296,
-          "tp1_5": 71831.144,
-          "tp2": 72184.992,
-          "tp3": 72892.688,
-          "risk_per_share": 707.696,
-          "shares": 0.004,
-          "position_value": 283.08,
-          "max_loss": 2.83,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034921915329548288",
-        "filled_price": 70766.5,
-        "timestamp": "2026-03-20T16:16:06.279888",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70766.5,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "close",
-        "result": "sl_hit",
-        "symbol": "BTCUSDT",
-        "side": "sell",
-        "qty": 0.004,
-        "entry_price": 70769.6,
-        "exit_price": 70620.1,
-        "pnl": -0.6,
-        "risk_reward": 2.0,
-        "timestamp": "2026-03-20T16:33:06.638416",
-        "signal_type": "auto"
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70606.1,
-          "stop_loss": 69900.039,
-          "tp1": 71312.161,
-          "tp1_5": 71665.1915,
-          "tp2": 72018.222,
-          "tp3": 72724.283,
-          "risk_per_share": 706.061,
-          "shares": 0.004,
-          "position_value": 282.42,
-          "max_loss": 2.82,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034928961718325248",
-        "filled_price": 70605.4,
-        "timestamp": "2026-03-20T16:44:06.363103",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70605.4,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70572.1,
-          "stop_loss": 69866.379,
-          "tp1": 71277.821,
-          "tp1_5": 71630.6815,
-          "tp2": 71983.542,
-          "tp3": 72689.263,
-          "risk_per_share": 705.721,
-          "shares": 0.004,
-          "position_value": 282.29,
-          "max_loss": 2.82,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034929469031976960",
-        "filled_price": 70562.4,
-        "timestamp": "2026-03-20T16:46:07.324185",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70562.4,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "close",
-        "result": "sl_hit",
-        "symbol": "BTCUSDT",
-        "side": "sell",
-        "qty": 0.004,
-        "entry_price": 70572.1,
-        "exit_price": 70441.7,
-        "pnl": -0.52,
-        "risk_reward": 2.0,
-        "timestamp": "2026-03-20T17:04:07.401469",
-        "signal_type": "auto"
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70476.7,
-          "stop_loss": 69771.933,
-          "tp1": 71181.467,
-          "tp1_5": 71533.8505,
-          "tp2": 71886.234,
-          "tp3": 72591.001,
-          "risk_per_share": 704.767,
-          "shares": 0.004,
-          "position_value": 281.91,
-          "max_loss": 2.82,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034934504134545408",
-        "filled_price": 70467.8,
-        "timestamp": "2026-03-20T17:06:07.825534",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70467.8,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "close",
-        "result": "sl_hit",
-        "symbol": "BTCUSDT",
-        "side": "sell",
-        "qty": 0.004,
-        "entry_price": 70476.7,
-        "exit_price": 70400.4,
-        "pnl": -0.31,
-        "risk_reward": 2.0,
-        "timestamp": "2026-03-20T17:18:07.672922",
-        "signal_type": "auto"
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70232.4,
-          "stop_loss": 69530.076,
-          "tp1": 70934.724,
-          "tp1_5": 71285.886,
-          "tp2": 71637.048,
-          "tp3": 72339.372,
-          "risk_per_share": 702.324,
-          "shares": 0.004,
-          "position_value": 280.93,
-          "max_loss": 2.81,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034938276609003520",
-        "filled_price": 70242.5,
-        "timestamp": "2026-03-20T17:21:07.289623",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70242.5,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70281.6,
-          "stop_loss": 69578.784,
-          "tp1": 70984.416,
-          "tp1_5": 71335.824,
-          "tp2": 71687.232,
-          "tp3": 72390.048,
-          "risk_per_share": 702.816,
-          "shares": 0.004,
-          "position_value": 281.13,
-          "max_loss": 2.81,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034939538142400512",
-        "filled_price": 70295.2,
-        "timestamp": "2026-03-20T17:26:08.012830",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70295.2,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70285.7,
-          "stop_loss": 69582.843,
-          "tp1": 70988.557,
-          "tp1_5": 71339.9855,
-          "tp2": 71691.414,
-          "tp3": 72394.271,
-          "risk_per_share": 702.857,
-          "shares": 0.004,
-          "position_value": 281.14,
-          "max_loss": 2.81,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034940793656971264",
-        "filled_price": 70312.4,
-        "timestamp": "2026-03-20T17:31:07.331750",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70312.4,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "close",
-        "result": "sl_hit",
-        "symbol": "BTCUSDT",
-        "side": "sell",
-        "qty": 0.004,
-        "entry_price": 70285.7,
-        "exit_price": 70524.9,
-        "pnl": 0.96,
-        "risk_reward": 2.0,
-        "timestamp": "2026-03-20T17:43:07.905586",
-        "signal_type": "auto"
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70543.8,
-          "stop_loss": 69838.362,
-          "tp1": 71249.238,
-          "tp1_5": 71601.957,
-          "tp2": 71954.676,
-          "tp3": 72660.114,
-          "risk_per_share": 705.438,
-          "shares": 0.004,
-          "position_value": 282.18,
-          "max_loss": 2.82,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034944564688588802",
-        "filled_price": 70531.7,
-        "timestamp": "2026-03-20T17:46:06.405091",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70531.7,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70550.0,
-          "stop_loss": 69844.5,
-          "tp1": 71255.5,
-          "tp1_5": 71608.25,
-          "tp2": 71961.0,
-          "tp3": 72666.5,
-          "risk_per_share": 705.5,
-          "shares": 0.004,
-          "position_value": 282.2,
-          "max_loss": 2.82,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034945829841670144",
-        "filled_price": 70543.7,
-        "timestamp": "2026-03-20T17:51:08.022219",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70543.7,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70526.6,
-          "stop_loss": 69821.334,
-          "tp1": 71231.866,
-          "tp1_5": 71584.499,
-          "tp2": 71937.132,
-          "tp3": 72642.398,
-          "risk_per_share": 705.266,
-          "shares": 0.004,
-          "position_value": 282.11,
-          "max_loss": 2.82,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034947088346779650",
-        "filled_price": 70532.9,
-        "timestamp": "2026-03-20T17:56:08.072217",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70532.9,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "close",
-        "result": "sl_hit",
-        "symbol": "BTCUSDT",
-        "side": "sell",
-        "qty": 0.004,
-        "entry_price": 70526.6,
-        "exit_price": 70686.1,
-        "pnl": 0.64,
-        "risk_reward": 2.0,
-        "timestamp": "2026-03-20T18:08:07.842185",
-        "signal_type": "auto"
-      },
-      {
-        "action": "open",
-        "setup": {
-          "direction": "long",
-          "entry": 70729.9,
-          "stop_loss": 70022.601,
-          "tp1": 71437.199,
-          "tp1_5": 71790.8485,
-          "tp2": 72144.498,
-          "tp3": 72851.797,
-          "risk_per_share": 707.299,
-          "shares": 0.004,
-          "position_value": 282.92,
-          "max_loss": 2.83,
-          "risk_amount": 10.0,
-          "risk_reward": 2.0,
-          "orb_stage": "ORB60"
-        },
-        "order_id": "2034950866043146242",
-        "filled_price": 70750.9,
-        "timestamp": "2026-03-20T18:11:08.733407",
-        "signal_type": "breakout_up",
-        "symbol": "BTCUSDT",
-        "side": "buy",
-        "qty": 0.004,
-        "entry_price": 70750.9,
-        "pnl": 0,
-        "risk_reward": 2.0
-      },
-      {
-        "action": "close",
-        "result": "sl_hit",
-        "symbol": "BTCUSDT",
-        "side": "sell",
-        "qty": 0.004,
-        "entry_price": 70729.9,
-        "exit_price": 70575.2,
-        "pnl": -0.62,
-        "risk_reward": 2.0,
-        "timestamp": "2026-03-20T18:37:08.423213",
-        "signal_type": "auto"
-      }
-    ],
+    "account_size": 1000,
+    "current_trade": null,
+    "trades": [],
     "stats": {
-      "total_trades": 13,
-      "winning": 5,
-      "losing": 8,
-      "total_pnl": 0.98,
-      "win_rate": 38.5,
-      "best_trade": 2.02,
-      "worst_trade": -0.7
+      "total_trades": 0,
+      "winning": 0,
+      "losing": 0,
+      "total_pnl": 0.0,
+      "win_rate": 0.0,
+      "best_trade": 0.0,
+      "worst_trade": 0.0
     },
     "last_updated": "--",
     "orb_levels": {},
