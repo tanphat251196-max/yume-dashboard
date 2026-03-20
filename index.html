@@ -552,6 +552,9 @@
       <div class="nav-item" onclick="switchTab('telegram', this)">
         <span class="arrow">▸</span> TELEGRAM
       </div>
+      <div class="nav-item" onclick="switchTab('orb', this)">
+        <span class="arrow">▸</span> ORB TRADE
+      </div>
       <div class="nav-item" onclick="switchTab('logs', this)">
         <span class="arrow">▸</span> <span data-i18n="nav-logs">NHẬT KÝ</span>
       </div>
@@ -674,6 +677,30 @@
         </table>
       </div>
       <div class="tg-card-list" id="tg-channels-cards"></div>
+    </div>
+
+    <!-- TAB: ORB TRADE -->
+    <div class="tab-content" id="tab-orb">
+      <div class="section-header">// PAPER TRADE — TRẠNG THÁI</div>
+      <div id="orb-status-cards" style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px"></div>
+
+      <div class="section-header">// VỊ THẾ ĐANG MỞ</div>
+      <div id="orb-current-trade" style="margin-bottom:20px"></div>
+
+      <div class="section-header">// LỊCH SỬ GIAO DỊCH (20 lệnh gần nhất)</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Thời gian</th>
+            <th>Chiều</th>
+            <th>Giá vào</th>
+            <th>Giá ra</th>
+            <th>Kết quả</th>
+            <th style="text-align:right">P&amp;L</th>
+          </tr>
+        </thead>
+        <tbody id="orb-trades-table"></tbody>
+      </table>
     </div>
 
     <!-- TAB: LOGS -->
@@ -964,6 +991,92 @@ function renderTelegram(tg) {
   buildRows((tg || {}).channels, 'tg-channels-table', 'tg-channels-cards', 'subscribers');
 }
 
+function renderORB(orb) {
+  if (!orb) return;
+  const s = orb.stats || {};
+
+  // Status cards
+  const pnlColor = s.total_pnl >= 0 ? 'var(--green)' : 'var(--red)';
+  document.getElementById('orb-status-cards').innerHTML = `
+    <div class="stat-card">
+      <div class="stat-label">MODE</div>
+      <div class="stat-value" style="color:var(--cyan)">${(orb.mode||'paper').toUpperCase()}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">TỔNG LỆNH</div>
+      <div class="stat-value">${s.total_trades||0}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">WIN RATE</div>
+      <div class="stat-value" style="color:var(--green)">${s.win_rate||0}%</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">TỔNG P&L</div>
+      <div class="stat-value" style="color:${pnlColor}">${s.total_pnl >= 0 ? '+' : ''}$${s.total_pnl||0}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">THẮNG / THUA</div>
+      <div class="stat-value"><span style="color:var(--green)">${s.winning||0}</span> / <span style="color:var(--red)">${s.losing||0}</span></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">LỆNH TỐT NHẤT</div>
+      <div class="stat-value" style="color:var(--green)">+$${s.best_trade||0}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">LỆNH TỆ NHẤT</div>
+      <div class="stat-value" style="color:var(--red)">$${s.worst_trade||0}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">CẬP NHẬT</div>
+      <div class="stat-value" style="font-size:10px;color:var(--green-dim)">${orb.last_updated||'--'}</div>
+    </div>
+  `;
+
+  // Current open trade
+  const ct = orb.current_trade;
+  const ctEl = document.getElementById('orb-current-trade');
+  if (ct) {
+    const sideColor = ct.side === 'buy' ? 'var(--green)' : 'var(--red)';
+    const sideIcon = ct.side === 'buy' ? '🔼 LONG' : '🔽 SHORT';
+    ctEl.innerHTML = `
+      <div style="border:1px solid var(--green);padding:12px;font-family:var(--font)">
+        <span style="color:${sideColor};font-size:14px;font-weight:bold">${sideIcon}</span>
+        <span style="color:var(--green-dim);margin-left:20px">${ct.symbol||orb.symbol}</span>
+        <div style="margin-top:8px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px">
+          <div><div style="color:var(--green-dim);font-size:10px">GIÁ VÀO</div><div style="color:var(--text)">$${ct.entry_price||'--'}</div></div>
+          <div><div style="color:var(--green-dim);font-size:10px">ORB STAGE</div><div style="color:var(--cyan)">${ct.orb_stage||'--'}</div></div>
+          <div><div style="color:var(--green-dim);font-size:10px">SỐ LƯỢNG</div><div style="color:var(--text)">${ct.qty||'--'}</div></div>
+          <div><div style="color:var(--green-dim);font-size:10px">THỜI GIAN</div><div style="color:var(--text);font-size:10px">${(ct.timestamp||'').slice(0,16)}</div></div>
+        </div>
+      </div>`;
+  } else {
+    ctEl.innerHTML = '<div style="color:var(--green-dim);padding:10px">Không có vị thế đang mở</div>';
+  }
+
+  // Trade history table
+  const trades = (orb.trades || []).filter(t => t.action === 'close').reverse();
+  const tbody = document.getElementById('orb-trades-table');
+  if (!trades.length) {
+    tbody.innerHTML = '<tr><td colspan="6" style="color:var(--green-dim)">Chưa có lệnh đóng</td></tr>';
+    return;
+  }
+  tbody.innerHTML = trades.map(t => {
+    const pnl = t.pnl || 0;
+    const pnlColor = pnl >= 0 ? 'var(--green)' : 'var(--red)';
+    const pnlStr = (pnl >= 0 ? '+' : '') + '$' + pnl.toFixed(2);
+    const sideColor = t.side === 'buy' ? 'var(--green)' : 'var(--red)';
+    const resultIcon = t.result === 'sl_hit' ? '❌ SL' : t.result === 'tp1_hit' ? '✅ TP1' : t.result === 'tp2_hit' ? '✅ TP2' : t.result === 'tp3_hit' ? '✅ TP3' : t.result || '--';
+    return `<tr>
+      <td style="font-size:10px">${(t.timestamp||'').slice(0,16)}</td>
+      <td style="color:${sideColor}">${t.side==='buy'?'🔼 LONG':'🔽 SHORT'}</td>
+      <td>$${(t.entry_price||0).toFixed(2)}</td>
+      <td>$${(t.exit_price||0).toFixed(2)}</td>
+      <td>${resultIcon}</td>
+      <td style="text-align:right;color:${pnlColor};font-weight:bold">${pnlStr}</td>
+    </tr>`;
+  }).join('');
+}
+
 function clearLogs() {
   const box = document.getElementById('log-box');
   box.innerHTML = '<div style="color:var(--green-dim);font-size:11px">Đã xóa. Nhấn làm mới để tải lại.</div>';
@@ -1205,6 +1318,7 @@ function renderAll(d) {
   renderSparkline(d.equity_history);
   renderLogs(d.recent_logs);
   renderTelegram(d.telegram);
+  renderORB(d.orb_trade);
 }
 
 function loadData(retries = 3) {
