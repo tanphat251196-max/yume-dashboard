@@ -541,7 +541,7 @@
         <span class="arrow">▸</span> <span data-i18n="nav-cron">TÁC VỤ CRON</span> <span id="cron-badge"></span>
       </div>
       <div class="nav-item" onclick="switchTab('bingx', this)">
-        <span class="arrow">▸</span> <span data-i18n="nav-bingx">BOT BINGX</span>
+        <span class="arrow">▸</span> <span data-i18n="nav-bingx">ORB TRADER</span>
       </div>
       <div class="nav-item" onclick="switchTab('forex', this)">
         <span class="arrow">▸</span> <span data-i18n="nav-forex">NGOẠI HỐI</span>
@@ -622,10 +622,17 @@
       </div>
     </div>
 
-    <!-- TAB: BINGX -->
+    <!-- TAB: BINGX / ORB TRADER -->
     <div class="tab-content" id="tab-bingx">
-      <div class="section-header">// <span data-i18n="positions-title">BOT BINGX — VỊ THẾ ĐANG MỞ</span></div>
+      <div class="section-header">// <span data-i18n="positions-title">ORB TRADER — BINGX DEMO</span></div>
+
+      <!-- Status + key cards -->
       <div class="bingx-stats-5" id="bingx-cards"></div>
+
+      <!-- Current open trade -->
+      <div id="orb-current-trade-bingx" style="margin-bottom:20px"></div>
+
+      <!-- Open positions table -->
       <table>
         <thead>
           <tr><th data-i18n="th-symbol">Symbol</th><th data-i18n="th-side">Chiều</th><th data-i18n="th-size">Khối lượng</th><th data-i18n="th-entry">Giá vào</th><th data-i18n="th-pnl">Lãi/Lỗ</th></tr>
@@ -726,7 +733,7 @@ let currentLang = 'vi';
 // ── i18n ──
 const i18n = {
   en: {
-    'nav-system': 'SYSTEM', 'nav-cron': 'TÁC VỤ CRON', 'nav-bingx': 'BINGX BOT',
+    'nav-system': 'SYSTEM', 'nav-cron': 'TÁC VỤ CRON', 'nav-bingx': 'ORB TRADER',
     'nav-forex': 'FOREX', 'nav-model': 'MODEL CFG', 'nav-logs': 'LOGS',
     'svc-title': '// DỊCH VỤ', 'subtitle': '// TRẠNG THÁI HỆ THỐNG',
     'cron-label': 'TÁC VỤ CRON', 'svc-label': 'DỊCH VỤ',
@@ -741,10 +748,10 @@ const i18n = {
     'th-symbol': 'Symbol', 'th-side': 'Side', 'th-size': 'Size',
     'th-entry': 'Entry Price', 'th-pnl': 'Unrealized PnL',
     // section headers
-    'bingx-summary-title': 'BINGX SUMMARY',
+    'bingx-summary-title': 'ORB TRADER SUMMARY',
     'cron-title': 'CRON JOB STATUS',
     'heatmap-title': 'RUN HISTORY (24H)',
-    'positions-title': 'BOT BINGX — VỊ THẾ ĐANG MỞ',
+    'positions-title': 'ORB TRADER — BINGX DEMO',
     'sparkline-title': 'EQUITY SPARKLINE',
     'forex-title': 'FOREX REALTIME — THEO DÕI NGOẠI HỐI',
     'model-title': 'MODEL CONFIG — TÁC VỤ CRON',
@@ -758,7 +765,7 @@ const i18n = {
     'mode': 'Mode',
   },
   vi: {
-    'nav-system': 'HỆ THỐNG', 'nav-cron': 'TÁC VỤ CRON', 'nav-bingx': 'BOT BINGX',
+    'nav-system': 'HỆ THỐNG', 'nav-cron': 'TÁC VỤ CRON', 'nav-bingx': 'ORB TRADER',
     'nav-forex': 'NGOẠI HỐI', 'nav-model': 'CẤU HÌNH MODEL', 'nav-logs': 'NHẬT KÝ',
     'svc-title': '// DỊCH VỤ', 'subtitle': '// TRẠNG THÁI HỆ THỐNG',
     'cron-label': 'TÁC VỤ CRON', 'svc-label': 'DỊCH VỤ',
@@ -773,10 +780,10 @@ const i18n = {
     'th-symbol': 'Cặp tiền', 'th-side': 'Chiều', 'th-size': 'Khối lượng',
     'th-entry': 'Giá vào', 'th-pnl': 'Lãi/lỗ',
     // section headers
-    'bingx-summary-title': 'TÓM TẮT BINGX',
+    'bingx-summary-title': 'TÓM TẮT ORB TRADER',
     'cron-title': 'TRẠNG THÁI TÁC VỤ CRON',
     'heatmap-title': 'LỊCH SỬ CHẠY (24H)',
-    'positions-title': 'BOT BINGX — VỊ THẾ ĐANG MỞ',
+    'positions-title': 'ORB TRADER — BINGX DEMO',
     'sparkline-title': 'BIỂU ĐỒ VỐN',
     'forex-title': 'THEO DÕI FOREX — REALTIME',
     'model-title': 'CẤU HÌNH MODEL — TÁC VỤ CRON',
@@ -1189,50 +1196,86 @@ function renderSystem(d) {
 
 function renderBingXSummary(bingx, containerId) {
   const b = bingx || {};
-  const pnl = b.unrealized_pnl || 0;
-  const pnlClass = pnl >= 0 ? 'pnl-pos' : 'pnl-neg';
-  const pnlSign = pnl >= 0 ? '+' : '';
 
-  // Base 4 cards (used on system tab summary & bingx tab)
-  const card4 = `
+  // Support both old field names (win_trades/loss_trades) and new (winning_trades/losing_trades)
+  const winTrades = b.winning_trades !== undefined ? b.winning_trades : (b.win_trades || 0);
+  const lossTrades = b.losing_trades !== undefined ? b.losing_trades : (b.loss_trades || 0);
+  const totalPnl = b.total_pnl || 0;
+  const winRate = b.win_rate || 0;
+  const isRunning = b.running === true;
+
+  // Status card
+  const statusCard = `
     <div class="card">
-      <div class="card-label">${t('balance')}</div>
-      <div class="card-value" style="font-size:18px">$${(b.balance||0).toFixed(2)}</div>
-      <div class="card-sub">${t('mode')}: ${(b.mode||'--').toUpperCase()}</div>
-    </div>
-    <div class="card">
-      <div class="card-label">${t('equity')}</div>
-      <div class="card-value" style="font-size:18px">$${(b.equity||0).toFixed(2)}</div>
-      <div class="card-sub">Available: $${(b.available||0).toFixed(2)}</div>
-    </div>
-    <div class="card">
-      <div class="card-label">${t('pnl')}</div>
-      <div class="card-value ${pnlClass}" style="font-size:18px">${pnlSign}$${pnl.toFixed(2)}</div>
-      <div class="card-sub">Open: ${b.open_positions||0} positions</div>
-    </div>
-    <div class="card">
-      <div class="card-label">${t('winrate')}</div>
-      <div class="card-value" style="font-size:18px">${(b.win_rate||0).toFixed(1)}<span style="font-size:14px">%</span></div>
-      <div class="card-sub">W:${b.win_trades||0} / L:${b.loss_trades||0}</div>
+      <div class="card-label">ĐANG CHẠY</div>
+      <div class="card-value" style="font-size:20px">${isRunning ? '✅' : '❌'}</div>
+      <div class="card-sub" style="color:${isRunning ? 'var(--green)' : 'var(--red)'}">
+        ${isRunning ? 'RUNNING' : 'STOPPED'} · ${(b.mode || 'demo').toUpperCase()}
+      </div>
     </div>
   `;
 
-  // 5th card: Total PnL — only for bingx-cards container
-  const totalPnl = b.total_pnl || 0;
-  const avgPnl = b.avg_pnl || 0;
+  // Balance card
+  const balCard = `
+    <div class="card">
+      <div class="card-label">BALANCE DEMO</div>
+      <div class="card-value" style="font-size:18px">$${(b.balance||0).toFixed(2)}</div>
+      <div class="card-sub">Equity: $${(b.equity||0).toFixed(2)}</div>
+    </div>
+  `;
+
+  // Open positions card
+  const posCard = `
+    <div class="card">
+      <div class="card-label">VỊ THẾ MỞ</div>
+      <div class="card-value" style="font-size:24px">${b.open_positions || 0}</div>
+      <div class="card-sub">Closed: ${b.closed_trades || 0} lệnh</div>
+    </div>
+  `;
+
+  // Win rate card
+  const wrCard = `
+    <div class="card">
+      <div class="card-label">${t('winrate')}</div>
+      <div class="card-value" style="font-size:18px">${winRate.toFixed(1)}<span style="font-size:14px">%</span></div>
+      <div class="card-sub">W:${winTrades} / L:${lossTrades}</div>
+    </div>
+  `;
+
+  // Total PnL card (5th card for bingx-cards container, or summary)
   const totalPnlClass = totalPnl >= 0 ? 'pnl-pos' : 'pnl-neg';
   const totalPnlSign = totalPnl >= 0 ? '+' : '';
-  const avgPnlClass = avgPnl >= 0 ? 'pnl-pos' : 'pnl-neg';
-  const avgPnlSign = avgPnl >= 0 ? '+' : '';
-  const card5 = containerId === 'bingx-cards' ? `
+  const bestTrade = b.best_trade || 0;
+  const worstTrade = b.worst_trade || 0;
+  const pnlCard = `
     <div class="card">
       <div class="card-label">TỔNG PnL</div>
-      <div class="card-value ${totalPnlClass}" style="font-size:18px">${totalPnlSign}$${totalPnl.toFixed(4)}</div>
-      <div class="card-sub ${avgPnlClass}">TB/lệnh: ${avgPnlSign}$${avgPnl.toFixed(4)}</div>
+      <div class="card-value ${totalPnlClass}" style="font-size:18px">${totalPnlSign}$${totalPnl.toFixed(2)}</div>
+      <div class="card-sub">Best: +$${bestTrade.toFixed(2)} / Worst: $${worstTrade.toFixed(2)}</div>
     </div>
-  ` : '';
+  `;
 
-  document.getElementById(containerId).innerHTML = card4 + card5;
+  if (containerId === 'bingx-cards') {
+    document.getElementById(containerId).innerHTML = statusCard + balCard + posCard + wrCard + pnlCard;
+    // Also render current trade info
+    const ctEl = document.getElementById('orb-current-trade-bingx');
+    if (ctEl) {
+      if (b.current_trade) {
+        const ct = b.current_trade;
+        ctEl.innerHTML = `<div style="padding:8px;border:1px solid var(--green-dim);font-size:12px;color:var(--green)">
+          <strong style="color:var(--green)">📊 VỊ THẾ ĐANG MỞ:</strong>
+          ${ct.symbol || '--'} · ${ct.side || ct.direction || '--'} ·
+          Entry: $${ct.entry_price || ct.price || '--'} ·
+          ${ct.timestamp ? new Date(ct.timestamp).toLocaleString('vi-VN') : ''}
+        </div>`;
+      } else {
+        ctEl.innerHTML = `<div style="color:var(--green-dim);font-size:11px;padding:4px">Không có vị thế đang mở</div>`;
+      }
+    }
+  } else {
+    // summary container: show 4 cards (bal, equity→pos, pnl, winrate)
+    document.getElementById(containerId).innerHTML = balCard + posCard + wrCard + pnlCard;
+  }
 }
 
 // ── Feature 1: renderCron with error badge ──
