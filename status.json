@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-20T09:45:08.408048+00:00",
-  "generated_at_vn": "2026-03-20 16:45:08",
+  "generated_at": "2026-03-20T09:50:07.730293+00:00",
+  "generated_at_vn": "2026-03-20 16:50:07",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "15d 3h 25m",
-    "uptime_seconds": 1308328,
+    "uptime": "15d 3h 30m",
+    "uptime_seconds": 1308627,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 7.05,
-      "percent": 45.9
+      "used_gb": 7.1,
+      "percent": 46.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 33.2,
+      "percent": 32.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -25,14 +25,14 @@
   "bingx_bot": {
     "running": true,
     "mode": "demo",
-    "balance": 9223.481,
-    "equity": 9960.6039,
+    "balance": 9189.9737,
+    "equity": 9955.3216,
     "open_positions": 1,
-    "closed_trades": 8,
+    "closed_trades": 9,
     "winning_trades": 3,
-    "losing_trades": 5,
-    "total_pnl": 0.83,
-    "win_rate": 37.5,
+    "losing_trades": 6,
+    "total_pnl": 0.42,
+    "win_rate": 33.3,
     "best_trade": 2.02,
     "worst_trade": -0.7,
     "current_trade": {
@@ -79,7 +79,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 380
+      "response_time_ms": 337
     },
     "openclaw": {
       "running": true
@@ -1295,10 +1295,6 @@
   ],
   "equity_history": [
     {
-      "ts": "2026-03-20T13:00:02.105746",
-      "equity": 9999.5077
-    },
-    {
       "ts": "2026-03-20T13:05:01.782956",
       "equity": 9999.5207
     },
@@ -1485,6 +1481,10 @@
     {
       "ts": "2026-03-20T16:45:02.593520",
       "equity": 9960.6039
+    },
+    {
+      "ts": "2026-03-20T16:50:01.856806",
+      "equity": 9955.3216
     }
   ],
   "recent_logs": [
@@ -1695,16 +1695,6 @@
     },
     {
       "label": "DASH",
-      "text": "   24e9e4b..9425a38  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   9425a38..38bf0ac  main -> main",
       "ts": ""
     },
@@ -1786,6 +1776,16 @@
     {
       "label": "DASH",
       "text": "   693ebe6..2b314b4  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   2b314b4..78b0be6  main -> main",
       "ts": ""
     }
   ],
@@ -1896,19 +1896,6 @@
       "risk_reward": 2.0
     },
     "trades": [
-      {
-        "action": "close",
-        "result": "sl_hit",
-        "symbol": "BTCUSDT",
-        "side": "sell",
-        "qty": 0.004,
-        "entry_price": 70299.9,
-        "exit_price": 70439.2,
-        "pnl": 0.56,
-        "risk_reward": 2.0,
-        "timestamp": "2026-03-20T14:23:06.400311",
-        "signal_type": "auto"
-      },
       {
         "action": "open",
         "setup": {
@@ -2395,18 +2382,31 @@
         "entry_price": 70605.4,
         "pnl": 0,
         "risk_reward": 2.0
+      },
+      {
+        "action": "close",
+        "result": "sl_hit",
+        "symbol": "BTCUSDT",
+        "side": "sell",
+        "qty": 0.004,
+        "entry_price": 70606.1,
+        "exit_price": 70504.8,
+        "pnl": -0.41,
+        "risk_reward": 2.0,
+        "timestamp": "2026-03-20T16:48:05.909411",
+        "signal_type": "auto"
       }
     ],
     "stats": {
-      "total_trades": 8,
+      "total_trades": 9,
       "winning": 3,
-      "losing": 5,
-      "total_pnl": 0.83,
-      "win_rate": 37.5,
+      "losing": 6,
+      "total_pnl": 0.42,
+      "win_rate": 33.3,
       "best_trade": 2.02,
       "worst_trade": -0.7
     },
-    "last_updated": "2026-03-20 16:45:07",
+    "last_updated": "2026-03-20 16:50:06",
     "orb_levels": {},
     "last_signal": null
   }
