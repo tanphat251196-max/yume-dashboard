@@ -1218,25 +1218,6 @@ function renderLinuxCron(entries) {
   }).join('');
 }
 
-function renderPositions(bingx) {
-  const tbody = document.getElementById('positions-table');
-  if (!tbody) return;
-  const pos = (bingx || {}).positions_detail || [];
-  if (!pos.length) { tbody.innerHTML = '<tr><td colspan="5" style="color:var(--green-dim)">Không có vị thế đang mở</td></tr>'; return; }
-  tbody.innerHTML = pos.map(p => {
-    const pnl = parseFloat(p.unrealized_pnl || 0);
-    const pc = pnl >= 0 ? 'pnl-pos' : 'pnl-neg';
-    const ps = pnl >= 0 ? '+' : '';
-    const sc = p.side === 'LONG' ? 'side-long' : 'side-short';
-    return `<tr>
-      <td>${p.symbol}</td>
-      <td class="${sc}">${p.side}</td>
-      <td>${p.size}</td>
-      <td>$${p.entry_price}</td>
-      <td class="${pc}">${ps}$${pnl.toFixed(4)}</td>
-    </tr>`;
-  }).join('');
-}
 
 function renderForex(services) {
   const fl = (services || {}).forex_listener || {};
@@ -1265,7 +1246,6 @@ function renderAll(d) {
   renderCronHeatmap(d.cron_history, d.openclaw_cron);
   renderLinuxCron(d.linux_cron);
   renderBingXSummary(d.bingx_bot, 'bingx-cards');
-  renderPositions(d.bingx_bot);
   renderForex(d.services);
   renderModelConfig(d.openclaw_cron);
   renderSparkline(d.equity_history);
