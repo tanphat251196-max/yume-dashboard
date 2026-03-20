@@ -874,6 +874,7 @@ function renderModelConfig(jobs) {
 // ── Feature 4: Equity Sparkline ──
 function renderSparkline(equityHistory) {
   const box = document.getElementById('equity-sparkline');
+  if (!box) return;  // đã xóa biểu đồ khỏi tab bingx
   if (!equityHistory || equityHistory.length < 2) {
     box.innerHTML = '<div class="loading">Chưa đủ dữ liệu vốn (cần ≥ 2 điểm)</div>';
     return;
@@ -1142,8 +1143,11 @@ function renderBingXSummary(bingx, containerId) {
     </div>
   `;
 
+  const containerEl = document.getElementById(containerId);
+  if (!containerEl) return;
+
   if (containerId === 'bingx-cards') {
-    document.getElementById(containerId).innerHTML = statusCard + balCard + posCard + wrCard + pnlCard;
+    containerEl.innerHTML = statusCard + balCard + posCard + wrCard + pnlCard;
 
     // Current open trade (chi tiết đầy đủ)
     const ctEl = document.getElementById('orb-current-trade-bingx');
@@ -1209,7 +1213,7 @@ function renderBingXSummary(bingx, containerId) {
     }
   } else {
     // summary container: show 4 cards
-    document.getElementById(containerId).innerHTML = balCard + posCard + wrCard + pnlCard;
+    containerEl.innerHTML = balCard + posCard + wrCard + pnlCard;
   }
 }
 
@@ -1269,6 +1273,7 @@ function renderLinuxCron(entries) {
 
 function renderPositions(bingx) {
   const tbody = document.getElementById('positions-table');
+  if (!tbody) return;
   const pos = (bingx || {}).positions_detail || [];
   if (!pos.length) { tbody.innerHTML = '<tr><td colspan="5" style="color:var(--green-dim)">Không có vị thế đang mở</td></tr>'; return; }
   tbody.innerHTML = pos.map(p => {
