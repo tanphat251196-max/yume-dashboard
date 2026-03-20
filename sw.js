@@ -1,7 +1,5 @@
-const CACHE_NAME = 'yume-dashboard-v2';
+const CACHE_NAME = 'yume-dashboard-v3';
 const ASSETS = [
-  './',
-  './index.html',
   './manifest.json',
   './icons/icon-192.png',
   './icons/icon-512.png',
@@ -25,17 +23,18 @@ self.addEventListener('activate', e => {
   self.clients.claim();
 });
 
-// Fetch: network first, fallback cache (status.json luôn lấy mới nhất)
+// Fetch: HTML + status.json luôn network first, icons dùng cache
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
-  // status.json: luôn fetch từ network, không cache
-  if (url.pathname.endsWith('status.json')) {
+
+  // HTML và status.json: luôn lấy mới nhất từ network
+  if (url.pathname.endsWith('.html') || url.pathname.endsWith('/') || url.pathname.endsWith('status.json') || url.pathname.endsWith('cron-history.json') || url.pathname.endsWith('equity-history.json')) {
     e.respondWith(
-      fetch(e.request).catch(() => caches.match(e.request))
+      fetch(e.request, { cache: 'no-cache' }).catch(() => caches.match(e.request))
     );
     return;
   }
-  // Còn lại: cache first
+  // Icons/manifest: cache first
   e.respondWith(
     caches.match(e.request).then(cached => cached || fetch(e.request))
   );
