@@ -544,7 +544,7 @@
         <span class="arrow">▸</span> TÁC VỤ CRON <span id="cron-badge"></span>
       </div>
       <div class="nav-item" onclick="switchTab('bingx', this)">
-        <span class="arrow">▸</span> ORB TRADER
+        <span class="arrow">▸</span> SWIFT BOT
       </div>
       <div class="nav-item" onclick="switchTab('forex', this)">
         <span class="arrow">▸</span> NGOẠI HỐI
@@ -584,7 +584,7 @@
       <div class="cards-row" id="system-cards">
         <div class="card"><div class="card-label">Đang tải...</div></div>
       </div>
-      <div class="section-header">// TÓM TẮT ORB TRADER</div>
+      <div class="section-header">// TÓM TẮT SWIFT WEBHOOK BOT</div>
       <div class="bingx-stats" id="bingx-summary"></div>
 
       <div class="section-header" style="margin-top:20px">// KÊNH & NHÓM TELEGRAM</div>
@@ -628,9 +628,9 @@
       <div id="model-config-table"></div>
     </div>
 
-    <!-- TAB: BINGX / ORB TRADER -->
+    <!-- TAB: SWIFT WEBHOOK BOT -->
     <div class="tab-content" id="tab-bingx">
-      <div class="section-header">// ORB TRADER — BINGX DEMO</div>
+      <div class="section-header">// SWIFT WEBHOOK BOT — BINGX DEMO</div>
 
       <!-- Status + key cards -->
       <div class="bingx-stats-5" id="bingx-cards"></div>
@@ -641,19 +641,19 @@
       <!-- Open positions table -->
       <table>
         <thead>
-          <tr><th>Symbol</th><th>Chiều</th><th>Khối lượng</th><th>Giá vào</th><th>SL / TP1</th><th>ORB Stage</th><th>Thời gian</th></tr>
+          <tr><th>Symbol</th><th>Chiều</th><th>Khối lượng</th><th>Giá vào</th><th>SL / TP</th><th>Trạng thái</th><th>Thời gian</th></tr>
         </thead>
         <tbody id="positions-table"></tbody>
       </table>
 
-      <!-- Lịch sử giao dịch (merge từ tab ORB TRADE) -->
+      <!-- Trade history -->
       <div class="section-header" style="margin-top:20px">// LỊCH SỬ GIAO DỊCH (20 lệnh gần nhất)</div>
       <table>
         <thead>
           <tr>
             <th>Thời gian</th>
+            <th>Symbol</th>
             <th>Chiều</th>
-            <th>ORB Stage</th>
             <th>Giá vào</th>
             <th>Giá ra</th>
             <th>Kết quả</th>
@@ -694,7 +694,7 @@ let currentLang = 'vi';
 // ── i18n ──
 const i18n = {
   en: {
-    'nav-system': 'SYSTEM', 'nav-cron': 'TÁC VỤ CRON', 'nav-bingx': 'ORB TRADER',
+    'nav-system': 'SYSTEM', 'nav-cron': 'TÁC VỤ CRON', 'nav-bingx': 'SWIFT BOT',
     'nav-forex': 'FOREX', 'nav-model': 'MODEL CFG', 'nav-logs': 'LOGS',
     'svc-title': '// DỊCH VỤ', 'subtitle': '// TRẠNG THÁI HỆ THỐNG',
     'cron-label': 'TÁC VỤ CRON', 'svc-label': 'DỊCH VỤ',
@@ -709,10 +709,10 @@ const i18n = {
     'th-symbol': 'Symbol', 'th-side': 'Side', 'th-size': 'Size',
     'th-entry': 'Entry Price', 'th-pnl': 'Unrealized PnL',
     // section headers
-    'bingx-summary-title': 'ORB TRADER SUMMARY',
+    'bingx-summary-title': 'SWIFT BOT SUMMARY',
     'cron-title': 'CRON JOB STATUS',
     'heatmap-title': 'RUN HISTORY (24H)',
-    'positions-title': 'ORB TRADER — BINGX DEMO',
+    'positions-title': 'SWIFT BOT — BINGX DEMO',
     'sparkline-title': 'EQUITY SPARKLINE',
     'forex-title': 'FOREX REALTIME — THEO DÕI NGOẠI HỐI',
     'model-title': 'MODEL CONFIG — TÁC VỤ CRON',
@@ -726,7 +726,7 @@ const i18n = {
     'mode': 'Mode',
   },
   vi: {
-    'nav-system': 'HỆ THỐNG', 'nav-cron': 'TÁC VỤ CRON', 'nav-bingx': 'ORB TRADER',
+    'nav-system': 'HỆ THỐNG', 'nav-cron': 'TÁC VỤ CRON', 'nav-bingx': 'SWIFT BOT',
     'nav-forex': 'NGOẠI HỐI', 'nav-model': 'CẤU HÌNH MODEL', 'nav-logs': 'NHẬT KÝ',
     'svc-title': '// DỊCH VỤ', 'subtitle': '// TRẠNG THÁI HỆ THỐNG',
     'cron-label': 'TÁC VỤ CRON', 'svc-label': 'DỊCH VỤ',
@@ -741,10 +741,10 @@ const i18n = {
     'th-symbol': 'Cặp tiền', 'th-side': 'Chiều', 'th-size': 'Khối lượng',
     'th-entry': 'Giá vào', 'th-pnl': 'Lãi/lỗ',
     // section headers
-    'bingx-summary-title': 'TÓM TẮT ORB TRADER',
+    'bingx-summary-title': 'TÓM TẮT SWIFT BOT',
     'cron-title': 'TRẠNG THÁI TÁC VỤ CRON',
     'heatmap-title': 'LỊCH SỬ CHẠY (24H)',
-    'positions-title': 'ORB TRADER — BINGX DEMO',
+    'positions-title': 'SWIFT BOT — BINGX DEMO',
     'sparkline-title': 'BIỂU ĐỒ VỐN',
     'forex-title': 'THEO DÕI FOREX — REALTIME',
     'model-title': 'CẤU HÌNH MODEL — TÁC VỤ CRON',
