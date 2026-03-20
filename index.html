@@ -743,9 +743,6 @@
       <!-- Status + key cards -->
       <div class="bingx-stats-5" id="bingx-cards"></div>
 
-      <!-- Current open trade -->
-      <div id="orb-current-trade-bingx" style="margin-bottom:20px"></div>
-
       <!-- Open positions table -->
       <table>
         <thead>
@@ -1227,7 +1224,29 @@ function renderBingXSummary(bingx, containerId) {
             </div>
           </div>`;
       } else {
-        ctEl.innerHTML = `<div style="color:var(--green-dim);padding:10px;font-size:11px">Không có vị thế đang mở</div>`;
+        ctEl.innerHTML = '';
+      }
+    }
+
+    // Positions table (open trades)
+    const posTbody = document.getElementById('positions-table');
+    if (posTbody) {
+      if (b.current_trade) {
+        const ct = b.current_trade;
+        const isLong = (ct.side||'').toLowerCase() === 'buy' || (ct.side||'').toLowerCase() === 'long';
+        const sideColor = isLong ? 'var(--green)' : 'var(--red)';
+        const sideLabel = isLong ? '▲ LONG' : '▼ SHORT';
+        posTbody.innerHTML = `<tr>
+          <td>${ct.symbol||'BTC-USDT'}</td>
+          <td style="color:${sideColor}">${sideLabel}</td>
+          <td>${ct.size||ct.quantity||'--'}</td>
+          <td>$${ct.entry_price||'--'}</td>
+          <td style="font-size:11px">$${(ct.setup?.stop_loss||0).toFixed?.(0)||'--'} / $${(ct.setup?.tp1||0).toFixed?.(0)||'--'}</td>
+          <td class="status-ok">● OPEN</td>
+          <td style="color:var(--green-dim);font-size:11px">${(ct.timestamp||'').slice(0,16)}</td>
+        </tr>`;
+      } else {
+        posTbody.innerHTML = '<tr><td colspan="7" style="color:var(--green-dim);text-align:center;padding:16px">Không có vị thế đang mở</td></tr>';
       }
     }
 
