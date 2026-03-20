@@ -390,7 +390,106 @@
   .model-gpt5 { color: #ff6600; }
   .model-other { color: var(--green-dim); }
 
-  /* ── Cron Heatmap ── */
+  /* ── Cron Card Grid ── */
+  .cron-filter-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .cron-filter-btn {
+    background: transparent;
+    border: 1px solid var(--green-dark);
+    color: var(--green-dim);
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    padding: 5px 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.15s;
+    border-radius: 2px;
+  }
+  .cron-filter-btn span { margin-left: 4px; font-weight: bold; }
+  .cron-filter-btn:hover, .cron-filter-btn.active { background: var(--green); color: #000; border-color: var(--green); }
+  .cron-filter-btn.ok.active  { background: var(--green); border-color: var(--green); color: #000; }
+  .cron-filter-btn.err.active { background: var(--red); border-color: var(--red); color: #000; }
+  .cron-filter-btn.idle.active { background: var(--yellow); border-color: var(--yellow); color: #000; }
+
+  .cron-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .cron-card {
+    border: 1px solid var(--green-dark);
+    background: var(--bg2);
+    padding: 12px;
+    cursor: default;
+    transition: border-color 0.15s;
+    position: relative;
+  }
+  .cron-card:hover { border-color: var(--green); }
+  .cron-card.status-ok  { border-left: 3px solid var(--green); }
+  .cron-card.status-err { border-left: 3px solid var(--red); }
+  .cron-card.status-idle { border-left: 3px solid var(--yellow); }
+  .cc-name {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--green);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+  }
+  .cc-schedule {
+    font-size: 10px;
+    color: var(--green-dim);
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cc-model {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  .cc-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+  }
+  .cc-lastrun { color: var(--green-dim); }
+  .cc-status { font-weight: bold; font-size: 11px; }
+
+  /* ── Accordion ── */
+  .cron-accordion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border: 1px solid var(--green-dark);
+    background: var(--bg2);
+    cursor: pointer;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--green-dim);
+    margin-bottom: 2px;
+    transition: all 0.15s;
+    user-select: none;
+  }
+  .cron-accordion:hover { border-color: var(--green); color: var(--green); }
+  .cron-accordion.open { color: var(--green); border-color: var(--green); }
+  .accordion-body {
+    border: 1px solid var(--green-dark);
+    border-top: none;
+    padding: 12px;
+    background: var(--bg2);
+    margin-bottom: 8px;
+  }
   .heatmap-row {
     display: flex;
     align-items: center;
@@ -598,34 +697,43 @@
 
     <!-- TAB: CRON -->
     <div class="tab-content" id="tab-cron">
-      <div class="section-header">// <span data-i18n="cron-title">CRON JOB STATUS / TRẠNG THÁI CRON</span></div>
-      <table>
-        <thead>
-          <tr><th data-i18n="th-name">Tên</th><th data-i18n="th-schedule">Lịch chạy</th><th data-i18n="th-model">Model</th><th data-i18n="th-lastrun">Lần cuối</th><th data-i18n="th-status">Trạng thái</th></tr>
-        </thead>
-        <tbody id="cron-table"></tbody>
-      </table>
-
-      <!-- Heatmap -->
-      <div class="section-header">// <span data-i18n="heatmap-title">RUN HISTORY (24H) / LỊCH SỬ CHẠY (24H)</span></div>
-      <div id="cron-heatmap" style="margin-bottom:20px">
-        <div class="loading">Chưa có lịch sử chạy</div>
+      <!-- Filter bar -->
+      <div class="cron-filter-bar">
+        <button class="cron-filter-btn active" onclick="filterCron('all', this)">Tất cả <span id="count-all">0</span></button>
+        <button class="cron-filter-btn ok" onclick="filterCron('ok', this)">✓ OK <span id="count-ok">0</span></button>
+        <button class="cron-filter-btn err" onclick="filterCron('error', this)">✗ ERR <span id="count-err">0</span></button>
+        <button class="cron-filter-btn idle" onclick="filterCron('idle', this)">◌ IDLE <span id="count-idle">0</span></button>
       </div>
 
-      <!-- Linux Cron Section -->
-      <div class="linux-cron-section">
-        <div class="section-header">// LINUX CRON (CRONTAB)</div>
+      <!-- Card grid -->
+      <div id="cron-cards" class="cron-card-grid"></div>
+
+      <!-- Heatmap accordion -->
+      <div class="cron-accordion" onclick="toggleAccordion('heatmap-body', this)">
+        <span>▸</span> LỊCH SỬ CHẠY 24H
+      </div>
+      <div id="heatmap-body" class="accordion-body" style="display:none">
+        <div id="cron-heatmap"><div class="loading">Chưa có lịch sử chạy</div></div>
+      </div>
+
+      <!-- Linux Cron accordion -->
+      <div class="cron-accordion" onclick="toggleAccordion('linuxcron-body', this)">
+        <span>▸</span> LINUX CRONTAB
+      </div>
+      <div id="linuxcron-body" class="accordion-body" style="display:none">
         <table>
-          <thead>
-            <tr><th>Lệnh</th><th>Lịch chạy</th><th>Trạng thái</th></tr>
-          </thead>
+          <thead><tr><th>Lệnh</th><th>Lịch chạy</th><th>Trạng thái</th></tr></thead>
           <tbody id="linux-cron-table"></tbody>
         </table>
       </div>
 
-      <!-- Model Config (gộp từ tab riêng) -->
-      <div class="section-header" style="margin-top:20px">// CẤU HÌNH MODEL — TÁC VỤ CRON</div>
-      <div id="model-config-table"></div>
+      <!-- Model config accordion -->
+      <div class="cron-accordion" onclick="toggleAccordion('modelcfg-body', this)">
+        <span>▸</span> CẤU HÌNH MODEL
+      </div>
+      <div id="modelcfg-body" class="accordion-body" style="display:none">
+        <div id="model-config-table"></div>
+      </div>
     </div>
 
     <!-- TAB: SWIFT WEBHOOK BOT -->
@@ -1167,30 +1275,84 @@ function renderBingXSummary(bingx, containerId) {
   }
 }
 
-// ── Feature 1: renderCron with error badge ──
+// ── Feature 1: renderCron — Card Grid ──
+let _cronJobs = [];
+
 function renderCron(jobs) {
-  const tbody = document.getElementById('cron-table');
-  if (!jobs || !jobs.length) { tbody.innerHTML = '<tr><td colspan="5" class="loading">Chưa có dữ liệu</td></tr>'; return; }
-  document.getElementById('stat-crons').textContent = jobs.length;
+  _cronJobs = jobs || [];
+  if (!_cronJobs.length) {
+    document.getElementById('cron-cards').innerHTML = '<div class="loading">Chưa có dữ liệu</div>';
+    return;
+  }
 
-  // Update error badge
-  const errCount = jobs.filter(j => j.status === 'error').length;
+  document.getElementById('stat-crons').textContent = _cronJobs.length;
+
+  // Count by status
+  const cntOk   = _cronJobs.filter(j => j.status === 'ok').length;
+  const cntErr  = _cronJobs.filter(j => j.status === 'error').length;
+  const cntIdle = _cronJobs.filter(j => j.status !== 'ok' && j.status !== 'error').length;
+  document.getElementById('count-all').textContent  = _cronJobs.length;
+  document.getElementById('count-ok').textContent   = cntOk;
+  document.getElementById('count-err').textContent  = cntErr;
+  document.getElementById('count-idle').textContent = cntIdle;
+
+  // Error badge in sidebar
   const badge = document.getElementById('cron-badge');
-  badge.textContent = errCount > 0 ? String(errCount) : '';
+  badge.textContent = cntErr > 0 ? String(cntErr) : '';
 
-  tbody.innerHTML = jobs.map(j => {
-    let sc = 'status-idle', sl = '● IDLE';
-    if (j.status === 'ok') { sc = 'status-ok'; sl = '● OK'; }
-    else if (j.status === 'error') { sc = 'status-err'; sl = '● ERR'; }
+  renderCronCards(_cronJobs);
+}
+
+function renderCronCards(jobs) {
+  const grid = document.getElementById('cron-cards');
+  if (!jobs.length) { grid.innerHTML = '<div class="loading" style="grid-column:1/-1">Không có tác vụ</div>'; return; }
+
+  grid.innerHTML = jobs.map(j => {
     const model = (j.model || '--').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '').replace('claude-', '');
-    return `<tr>
-      <td>${j.name}</td>
-      <td style="color:var(--green-dim);font-size:11px">${j.schedule||'--'}</td>
-      <td style="color:var(--green-dim);font-size:10px">${model}</td>
-      <td style="color:var(--green-dim)">${j.last_run||'--'}</td>
-      <td class="${sc}">${sl}</td>
-    </tr>`;
+    let cardCls = 'status-idle', dot = '◌', dotCls = 'status-idle', label = 'IDLE';
+    if (j.status === 'ok')    { cardCls = 'status-ok';  dot = '●'; dotCls = 'status-ok';  label = 'OK'; }
+    if (j.status === 'error') { cardCls = 'status-err'; dot = '✗'; dotCls = 'status-err'; label = 'ERR'; }
+
+    let modelCls = 'model-other';
+    if (model.includes('haiku'))  modelCls = 'model-haiku';
+    if (model.includes('sonnet')) modelCls = 'model-sonnet';
+    if (model.includes('gpt'))    modelCls = 'model-gpt';
+
+    const sched = (j.schedule || '--').replace('cron ', '').replace(' (exact)', '');
+
+    return `<div class="cron-card ${cardCls}" data-status="${j.status||'idle'}">
+      <div class="cc-name" title="${j.name}">${j.name}</div>
+      <div class="cc-schedule" title="${sched}">${sched}</div>
+      <div class="cc-model ${modelCls}">${model}</div>
+      <div class="cc-footer">
+        <span class="cc-lastrun">${j.last_run || '--'}</span>
+        <span class="cc-status ${dotCls}">${dot} ${label}</span>
+      </div>
+    </div>`;
   }).join('');
+}
+
+function filterCron(status, btn) {
+  document.querySelectorAll('.cron-filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const filtered = status === 'all' ? _cronJobs
+    : status === 'idle' ? _cronJobs.filter(j => j.status !== 'ok' && j.status !== 'error')
+    : _cronJobs.filter(j => j.status === status);
+  renderCronCards(filtered);
+}
+
+function toggleAccordion(bodyId, btn) {
+  const body = document.getElementById(bodyId);
+  const arrow = btn.querySelector('span');
+  if (body.style.display === 'none') {
+    body.style.display = 'block';
+    arrow.textContent = '▾';
+    btn.classList.add('open');
+  } else {
+    body.style.display = 'none';
+    arrow.textContent = '▸';
+    btn.classList.remove('open');
+  }
 }
 
 // ── Linux Cron Renderer ──
