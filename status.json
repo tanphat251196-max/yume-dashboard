@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-20T15:00:09.470286+00:00",
-  "generated_at_vn": "2026-03-20 22:00:09",
+  "generated_at": "2026-03-20T15:05:07.362411+00:00",
+  "generated_at_vn": "2026-03-20 22:05:07",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "15d 8h 40m",
-    "uptime_seconds": 1327229,
+    "uptime": "15d 8h 45m",
+    "uptime_seconds": 1327527,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 8.94,
-      "percent": 58.2
+      "percent": 58.1
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 46.5,
+      "percent": 39.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -78,7 +78,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 411
+      "response_time_ms": 337
     },
     "openclaw": {
       "running": true
@@ -1294,10 +1294,6 @@
   ],
   "equity_history": [
     {
-      "ts": "2026-03-20T18:05:02.255674",
-      "equity": 9972.4097
-    },
-    {
       "ts": "2026-03-20T18:10:02.243474",
       "equity": 9985.6133
     },
@@ -1484,9 +1480,33 @@
     {
       "ts": "2026-03-20T22:00:02.339799",
       "equity": 9980.3403
+    },
+    {
+      "ts": "2026-03-20T22:05:02.022246",
+      "equity": 9980.3403
     }
   ],
   "recent_logs": [
+    {
+      "label": "FOREX",
+      "text": "    return runner.run(main)",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "           ^^^^^^^^^^^^^^^^",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "  File \"/usr/lib/python3.12/asyncio/runners.py\", line 118, in run",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "    return self._loop.run_until_complete(task)",
+      "ts": ""
+    },
     {
       "label": "FOREX",
       "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
@@ -1565,26 +1585,6 @@
     {
       "label": "FOREX",
       "text": "sqlite3.OperationalError: database is locked",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-20 22:00:06,950 INFO Connecting to 91.108.56.199:443/TcpFull...",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-20 22:00:06,950 INFO Connecting to 91.108.56.199:443/TcpFull...",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-20 22:00:07,004 INFO Connection to 91.108.56.199:443/TcpFull complete!",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-20 22:00:07,004 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
@@ -1694,16 +1694,6 @@
     },
     {
       "label": "DASH",
-      "text": "   441ef95..8bbb4a2  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   8bbb4a2..beda902  main -> main",
       "ts": ""
     },
@@ -1785,6 +1775,16 @@
     {
       "label": "DASH",
       "text": "   9f32029..84e7ce5  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   84e7ce5..4c32c17  main -> main",
       "ts": ""
     }
   ],
