@@ -535,28 +535,19 @@
 
     <div class="nav">
       <div class="nav-item active" onclick="switchTab('system', this)">
-        <span class="arrow">▶</span> <span data-i18n="nav-system">HỆ THỐNG</span>
+        <span class="arrow">▶</span> HỆ THỐNG
       </div>
       <div class="nav-item" onclick="switchTab('cron', this)">
-        <span class="arrow">▸</span> <span data-i18n="nav-cron">TÁC VỤ CRON</span> <span id="cron-badge"></span>
+        <span class="arrow">▸</span> TÁC VỤ CRON <span id="cron-badge"></span>
       </div>
       <div class="nav-item" onclick="switchTab('bingx', this)">
-        <span class="arrow">▸</span> <span data-i18n="nav-bingx">ORB TRADER</span>
+        <span class="arrow">▸</span> ORB TRADER
       </div>
       <div class="nav-item" onclick="switchTab('forex', this)">
-        <span class="arrow">▸</span> <span data-i18n="nav-forex">NGOẠI HỐI</span>
-      </div>
-      <div class="nav-item" onclick="switchTab('model', this)">
-        <span class="arrow">▸</span> <span data-i18n="nav-model">CẤU HÌNH MODEL</span>
-      </div>
-      <div class="nav-item" onclick="switchTab('telegram', this)">
-        <span class="arrow">▸</span> TELEGRAM
-      </div>
-      <div class="nav-item" onclick="switchTab('orb', this)">
-        <span class="arrow">▸</span> ORB TRADE
+        <span class="arrow">▸</span> NGOẠI HỐI
       </div>
       <div class="nav-item" onclick="switchTab('logs', this)">
-        <span class="arrow">▸</span> <span data-i18n="nav-logs">NHẬT KÝ</span>
+        <span class="arrow">▸</span> NHẬT KÝ
       </div>
     </div>
 
@@ -590,8 +581,16 @@
       <div class="cards-row" id="system-cards">
         <div class="card"><div class="card-label">Đang tải...</div></div>
       </div>
-      <div class="section-header">// <span data-i18n="bingx-summary-title">BINGX SUMMARY / TÓM TẮT BINGX</span></div>
+      <div class="section-header">// TÓM TẮT ORB TRADER</div>
       <div class="bingx-stats" id="bingx-summary"></div>
+
+      <div class="section-header" style="margin-top:20px">// KÊNH & NHÓM TELEGRAM</div>
+      <table>
+        <thead>
+          <tr><th>Tên</th><th>Tiêu đề</th><th>Model</th><th>Loại</th><th style="text-align:right">Thành viên</th><th>Trạng thái</th></tr>
+        </thead>
+        <tbody id="tg-all-table"></tbody>
+      </table>
     </div>
 
     <!-- TAB: CRON -->
@@ -620,6 +619,10 @@
           <tbody id="linux-cron-table"></tbody>
         </table>
       </div>
+
+      <!-- Model Config (gộp từ tab riêng) -->
+      <div class="section-header" style="margin-top:20px">// CẤU HÌNH MODEL — TÁC VỤ CRON</div>
+      <div id="model-config-table"></div>
     </div>
 
     <!-- TAB: BINGX / ORB TRADER -->
@@ -665,39 +668,7 @@
         <div class="loading">Đang tải...</div>
       </div>
     </div>
-
-    <!-- TAB: MODEL CONFIG -->
-    <div class="tab-content" id="tab-model">
-      <div class="section-header">// CẤU HÌNH MODEL — TÁC VỤ CRON</div>
-      <div id="model-config-table"></div>
-    </div>
-
-    <!-- TAB: TELEGRAM -->
-    <div class="tab-content" id="tab-telegram">
-      <div class="section-header">// NHÓM CHAT</div>
-      <div class="tg-table-wrap">
-        <table>
-          <thead>
-            <tr><th>Nhóm</th><th>Tiêu đề</th><th>Model</th><th style="text-align:right">Thành viên</th><th>Trạng thái</th></tr>
-          </thead>
-          <tbody id="tg-groups-table"></tbody>
-        </table>
-      </div>
-      <div class="tg-card-list" id="tg-groups-cards"></div>
-
-      <div class="section-header">// KÊNH (CHANNEL)</div>
-      <div class="tg-table-wrap">
-        <table>
-          <thead>
-            <tr><th>Kênh</th><th>Tiêu đề</th><th>Model</th><th style="text-align:right">Subscribers</th><th>Trạng thái</th></tr>
-          </thead>
-          <tbody id="tg-channels-table"></tbody>
-        </table>
-      </div>
-      <div class="tg-card-list" id="tg-channels-cards"></div>
-    </div>
-
-    <!-- TAB: LOGS -->
+<!-- TAB: LOGS -->
     <div class="tab-content" id="tab-logs">
       <div class="section-header">// <span data-i18n="logs-title">LIVE LOG VIEWER / XEM LOG TRỰC TIẾP</span></div>
       <div class="log-toolbar">
@@ -838,6 +809,7 @@ function renderCronHeatmap(history, jobs) {
 // ── Feature 2: Model Config Tab ──
 function renderModelConfig(jobs) {
   const container = document.getElementById('model-config-table');
+  if (!container) return;
   if (!jobs || !jobs.length) {
     container.innerHTML = '<div class="loading">Chưa có tác vụ cron</div>';
     return;
@@ -928,8 +900,15 @@ function renderLogs(logs) {
 }
 
 function renderTelegram(tg) {
+  const el = document.getElementById('tg-all-table');
+  if (!el) return;
+  const items = [...((tg||{}).groups||[]), ...((tg||{}).channels||[])];
+  if (!items.length) {
+    el.innerHTML = '<tr><td colspan="6" style="color:var(--green-dim)">Không có dữ liệu</td></tr>';
+    return;
+  }
   function modelClass(m) {
-    if (!m || m === '--') return 'model-other';
+    if (!m||m==='--') return 'model-other';
     if (m.includes('haiku'))  return 'model-haiku';
     if (m.includes('sonnet')) return 'model-sonnet';
     if (m.includes('opus'))   return 'model-opus';
@@ -937,53 +916,21 @@ function renderTelegram(tg) {
     if (m.includes('gpt'))    return 'model-gpt';
     return 'model-other';
   }
-  function buildRows(items, tbodyId, cardListId, memberLabel) {
-    const tbody = document.getElementById(tbodyId);
-    const cardList = document.getElementById(cardListId);
-    if (!items || !items.length) {
-      tbody.innerHTML = `<tr><td colspan="5" style="color:var(--green-dim)">Không có dữ liệu</td></tr>`;
-      cardList.innerHTML = `<div style="color:var(--green-dim);font-size:12px">Không có dữ liệu</div>`;
-      return;
-    }
-    // Table rows (desktop)
-    tbody.innerHTML = items.map(c => {
-      const statusCls = c.ok ? 'status-ok' : 'status-err';
-      const statusTxt = c.ok ? '● ONLINE' : '● LỖI';
-      const members = c.members !== '--' ? Number(c.members).toLocaleString('vi-VN') : '--';
-      const username = c.username ? `<span style="color:var(--green-dim);font-size:10px">@${c.username}</span>` : '';
-      const rawModel = (c.model || '--').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '').replace('claude-', '');
-      const mCls = modelClass(c.model || '');
-      return `<tr>
-        <td>${c.label}<br>${username}</td>
-        <td>${c.title || '--'}</td>
-        <td class="${mCls}" style="font-size:11px">${rawModel}</td>
-        <td style="text-align:right;font-weight:bold">${members}</td>
-        <td class="${statusCls}">${statusTxt}</td>
-      </tr>`;
-    }).join('');
-    // Cards (mobile)
-    cardList.innerHTML = items.map(c => {
-      const statusCls = c.ok ? 'status-ok' : 'status-err';
-      const statusTxt = c.ok ? '● ONLINE' : '● LỖI';
-      const members = c.members !== '--' ? Number(c.members).toLocaleString('vi-VN') : '--';
-      const rawModel = (c.model || '--').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '').replace('claude-', '');
-      const mCls = modelClass(c.model || '');
-      return `<div class="tg-card">
-        <div class="tg-card-left">
-          <div class="tg-card-label">${c.label}</div>
-          <div class="tg-card-title">${c.title || '--'}</div>
-          <div class="tg-card-model ${mCls}">${rawModel}</div>
-        </div>
-        <div class="tg-card-right">
-          <div class="tg-card-members">${members}</div>
-          <div class="tg-card-members-label">${memberLabel}</div>
-          <div class="tg-card-status ${statusCls}">${statusTxt}</div>
-        </div>
-      </div>`;
-    }).join('');
-  }
-  buildRows((tg || {}).groups,   'tg-groups-table',   'tg-groups-cards',   'thành viên');
-  buildRows((tg || {}).channels, 'tg-channels-table', 'tg-channels-cards', 'subscribers');
+  el.innerHTML = items.map(c => {
+    const statusCls = c.ok ? 'status-ok' : 'status-err';
+    const statusTxt = c.ok ? '● ONLINE' : '● LỖI';
+    const members = c.members !== '--' ? Number(c.members).toLocaleString('vi-VN') : '--';
+    const rawModel = (c.model||'--').replace('claude-','').replace('claudible/','').replace('openai-codex/','').replace('google/','');
+    const typeLabel = c.type === 'channel' ? '📢 Kênh' : '👥 Nhóm';
+    return `<tr>
+      <td>${c.label}${c.username?`<br><span style="color:var(--green-dim);font-size:10px">@${c.username}</span>`:''}</td>
+      <td style="font-size:11px">${c.title||'--'}</td>
+      <td class="${modelClass(c.model||'')}" style="font-size:11px">${rawModel}</td>
+      <td style="color:var(--green-dim);font-size:11px">${typeLabel}</td>
+      <td style="text-align:right;font-weight:bold">${members}</td>
+      <td class="${statusCls}">${statusTxt}</td>
+    </tr>`;
+  }).join('');
 }
 
 function renderORB(orb) {
