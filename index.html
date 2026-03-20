@@ -1044,8 +1044,8 @@ function renderORB(orb) {
         <span style="color:var(--green-dim);margin-left:20px">${ct.symbol||orb.symbol}</span>
         <div style="margin-top:8px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px">
           <div><div style="color:var(--green-dim);font-size:10px">GIÁ VÀO</div><div style="color:var(--text)">$${ct.entry_price||'--'}</div></div>
-          <div><div style="color:var(--green-dim);font-size:10px">ORB STAGE</div><div style="color:var(--cyan)">${ct.orb_stage||'--'}</div></div>
-          <div><div style="color:var(--green-dim);font-size:10px">SỐ LƯỢNG</div><div style="color:var(--text)">${ct.qty||'--'}</div></div>
+          <div><div style="color:var(--green-dim);font-size:10px">ORB STAGE</div><div style="color:var(--cyan)">${ct.orb_stage||ct.setup?.orb_stage||'--'}</div></div>
+          <div><div style="color:var(--green-dim);font-size:10px">SL / TP1</div><div style="color:var(--text);font-size:11px">$${(ct.setup?.stop_loss||0).toFixed(0)} / $${(ct.setup?.tp1||0).toFixed(0)}</div></div>
           <div><div style="color:var(--green-dim);font-size:10px">THỜI GIAN</div><div style="color:var(--text);font-size:10px">${(ct.timestamp||'').slice(0,16)}</div></div>
         </div>
       </div>`;
@@ -1053,22 +1053,44 @@ function renderORB(orb) {
     ctEl.innerHTML = '<div style="color:var(--green-dim);padding:10px">Không có vị thế đang mở</div>';
   }
 
-  // Trade history table
-  const trades = (orb.trades || []).filter(t => t.action === 'close').reverse();
+  // Trade history table — pair open+close để lấy direction đúng
+  const allTrades = orb.trades || [];
+  const openMap = {};
+  allTrades.filter(t => t.action === 'open').forEach(t => { openMap[t.order_id] = t; });
+
+  const closes = allTrades.filter(t => t.action === 'close').reverse();
   const tbody = document.getElementById('orb-trades-table');
-  if (!trades.length) {
+  if (!closes.length) {
     tbody.innerHTML = '<tr><td colspan="6" style="color:var(--green-dim)">Chưa có lệnh đóng</td></tr>';
     return;
   }
-  tbody.innerHTML = trades.map(t => {
+  tbody.innerHTML = closes.map((t, i) => {
     const pnl = t.pnl || 0;
     const pnlColor = pnl >= 0 ? 'var(--green)' : 'var(--red)';
     const pnlStr = (pnl >= 0 ? '+' : '') + '$' + pnl.toFixed(2);
-    const sideColor = t.side === 'buy' ? 'var(--green)' : 'var(--red)';
-    const resultIcon = t.result === 'sl_hit' ? '❌ SL' : t.result === 'tp1_hit' ? '✅ TP1' : t.result === 'tp2_hit' ? '✅ TP2' : t.result === 'tp3_hit' ? '✅ TP3' : t.result || '--';
+
+    // Lấy direction từ open record — close.side là "sell" cho LONG, nên không dùng
+    // Tìm open tương ứng theo index (reverse order)
+    const opens = allTrades.filter(t => t.action === 'open');
+    const openIdx = opens.length - 1 - i;
+    const openRecord = opens[openIdx] || {};
+    const direction = openRecord.side || openRecord.setup?.direction || t.side;
+    const isLong = direction === 'buy' || direction === 'long';
+    const sideColor = isLong ? 'var(--green)' : 'var(--red)';
+    const sideLabel = isLong ? '🔼 LONG' : '🔽 SHORT';
+
+    // Kết quả label — sl_hit với P&L > 0 = trailing stop đóng lời
+    let resultIcon;
+    if (t.result === 'sl_hit' && pnl > 0) resultIcon = '✅ Trailing';
+    else if (t.result === 'sl_hit') resultIcon = '❌ SL';
+    else if (t.result === 'tp1_hit') resultIcon = '✅ TP1';
+    else if (t.result === 'tp2_hit') resultIcon = '✅ TP2';
+    else if (t.result === 'tp3_hit') resultIcon = '✅ TP3';
+    else resultIcon = t.result || '--';
+
     return `<tr>
       <td style="font-size:10px">${(t.timestamp||'').slice(0,16)}</td>
-      <td style="color:${sideColor}">${t.side==='buy'?'🔼 LONG':'🔽 SHORT'}</td>
+      <td style="color:${sideColor}">${sideLabel}</td>
       <td>$${(t.entry_price||0).toFixed(2)}</td>
       <td>$${(t.exit_price||0).toFixed(2)}</td>
       <td>${resultIcon}</td>
