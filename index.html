@@ -738,7 +738,7 @@
 
     <!-- TAB: SWIFT WEBHOOK BOT -->
     <div class="tab-content" id="tab-bingx">
-      <div class="section-header">// SWIFT WEBHOOK BOT — BINGX DEMO</div>
+      <div class="section-header">// SWIFT WEBHOOK BOT — BINGX LIVE</div>
 
       <!-- Status + key cards -->
       <div class="bingx-stats-5" id="bingx-cards"></div>
@@ -817,7 +817,7 @@ const i18n = {
     'bingx-summary-title': 'SWIFT BOT SUMMARY',
     'cron-title': 'CRON JOB STATUS',
     'heatmap-title': 'RUN HISTORY (24H)',
-    'positions-title': 'SWIFT BOT — BINGX DEMO',
+    'positions-title': 'SWIFT BOT — BINGX LIVE',
     'sparkline-title': 'EQUITY SPARKLINE',
     'forex-title': 'FOREX REALTIME — THEO DÕI NGOẠI HỐI',
     'model-title': 'MODEL CONFIG — TÁC VỤ CRON',
@@ -849,7 +849,7 @@ const i18n = {
     'bingx-summary-title': 'TÓM TẮT SWIFT BOT',
     'cron-title': 'TRẠNG THÁI TÁC VỤ CRON',
     'heatmap-title': 'LỊCH SỬ CHẠY (24H)',
-    'positions-title': 'SWIFT BOT — BINGX DEMO',
+    'positions-title': 'SWIFT BOT — BINGX LIVE',
     'sparkline-title': 'BIỂU ĐỒ VỐN',
     'forex-title': 'THEO DÕI FOREX — REALTIME',
     'model-title': 'CẤU HÌNH MODEL — TÁC VỤ CRON',
@@ -1153,7 +1153,7 @@ function renderBingXSummary(bingx, containerId) {
       <div class="card-label">ĐANG CHẠY</div>
       <div class="card-value" style="font-size:20px">${isRunning ? '✅' : '❌'}</div>
       <div class="card-sub" style="color:${isRunning ? 'var(--green)' : 'var(--red)'}">
-        ${isRunning ? 'RUNNING' : 'STOPPED'} · ${(b.mode || 'demo').toUpperCase()}
+        ${isRunning ? 'RUNNING' : 'STOPPED'} · ${(b.mode || 'live').toUpperCase()}
       </div>
     </div>
   `;
@@ -1161,7 +1161,7 @@ function renderBingXSummary(bingx, containerId) {
   // Balance card
   const balCard = `
     <div class="card">
-      <div class="card-label">BALANCE DEMO</div>
+      <div class="card-label">BALANCE LIVE</div>
       <div class="card-value" style="font-size:18px">$${(b.balance||0).toFixed(2)}</div>
       <div class="card-sub">Equity: $${(b.equity||0).toFixed(2)}</div>
     </div>
