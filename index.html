@@ -1233,18 +1233,30 @@ function renderBingXSummary(bingx, containerId) {
     if (posTbody) {
       if (b.current_trade) {
         const ct = b.current_trade;
-        const isLong = (ct.side||'').toLowerCase() === 'buy' || (ct.side||'').toLowerCase() === 'long';
-        const sideColor = isLong ? 'var(--green)' : 'var(--red)';
-        const sideLabel = isLong ? '▲ LONG' : '▼ SHORT';
-        posTbody.innerHTML = `<tr>
-          <td>${ct.symbol||'BTC-USDT'}</td>
-          <td style="color:${sideColor}">${sideLabel}</td>
-          <td>${ct.size||ct.quantity||'--'}</td>
-          <td>$${ct.entry_price||'--'}</td>
-          <td style="font-size:11px">$${(ct.setup?.stop_loss||0).toFixed?.(0)||'--'} / $${(ct.setup?.tp1||0).toFixed?.(0)||'--'}</td>
-          <td class="status-ok">● OPEN</td>
-          <td style="color:var(--green-dim);font-size:11px">${(ct.timestamp||'').slice(0,16)}</td>
-        </tr>`;
+        // Nếu có _all_open (swift-bot format) → hiển thị tất cả vị thế
+        const allOpen = ct._all_open || { [ct.symbol||'?']: ct };
+        let rows = '';
+        for (const [sym, data] of Object.entries(allOpen)) {
+          const side = (data.side||ct.side||'').toUpperCase();
+          const isLong = side === 'LONG' || side === 'BUY';
+          const sideColor = isLong ? 'var(--green)' : 'var(--red)';
+          const sideLabel = isLong ? '▲ LONG' : '▼ SHORT';
+          const entry = data.entry_price || ct.entry_price || 0;
+          const qty = data.qty || data.size || data.quantity || ct.size || ct.quantity || '--';
+          const setup = data.setup || ct.setup || {};
+          const sl = setup.stop_loss || data.sl_price || 0;
+          const tp1 = setup.tp1 || data.tp1_price || 0;
+          rows += `<tr>
+            <td>${sym}</td>
+            <td style="color:${sideColor}">${sideLabel}</td>
+            <td>${qty}</td>
+            <td>$${Number(entry).toFixed(2)}</td>
+            <td style="font-size:11px">$${sl ? Number(sl).toFixed(0) : '--'} / $${tp1 ? Number(tp1).toFixed(0) : '--'}</td>
+            <td class="status-ok">● OPEN</td>
+            <td style="color:var(--green-dim);font-size:11px">SwiftBot</td>
+          </tr>`;
+        }
+        posTbody.innerHTML = rows;
       } else {
         posTbody.innerHTML = '<tr><td colspan="7" style="color:var(--green-dim);text-align:center;padding:16px">Không có vị thế đang mở</td></tr>';
       }
