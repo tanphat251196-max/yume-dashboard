@@ -693,6 +693,17 @@
         </thead>
         <tbody id="tg-all-table"></tbody>
       </table>
+
+      <div class="section-header" style="margin-top:20px">// SOCIAL MEDIA STATUS</div>
+      <div id="social-cards" class="bingx-stats" style="grid-template-columns:repeat(3,1fr)"></div>
+
+      <div class="section-header" style="margin-top:20px">// LỊCH LÀM VIỆC (WORK SCHEDULE)</div>
+      <table id="work-schedule-table">
+        <thead>
+          <tr><th>Giờ</th><th>Task</th><th>Mô tả</th><th>Loại</th></tr>
+        </thead>
+        <tbody id="work-schedule-body"></tbody>
+      </table>
     </div>
 
     <!-- TAB: CRON -->
@@ -1047,6 +1058,85 @@ function renderORB(orb) {
   // Lưu trades để renderBingXSummary dùng
   window._orbTrades = (orb.trades || []);
 }
+
+function renderSocial(social) {
+  const el = document.getElementById('social-cards');
+  if (!el || !social) return;
+  const th = social.threads || {};
+  const fb = social.facebook || {};
+  const tw = social.x_twitter || {};
+
+  function statusBadge(s) {
+    if (s === 'active') return '<span class="status-ok">● ACTIVE</span>';
+    if (s === 'no_config') return '<span style="color:var(--yellow)">● NO CONFIG</span>';
+    if (s === 'config_error') return '<span class="status-err">● CONFIG ERR</span>';
+    return `<span style="color:var(--green-dim)">● ${s||'?'}</span>`;
+  }
+
+  el.innerHTML = `
+    <div class="bingx-stat-card" style="border-color:#1DA1F2">
+      <div class="bingx-stat-label">THREADS</div>
+      <div class="bingx-stat-value" style="font-size:13px">${th.username ? '@'+th.username : '--'}</div>
+      <div style="font-size:10px;color:var(--green-dim);margin-top:4px">${statusBadge(th.status)}</div>
+      <div style="font-size:10px;color:var(--green-dim);margin-top:2px">Hết hạn: ${th.token_expires||'--'}</div>
+    </div>
+    <div class="bingx-stat-card" style="border-color:#4267B2">
+      <div class="bingx-stat-label">FACEBOOK PAGE</div>
+      <div class="bingx-stat-value" style="font-size:13px">${fb.page||'--'}</div>
+      <div style="font-size:10px;color:var(--green-dim);margin-top:4px">${statusBadge(fb.status)}</div>
+    </div>
+    <div class="bingx-stat-card" style="border-color:#000000;outline:1px solid #555">
+      <div class="bingx-stat-label">X / TWITTER</div>
+      <div class="bingx-stat-value" style="font-size:13px">${tw.account||'--'}</div>
+      <div style="font-size:10px;color:var(--green-dim);margin-top:4px">${statusBadge(tw.status)}</div>
+      <div style="font-size:10px;color:var(--green-dim);margin-top:2px">Chrome Relay: ${tw.chrome_relay||'--'}</div>
+    </div>
+  `;
+}
+
+function renderWorkSchedule(schedule) {
+  const tbody = document.getElementById('work-schedule-body');
+  if (!tbody || !schedule) return;
+
+  // Get current time in HH:MM
+  const now = new Date();
+  const nowMin = now.getHours() * 60 + now.getMinutes();
+
+  function parseTimeMin(timeStr) {
+    if (!timeStr || timeStr.startsWith('*/') || timeStr === '24/7') return -1;
+    const parts = timeStr.split(':');
+    if (parts.length === 2) return parseInt(parts[0]) * 60 + parseInt(parts[1]);
+    return -1;
+  }
+
+  function typeColor(t) {
+    if (t === 'linux_cron') return '#ffff00';
+    if (t === 'oc_cron')    return '#00ff00';
+    if (t === 'service')    return '#1DA1F2';
+    return '#aaa';
+  }
+
+  function typeLabel(t) {
+    if (t === 'linux_cron') return 'LINUX';
+    if (t === 'oc_cron')    return 'OC';
+    if (t === 'service')    return 'SERVICE';
+    return t;
+  }
+
+  tbody.innerHTML = schedule.map(item => {
+    const taskMin = parseTimeMin(item.time);
+    const isNear = taskMin >= 0 && Math.abs(taskMin - nowMin) <= 30;
+    const highlight = isNear ? 'background:rgba(0,255,0,0.07);' : '';
+    const nearIcon = isNear ? ' ⚡' : '';
+    return `<tr style="${highlight}">
+      <td style="font-weight:bold;color:${isNear?'var(--yellow)':'var(--green)'}">${item.time}${nearIcon}</td>
+      <td style="font-size:11px">${item.task}</td>
+      <td style="font-size:11px;color:var(--green-dim)">${item.desc}</td>
+      <td><span style="color:${typeColor(item.type)};font-size:10px;font-weight:bold">${typeLabel(item.type)}</span></td>
+    </tr>`;
+  }).join('');
+}
+
 
 
 function clearLogs() {
@@ -1448,6 +1538,8 @@ function renderAll(d) {
   renderLogs(d.recent_logs);
   renderTelegram(d.telegram);
   renderORB(d.orb_trade);
+  renderSocial(d.social);
+  renderWorkSchedule(d.work_schedule);
 }
 
 function loadData(retries = 3) {
