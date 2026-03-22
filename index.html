@@ -1502,6 +1502,7 @@ function renderLinuxCron(entries) {
 function renderForex(services) {
   const fl = (services || {}).forex_listener || {};
   const panel = document.getElementById('forex-panel');
+  if (!panel) return;
   const isOn = fl.running === true;
   panel.innerHTML = `
     <div class="forex-row"><span class="forex-key">Status</span><span class="forex-val ${isOn ? 'status-ok' : 'status-err'}">${isOn ? currentLang === 'vi' ? '● ĐANG LẮNG NGHE' : '● TRỰC TUYẾN — ĐANG LẮNG NGHE' : '● NGOẠI TUYẾN'}</span></div>
