@@ -1070,17 +1070,20 @@ function renderSocial(social) {
       <div class="bingx-stat-value" style="font-size:13px">${th.username ? '@'+th.username : '--'}</div>
       <div style="font-size:10px;color:var(--green-dim);margin-top:4px">${statusBadge(th.status)}</div>
       <div style="font-size:10px;color:var(--green-dim);margin-top:2px">Hết hạn: ${th.token_expires||'--'}</div>
+      <div style="font-size:10px;color:var(--green-dim);margin-top:2px">📅 ${th.schedule||'--'}</div>
     </div>
     <div class="bingx-stat-card" style="border-color:#4267B2">
       <div class="bingx-stat-label">FACEBOOK PAGE</div>
       <div class="bingx-stat-value" style="font-size:13px">${fb.page||'--'}</div>
       <div style="font-size:10px;color:var(--green-dim);margin-top:4px">${statusBadge(fb.status)}</div>
+      <div style="font-size:10px;color:var(--green-dim);margin-top:2px">📅 ${fb.schedule||'--'}</div>
     </div>
     <div class="bingx-stat-card" style="border-color:#000000;outline:1px solid #555">
       <div class="bingx-stat-label">X / TWITTER</div>
       <div class="bingx-stat-value" style="font-size:13px">${tw.account||'--'}</div>
       <div style="font-size:10px;color:var(--green-dim);margin-top:4px">${statusBadge(tw.status)}</div>
       <div style="font-size:10px;color:var(--green-dim);margin-top:2px">Chrome Relay: ${tw.chrome_relay||'--'}</div>
+      <div style="font-size:10px;color:var(--green-dim);margin-top:2px">📅 ${tw.schedule||'--'}</div>
     </div>
   `;
 }
