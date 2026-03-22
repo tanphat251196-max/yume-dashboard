@@ -686,24 +686,6 @@
       <div class="section-header">// TÓM TẮT SWIFT BOT</div>
       <div class="bingx-stats" id="bingx-summary"></div>
 
-      <div class="section-header" style="margin-top:20px">// KÊNH & NHÓM TELEGRAM</div>
-      <table>
-        <thead>
-          <tr><th>Tên</th><th>Tiêu đề</th><th>Model</th><th>Loại</th><th style="text-align:right">Thành viên</th><th>Trạng thái</th></tr>
-        </thead>
-        <tbody id="tg-all-table"></tbody>
-      </table>
-
-      <div class="section-header" style="margin-top:20px">// SOCIAL MEDIA STATUS</div>
-      <div id="social-cards" class="bingx-stats" style="grid-template-columns:repeat(3,1fr)"></div>
-
-      <div class="section-header" style="margin-top:20px">// LỊCH LÀM VIỆC (WORK SCHEDULE)</div>
-      <table id="work-schedule-table">
-        <thead>
-          <tr><th>Giờ</th><th>Task</th><th>Mô tả</th><th>Loại</th></tr>
-        </thead>
-        <tbody id="work-schedule-body"></tbody>
-      </table>
     </div>
 
     <!-- TAB: CRON -->
@@ -744,6 +726,40 @@
       </div>
       <div id="modelcfg-body" class="accordion-body" style="display:none">
         <div id="model-config-table"></div>
+      </div>
+
+      <!-- Telegram channels accordion -->
+      <div class="cron-accordion" onclick="toggleAccordion('tgchannels-body', this)">
+        <span>▸</span> KÊNH & NHÓM TELEGRAM
+      </div>
+      <div id="tgchannels-body" class="accordion-body" style="display:none">
+        <table>
+          <thead>
+            <tr><th>Tên</th><th>Tiêu đề</th><th>Model</th><th>Loại</th><th style="text-align:right">Thành viên</th><th>Trạng thái</th></tr>
+          </thead>
+          <tbody id="tg-all-table"></tbody>
+        </table>
+      </div>
+
+      <!-- Social media accordion -->
+      <div class="cron-accordion" onclick="toggleAccordion('social-body', this)">
+        <span>▸</span> SOCIAL MEDIA STATUS
+      </div>
+      <div id="social-body" class="accordion-body" style="display:none">
+        <div id="social-cards" class="bingx-stats" style="grid-template-columns:repeat(3,1fr)"></div>
+      </div>
+
+      <!-- Work schedule accordion -->
+      <div class="cron-accordion" onclick="toggleAccordion('schedule-body', this)">
+        <span>▸</span> LỊCH LÀM VIỆC
+      </div>
+      <div id="schedule-body" class="accordion-body" style="display:none">
+        <table id="work-schedule-table">
+          <thead>
+            <tr><th>Giờ</th><th>Task</th><th>Mô tả</th><th>Loại</th></tr>
+          </thead>
+          <tbody id="work-schedule-body"></tbody>
+        </table>
       </div>
     </div>
 
