@@ -1489,10 +1489,25 @@ function renderLinuxCron(entries) {
     }
     const schedule = parts.slice(0, 5).join(' ');
     const command = parts.slice(5).join(' ');
-    const cmdShort = command.length > 60 ? command.slice(0, 57) + '…' : command;
+    // Lấy tên script ngắn gọn: bỏ path python + path dài, chỉ giữ tên file + args
+    const scriptMatch = command.match(/(\w[\w.-]*\.py(?:\s+\w+)?)/);
+    const cmdShort = scriptMatch ? scriptMatch[1] : (command.split('/').pop() || command).slice(0, 40);
+    // Format schedule dễ đọc
+    const schedMap = {
+      '*/5 * * * *': 'mỗi 5 phút',
+      '0 6 * * *': '6:00 hàng ngày',
+      '0 7 * * 1': '7:00 thứ Hai',
+      '15 7 * * 1': '7:15 thứ Hai',
+      '45 7 * * *': '7:45 hàng ngày',
+      '0 8 * * *': '8:00 hàng ngày',
+      '30 8 * * *': '8:30 hàng ngày',
+      '0 14 * * *': '14:00 hàng ngày',
+      '0 20 * * *': '20:00 hàng ngày',
+    };
+    const schedLabel = schedMap[schedule] || schedule;
     return `<tr>
-      <td style="font-size:11px;color:var(--green)" title="${command.replace(/"/g,'&quot;')}">${cmdShort}</td>
-      <td style="color:var(--green-dim);font-size:10px;white-space:nowrap">${schedule}</td>
+      <td style="font-size:12px;color:var(--green);font-weight:bold" title="${command.replace(/"/g,'&quot;')}">${cmdShort}</td>
+      <td style="color:var(--green-dim);font-size:11px;white-space:nowrap">${schedLabel}</td>
       <td class="status-ok">● ACTIVE</td>
     </tr>`;
   }).join('');
