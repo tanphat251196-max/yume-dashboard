@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-22T17:50:06.307422+00:00",
-  "generated_at_vn": "2026-03-23 00:50:06",
+  "generated_at": "2026-03-22T17:55:06.312398+00:00",
+  "generated_at_vn": "2026-03-23 00:55:06",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "11h 42m",
-    "uptime_seconds": 42150,
+    "uptime": "11h 47m",
+    "uptime_seconds": 42450,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.12,
-      "percent": 20.3
+      "used_gb": 3.16,
+      "percent": 20.6
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 7
     },
     "cpu": {
-      "percent": 12.2,
+      "percent": 10.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -27,7 +27,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 2h",
-      "last_run": "5m ago",
+      "last_run": "10m ago",
       "status": "ok",
       "model": "openai-codex/gpt-5.4"
     },
@@ -295,7 +295,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 273
+      "response_time_ms": 379
     },
     "openclaw": {
       "running": true
@@ -312,150 +312,6 @@
       "job_id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
       "name": "x-post-insight-2",
       "status": "error",
-      "ts": 1774200291.523895
-    },
-    {
-      "job_id": "34cd789a-75a1-414f-ada7-f72817e76244",
-      "name": "x-post-thread",
-      "status": "ok",
-      "ts": 1774200291.523895
-    },
-    {
-      "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
-      "name": "x-engage-5",
-      "status": "ok",
-      "ts": 1774200291.523895
-    },
-    {
-      "job_id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
-      "name": "x-post-news-3",
-      "status": "ok",
-      "ts": 1774200291.523895
-    },
-    {
-      "job_id": "aa9e48fe-7215-4955-8091-1049db862b01",
-      "name": "x-post-analysis-pm",
-      "status": "error",
-      "ts": 1774200291.523895
-    },
-    {
-      "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
-      "name": "x-engage-6",
-      "status": "ok",
-      "ts": 1774200291.523895
-    },
-    {
-      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "status": "error",
-      "ts": 1774200291.523895
-    },
-    {
-      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "status": "ok",
-      "ts": 1774200291.523895
-    },
-    {
-      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "status": "idle",
-      "ts": 1774200291.523895
-    },
-    {
-      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "status": "error",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
-      "name": "auto-web-post",
-      "status": "ok",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "status": "ok",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-      "name": "weekly-economic-calendar",
-      "status": "error",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "status": "ok",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
-      "name": "x-post-analysis-am",
-      "status": "ok",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
-      "name": "x-engage-1",
-      "status": "ok",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-      "name": "daily-news",
-      "status": "ok",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-      "name": "commodity-update",
-      "status": "ok",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
-      "name": "x-post-news-1",
-      "status": "error",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-      "name": "x-engage-2",
-      "status": "ok",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
-      "name": "x-post-insight-1",
-      "status": "error",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
-      "name": "x-engage-3",
-      "status": "ok",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
-      "name": "x-post-news-2",
-      "status": "ok",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
-      "name": "x-engage-4",
-      "status": "ok",
-      "ts": 1774200293.716439
-    },
-    {
-      "job_id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
-      "name": "x-post-insight-2",
-      "status": "error",
       "ts": 1774200293.716439
     },
     {
@@ -1507,13 +1363,153 @@
       "name": "monthly-analysis",
       "status": "idle",
       "ts": 1774201806.306272
+    },
+    {
+      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
+      "name": "auto-web-post",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+      "name": "daily-analysis",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
+      "name": "weekly-economic-calendar",
+      "status": "error",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+      "name": "weekly-analysis",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
+      "name": "x-post-analysis-am",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
+      "name": "x-engage-1",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
+      "name": "daily-news",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
+      "name": "commodity-update",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
+      "name": "x-post-news-1",
+      "status": "error",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
+      "name": "x-engage-2",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
+      "name": "x-post-insight-1",
+      "status": "error",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
+      "name": "x-engage-3",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
+      "name": "x-post-news-2",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
+      "name": "x-engage-4",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
+      "name": "x-post-insight-2",
+      "status": "error",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "34cd789a-75a1-414f-ada7-f72817e76244",
+      "name": "x-post-thread",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
+      "name": "x-engage-5",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
+      "name": "x-post-news-3",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "aa9e48fe-7215-4955-8091-1049db862b01",
+      "name": "x-post-analysis-pm",
+      "status": "error",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
+      "name": "x-engage-6",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+      "name": "crypto-education",
+      "status": "error",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+      "name": "weekly-leaderboard",
+      "status": "ok",
+      "ts": 1774202106.311095
+    },
+    {
+      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+      "name": "monthly-analysis",
+      "status": "idle",
+      "ts": 1774202106.311095
     }
   ],
   "equity_history": [
-    {
-      "ts": "2026-03-22T21:15:01.957913",
-      "equity": 103.0364
-    },
     {
       "ts": "2026-03-22T21:20:02.247035",
       "equity": 102.9677
@@ -1701,107 +1697,111 @@
     {
       "ts": "2026-03-23T00:50:02.529000",
       "equity": 102.5483
+    },
+    {
+      "ts": "2026-03-23T00:55:02.532034",
+      "equity": 102.5483
     }
   ],
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:47:43,534 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-23 00:52:42,780 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:47:43,580 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-23 00:52:42,834 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:47:59,294 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-23 00:52:58,544 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:47:59,348 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-23 00:52:58,581 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:48:15,047 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-23 00:53:14,277 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:48:15,091 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-23 00:53:14,323 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:48:30,788 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-23 00:53:30,046 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:48:30,832 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-23 00:53:30,091 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:48:46,547 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-23 00:53:45,785 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:48:46,584 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-23 00:53:45,836 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:49:02,288 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-23 00:54:01,527 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:49:02,333 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-23 00:54:01,573 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:49:18,048 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-23 00:54:17,311 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:49:18,093 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-23 00:54:17,348 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:49:33,874 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-23 00:54:33,038 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:49:33,930 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-23 00:54:33,073 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:49:49,539 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-23 00:54:48,792 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:49:49,585 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-23 00:54:48,847 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:50:05,313 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-23 00:55:04,589 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-23 00:50:05,352 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-23 00:55:04,640 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
@@ -1911,16 +1911,6 @@
     },
     {
       "label": "DASH",
-      "text": "   803ac30..bf0e4a9  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   7797709..5884610  main -> main",
       "ts": ""
     },
@@ -2002,6 +1992,16 @@
     {
       "label": "DASH",
       "text": "   b02e41a..bb2360e  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   f15ce72..4b1409a  main -> main",
       "ts": ""
     }
   ],
