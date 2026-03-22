@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-22T20:05:06.116016+00:00",
-  "generated_at_vn": "2026-03-23 03:05:06",
+  "generated_at": "2026-03-22T20:09:11.111059+00:00",
+  "generated_at_vn": "2026-03-23 03:09:11",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "10m",
-    "uptime_seconds": 639,
+    "uptime": "14m",
+    "uptime_seconds": 884,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.94,
-      "percent": 19.1
+      "used_gb": 2.87,
+      "percent": 18.7
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 5
     },
     "cpu": {
-      "percent": 1.8,
+      "percent": 15.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -27,7 +27,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 2h",
-      "last_run": "20m ago",
+      "last_run": "24m ago",
       "status": "ok",
       "model": "openai-codex/gpt-5.4"
     },
@@ -235,7 +235,7 @@
     "mode": "live",
     "balance": 102.5483,
     "equity": 102.5483,
-    "open_positions": 1,
+    "open_positions": 0,
     "closed_trades": 0,
     "winning_trades": 0,
     "losing_trades": 0,
@@ -243,35 +243,7 @@
     "win_rate": 0.0,
     "best_trade": 0.0,
     "worst_trade": 0.0,
-    "current_trade": {
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "entry_price": 68560.9,
-      "size": 0.003,
-      "quantity": 0.003,
-      "setup": {
-        "stop_loss": 68218.1,
-        "tp1": 69246.51,
-        "tp2": 0,
-        "tp3": 0
-      },
-      "timestamp": "",
-      "_all_open": {
-        "BTCUSDT": {
-          "side": "LONG",
-          "entry_price": 68560.9,
-          "qty": 0.003,
-          "sl": 68218.1,
-          "tp1": 69246.51,
-          "tp2": 0,
-          "tp3": 0,
-          "tp1_qty": 0.003,
-          "tp2_qty": 0,
-          "tp3_qty": 0,
-          "opened_at": "2026-03-22T14:04:45.008066"
-        }
-      }
-    },
+    "current_trade": null,
     "error": null
   },
   "linux_cron": [
@@ -286,7 +258,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 290
+      "response_time_ms": 327
     },
     "openclaw": {
       "running": true
@@ -300,144 +272,6 @@
   },
   "cron_history": [
     {
-      "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
-      "name": "x-engage-4",
-      "status": "ok",
-      "ts": 1774201806.306272
-    },
-    {
-      "job_id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
-      "name": "x-post-insight-2",
-      "status": "error",
-      "ts": 1774201806.306272
-    },
-    {
-      "job_id": "34cd789a-75a1-414f-ada7-f72817e76244",
-      "name": "x-post-thread",
-      "status": "ok",
-      "ts": 1774201806.306272
-    },
-    {
-      "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
-      "name": "x-engage-5",
-      "status": "ok",
-      "ts": 1774201806.306272
-    },
-    {
-      "job_id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
-      "name": "x-post-news-3",
-      "status": "ok",
-      "ts": 1774201806.306272
-    },
-    {
-      "job_id": "aa9e48fe-7215-4955-8091-1049db862b01",
-      "name": "x-post-analysis-pm",
-      "status": "error",
-      "ts": 1774201806.306272
-    },
-    {
-      "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
-      "name": "x-engage-6",
-      "status": "ok",
-      "ts": 1774201806.306272
-    },
-    {
-      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "status": "error",
-      "ts": 1774201806.306272
-    },
-    {
-      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "status": "ok",
-      "ts": 1774201806.306272
-    },
-    {
-      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "status": "idle",
-      "ts": 1774201806.306272
-    },
-    {
-      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "status": "ok",
-      "ts": 1774202106.311095
-    },
-    {
-      "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
-      "name": "auto-web-post",
-      "status": "ok",
-      "ts": 1774202106.311095
-    },
-    {
-      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "status": "ok",
-      "ts": 1774202106.311095
-    },
-    {
-      "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-      "name": "weekly-economic-calendar",
-      "status": "error",
-      "ts": 1774202106.311095
-    },
-    {
-      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "status": "ok",
-      "ts": 1774202106.311095
-    },
-    {
-      "job_id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
-      "name": "x-post-analysis-am",
-      "status": "ok",
-      "ts": 1774202106.311095
-    },
-    {
-      "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
-      "name": "x-engage-1",
-      "status": "ok",
-      "ts": 1774202106.311095
-    },
-    {
-      "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-      "name": "daily-news",
-      "status": "ok",
-      "ts": 1774202106.311095
-    },
-    {
-      "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-      "name": "commodity-update",
-      "status": "ok",
-      "ts": 1774202106.311095
-    },
-    {
-      "job_id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
-      "name": "x-post-news-1",
-      "status": "error",
-      "ts": 1774202106.311095
-    },
-    {
-      "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-      "name": "x-engage-2",
-      "status": "ok",
-      "ts": 1774202106.311095
-    },
-    {
-      "job_id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
-      "name": "x-post-insight-1",
-      "status": "error",
-      "ts": 1774202106.311095
-    },
-    {
-      "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
-      "name": "x-engage-3",
-      "status": "ok",
-      "ts": 1774202106.311095
-    },
-    {
       "job_id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
       "name": "x-post-news-2",
       "status": "ok",
@@ -1498,13 +1332,147 @@
       "name": "monthly-analysis",
       "status": "idle",
       "ts": 1774209906.114798
+    },
+    {
+      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+      "name": "daily-analysis",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
+      "name": "weekly-economic-calendar",
+      "status": "error",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+      "name": "weekly-analysis",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
+      "name": "x-post-analysis-am",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
+      "name": "x-engage-1",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
+      "name": "daily-news",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
+      "name": "commodity-update",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
+      "name": "x-post-news-1",
+      "status": "error",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
+      "name": "x-engage-2",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
+      "name": "x-post-insight-1",
+      "status": "error",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
+      "name": "x-engage-3",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
+      "name": "x-post-news-2",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
+      "name": "x-engage-4",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
+      "name": "x-post-insight-2",
+      "status": "error",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "34cd789a-75a1-414f-ada7-f72817e76244",
+      "name": "x-post-thread",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
+      "name": "x-engage-5",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
+      "name": "x-post-news-3",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "aa9e48fe-7215-4955-8091-1049db862b01",
+      "name": "x-post-analysis-pm",
+      "status": "error",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
+      "name": "x-engage-6",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+      "name": "crypto-education",
+      "status": "error",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+      "name": "weekly-leaderboard",
+      "status": "ok",
+      "ts": 1774210151.109798
+    },
+    {
+      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+      "name": "monthly-analysis",
+      "status": "idle",
+      "ts": 1774210151.109798
     }
   ],
   "equity_history": [
-    {
-      "ts": "2026-03-22T22:10:02.070553",
-      "equity": 102.9858
-    },
     {
       "ts": "2026-03-22T22:15:02.262479",
       "equity": 102.9858
@@ -1691,6 +1659,10 @@
     },
     {
       "ts": "2026-03-23T03:05:02.344846",
+      "equity": 102.5483
+    },
+    {
+      "ts": "2026-03-23T03:09:07.389653",
       "equity": 102.5483
     }
   ],
@@ -2087,5 +2059,150 @@
     "last_updated": "--",
     "orb_levels": {},
     "last_signal": null
-  }
+  },
+  "social": {
+    "threads": {
+      "username": "ginginzzzzz",
+      "user_id": "34619106054371687",
+      "token_expires": "~60 ngày từ 22/03/2026",
+      "status": "active"
+    },
+    "facebook": {
+      "page": "Thiên Kim Crypto",
+      "status": "active"
+    },
+    "x_twitter": {
+      "account": "@ThienKimCrypto",
+      "status": "active",
+      "chrome_relay": "check"
+    }
+  },
+  "work_schedule": [
+    {
+      "time": "06:00",
+      "task": "auto-web-post.py",
+      "desc": "Crawl + viết 5-8 bài web",
+      "type": "linux_cron"
+    },
+    {
+      "time": "07:00",
+      "task": "daily-analysis (OC)",
+      "desc": "Phân tích BTC/ETH Daily",
+      "type": "oc_cron"
+    },
+    {
+      "time": "07:00",
+      "task": "weekly-economic-calendar.py (T2)",
+      "desc": "Lịch kinh tế tuần",
+      "type": "linux_cron"
+    },
+    {
+      "time": "07:15",
+      "task": "update-economic-calendar.py (T2)",
+      "desc": "Cập nhật web lịch kinh tế",
+      "type": "linux_cron"
+    },
+    {
+      "time": "07:20",
+      "task": "weekly-analysis (OC, T2)",
+      "desc": "Phân tích BTC/ETH Weekly",
+      "type": "oc_cron"
+    },
+    {
+      "time": "07:45",
+      "task": "daily-news.py",
+      "desc": "Đăng 5 tin tức lên Telegram",
+      "type": "linux_cron"
+    },
+    {
+      "time": "07:30",
+      "task": "x-post-analysis (OC)",
+      "desc": "X: Bài phân tích sáng",
+      "type": "oc_cron"
+    },
+    {
+      "time": "08:00",
+      "task": "monthly-analysis (OC, ngày 1)",
+      "desc": "Phân tích BTC/ETH Monthly",
+      "type": "oc_cron"
+    },
+    {
+      "time": "08:30",
+      "task": "commodity-update.py",
+      "desc": "Cập nhật giá vàng/dầu",
+      "type": "linux_cron"
+    },
+    {
+      "time": "09:30",
+      "task": "x-post-news1 (OC)",
+      "desc": "X: Tin tức #1",
+      "type": "oc_cron"
+    },
+    {
+      "time": "11:30",
+      "task": "x-post-insight1 (OC)",
+      "desc": "X: Insight #1",
+      "type": "oc_cron"
+    },
+    {
+      "time": "13:30",
+      "task": "x-post-news2 (OC)",
+      "desc": "X: Tin tức #2",
+      "type": "oc_cron"
+    },
+    {
+      "time": "15:30",
+      "task": "x-post-insight2 (OC)",
+      "desc": "X: Insight #2",
+      "type": "oc_cron"
+    },
+    {
+      "time": "17:30",
+      "task": "x-post-thread (OC)",
+      "desc": "X: Thread giáo dục",
+      "type": "oc_cron"
+    },
+    {
+      "time": "19:30",
+      "task": "x-post-news3 (OC)",
+      "desc": "X: Tin tức #3",
+      "type": "oc_cron"
+    },
+    {
+      "time": "20:30",
+      "task": "weekly-leaderboard (OC, CN)",
+      "desc": "Leaderboard tuần",
+      "type": "oc_cron"
+    },
+    {
+      "time": "20:00",
+      "task": "crypto-education (OC, T3/T5/T7)",
+      "desc": "Giáo dục crypto",
+      "type": "oc_cron"
+    },
+    {
+      "time": "21:30",
+      "task": "x-post-recap (OC)",
+      "desc": "X: Tổng kết ngày",
+      "type": "oc_cron"
+    },
+    {
+      "time": "*/2h",
+      "task": "whale-tracker (OC)",
+      "desc": "Theo dõi cá voi",
+      "type": "oc_cron"
+    },
+    {
+      "time": "*/1min",
+      "task": "forex-listener.service",
+      "desc": "Forward Forex signals realtime",
+      "type": "service"
+    },
+    {
+      "time": "24/7",
+      "task": "swift-webhook-v2.service",
+      "desc": "TradingView → BingX webhook bot",
+      "type": "service"
+    }
+  ]
 }
