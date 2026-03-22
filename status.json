@@ -1,27 +1,31 @@
 {
-  "generated_at": "2026-03-22T19:55:06.011423+00:00",
-  "generated_at_vn": "2026-03-23 02:55:06",
+  "generated_at": "2026-03-22T20:00:16.974223+00:00",
+  "generated_at_vn": "2026-03-23 03:00:16",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "0m",
-    "uptime_seconds": 38,
+    "uptime": "5m",
+    "uptime_seconds": 349,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 4.52,
-      "percent": 29.4
+      "used_gb": 4.25,
+      "percent": 27.6
     },
     "disk": {
       "total_gb": 468,
-      "used_gb": 28,
-      "percent": 7
+      "used_gb": 25,
+      "percent": 6
     },
     "cpu": {
-      "percent": 76.2,
+      "percent": 15.8,
       "count": 4,
       "freq_mhz": 0
     }
   },
-  "openclaw_cron": [],
+  "openclaw_cron": [
+    {
+      "error": "Command '['/home/shinyyume/.npm-global/bin/openclaw', 'cron', 'list']' timed out after 15 seconds"
+    }
+  ],
   "bingx_bot": {
     "running": true,
     "mode": "live",
@@ -78,7 +82,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 327
+      "response_time_ms": 377
     },
     "openclaw": {
       "running": true
@@ -1294,10 +1298,6 @@
   ],
   "equity_history": [
     {
-      "ts": "2026-03-22T22:00:02.653660",
-      "equity": 102.8399
-    },
-    {
       "ts": "2026-03-22T22:05:02.073399",
       "equity": 102.9858
     },
@@ -1484,74 +1484,13 @@
     {
       "ts": "2026-03-23T02:55:02.074150",
       "equity": 102.5483
+    },
+    {
+      "ts": "2026-03-23T03:00:01.954483",
+      "equity": 102.5483
     }
   ],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "    return runner.run(main)",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "           ^^^^^^^^^^^^^^^^",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "  File \"/usr/lib/python3.12/asyncio/runners.py\", line 118, in run",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "    return self._loop.run_until_complete(task)",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "    return future.result()",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "           ^^^^^^^^^^^^^^^",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "  File \"/home/shinyyume/.openclaw/workspace/forex-forwarder/listener.py\", line 142, in main",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "    await client.start()",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/client/auth.py\", line 135, in _start",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "    await self.connect()",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py\", line 563, in connect",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "    self.session.auth_key = self._sender.auth_key",
@@ -1585,6 +1524,71 @@
     {
       "label": "FOREX",
       "text": "sqlite3.OperationalError: database is locked",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:55:41,707 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:55:41,707 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:55:41,758 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:55:41,758 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:55:42,128 INFO ✅ Userbot connected!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:55:42,128 INFO ✅ Userbot connected!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:55:42,188 INFO Logged in as: None (Yume)",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:55:42,188 INFO Logged in as: None (Yume)",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:55:42,188 INFO 👂 Listening to @BoBotfxSignals...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:55:42,188 INFO 👂 Listening to @BoBotfxSignals...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:56:42,178 INFO Closing current connection to begin reconnect...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:56:42,179 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-23 02:56:42,225 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
