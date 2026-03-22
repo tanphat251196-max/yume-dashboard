@@ -721,6 +721,8 @@
         </table>
         <div style="font-size:10px;color:var(--green-dim);margin-bottom:6px">SOCIAL MEDIA</div>
         <div id="social-cards" class="bingx-stats" style="grid-template-columns:repeat(3,1fr)"></div>
+        <div style="font-size:10px;color:var(--green-dim);margin:10px 0 4px">LỊCH ĐĂNG BÀI CHI TIẾT</div>
+        <div id="social-schedule-detail"></div>
       </div>
 
       <!-- Config accordion -->
@@ -1086,6 +1088,30 @@ function renderSocial(social) {
       <div style="font-size:10px;color:var(--green-dim);margin-top:2px">📅 ${tw.schedule||'--'}</div>
     </div>
   `;
+
+  // Bảng lịch chi tiết bên dưới
+  const detailEl = document.getElementById('social-schedule-detail');
+  if (detailEl) {
+    detailEl.innerHTML = `
+      <table style="margin-top:10px;width:100%">
+        <thead><tr><th>Giờ</th><th>Nền tảng</th><th>Loại bài</th><th>Model</th></tr></thead>
+        <tbody>
+          <tr><td>7:30</td><td>🐦 X</td><td>Phân tích BTC/ETH sáng</td><td class="model-sonnet">sonnet-4.6</td></tr>
+          <tr><td>8:00</td><td>🧵 Threads</td><td>Bài sáng (thị trường)</td><td class="model-haiku">haiku-4.5</td></tr>
+          <tr><td>9:30</td><td>🐦 X</td><td>Tin tức hot #1</td><td class="model-sonnet">sonnet-4.6</td></tr>
+          <tr><td>11:30</td><td>🐦 X</td><td>Insight / opinion</td><td class="model-sonnet">sonnet-4.6</td></tr>
+          <tr><td>13:30</td><td>🐦 X</td><td>Tin tức hot #2</td><td class="model-sonnet">sonnet-4.6</td></tr>
+          <tr><td>14:00</td><td>🧵 Threads</td><td>Bài chiều (insight)</td><td class="model-haiku">haiku-4.5</td></tr>
+          <tr><td>15:30</td><td>🐦 X</td><td>Insight #2</td><td class="model-sonnet">sonnet-4.6</td></tr>
+          <tr><td>17:30</td><td>🐦 X</td><td>Thread giáo dục/recap</td><td class="model-sonnet">sonnet-4.6</td></tr>
+          <tr><td>19:30</td><td>🐦 X</td><td>Tin tức hot #3</td><td class="model-sonnet">sonnet-4.6</td></tr>
+          <tr><td>20:00</td><td>🧵 Threads</td><td>Bài tối (tổng kết)</td><td class="model-haiku">haiku-4.5</td></tr>
+          <tr><td>21:30</td><td>🐦 X</td><td>Tổng kết ngày</td><td class="model-sonnet">sonnet-4.6</td></tr>
+          <tr><td style="color:var(--green-dim)">8:30</td><td style="color:var(--green-dim)">📘 Facebook</td><td style="color:var(--green-dim)">Bài sáng (chờ token)</td><td style="color:var(--green-dim)">haiku-4.5</td></tr>
+          <tr><td style="color:var(--green-dim)">15:30</td><td style="color:var(--green-dim)">📘 Facebook</td><td style="color:var(--green-dim)">Bài chiều (chờ token)</td><td style="color:var(--green-dim)">haiku-4.5</td></tr>
+        </tbody>
+      </table>`;
+  }
 }
 
 function renderWorkSchedule(schedule) {
