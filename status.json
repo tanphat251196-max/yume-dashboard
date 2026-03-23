@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-03-23T18:05:06.511094+00:00",
-  "generated_at_vn": "2026-03-24 01:05:06",
+  "generated_at_vn": "2026-03-24 01:09:42",
   "system": {
     "hostname": "shinyyume-OpenClaw",
     "uptime": "11h 5m",
@@ -287,6 +287,14 @@
       "source": "@BoBotfxSignals",
       "dest": "@CallerFOREX",
       "mode": "Telethon MTProto realtime"
+    },
+    "swift_bot": {
+      "running": false,
+      "note": "Tạm dừng theo yêu cầu ba Gin"
+    },
+    "chrome_relay": {
+      "running": true,
+      "status": "connected"
     }
   },
   "cron_history": [
@@ -1897,7 +1905,8 @@
     "facebook": {
       "page": "Thiên Kim Crypto",
       "status": "active",
-      "schedule": "2 bài/ngày: 8h30 · 15h30"
+      "schedule": "3 bài/ngày: 8h · 14h · 20h",
+      "token_expires": "~23/05/2026 (updated 24/03/2026)"
     },
     "x_twitter": {
       "account": "@ThienKimCrypto",
@@ -1938,22 +1947,34 @@
       "type": "oc_cron"
     },
     {
-      "time": "07:45",
-      "task": "daily-news.py",
-      "desc": "Đăng 5 tin tức lên Telegram",
-      "type": "linux_cron"
-    },
-    {
       "time": "07:30",
       "task": "x-post-analysis (OC)",
       "desc": "X: Bài phân tích sáng",
       "type": "oc_cron"
     },
     {
+      "time": "07:45",
+      "task": "daily-news.py",
+      "desc": "Đăng 5 tin tức lên Telegram",
+      "type": "linux_cron"
+    },
+    {
       "time": "08:00",
       "task": "monthly-analysis (OC, ngày 1)",
       "desc": "Phân tích BTC/ETH Monthly",
       "type": "oc_cron"
+    },
+    {
+      "time": "08:00",
+      "task": "facebook-post.py (sáng)",
+      "desc": "Facebook: Bài sáng 8h",
+      "type": "linux_cron"
+    },
+    {
+      "time": "08:00",
+      "task": "threads-post.py morning",
+      "desc": "Threads: Bài sáng 8h",
+      "type": "linux_cron"
     },
     {
       "time": "08:30",
@@ -1980,6 +2001,18 @@
       "type": "oc_cron"
     },
     {
+      "time": "14:00",
+      "task": "facebook-post.py (chiều)",
+      "desc": "Facebook: Bài chiều 14h",
+      "type": "linux_cron"
+    },
+    {
+      "time": "14:00",
+      "task": "threads-post.py afternoon",
+      "desc": "Threads: Bài chiều 14h",
+      "type": "linux_cron"
+    },
+    {
       "time": "15:30",
       "task": "x-post-insight2 (OC)",
       "desc": "X: Insight #2",
@@ -1998,15 +2031,27 @@
       "type": "oc_cron"
     },
     {
-      "time": "20:30",
-      "task": "weekly-leaderboard (OC, CN)",
-      "desc": "Leaderboard tuần",
+      "time": "20:00",
+      "task": "crypto-education (OC, T3/T5/T7)",
+      "desc": "Giáo dục crypto",
       "type": "oc_cron"
     },
     {
       "time": "20:00",
-      "task": "crypto-education (OC, T3/T5/T7)",
-      "desc": "Giáo dục crypto",
+      "task": "facebook-post.py (tối)",
+      "desc": "Facebook: Bài tối 20h",
+      "type": "linux_cron"
+    },
+    {
+      "time": "20:00",
+      "task": "threads-post.py evening",
+      "desc": "Threads: Bài tối 20h",
+      "type": "linux_cron"
+    },
+    {
+      "time": "20:30",
+      "task": "weekly-leaderboard (OC, CN)",
+      "desc": "Leaderboard tuần",
       "type": "oc_cron"
     },
     {
