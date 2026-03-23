@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-23T08:15:11.836786+00:00",
-  "generated_at_vn": "2026-03-23 15:15:11",
+  "generated_at": "2026-03-23T08:15:12.059791+00:00",
+  "generated_at_vn": "2026-03-23 15:15:12",
   "system": {
     "hostname": "shinyyume-OpenClaw",
     "uptime": "1h 15m",
-    "uptime_seconds": 4522,
+    "uptime_seconds": 4523,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.49,
-      "percent": 22.7
+      "used_gb": 3.25,
+      "percent": 21.1
     },
     "disk": {
       "total_gb": 468,
@@ -243,7 +243,7 @@
     "running": true,
     "mode": "live",
     "balance": 75.0985,
-    "equity": 102.2932,
+    "equity": 102.3107,
     "open_positions": 3,
     "closed_trades": 0,
     "winning_trades": 0,
@@ -315,7 +315,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 424
+      "response_time_ms": 337
     },
     "openclaw": {
       "running": true
@@ -1531,10 +1531,6 @@
   ],
   "equity_history": [
     {
-      "ts": "2026-03-23T11:30:02.462654",
-      "equity": 102.1619
-    },
-    {
       "ts": "2026-03-23T11:35:02.913755",
       "equity": 102.1619
     },
@@ -1721,6 +1717,10 @@
     {
       "ts": "2026-03-23T15:15:07.389167",
       "equity": 102.2932
+    },
+    {
+      "ts": "2026-03-23T15:15:07.624358",
+      "equity": 102.3107
     }
   ],
   "recent_logs": [
