@@ -208,6 +208,77 @@
   .tab-content { display: none; }
   .tab-content.active { display: block; }
 
+  /* Alert Panel */
+  .alert-panel {
+    border: 2px solid var(--red);
+    margin-bottom: 20px;
+    background: var(--bg2);
+  }
+  .alert-panel.all-clear {
+    border-color: var(--green);
+  }
+  .alert-panel-header {
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .alert-panel-header.critical {
+    background: rgba(255, 51, 51, 0.2);
+    color: var(--red);
+    text-shadow: 0 0 8px var(--red);
+    border-bottom: 1px solid var(--red);
+  }
+  .alert-panel-header.warning-only {
+    background: rgba(255, 255, 0, 0.1);
+    color: var(--yellow);
+    text-shadow: 0 0 8px var(--yellow);
+    border-bottom: 1px solid var(--yellow);
+  }
+  .alert-panel-header.ok {
+    background: rgba(0, 255, 0, 0.08);
+    color: var(--green);
+    text-shadow: 0 0 8px var(--green);
+    border-bottom: 1px solid var(--green-dark);
+  }
+  .alert-panel-body {
+    padding: 12px 16px;
+  }
+  .alert-item {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border-left: 3px solid;
+  }
+  .alert-item:last-child { margin-bottom: 0; }
+  .alert-item.critical {
+    background: rgba(255, 51, 51, 0.08);
+    border-left-color: var(--red);
+    color: #ffaaaa;
+  }
+  .alert-item.warning {
+    background: rgba(255, 255, 0, 0.05);
+    border-left-color: var(--yellow);
+    color: #ffffaa;
+  }
+  .alert-item-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+  .alert-item-content { flex: 1; }
+  .alert-item-title { font-weight: bold; font-size: 13px; }
+  .alert-item-msg { font-size: 11px; color: var(--green-dim); margin-top: 3px; font-family: 'Courier New', monospace; }
+  .alert-all-clear {
+    color: var(--green);
+    font-size: 13px;
+    text-shadow: var(--glow-sm);
+    padding: 4px 0;
+  }
+
   /* Cards */
   .cards-row {
     display: grid;
@@ -667,6 +738,16 @@
     <div class="main-header">
       <div class="main-title" id="main-title">[GIÁM SÁT HỆ THỐNG]</div>
       <div class="timestamp" id="last-updated">[Đang tải...]</div>
+    </div>
+
+    <!-- ALERT PANEL -->
+    <div class="alert-panel" id="alert-panel">
+      <div class="alert-panel-header critical" id="alert-panel-header">
+        🚨 <span id="alert-count-critical">?</span> Critical · <span id="alert-count-warning">?</span> Warnings
+      </div>
+      <div class="alert-panel-body" id="alert-panel-body">
+        <div class="loading">Đang kiểm tra hệ thống...</div>
+      </div>
     </div>
 
     <!-- TAB: SYSTEM -->
@@ -1354,8 +1435,8 @@ function renderBingXSummary(bingx, containerId) {
           const entry = data.entry_price || ct.entry_price || 0;
           const qty = data.qty || data.size || data.quantity || ct.size || ct.quantity || '--';
           const setup = data.setup || ct.setup || {};
-          const sl = setup.stop_loss || data.sl_price || 0;
-          const tp1 = setup.tp1 || data.tp1_price || 0;
+          const sl = data.sl || data.sl_price || setup.stop_loss || 0;
+          const tp1 = data.tp1 || data.tp1_price || setup.tp1 || 0;
           rows += `<tr>
             <td>${sym}</td>
             <td style="color:${sideColor}">${sideLabel}</td>
@@ -1556,11 +1637,67 @@ function renderForex(services) {
   `;
 }
 
+function renderAlerts(data) {
+  const alertsData = data.alerts || {};
+  const panel = document.getElementById('alert-panel');
+  const header = document.getElementById('alert-panel-header');
+  const body = document.getElementById('alert-panel-body');
+  if (!panel || !header || !body) return;
+
+  if (alertsData.all_clear) {
+    panel.className = 'alert-panel all-clear';
+    header.className = 'alert-panel-header ok';
+    header.innerHTML = '✅ TẤT CẢ HỆ THỐNG HOẠT ĐỘNG BÌNH THƯỜNG';
+    body.innerHTML = '<div class="alert-all-clear">● Không có vấn đề gì cần xử lý. Ba yên tâm đi ngủ đi! ✨</div>';
+    return;
+  }
+
+  const criticals = alertsData.alerts || [];
+  const warnings = alertsData.warnings || [];
+  const totalCrit = alertsData.total_critical || 0;
+  const totalWarn = alertsData.total_warning || 0;
+
+  // Update header
+  if (totalCrit > 0) {
+    panel.className = 'alert-panel';
+    panel.style.borderColor = 'var(--red)';
+    header.className = 'alert-panel-header critical';
+    header.innerHTML = `🚨 <span id="alert-count-critical">${totalCrit}</span> CRITICAL · <span id="alert-count-warning">${totalWarn}</span> WARNINGS`;
+  } else {
+    panel.className = 'alert-panel';
+    panel.style.borderColor = 'var(--yellow)';
+    header.className = 'alert-panel-header warning-only';
+    header.innerHTML = `⚠️ <span id="alert-count-critical">0</span> Critical · <span id="alert-count-warning">${totalWarn}</span> Warnings`;
+  }
+
+  let html = '';
+  criticals.forEach(a => {
+    html += `<div class="alert-item critical">
+      <span class="alert-item-icon">${a.icon}</span>
+      <div class="alert-item-content">
+        <div class="alert-item-title">${a.title}</div>
+        <div class="alert-item-msg">▸ ${a.msg}</div>
+      </div>
+    </div>`;
+  });
+  warnings.forEach(w => {
+    html += `<div class="alert-item warning">
+      <span class="alert-item-icon">${w.icon}</span>
+      <div class="alert-item-content">
+        <div class="alert-item-title">${w.title}</div>
+        <div class="alert-item-msg">▸ ${w.msg}</div>
+      </div>
+    </div>`;
+  });
+  body.innerHTML = html || '<div style="color:var(--green-dim);font-size:11px">Không có dữ liệu alert</div>';
+}
+
 function renderAll(d) {
   window._orbTrades = (d.orb_trade || {}).trades || [];  // share ORB trades globally
   data = d;
   const ts = d.generated_at_vn || d.generated_at || '--';
   document.getElementById('last-updated').textContent = '[' + ts + ']';
+  renderAlerts(d);
   renderServices(d.services);
   renderSystem(d);
   renderBingXSummary(d.bingx_bot, 'bingx-summary');
