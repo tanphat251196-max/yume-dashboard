@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-27T17:40:04.804195+00:00",
-  "generated_at_vn": "2026-03-28 00:40:04",
+  "generated_at": "2026-03-27T17:45:04.132350+00:00",
+  "generated_at_vn": "2026-03-28 00:45:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "3h 11m",
-    "uptime_seconds": 11469,
+    "uptime": "3h 16m",
+    "uptime_seconds": 11769,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.43,
-      "percent": 22.3
+      "used_gb": 3.22,
+      "percent": 21.0
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 35.5,
+      "percent": 16.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -60,7 +60,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 391
+      "response_time_ms": 392
     },
     "openclaw": {
       "running": true
@@ -1278,102 +1278,102 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-03-27 23:14:07,182 INFO   🎯 UPDATE → mapped via reply_to src#5290 → dest#966",
+      "text": "2026-03-28 00:44:12,846 INFO Disconnection from 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-27 23:14:08,230 INFO   ✅ UPDATE replied to 966",
+      "text": "2026-03-28 00:44:17,864 ERROR Task exception was never retrieved",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-27 23:14:08,298 INFO Got difference for channel 3850136703 updates",
+      "text": "future: <Task finished name='Task-32' coro=<TelegramBaseClient._disconnect_coro() done, defined at /home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py:716> exception=OperationalError('database is locked')>",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-27 23:15:10,439 INFO Got difference for account updates",
+      "text": "Traceback (most recent call last):",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-27 23:15:10,439 INFO Got difference for account updates",
+      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py\", line 746, in _disconnect_coro",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:22:07,335 INFO New message #5292 → SIGNAL: '💱 Symbol: BTCUSD 📉 Signal: Sell 💠 Entry: 65873.07 ❌SL: 66249.36 🔷 TP1: 65684.93 '",
+      "text": "    await self._save_states_and_entities()",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:22:07,335 INFO New message #5292 → SIGNAL: '💱 Symbol: BTCUSD 📉 Signal: Sell 💠 Entry: 65873.07 ❌SL: 66249.36 🔷 TP1: 65684.93 '",
+      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py\", line 701, in _save_states_and_entities",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:22:08,275 INFO   ✅ SIGNAL posted → dest msg_id=969",
+      "text": "    self.session.process_entities(",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:22:08,275 INFO   ✅ SIGNAL posted → dest msg_id=969",
+      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/sessions/sqlite.py\", line 301, in process_entities",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:29:07,711 INFO Got difference for account updates",
+      "text": "    c.executemany(",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:29:07,712 INFO New message #5292 → SIGNAL: '💱 Symbol: BTCUSD 📉 Signal: Sell 💠 Entry: 65873.07 ❌SL: 66249.36 🔷 TP1: 65684.93 '",
+      "text": "sqlite3.OperationalError: database is locked",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:29:08,684 INFO   ✅ SIGNAL posted → dest msg_id=970",
+      "text": "2026-03-28 00:44:17,867 INFO Not disconnecting (already have no connection)",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:30:11,075 INFO Got difference for account updates",
+      "text": "2026-03-28 00:44:28,916 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:30:11,075 INFO Got difference for account updates",
+      "text": "2026-03-28 00:44:28,972 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:33:52,518 INFO New message #5293 → UPDATE: 'TP2 Hit +4377.6Pips'",
+      "text": "2026-03-28 00:44:29,455 INFO ✅ Userbot connected!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:33:52,518 INFO New message #5293 → UPDATE: 'TP2 Hit +4377.6Pips'",
+      "text": "2026-03-28 00:44:29,537 INFO Logged in as: None (Yume)",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:33:52,519 INFO   🎯 UPDATE → mapped via reply_to src#5290 → dest#966",
+      "text": "2026-03-28 00:44:29,537 INFO 👂 Listening to @BoBotfxSignals...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:33:52,519 INFO   🎯 UPDATE → mapped via reply_to src#5290 → dest#966",
+      "text": "2026-03-28 00:44:55,995 INFO New message #5295 → UPDATE: 'TP3 Hit +6217.5Pips'",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:33:53,732 INFO   ✅ UPDATE replied to 966",
+      "text": "2026-03-28 00:44:55,997 INFO   🎯 UPDATE → mapped via reply_to src#5284 → dest#961",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:33:53,732 INFO   ✅ UPDATE replied to 966",
+      "text": "2026-03-28 00:44:57,095 INFO   ✅ UPDATE replied to 961",
       "ts": ""
     },
     {
@@ -1483,16 +1483,6 @@
     },
     {
       "label": "DASH",
-      "text": "   ab8122a..fbb2daf  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   17c79b1..91df56f  main -> main",
       "ts": ""
     },
@@ -1574,6 +1564,16 @@
     {
       "label": "DASH",
       "text": "   43f88b2..2703e98  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   04f56a1..60b66fc  main -> main",
       "ts": ""
     }
   ],
