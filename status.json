@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-27T18:15:05.952578+00:00",
-  "generated_at_vn": "2026-03-28 01:15:05",
+  "generated_at": "2026-03-27T18:20:05.847062+00:00",
+  "generated_at_vn": "2026-03-28 01:20:05",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "3h 46m",
-    "uptime_seconds": 13570,
+    "uptime": "3h 51m",
+    "uptime_seconds": 13870,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.9,
-      "percent": 18.8
+      "used_gb": 2.91,
+      "percent": 18.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 23.8,
+      "percent": 18.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -60,7 +60,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 384
+      "response_time_ms": 379
     },
     "openclaw": {
       "running": true
@@ -1278,102 +1278,102 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:45:37,363 INFO 👂 Listening to @BoBotfxSignals...",
+      "text": "    return runner.run(main)",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:45:37,363 INFO 👂 Listening to @BoBotfxSignals...",
+      "text": "           ^^^^^^^^^^^^^^^^",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:49:37,480 WARNING Server closed the connection: [Errno 104] Connection reset by peer",
+      "text": "  File \"/usr/lib/python3.12/asyncio/runners.py\", line 118, in run",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:49:37,480 WARNING Server closed the connection: [Errno 104] Connection reset by peer",
+      "text": "    return self._loop.run_until_complete(task)",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:49:37,480 INFO Connection closed while receiving data: [Errno 104] Connection reset by peer",
+      "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:49:37,480 INFO Connection closed while receiving data: [Errno 104] Connection reset by peer",
+      "text": "  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:49:37,481 INFO Closing current connection to begin reconnect...",
+      "text": "    return future.result()",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:49:37,481 INFO Closing current connection to begin reconnect...",
+      "text": "           ^^^^^^^^^^^^^^^",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:49:37,481 INFO <class 'ConnectionResetError'> during disconnect: [Errno 104] Connection reset by peer",
+      "text": "  File \"/home/shinyyume/.openclaw/workspace/forex-forwarder/listener.py\", line 144, in main",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:49:37,481 INFO <class 'ConnectionResetError'> during disconnect: [Errno 104] Connection reset by peer",
+      "text": "    await client.start()",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:49:37,482 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/client/auth.py\", line 135, in _start",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:49:37,482 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "    await self.connect()",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:49:37,565 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py\", line 563, in connect",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:49:37,565 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "    self.session.auth_key = self._sender.auth_key",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:55:37,807 INFO Closing current connection to begin reconnect...",
+      "text": "    ^^^^^^^^^^^^^^^^^^^^^",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:55:37,807 INFO Closing current connection to begin reconnect...",
+      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/sessions/sqlite.py\", line 180, in auth_key",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:55:37,808 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "    self._update_session_table()",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:55:37,808 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/sessions/sqlite.py\", line 194, in _update_session_table",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:55:37,847 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "    c.execute('delete from sessions')",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:55:37,847 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "sqlite3.OperationalError: database is locked",
       "ts": ""
     },
     {
@@ -1483,16 +1483,6 @@
     },
     {
       "label": "DASH",
-      "text": "   50959b1..5d7251e  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   11511df..de3c22b  main -> main",
       "ts": ""
     },
@@ -1575,6 +1565,16 @@
       "label": "DASH",
       "text": "   d7f08b5..dbf434d  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   966d38f..25ead6a  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -1629,12 +1629,11 @@
         "id": "-1001919338716",
         "label": "@SignalHuntersCrypto",
         "type": "channel",
-        "title": "Signal Hunters",
-        "members": 4607,
-        "ok": true,
+        "title": "--",
+        "members": "--",
+        "ok": false,
         "model": "claudible/claude-sonnet-4.6",
-        "username": "SignalHuntersCrypto",
-        "description": "Chào mừng tất cả anh em tới Signal Hunters 🔥\nChat @SignalHuntersChat\nJoin VIP @J"
+        "error": "<urlopen error [Errno 104] Connection reset by peer>"
       },
       {
         "id": "-1003850136703",
