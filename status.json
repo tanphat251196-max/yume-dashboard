@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-27T07:05:12.878816+00:00",
-  "generated_at_vn": "2026-03-27 14:05:12",
+  "generated_at": "2026-03-27T07:10:18.487158+00:00",
+  "generated_at_vn": "2026-03-27 14:10:18",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "1h 59m",
-    "uptime_seconds": 7184,
+    "uptime": "2h 4m",
+    "uptime_seconds": 7490,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.66,
-      "percent": 23.8
+      "used_gb": 3.68,
+      "percent": 23.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,231 +16,18 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 3.8,
+      "percent": 10.8,
       "count": 4,
       "freq_mhz": 0
     }
   },
   "openclaw_cron": [
     {
-      "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 40m",
-      "last_run": "1h ago",
-      "status": "error",
-      "model": "openai-codex/gpt-5.4"
-    },
-    {
-      "id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
-      "name": "x-engage-4",
-      "schedule": "cron 0 15 * * * (exact)",
-      "next_run": "in 55m",
-      "last_run": "23h ago",
-      "status": "ok",
-      "model": "claudible/claude-haiku-4.5"
-    },
-    {
-      "id": "2ba6fc94-3668-4722-82a2-3567446040e8",
-      "name": "auto-web-post",
-      "schedule": "unknown",
-      "next_run": "-",
-      "last_run": "-",
-      "status": "error",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
-      "name": "x-post-insight-2",
-      "schedule": "cron 30 15 * * * (exact)",
-      "next_run": "in 1h",
-      "last_run": "23h ago",
-      "status": "error",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "34cd789a-75a1-414f-ada7-f72817e76244",
-      "name": "x-post-thread",
-      "schedule": "cron 30 17 * * * (exact)",
-      "next_run": "in 3h",
-      "last_run": "21h ago",
-      "status": "ok",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "93088c93-e520-4685-b54f-33fcb9d0908e",
-      "name": "x-engage-5",
-      "schedule": "cron 0 19 * * * (exact)",
-      "next_run": "in 5h",
-      "last_run": "19h ago",
-      "status": "ok",
-      "model": "claudible/claude-haiku-4.5"
-    },
-    {
-      "id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
-      "name": "x-post-news-3",
-      "schedule": "cron 30 19 * * * (exact)",
-      "next_run": "in 5h",
-      "last_run": "19h ago",
-      "status": "ok",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "aa9e48fe-7215-4955-8091-1049db862b01",
-      "name": "x-post-analysis-pm",
-      "schedule": "cron 30 21 * * * (exact)",
-      "next_run": "in 7h",
-      "last_run": "2h ago",
-      "status": "error",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
-      "name": "x-engage-6",
-      "schedule": "cron 0 22 * * * (exact)",
-      "next_run": "in 8h",
-      "last_run": "16h ago",
-      "status": "ok",
-      "model": "claudible/claude-haiku-4.5"
-    },
-    {
-      "id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "schedule": "cron 0 7 * * * (exact)",
-      "next_run": "in 17h",
-      "last_run": "7h ago",
-      "status": "ok",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
-      "name": "x-post-analysis-am",
-      "schedule": "cron 30 7 * * * (exact)",
-      "next_run": "in 17h",
-      "last_run": "7h ago",
-      "status": "ok",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
-      "name": "x-engage-1",
-      "schedule": "cron 45 7 * * * (exact)",
-      "next_run": "in 18h",
-      "last_run": "6h ago",
-      "status": "ok",
-      "model": "claudible/claude-haiku-4.5"
-    },
-    {
-      "id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-      "name": "daily-news",
-      "schedule": "cron 0 8 * * * (exact)",
-      "next_run": "in 18h",
-      "last_run": "6h ago",
-      "status": "ok",
-      "model": "openai-codex/gpt-5.4"
-    },
-    {
-      "id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-      "name": "commodity-update",
-      "schedule": "cron 45 8 * * * (exact)",
-      "next_run": "in 19h",
-      "last_run": "5h ago",
-      "status": "ok",
-      "model": "openai-codex/gpt-5.4"
-    },
-    {
-      "id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
-      "name": "x-post-news-1",
-      "schedule": "cron 30 9 * * * (exact)",
-      "next_run": "in 19h",
-      "last_run": "5h ago",
-      "status": "error",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-      "name": "x-engage-2",
-      "schedule": "cron 0 10 * * * (exact)",
-      "next_run": "in 20h",
-      "last_run": "4h ago",
-      "status": "ok",
-      "model": "claudible/claude-haiku-4.5"
-    },
-    {
-      "id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
-      "name": "x-post-insight-1",
-      "schedule": "cron 30 11 * * * (exact)",
-      "next_run": "in 21h",
-      "last_run": "3h ago",
-      "status": "error",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
-      "name": "x-engage-3",
-      "schedule": "cron 0 13 * * * (exact)",
-      "next_run": "in 23h",
-      "last_run": "1h ago",
-      "status": "ok",
-      "model": "claudible/claude-haiku-4.5"
-    },
-    {
-      "id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
-      "name": "x-post-news-2",
-      "schedule": "cron 30 13 * * * (exact)",
-      "next_run": "in 23h",
-      "last_run": "35m ago",
-      "status": "ok",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "schedule": "cron 0 20 * * 2,4,6 (exact)",
-      "next_run": "in 1d",
-      "last_run": "18h ago",
-      "status": "ok",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "schedule": "cron 30 20 * * 0 (exact)",
-      "next_run": "in 2d",
-      "last_run": "5d ago",
-      "status": "ok",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "schedule": "cron 15 7 * * 1 (exact)",
-      "next_run": "in 3d",
-      "last_run": "4d ago",
-      "status": "ok",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-      "name": "weekly-economic-calendar",
-      "schedule": "unknown",
-      "next_run": "-",
-      "last_run": "-",
-      "status": "ok",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "schedule": "cron 15 8 1 * * (exact)",
-      "next_run": "in 5d",
-      "last_run": "-",
-      "status": "idle",
-      "model": "claudible/claude-sonnet-4.6"
+      "error": "Command '['/home/shinyyume/.npm-global/bin/openclaw', 'cron', 'list']' timed out after 15 seconds"
     }
   ],
   "bingx_bot": {
-    "running": true,
+    "running": false,
     "mode": "live",
     "balance": 0.0,
     "equity": 0.0,
@@ -272,12 +59,12 @@
   "services": {
     "chrome": {
       "running": true,
-      "process_count": 4
+      "process_count": 2
     },
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 494
+      "response_time_ms": 396
     },
     "openclaw": {
       "running": true
@@ -1495,46 +1282,6 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "    return future.result()",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "           ^^^^^^^^^^^^^^^",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "  File \"/home/shinyyume/.openclaw/workspace/forex-forwarder/listener.py\", line 144, in main",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "    await client.start()",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/client/auth.py\", line 135, in _start",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "    await self.connect()",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py\", line 563, in connect",
       "ts": ""
     },
@@ -1575,22 +1322,62 @@
     },
     {
       "label": "FOREX",
-      "text": "2026-03-27 14:05:10,995 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-27 14:10:10,291 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-27 14:05:10,995 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-27 14:10:10,291 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-27 14:05:11,048 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-27 14:10:10,329 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-27 14:05:11,048 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-27 14:10:10,329 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 14:10:10,615 INFO ✅ Userbot connected!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 14:10:10,615 INFO ✅ Userbot connected!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 14:10:10,661 INFO Logged in as: None (Yume)",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 14:10:10,661 INFO Logged in as: None (Yume)",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 14:10:10,661 INFO 👂 Listening to @BoBotfxSignals...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 14:10:10,661 INFO 👂 Listening to @BoBotfxSignals...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 14:10:11,856 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 14:10:11,908 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
@@ -1700,16 +1487,6 @@
     },
     {
       "label": "DASH",
-      "text": "   f54174e..67ed20b  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   0c36f9b..9506af0  main -> main",
       "ts": ""
     },
@@ -1791,6 +1568,16 @@
     {
       "label": "DASH",
       "text": "   da41cc1..a08f53f  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   4dfb640..65385f1  main -> main",
       "ts": ""
     }
   ],
@@ -2047,12 +1834,18 @@
       {
         "level": "warning",
         "icon": "🟡",
+        "title": "Swift Bot đang tắt",
+        "msg": "Bot BingX không hoạt động. Bật lại: sudo systemctl start swift-webhook-v2"
+      },
+      {
+        "level": "warning",
+        "icon": "🟡",
         "title": "X posts có lỗi gần đây",
         "msg": "Kiểm tra logs/x-kol.log"
       }
     ],
     "total_critical": 1,
-    "total_warning": 1,
+    "total_warning": 2,
     "all_clear": false
   }
 }
