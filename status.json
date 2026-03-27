@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-27T06:05:09.352106+00:00",
-  "generated_at_vn": "2026-03-27 13:05:09",
+  "generated_at": "2026-03-27T06:10:10.212716+00:00",
+  "generated_at_vn": "2026-03-27 13:10:10",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "59m",
-    "uptime_seconds": 3581,
+    "uptime": "1h 4m",
+    "uptime_seconds": 3882,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.61,
-      "percent": 23.5
+      "used_gb": 3.66,
+      "percent": 23.8
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 17.2,
+      "percent": 4.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
       "name": "x-post-news-2",
       "schedule": "cron 30 13 * * * (exact)",
-      "next_run": "in 25m",
+      "next_run": "in 20m",
       "last_run": "24h ago",
       "status": "ok",
       "model": "claudible/claude-sonnet-4.6"
@@ -36,7 +36,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 2h",
-      "last_run": "20m ago",
+      "last_run": "25m ago",
       "status": "error",
       "model": "openai-codex/gpt-5.4"
     },
@@ -99,7 +99,7 @@
       "name": "x-post-analysis-pm",
       "schedule": "cron 30 21 * * * (exact)",
       "next_run": "in 8h",
-      "last_run": "59m ago",
+      "last_run": "1h ago",
       "status": "error",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -189,7 +189,7 @@
       "name": "x-engage-3",
       "schedule": "cron 0 13 * * * (exact)",
       "next_run": "in 24h",
-      "last_run": "5m ago",
+      "last_run": "10m ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
     },
@@ -277,7 +277,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 376
+      "response_time_ms": 466
     },
     "openclaw": {
       "running": true
@@ -294,150 +294,6 @@
       "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
       "name": "commodity-update",
       "status": "ok",
-      "ts": 1774589110.212936
-    },
-    {
-      "job_id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
-      "name": "x-post-news-1",
-      "status": "error",
-      "ts": 1774589110.212936
-    },
-    {
-      "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-      "name": "x-engage-2",
-      "status": "ok",
-      "ts": 1774589110.212936
-    },
-    {
-      "job_id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
-      "name": "x-post-insight-1",
-      "status": "error",
-      "ts": 1774589110.212936
-    },
-    {
-      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "status": "ok",
-      "ts": 1774589110.212936
-    },
-    {
-      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "status": "ok",
-      "ts": 1774589110.212936
-    },
-    {
-      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "status": "ok",
-      "ts": 1774589110.212936
-    },
-    {
-      "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-      "name": "weekly-economic-calendar",
-      "status": "ok",
-      "ts": 1774589110.212936
-    },
-    {
-      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "status": "idle",
-      "ts": 1774589110.212936
-    },
-    {
-      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "status": "error",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
-      "name": "x-engage-3",
-      "status": "ok",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
-      "name": "x-post-news-2",
-      "status": "ok",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
-      "name": "x-engage-4",
-      "status": "ok",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
-      "name": "auto-web-post",
-      "status": "error",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
-      "name": "x-post-insight-2",
-      "status": "error",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "34cd789a-75a1-414f-ada7-f72817e76244",
-      "name": "x-post-thread",
-      "status": "ok",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
-      "name": "x-engage-5",
-      "status": "ok",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
-      "name": "x-post-news-3",
-      "status": "ok",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "aa9e48fe-7215-4955-8091-1049db862b01",
-      "name": "x-post-analysis-pm",
-      "status": "error",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
-      "name": "x-engage-6",
-      "status": "ok",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "status": "ok",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
-      "name": "x-post-analysis-am",
-      "status": "ok",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
-      "name": "x-engage-1",
-      "status": "ok",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-      "name": "daily-news",
-      "status": "ok",
-      "ts": 1774589412.854976
-    },
-    {
-      "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-      "name": "commodity-update",
-      "status": "ok",
       "ts": 1774589412.854976
     },
     {
@@ -1489,57 +1345,156 @@
       "name": "monthly-analysis",
       "status": "idle",
       "ts": 1774591509.350979
+    },
+    {
+      "job_id": "f21bf5ec-a524-4a34-9620-9a858441a26a",
+      "name": "x-post-news-2",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "status": "error",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
+      "name": "x-engage-4",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
+      "name": "auto-web-post",
+      "status": "error",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "b3267700-b472-4a52-bf8a-0994ffcacdfc",
+      "name": "x-post-insight-2",
+      "status": "error",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "34cd789a-75a1-414f-ada7-f72817e76244",
+      "name": "x-post-thread",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
+      "name": "x-engage-5",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "5f61a1b6-c08d-4d5c-a398-f99aa912f6f8",
+      "name": "x-post-news-3",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "aa9e48fe-7215-4955-8091-1049db862b01",
+      "name": "x-post-analysis-pm",
+      "status": "error",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
+      "name": "x-engage-6",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+      "name": "daily-analysis",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "8ca75218-5fa0-4675-94ee-d00620764bdc",
+      "name": "x-post-analysis-am",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
+      "name": "x-engage-1",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
+      "name": "daily-news",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
+      "name": "commodity-update",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "f44c987e-3da9-4747-bedc-9b861c10ee3b",
+      "name": "x-post-news-1",
+      "status": "error",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
+      "name": "x-engage-2",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "03214ec5-1c01-4036-bec3-1e8ae3af24cc",
+      "name": "x-post-insight-1",
+      "status": "error",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
+      "name": "x-engage-3",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+      "name": "crypto-education",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+      "name": "weekly-leaderboard",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+      "name": "weekly-analysis",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
+      "name": "weekly-economic-calendar",
+      "status": "ok",
+      "ts": 1774591810.211569
+    },
+    {
+      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+      "name": "monthly-analysis",
+      "status": "idle",
+      "ts": 1774591810.211569
     }
   ],
   "equity_history": [],
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-03-27 12:35:42,583 INFO   ✅ SIGNAL posted → dest msg_id=890",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-27 12:35:42,583 INFO New message #5222 → UPDATE: 'Hit SL Wait for recovery'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-27 12:35:42,584 INFO   🎯 UPDATE → mapped via reply_to src#5221 → dest#890",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-27 12:35:43,540 INFO   ✅ UPDATE replied to 890",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-27 12:35:43,542 INFO   🔒 Signal 5221 closed",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-27 12:35:43,542 INFO New message #5223 → UPDATE: 'TP2 Hit +1744.4Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-27 12:35:43,543 INFO   🎯 UPDATE → mapped via reply_to src#5219 → dest#888",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-27 12:35:44,466 INFO   ✅ UPDATE replied to 888",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-27 12:36:43,522 INFO Got difference for account updates",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-03-27 12:36:43,522 INFO Got difference for account updates",
       "ts": ""
     },
@@ -1591,6 +1546,51 @@
     {
       "label": "FOREX",
       "text": "2026-03-27 12:57:28,023 INFO   ✅ UPDATE replied to 893",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 13:05:39,994 INFO Got difference for account updates",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 13:05:39,995 INFO New message #5224 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Sell 💠 Entry: 4461.677 ❌SL: 4472.966 🔷 TP1: 4456.033 '",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 13:05:40,900 INFO   ✅ SIGNAL posted → dest msg_id=895",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 13:05:40,900 INFO New message #5225 → UPDATE: 'TP1 Hit +56.4Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 13:05:40,901 INFO   🎯 UPDATE → mapped via reply_to src#5224 → dest#895",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 13:05:41,837 INFO   ✅ UPDATE replied to 895",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 13:05:41,944 INFO Got difference for channel 3850136703 updates",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 13:06:43,715 INFO Got difference for account updates",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-27 13:06:43,715 INFO Got difference for account updates",
       "ts": ""
     },
     {
@@ -1700,16 +1700,6 @@
     },
     {
       "label": "DASH",
-      "text": "   dac3c27..fece0a7  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   8e9e904..69701ee  main -> main",
       "ts": ""
     },
@@ -1791,6 +1781,16 @@
     {
       "label": "DASH",
       "text": "   9931f0f..d116527  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   02c00ee..411531f  main -> main",
       "ts": ""
     }
   ],
