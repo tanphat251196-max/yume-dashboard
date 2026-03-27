@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-27T17:45:04.132350+00:00",
-  "generated_at_vn": "2026-03-28 00:45:04",
+  "generated_at": "2026-03-27T17:50:04.520765+00:00",
+  "generated_at_vn": "2026-03-28 00:50:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "3h 16m",
-    "uptime_seconds": 11769,
+    "uptime": "3h 21m",
+    "uptime_seconds": 12069,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.22,
-      "percent": 21.0
+      "used_gb": 2.98,
+      "percent": 19.4
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 16.5,
+      "percent": 15.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -60,7 +60,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 392
+      "response_time_ms": 499
     },
     "openclaw": {
       "running": true
@@ -1278,102 +1278,102 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:44:12,846 INFO Disconnection from 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-28 00:45:36,973 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:44:17,864 ERROR Task exception was never retrieved",
+      "text": "2026-03-28 00:45:36,973 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "future: <Task finished name='Task-32' coro=<TelegramBaseClient._disconnect_coro() done, defined at /home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py:716> exception=OperationalError('database is locked')>",
+      "text": "2026-03-28 00:45:37,313 INFO ✅ Userbot connected!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "Traceback (most recent call last):",
+      "text": "2026-03-28 00:45:37,313 INFO ✅ Userbot connected!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py\", line 746, in _disconnect_coro",
+      "text": "2026-03-28 00:45:37,363 INFO Logged in as: None (Yume)",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "    await self._save_states_and_entities()",
+      "text": "2026-03-28 00:45:37,363 INFO Logged in as: None (Yume)",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py\", line 701, in _save_states_and_entities",
+      "text": "2026-03-28 00:45:37,363 INFO 👂 Listening to @BoBotfxSignals...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "    self.session.process_entities(",
+      "text": "2026-03-28 00:45:37,363 INFO 👂 Listening to @BoBotfxSignals...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "  File \"/home/shinyyume/.openclaw/venvs/crypto-tools/lib/python3.12/site-packages/telethon/sessions/sqlite.py\", line 301, in process_entities",
+      "text": "2026-03-28 00:49:37,480 WARNING Server closed the connection: [Errno 104] Connection reset by peer",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "    c.executemany(",
+      "text": "2026-03-28 00:49:37,480 WARNING Server closed the connection: [Errno 104] Connection reset by peer",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "sqlite3.OperationalError: database is locked",
+      "text": "2026-03-28 00:49:37,480 INFO Connection closed while receiving data: [Errno 104] Connection reset by peer",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:44:17,867 INFO Not disconnecting (already have no connection)",
+      "text": "2026-03-28 00:49:37,480 INFO Connection closed while receiving data: [Errno 104] Connection reset by peer",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:44:28,916 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-28 00:49:37,481 INFO Closing current connection to begin reconnect...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:44:28,972 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-28 00:49:37,481 INFO Closing current connection to begin reconnect...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:44:29,455 INFO ✅ Userbot connected!",
+      "text": "2026-03-28 00:49:37,481 INFO <class 'ConnectionResetError'> during disconnect: [Errno 104] Connection reset by peer",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:44:29,537 INFO Logged in as: None (Yume)",
+      "text": "2026-03-28 00:49:37,481 INFO <class 'ConnectionResetError'> during disconnect: [Errno 104] Connection reset by peer",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:44:29,537 INFO 👂 Listening to @BoBotfxSignals...",
+      "text": "2026-03-28 00:49:37,482 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:44:55,995 INFO New message #5295 → UPDATE: 'TP3 Hit +6217.5Pips'",
+      "text": "2026-03-28 00:49:37,482 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:44:55,997 INFO   🎯 UPDATE → mapped via reply_to src#5284 → dest#961",
+      "text": "2026-03-28 00:49:37,565 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 00:44:57,095 INFO   ✅ UPDATE replied to 961",
+      "text": "2026-03-28 00:49:37,565 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
@@ -1483,16 +1483,6 @@
     },
     {
       "label": "DASH",
-      "text": "   17c79b1..91df56f  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   c097a04..4a1ee18  main -> main",
       "ts": ""
     },
@@ -1574,6 +1564,16 @@
     {
       "label": "DASH",
       "text": "   04f56a1..60b66fc  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   e35dbf4..2c06637  main -> main",
       "ts": ""
     }
   ],
