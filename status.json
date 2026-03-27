@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-03-27T22:25:07.449662+00:00",
-  "generated_at_vn": "2026-03-28 05:25:07",
+  "generated_at": "2026-03-27T22:30:06.012712+00:00",
+  "generated_at_vn": "2026-03-28 05:30:06",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "7h 56m",
-    "uptime_seconds": 28572,
+    "uptime": "8h 1m",
+    "uptime_seconds": 28870,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.37,
-      "percent": 15.4
+      "used_gb": 2.91,
+      "percent": 18.9
     },
     "disk": {
       "total_gb": 468,
-      "used_gb": 24,
+      "used_gb": 25,
       "percent": 6
     },
     "cpu": {
@@ -54,13 +54,13 @@
   ],
   "services": {
     "chrome": {
-      "running": false,
-      "process_count": 0
+      "running": true,
+      "process_count": 13
     },
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 451
+      "response_time_ms": 353
     },
     "openclaw": {
       "running": true
@@ -1278,6 +1278,16 @@
   "recent_logs": [
     {
       "label": "FOREX",
+      "text": "  File \"/usr/lib/python3.12/asyncio/runners.py\", line 118, in run",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "    return self._loop.run_until_complete(task)",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
       "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
       "ts": ""
     },
@@ -1358,22 +1368,12 @@
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 05:25:07,211 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-28 05:30:06,419 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 05:25:07,211 INFO Connecting to 91.108.56.199:443/TcpFull...",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-28 05:25:07,246 INFO Connection to 91.108.56.199:443/TcpFull complete!",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-28 05:25:07,246 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-28 05:30:06,419 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
@@ -1483,16 +1483,6 @@
     },
     {
       "label": "DASH",
-      "text": "   e8af658..27b8d14  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   be75c43..0e59cda  main -> main",
       "ts": ""
     },
@@ -1574,6 +1564,16 @@
     {
       "label": "DASH",
       "text": "   26d527f..26ab176  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   ca2abb2..ff1f2d2  main -> main",
       "ts": ""
     }
   ],
