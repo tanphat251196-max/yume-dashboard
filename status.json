@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-28T13:00:04.724913+00:00",
-  "generated_at_vn": "2026-03-28 20:00:04",
+  "generated_at": "2026-03-28T13:05:05.219973+00:00",
+  "generated_at_vn": "2026-03-28 20:05:05",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "22h 31m",
-    "uptime_seconds": 81069,
+    "uptime": "22h 36m",
+    "uptime_seconds": 81370,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 4.1,
-      "percent": 26.7
+      "used_gb": 4.13,
+      "percent": 26.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 8.8,
+      "percent": 3.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -60,7 +60,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 359
+      "response_time_ms": 446
     },
     "openclaw": {
       "running": true
@@ -1358,22 +1358,22 @@
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 20:00:02,233 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-28 20:05:01,436 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 20:00:02,233 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "text": "2026-03-28 20:05:01,436 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 20:00:02,285 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-28 20:05:01,482 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-03-28 20:00:02,285 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "text": "2026-03-28 20:05:01,482 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
@@ -1483,16 +1483,6 @@
     },
     {
       "label": "DASH",
-      "text": "   3d1fdd2..64f9039  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   472a936..fa12f9d  main -> main",
       "ts": ""
     },
@@ -1574,6 +1564,16 @@
     {
       "label": "DASH",
       "text": "   ef33503..75e3c73  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   e80176e..8bfd232  main -> main",
       "ts": ""
     }
   ],
