@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-29T14:10:03.846106+00:00",
-  "generated_at_vn": "2026-03-29 21:10:03",
+  "generated_at": "2026-03-29T14:15:04.407332+00:00",
+  "generated_at_vn": "2026-03-29 21:15:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "1d 23h 41m",
-    "uptime_seconds": 171668,
+    "uptime": "1d 23h 46m",
+    "uptime_seconds": 171969,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.64,
-      "percent": 17.2
+      "used_gb": 2.59,
+      "percent": 16.8
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 6
     },
     "cpu": {
-      "percent": 12.8,
+      "percent": 15.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -56,7 +56,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 378
+      "response_time_ms": 395
     },
     "openclaw": {
       "running": true
@@ -1274,26 +1274,6 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-03-29 18:07:04,291 INFO   ✅ UPDATE replied to 1047",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-29 18:07:04,291 INFO   ✅ UPDATE replied to 1047",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-29 18:46:29,318 INFO New message #5372 → UPDATE: 'TP4 Hit +3683.0Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-03-29 18:46:29,318 INFO New message #5372 → UPDATE: 'TP4 Hit +3683.0Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-03-29 18:46:29,319 INFO   🎯 UPDATE → mapped via reply_to src#5368 → dest#1047",
       "ts": ""
     },
@@ -1370,6 +1350,26 @@
     {
       "label": "FOREX",
       "text": "2026-03-29 20:07:42,050 INFO   🔒 Signal 5373 closed",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-29 21:12:02,108 INFO New message #5375 → SIGNAL: '💱 Symbol: BTCUSD 📉 Signal: Buy 💠 Entry: 66634.24 ❌SL: 66395.80 🔷 TP1: 66753.46 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-29 21:12:02,108 INFO New message #5375 → SIGNAL: '💱 Symbol: BTCUSD 📉 Signal: Buy 💠 Entry: 66634.24 ❌SL: 66395.80 🔷 TP1: 66753.46 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-29 21:12:03,056 INFO   ✅ SIGNAL posted → dest msg_id=1054",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-03-29 21:12:03,056 INFO   ✅ SIGNAL posted → dest msg_id=1054",
       "ts": ""
     },
     {
@@ -1479,16 +1479,6 @@
     },
     {
       "label": "DASH",
-      "text": "   b8f6ceb..5567bb0  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   6839f25..9c4bab9  main -> main",
       "ts": ""
     },
@@ -1570,6 +1560,16 @@
     {
       "label": "DASH",
       "text": "   ebec0b4..23e5d83  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   e12d0ad..7d6761f  main -> main",
       "ts": ""
     }
   ],
