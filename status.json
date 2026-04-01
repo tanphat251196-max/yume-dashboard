@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T05:45:05.542464+00:00",
+  "generated_at": "2026-04-01T05:45:05.912139+00:00",
   "generated_at_vn": "2026-04-01 12:45:05",
   "system": {
     "hostname": "shinyyume-OpenClaw",
@@ -7,8 +7,8 @@
     "uptime_seconds": 400570,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 4.26,
-      "percent": 27.7
+      "used_gb": 4.08,
+      "percent": 26.5
     },
     "disk": {
       "total_gb": 468,
@@ -268,7 +268,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 427
+      "response_time_ms": 280
     },
     "openclaw": {
       "running": true
@@ -1484,10 +1484,6 @@
   ],
   "equity_history": [
     {
-      "ts": "2026-04-01T08:55:01.837437",
-      "equity": 32.0807
-    },
-    {
       "ts": "2026-04-01T09:00:01.869224",
       "equity": 32.0807
     },
@@ -1673,6 +1669,10 @@
     },
     {
       "ts": "2026-04-01T12:45:02.717701",
+      "equity": 32.0807
+    },
+    {
+      "ts": "2026-04-01T12:45:03.082330",
       "equity": 32.0807
     }
   ],
