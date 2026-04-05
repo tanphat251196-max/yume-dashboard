@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-05T23:00:03.503850+00:00",
-  "generated_at_vn": "2026-04-06 06:00:03",
+  "generated_at": "2026-04-05T23:05:05.125633+00:00",
+  "generated_at_vn": "2026-04-06 06:05:05",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "3d 20h 25m",
-    "uptime_seconds": 332754,
+    "uptime": "3d 20h 30m",
+    "uptime_seconds": 333056,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 3.5,
@@ -16,26 +16,17 @@
       "percent": 8
     },
     "cpu": {
-      "percent": 0.0,
+      "percent": 2.0,
       "count": 4,
       "freq_mhz": 0
     }
   },
   "openclaw_cron": [
     {
-      "id": "2ba6fc94-3668-4722-82a2-3567446040e8",
-      "name": "auto-web-post",
-      "schedule": "unknown",
-      "next_run": "-",
-      "last_run": "-",
-      "status": "ok",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 45m",
+      "next_run": "in 40m",
       "last_run": "1h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
@@ -44,7 +35,7 @@
       "id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
       "name": "daily-analysis",
       "schedule": "cron 0 7 * * * (exact)",
-      "next_run": "in 60m",
+      "next_run": "in 55m",
       "last_run": "23h ago",
       "status": "ok",
       "model": "claudible/claude-sonnet-4.6"
@@ -53,7 +44,7 @@
       "id": "ad28155c-e753-4558-a78a-171aff9c4107",
       "name": "x-bigaccount-monitor",
       "schedule": "cron 5,35 7-23 * * * (exact)",
-      "next_run": "in 1h",
+      "next_run": "in 60m",
       "last_run": "6h ago",
       "status": "error",
       "model": "claudible/claude-haiku-4.5"
@@ -120,6 +111,15 @@
       "last_run": "11h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
+    },
+    {
+      "id": "2ba6fc94-3668-4722-82a2-3567446040e8",
+      "name": "auto-web-post",
+      "schedule": "unknown",
+      "next_run": "-",
+      "last_run": "-",
+      "status": "ok",
+      "model": "claudible/claude-sonnet-4.6"
     },
     {
       "id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
@@ -358,7 +358,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 382
+      "response_time_ms": 572
     },
     "openclaw": {
       "running": true
@@ -375,198 +375,6 @@
       "job_id": "cf7445f8-cc67-4dbf-a5a4-c305088ecd2a",
       "name": "x-engage-12",
       "status": "error",
-      "ts": 1775428203.275794
-    },
-    {
-      "job_id": "7b12fd11-56b0-4972-9341-af2510ad6a62",
-      "name": "x-engage-13",
-      "status": "error",
-      "ts": 1775428203.275794
-    },
-    {
-      "job_id": "f2ecf1e4-571b-4eb7-8992-f4952fd90812",
-      "name": "x-engage-14",
-      "status": "error",
-      "ts": 1775428203.275794
-    },
-    {
-      "job_id": "82aab729-7c93-4c11-a90e-bf246975cb34",
-      "name": "x-engage-15",
-      "status": "error",
-      "ts": 1775428203.275794
-    },
-    {
-      "job_id": "35d6219c-ca5d-4bb2-adbe-35204cc324bc",
-      "name": "x-engage-16",
-      "status": "error",
-      "ts": 1775428203.275794
-    },
-    {
-      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "status": "error",
-      "ts": 1775428203.275794
-    },
-    {
-      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "status": "ok",
-      "ts": 1775428203.275794
-    },
-    {
-      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "status": "ok",
-      "ts": 1775428203.275794
-    },
-    {
-      "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
-      "name": "auto-web-post",
-      "status": "ok",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "status": "ok",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "status": "ok",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "ad28155c-e753-4558-a78a-171aff9c4107",
-      "name": "x-bigaccount-monitor",
-      "status": "error",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "status": "ok",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-      "name": "weekly-economic-calendar",
-      "status": "ok",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
-      "name": "x-engage-1",
-      "status": "error",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-      "name": "daily-news",
-      "status": "ok",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "35410aed-d6e9-478b-88ff-bec1a9d7a7b2",
-      "name": "fb-personal-morning",
-      "status": "ok",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-      "name": "commodity-update",
-      "status": "ok",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "b5f94ad6-4c12-4374-bc2d-4dfcb6b0fbae",
-      "name": "fb-group-engage",
-      "status": "ok",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-      "name": "x-engage-2",
-      "status": "error",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "4e943de6-0f26-468d-abfd-3479fe3c8af0",
-      "name": "fb-add-friends",
-      "status": "ok",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
-      "name": "x-engage-3",
-      "status": "error",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
-      "name": "x-engage-4",
-      "status": "error",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
-      "name": "x-engage-5",
-      "status": "error",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "b01fe68e-b684-4822-afa1-0c299230c90f",
-      "name": "fb-personal-afternoon",
-      "status": "ok",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
-      "name": "x-engage-6",
-      "status": "error",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "2d6c1b84-138f-4208-a0ce-10f86eb58d3b",
-      "name": "x-engage-7",
-      "status": "error",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "b9c55853-b588-4556-b3fe-8bd70201ccc0",
-      "name": "x-engage-8",
-      "status": "error",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "945b5431-064c-48f9-bfba-9e47552521a9",
-      "name": "x-engage-9",
-      "status": "error",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "06793ba7-fe30-4613-949f-1a1b9f290723",
-      "name": "x-engage-10",
-      "status": "error",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "762edf14-ed86-476b-85ee-ccf49db9f322",
-      "name": "fb-personal-evening",
-      "status": "ok",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "d6694155-b901-4f4d-a5ef-35d768ebce32",
-      "name": "x-engage-11",
-      "status": "error",
-      "ts": 1775428503.848064
-    },
-    {
-      "job_id": "cf7445f8-cc67-4dbf-a5a4-c305088ecd2a",
-      "name": "x-engage-12",
-      "status": "error",
       "ts": 1775428503.848064
     },
     {
@@ -1570,32 +1378,204 @@
       "name": "monthly-analysis",
       "status": "ok",
       "ts": 1775430003.502752
+    },
+    {
+      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+      "name": "daily-analysis",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "ad28155c-e753-4558-a78a-171aff9c4107",
+      "name": "x-bigaccount-monitor",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+      "name": "weekly-analysis",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
+      "name": "weekly-economic-calendar",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
+      "name": "x-engage-1",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
+      "name": "daily-news",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "35410aed-d6e9-478b-88ff-bec1a9d7a7b2",
+      "name": "fb-personal-morning",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
+      "name": "commodity-update",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "b5f94ad6-4c12-4374-bc2d-4dfcb6b0fbae",
+      "name": "fb-group-engage",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
+      "name": "auto-web-post",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
+      "name": "x-engage-2",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "4e943de6-0f26-468d-abfd-3479fe3c8af0",
+      "name": "fb-add-friends",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
+      "name": "x-engage-3",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
+      "name": "x-engage-4",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
+      "name": "x-engage-5",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "b01fe68e-b684-4822-afa1-0c299230c90f",
+      "name": "fb-personal-afternoon",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
+      "name": "x-engage-6",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "2d6c1b84-138f-4208-a0ce-10f86eb58d3b",
+      "name": "x-engage-7",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "b9c55853-b588-4556-b3fe-8bd70201ccc0",
+      "name": "x-engage-8",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "945b5431-064c-48f9-bfba-9e47552521a9",
+      "name": "x-engage-9",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "06793ba7-fe30-4613-949f-1a1b9f290723",
+      "name": "x-engage-10",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "762edf14-ed86-476b-85ee-ccf49db9f322",
+      "name": "fb-personal-evening",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "d6694155-b901-4f4d-a5ef-35d768ebce32",
+      "name": "x-engage-11",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "cf7445f8-cc67-4dbf-a5a4-c305088ecd2a",
+      "name": "x-engage-12",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "7b12fd11-56b0-4972-9341-af2510ad6a62",
+      "name": "x-engage-13",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "f2ecf1e4-571b-4eb7-8992-f4952fd90812",
+      "name": "x-engage-14",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "82aab729-7c93-4c11-a90e-bf246975cb34",
+      "name": "x-engage-15",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "35d6219c-ca5d-4bb2-adbe-35204cc324bc",
+      "name": "x-engage-16",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+      "name": "crypto-education",
+      "status": "error",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+      "name": "weekly-leaderboard",
+      "status": "ok",
+      "ts": 1775430305.124269
+    },
+    {
+      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+      "name": "monthly-analysis",
+      "status": "ok",
+      "ts": 1775430305.124269
     }
   ],
   "equity_history": [],
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-04-06 05:46:06,217 INFO New message #5797 → UPDATE: 'TP2 Hit +4209.7Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-06 05:46:06,217 INFO New message #5797 → UPDATE: 'TP2 Hit +4209.7Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-06 05:46:06,218 INFO   🎯 UPDATE → mapped via reply_to src#5789 → dest#1463",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-06 05:46:06,218 INFO   🎯 UPDATE → mapped via reply_to src#5789 → dest#1463",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-04-06 05:46:07,185 INFO   ✅ UPDATE replied to 1463",
       "ts": ""
     },
@@ -1672,6 +1652,26 @@
     {
       "label": "FOREX",
       "text": "2026-04-06 05:57:31,127 INFO   ✅ UPDATE replied to 1463",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-06 06:01:02,571 INFO New message #5800 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4650.192 ❌SL: 4608.316 🔷 TP1: 4671.130 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-06 06:01:02,571 INFO New message #5800 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4650.192 ❌SL: 4608.316 🔷 TP1: 4671.130 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-06 06:01:03,504 INFO   ✅ SIGNAL posted → dest msg_id=1474",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-06 06:01:03,504 INFO   ✅ SIGNAL posted → dest msg_id=1474",
       "ts": ""
     },
     {
@@ -1781,16 +1781,6 @@
     },
     {
       "label": "DASH",
-      "text": "   738a64f..0a1a966  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   a22f664..165425a  main -> main",
       "ts": ""
     },
@@ -1872,6 +1862,16 @@
     {
       "label": "DASH",
       "text": "   6e32b71..c9bab58  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   a42a821..153b01b  main -> main",
       "ts": ""
     }
   ],
