@@ -1,14 +1,993 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>yume-terminal</title>
-    <script type="module" crossorigin src="./assets/index-CdaSo-9Q.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BtNKu6Vh.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YUME_DASHBOARD</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --green: #00ff00;
+    --green-dim: #00aa00;
+    --green-dark: #003300;
+    --red: #ff3333;
+    --yellow: #ffff00;
+    --bg: #000000;
+    --bg2: #050505;
+    --border: 1px solid #00ff00;
+    --glow: 0 0 8px #00ff00;
+    --glow-sm: 0 0 4px #00ff00;
+  }
+  body {
+    background: var(--bg);
+    color: var(--green);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  /* Scanline effect */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,255,0,0.015) 2px,
+      rgba(0,255,0,0.015) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* Layout */
+  .container { display: flex; min-height: 100vh; }
+
+  /* SIDEBAR */
+  .sidebar {
+    width: 280px;
+    min-width: 280px;
+    border-right: var(--border);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px;
+    background: var(--bg2);
+  }
+  .sidebar-title {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: var(--glow);
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .cursor {
+    display: inline-block;
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+  .sidebar-subtitle {
+    color: var(--green-dim);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid var(--green-dark);
+    margin: 12px 0;
+  }
+  .stats-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .stat-box {
+    flex: 1;
+    border: var(--border);
+    padding: 8px;
+    text-align: center;
+  }
+  .stat-num {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: var(--glow);
+    display: block;
+  }
+  .stat-label {
+    font-size: 9px;
+    color: var(--green-dim);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* Nav */
+  .nav { margin-bottom: 16px; }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    transition: all 0.1s;
+    border: 1px solid transparent;
+    margin-bottom: 2px;
+  }
+  .nav-item:hover { border-color: var(--green-dim); color: #fff; }
+  .nav-item.active {
+    background: var(--green);
+    color: #000;
+    border-color: var(--green);
+    text-shadow: none;
+    font-weight: bold;
+  }
+  .nav-item .arrow { font-size: 10px; }
+
+  /* Services */
+  .section-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--green-dim);
+    margin-bottom: 8px;
+  }
+  .service-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 12px;
+  }
+  .dot { font-size: 10px; }
+  .dot.online { color: var(--green); text-shadow: var(--glow-sm); }
+  .dot.offline { color: var(--red); }
+  .service-name { flex: 1; color: var(--green-dim); }
+  .service-status { font-size: 10px; text-transform: uppercase; }
+  .service-status.online { color: var(--green); }
+  .service-status.offline { color: var(--red); }
+
+  .sidebar-footer {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid var(--green-dark);
+    font-size: 10px;
+    color: var(--green-dark);
+    font-style: italic;
+  }
+  .refresh-info {
+    font-size: 10px;
+    color: var(--green-dim);
+    margin-top: 8px;
+  }
+
+  /* MAIN */
+  .main {
+    flex: 1;
+    padding: 20px;
+    background:
+      linear-gradient(rgba(0,255,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: var(--border);
+  }
+  .main-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-shadow: var(--glow-sm);
+    letter-spacing: 2px;
+  }
+  .timestamp {
+    font-size: 11px;
+    color: var(--green-dim);
+  }
+
+  /* Tabs */
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* Cards */
+  .cards-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .card {
+    border: var(--border);
+    padding: 14px;
+    background: var(--bg2);
+  }
+  .card-label {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--green-dim);
+    margin-bottom: 6px;
+  }
+  .card-value {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: var(--glow-sm);
+    margin-bottom: 8px;
+  }
+  .card-sub { font-size: 10px; color: var(--green-dim); margin-bottom: 6px; }
+  .progress-bar {
+    font-size: 11px;
+    color: var(--green);
+    letter-spacing: 0;
+    word-break: break-all;
+  }
+
+  /* Tables */
+  .section-header {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--green-dim);
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--green-dark);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  th {
+    text-align: left;
+    padding: 6px 10px;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--green-dim);
+    border-bottom: 1px solid var(--green-dark);
+  }
+  td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #001100;
+    color: var(--green);
+  }
+  tr:hover td { background: #001a00; }
+  .status-ok { color: var(--green); text-shadow: var(--glow-sm); }
+  .status-err { color: var(--red); }
+  .status-idle { color: var(--yellow); }
+  .side-long { color: var(--green); }
+  .side-short { color: var(--red); }
+  .pnl-pos { color: var(--green); }
+  .pnl-neg { color: var(--red); }
+
+  /* BingX panel */
+  .bingx-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  /* Forex panel */
+  .forex-panel {
+    border: var(--border);
+    padding: 16px;
+    background: var(--bg2);
+    margin-bottom: 20px;
+  }
+  .forex-row {
+    display: flex;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: 1px solid #001100;
+    font-size: 12px;
+  }
+  .forex-key { color: var(--green-dim); width: 160px; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+  .forex-val { color: var(--green); }
+
+  .loading { color: var(--green-dim); font-size: 12px; padding: 20px; }
+  .error-msg { color: var(--red); font-size: 12px; padding: 20px; }
+
+  @media (max-width: 768px) {
+    .container { flex-direction: column; }
+    .sidebar { width: 100%; min-width: unset; border-right: none; border-bottom: var(--border); }
+    .cards-row { grid-template-columns: repeat(2, 1fr); }
+    .bingx-stats { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* ── Alert Badge ── */
+  @keyframes badge-blink { 50% { opacity: 0.3; } }
+  #cron-badge {
+    display: inline-block;
+    background: #ff0000;
+    color: #000;
+    border-radius: 2px;
+    padding: 1px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 4px;
+    animation: badge-blink 1s step-end infinite;
+    vertical-align: middle;
+  }
+  #cron-badge:empty { display: none; }
+
+  /* ── Model Config Tab ── */
+  .model-group-header {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 8px 10px 4px;
+    border-bottom: 1px solid var(--green-dark);
+    margin-bottom: 4px;
+  }
+  .model-haiku { color: #00aaff; }
+  .model-sonnet { color: #00ff00; }
+  .model-gpt { color: #ffaa00; }
+  .model-other { color: var(--green-dim); }
+
+  /* ── Cron Heatmap ── */
+  .heatmap-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 0;
+    font-size: 11px;
+  }
+  .heatmap-label {
+    width: 220px;
+    min-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--green-dim);
+    font-size: 10px;
+  }
+  .heatmap-dots { letter-spacing: 2px; }
+  .dot-ok { color: #00ff00; }
+  .dot-error { color: #ff3333; }
+  .dot-idle { color: #ffff00; }
+  .dot-unknown { color: #444; }
+
+  /* ── Sparkline ── */
+  .sparkline-box {
+    border: var(--border);
+    padding: 12px 16px;
+    background: var(--bg2);
+    margin-bottom: 20px;
+    font-family: 'Courier New', monospace;
+  }
+  .sparkline-chars {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--green);
+    text-shadow: var(--glow-sm);
+    word-break: break-all;
+    line-height: 1.4;
+  }
+  .sparkline-meta {
+    font-size: 10px;
+    color: var(--green-dim);
+    margin-top: 6px;
+  }
+
+  /* ── Log Viewer ── */
+  .log-toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .log-btn {
+    background: transparent;
+    border: 1px solid var(--green-dim);
+    color: var(--green);
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    padding: 4px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.1s;
+  }
+  .log-btn:hover { background: var(--green); color: #000; }
+  .log-box {
+    background: #000;
+    border: var(--border);
+    padding: 12px;
+    height: 420px;
+    overflow-y: auto;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  .log-line { display: flex; gap: 6px; }
+  .log-prefix-forex { color: #00aaff; }
+  .log-prefix-web { color: #ffaa00; }
+  .log-prefix-dash { color: var(--green-dim); }
+  .log-text { color: #aaa; flex: 1; word-break: break-all; }
+  .log-text.is-error { color: #ff3333; }
+  .log-text.is-ok { color: #00ff00; }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-title">YUME<span class="cursor">_</span></div>
+    <div class="sidebar-subtitle" id="txt-subtitle">// SYSTEM_STATUS</div>
+
+    <div style="margin-bottom:10px">
+      <button class="log-btn active" id="btn-en" onclick="setLang('en')" style="padding:2px 8px;font-size:10px">EN</button>
+      <button class="log-btn" id="btn-vi" onclick="setLang('vi')" style="padding:2px 8px;font-size:10px;margin-left:4px">VI</button>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <span class="stat-num" id="stat-crons">--</span>
+        <span class="stat-label" id="txt-cron-label">CRON JOBS / TÁC VỤ</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" id="stat-services">--</span>
+        <span class="stat-label" id="txt-svc-label">SERVICES</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="nav">
+      <div class="nav-item active" onclick="switchTab('system', this)">
+        <span class="arrow">▶</span> <span data-i18n="nav-system">SYSTEM / HỆ THỐNG</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('cron', this)">
+        <span class="arrow">▸</span> <span data-i18n="nav-cron">CRON JOBS</span> <span id="cron-badge"></span>
+      </div>
+      <div class="nav-item" onclick="switchTab('bingx', this)">
+        <span class="arrow">▸</span> <span data-i18n="nav-bingx">BINGX BOT / BOT GIAO DỊCH</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('forex', this)">
+        <span class="arrow">▸</span> <span data-i18n="nav-forex">FOREX / NGOẠI HỐI</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('model', this)">
+        <span class="arrow">▸</span> <span data-i18n="nav-model">MODEL CFG / CẤU HÌNH MODEL</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('logs', this)">
+        <span class="arrow">▸</span> <span data-i18n="nav-logs">LOGS / NHẬT KÝ</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section-title" data-i18n="svc-title">// <span data-i18n="svc-title">SERVICES / DỊCH VỤ</span></div>
+    <div id="services-list">
+      <div class="loading">Loading...</div>
+    </div>
+
+    <div class="refresh-info" id="refresh-info">Auto-refresh: 60s</div>
+    <div class="sidebar-footer" id="txt-footer">Wake up, Neo...<br>The Matrix has you.<br><span style="color:#006600">Thức dậy, Neo...<br>Ma trận đang ở đây.</span></div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+    <div class="main-header">
+      <div class="main-title" id="main-title">[SYSTEM_MONITOR]</div>
+      <div class="timestamp" id="last-updated">[Loading...]</div>
+    </div>
+
+    <!-- TAB: SYSTEM -->
+    <div class="tab-content active" id="tab-system">
+      <div class="cards-row" id="system-cards">
+        <div class="card"><div class="card-label">Loading...</div></div>
+      </div>
+      <div class="section-header">// <span data-i18n="bingx-summary-title">BINGX SUMMARY / TÓM TẮT BINGX</span></div>
+      <div class="bingx-stats" id="bingx-summary"></div>
+    </div>
+
+    <!-- TAB: CRON -->
+    <div class="tab-content" id="tab-cron">
+      <div class="section-header">// <span data-i18n="cron-title">CRON JOB STATUS / TRẠNG THÁI CRON</span></div>
+      <table>
+        <thead>
+          <tr><th data-i18n="th-name">Name / Tên</th><th data-i18n="th-schedule">Schedule / Lịch</th><th data-i18n="th-model">Model</th><th data-i18n="th-lastrun">Last Run / Lần cuối</th><th data-i18n="th-status">Status / Trạng thái</th></tr>
+        </thead>
+        <tbody id="cron-table"></tbody>
+      </table>
+
+      <!-- Heatmap -->
+      <div class="section-header">// <span data-i18n="heatmap-title">RUN HISTORY (24H) / LỊCH SỬ CHẠY (24H)</span></div>
+      <div id="cron-heatmap" style="margin-bottom:20px">
+        <div class="loading">No run history available</div>
+      </div>
+    </div>
+
+    <!-- TAB: BINGX -->
+    <div class="tab-content" id="tab-bingx">
+      <div class="section-header">// <span data-i18n="positions-title">BINGX BOT — OPEN POSITIONS / VỊ THẾ ĐANG MỞ</span></div>
+      <div class="bingx-stats" id="bingx-cards"></div>
+      <table>
+        <thead>
+          <tr><th data-i18n="th-symbol">Symbol</th><th data-i18n="th-side">Side / Chiều</th><th data-i18n="th-size">Size / Khối lượng</th><th data-i18n="th-entry">Entry Price / Giá vào</th><th data-i18n="th-pnl">Unrealized PnL / Lãi lỗ</th></tr>
+        </thead>
+        <tbody id="positions-table"></tbody>
+      </table>
+
+      <!-- Sparkline -->
+      <div class="section-header">// <span data-i18n="sparkline-title">EQUITY SPARKLINE / BIỂU ĐỒ VỐN</span></div>
+      <div class="sparkline-box" id="equity-sparkline">
+        <div class="loading">No equity history</div>
+      </div>
+    </div>
+
+    <!-- TAB: FOREX -->
+    <div class="tab-content" id="tab-forex">
+      <div class="section-header">// <span data-i18n="forex-title">FOREX LISTENER — TELETHON REALTIME / THEO DÕI FOREX</span></div>
+      <div class="forex-panel" id="forex-panel">
+        <div class="loading">Loading...</div>
+      </div>
+    </div>
+
+    <!-- TAB: MODEL CONFIG -->
+    <div class="tab-content" id="tab-model">
+      <div class="section-header">// <span data-i18n="model-title">MODEL CONFIG — CRON JOBS / CẤU HÌNH MODEL</span></div>
+      <div id="model-config-table"></div>
+    </div>
+
+    <!-- TAB: LOGS -->
+    <div class="tab-content" id="tab-logs">
+      <div class="section-header">// <span data-i18n="logs-title">LIVE LOG VIEWER / XEM LOG TRỰC TIẾP</span></div>
+      <div class="log-toolbar">
+        <button class="log-btn" onclick="clearLogs()">[CLEAR]</button>
+        <button class="log-btn" onclick="loadData()">[REFRESH]</button>
+        <span style="font-size:10px;color:var(--green-dim)">Sources: FOREX · WEB · DASH</span>
+      </div>
+      <div class="log-box" id="log-box">
+        <div class="loading">Loading logs...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let refreshTimer = 60;
+let data = null;
+let currentLang = 'en';
+
+// ── i18n ──
+const i18n = {
+  en: {
+    'nav-system': 'SYSTEM', 'nav-cron': 'CRON JOBS', 'nav-bingx': 'BINGX BOT',
+    'nav-forex': 'FOREX', 'nav-model': 'MODEL CFG', 'nav-logs': 'LOGS',
+    'svc-title': '// SERVICES', 'subtitle': '// SYSTEM_STATUS',
+    'cron-label': 'CRON JOBS', 'svc-label': 'SERVICES',
+    'footer': 'Wake up, Neo...<br>The Matrix has you.',
+    'refresh': 'Auto-refresh: ',
+    // card labels
+    'cpu': 'CPU Usage', 'ram': 'RAM', 'disk': 'Disk', 'uptime': 'Uptime',
+    'balance': 'Balance', 'equity': 'Equity', 'pnl': 'Unrealized PnL', 'winrate': 'Win Rate',
+    // table headers
+    'th-name': 'Name', 'th-schedule': 'Schedule', 'th-model': 'Model',
+    'th-lastrun': 'Last Run', 'th-status': 'Status',
+    'th-symbol': 'Symbol', 'th-side': 'Side', 'th-size': 'Size',
+    'th-entry': 'Entry Price', 'th-pnl': 'Unrealized PnL',
+    // section headers
+    'bingx-summary-title': 'BINGX SUMMARY',
+    'cron-title': 'CRON JOB STATUS',
+    'heatmap-title': 'RUN HISTORY (24H)',
+    'positions-title': 'BINGX BOT — OPEN POSITIONS',
+    'sparkline-title': 'EQUITY SPARKLINE',
+    'forex-title': 'FOREX LISTENER — TELETHON REALTIME',
+    'model-title': 'MODEL CONFIG — CRON JOBS',
+    'logs-title': 'LIVE LOG VIEWER',
+    'btn-clear': '[CLEAR]', 'btn-refresh': '[REFRESH]',
+    'log-sources': 'Sources: FOREX · WEB · DASH',
+    'no-history': 'No run history in last 24h',
+    'no-position': 'No open positions',
+    'no-equity': 'Insufficient equity history (need ≥ 2 data points)',
+    'system-nominal': 'SYSTEM NOMINAL',
+    'mode': 'Mode',
+  },
+  vi: {
+    'nav-system': 'HỆ THỐNG', 'nav-cron': 'TÁC VỤ CRON', 'nav-bingx': 'BOT BINGX',
+    'nav-forex': 'NGOẠI HỐI', 'nav-model': 'CẤU HÌNH MODEL', 'nav-logs': 'NHẬT KÝ',
+    'svc-title': '// DỊCH VỤ', 'subtitle': '// TRẠNG THÁI HỆ THỐNG',
+    'cron-label': 'TÁC VỤ CRON', 'svc-label': 'DỊCH VỤ',
+    'footer': 'Thức dậy, Neo...<br>Ma trận đang ở đây.',
+    'refresh': 'Tự động làm mới: ',
+    // card labels
+    'cpu': 'CPU', 'ram': 'RAM', 'disk': 'Ổ cứng', 'uptime': 'Thời gian hoạt động',
+    'balance': 'Số dư', 'equity': 'Vốn', 'pnl': 'Lãi/lỗ chưa chốt', 'winrate': 'Tỷ lệ thắng',
+    // table headers
+    'th-name': 'Tên', 'th-schedule': 'Lịch chạy', 'th-model': 'Model',
+    'th-lastrun': 'Lần cuối', 'th-status': 'Trạng thái',
+    'th-symbol': 'Cặp tiền', 'th-side': 'Chiều', 'th-size': 'Khối lượng',
+    'th-entry': 'Giá vào', 'th-pnl': 'Lãi/lỗ',
+    // section headers
+    'bingx-summary-title': 'TÓM TẮT BINGX',
+    'cron-title': 'TRẠNG THÁI TÁC VỤ CRON',
+    'heatmap-title': 'LỊCH SỬ CHẠY (24H)',
+    'positions-title': 'BOT BINGX — VỊ THẾ ĐANG MỞ',
+    'sparkline-title': 'BIỂU ĐỒ VỐN',
+    'forex-title': 'THEO DÕI FOREX — REALTIME',
+    'model-title': 'CẤU HÌNH MODEL — TÁC VỤ CRON',
+    'logs-title': 'XEM NHẬT KÝ TRỰC TIẾP',
+    'btn-clear': '[XÓA]', 'btn-refresh': '[LÀM MỚI]',
+    'log-sources': 'Nguồn: FOREX · WEB · DASH',
+    'no-history': 'Không có lịch sử chạy trong 24h qua',
+    'no-position': 'Không có vị thế nào đang mở',
+    'no-equity': 'Chưa đủ dữ liệu vốn (cần ≥ 2 điểm)',
+    'system-nominal': 'HỆ THỐNG BÌNH THƯỜNG',
+    'mode': 'Chế độ',
+  }
+};
+
+function t(key) {
+  return (i18n[currentLang] || i18n.en)[key] || key;
+}
+
+function setLang(lang) {
+  currentLang = lang;
+  document.getElementById('btn-en').style.background = lang === 'en' ? 'var(--green)' : 'transparent';
+  document.getElementById('btn-en').style.color = lang === 'en' ? '#000' : 'var(--green)';
+  document.getElementById('btn-vi').style.background = lang === 'vi' ? 'var(--green)' : 'transparent';
+  document.getElementById('btn-vi').style.color = lang === 'vi' ? '#000' : 'var(--green)';
+  // Update static i18n elements
+  document.getElementById('txt-subtitle').textContent = t('subtitle');
+  document.getElementById('txt-cron-label').textContent = t('cron-label');
+  document.getElementById('txt-svc-label').textContent = t('svc-label');
+  document.getElementById('txt-footer').innerHTML = t('footer');
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const val = t(key);
+    if (val) el.textContent = val;
+  });
+  // Re-render dynamic content with new lang
+  if (data) renderAll(data);
+}
+
+function switchTab(name, el) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => {
+    n.classList.remove('active');
+    n.querySelector('.arrow').textContent = '▸';
+  });
+  document.getElementById('tab-' + name).classList.add('active');
+  el.classList.add('active');
+  el.querySelector('.arrow').textContent = '▶';
+  document.getElementById('main-title').textContent = '[' + name.toUpperCase() + '_MONITOR]';
+}
+
+// ── Feature 3: Cron History Heatmap ──
+function renderCronHeatmap(history, jobs) {
+  const container = document.getElementById('cron-heatmap');
+  if (!history || !history.length) {
+    container.innerHTML = '<div style="color:var(--green-dim);font-size:11px;padding:8px">No run history in last 24h</div>';
+    return;
+  }
+  const byJob = {};
+  history.forEach(h => {
+    if (!byJob[h.job_id]) byJob[h.job_id] = [];
+    byJob[h.job_id].push(h);
+  });
+  const jobNames = {};
+  if (jobs) jobs.forEach(j => { jobNames[j.id] = j.name; });
+  let html = '';
+  Object.entries(byJob).forEach(([jobId, runs]) => {
+    const label = jobNames[jobId] || jobId.slice(0, 20) + '…';
+    const dots = runs.map(r => {
+      const ts = new Date(r.ts * 1000).toLocaleTimeString('vi-VN', {hour:'2-digit', minute:'2-digit'});
+      let cls = 'dot-unknown';
+      if (r.status === 'ok' || r.status === 'success') cls = 'dot-ok';
+      else if (r.status === 'error' || r.status === 'failed') cls = 'dot-error';
+      else if (r.status === 'idle' || r.status === 'running') cls = 'dot-idle';
+      return `<span class="${cls}" title="${ts} [${r.status}] ${r.duration_ms ? r.duration_ms+'ms' : ''}">■</span>`;
+    }).join('');
+    html += `<div class="heatmap-row">
+      <span class="heatmap-label" title="${jobId}">${label}</span>
+      <span class="heatmap-dots">${dots}</span>
+    </div>`;
+  });
+  container.innerHTML = html || '<div style="color:var(--green-dim);font-size:11px;padding:8px">No run history</div>';
+}
+
+// ── Feature 2: Model Config Tab ──
+function renderModelConfig(jobs) {
+  const container = document.getElementById('model-config-table');
+  if (!jobs || !jobs.length) {
+    container.innerHTML = '<div class="loading">No cron jobs found</div>';
+    return;
+  }
+  const groups = {};
+  jobs.forEach(j => {
+    const rawModel = (j.model || 'unknown').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '');
+    if (!groups[rawModel]) groups[rawModel] = [];
+    groups[rawModel].push(j);
+  });
+  function modelClass(m) {
+    if (m.includes('haiku')) return 'model-haiku';
+    if (m.includes('sonnet') || m.includes('opus')) return 'model-sonnet';
+    if (m.includes('gpt')) return 'model-gpt';
+    return 'model-other';
+  }
+  let html = '';
+  Object.entries(groups).forEach(([model, groupJobs]) => {
+    const cls = modelClass(model);
+    html += `<div class="model-group-header ${cls}">▶ ${model.toUpperCase()} (${groupJobs.length} jobs)</div>`;
+    html += `<table style="margin-bottom:12px">
+      <thead><tr><th>Job Name</th><th>Model</th><th>Status</th></tr></thead><tbody>`;
+    groupJobs.forEach(j => {
+      let sc = 'status-idle', sl = '● IDLE';
+      if (j.status === 'ok') { sc = 'status-ok'; sl = '● OK'; }
+      else if (j.status === 'error') { sc = 'status-err'; sl = '● ERR'; }
+      html += `<tr><td>${j.name}</td><td class="${cls}" style="font-size:11px">${model}</td><td class="${sc}">${sl}</td></tr>`;
+    });
+    html += '</tbody></table>';
+  });
+  container.innerHTML = html;
+}
+
+// ── Feature 4: Equity Sparkline ──
+function renderSparkline(equityHistory) {
+  const box = document.getElementById('equity-sparkline');
+  if (!equityHistory || equityHistory.length < 2) {
+    box.innerHTML = '<div class="loading">Insufficient equity history (need ≥ 2 data points)</div>';
+    return;
+  }
+  const values = equityHistory.map(e => parseFloat(e.equity) || 0);
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+  const chars = '▁▂▃▄▅▆▇█';
+  const sparkStr = values.map(v => {
+    const idx = Math.min(Math.floor(((v - min) / range) * (chars.length - 1)), chars.length - 1);
+    return chars[idx];
+  }).join('');
+  const latest = values[values.length - 1];
+  const oldest = values[0];
+  const change = latest - oldest;
+  const changePct = oldest ? ((change / oldest) * 100).toFixed(2) : '0.00';
+  const changeSign = change >= 0 ? '+' : '';
+  const changeColor = change >= 0 ? 'var(--green)' : 'var(--red)';
+  box.innerHTML = `
+    <div class="sparkline-chars">${sparkStr}</div>
+    <div class="sparkline-meta">
+      <span>Low: $${min.toFixed(2)}</span>
+      <span style="margin:0 12px">High: $${max.toFixed(2)}</span>
+      <span>Latest: $${latest.toFixed(2)}</span>
+      <span style="margin-left:12px;color:${changeColor}">${changeSign}$${change.toFixed(2)} (${changeSign}${changePct}%)</span>
+      <span style="margin-left:12px">${equityHistory.length} entries</span>
+    </div>`;
+}
+
+// ── Feature 5: Log Viewer ──
+function renderLogs(logs) {
+  const box = document.getElementById('log-box');
+  if (!logs || !logs.length) {
+    box.innerHTML = '<div style="color:var(--green-dim);font-size:11px">No log entries found</div>';
+    return;
+  }
+  const html = logs.map(entry => {
+    const label = entry.label || '???';
+    let prefixCls = 'log-prefix-dash';
+    if (label === 'FOREX') prefixCls = 'log-prefix-forex';
+    else if (label === 'WEB') prefixCls = 'log-prefix-web';
+    const text = (entry.text || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    let textCls = 'log-text';
+    if (/error|ERROR|CRITICAL|FATAL/i.test(text)) textCls += ' is-error';
+    else if (/✅|OK\b|SUCCESS|success/i.test(text)) textCls += ' is-ok';
+    return `<div class="log-line"><span class="${prefixCls}">[${label}]</span><span class="${textCls}">${text}</span></div>`;
+  }).join('');
+  box.innerHTML = html;
+  box.scrollTop = box.scrollHeight;
+}
+
+function clearLogs() {
+  const box = document.getElementById('log-box');
+  box.innerHTML = '<div style="color:var(--green-dim);font-size:11px">Cleared. Refresh to reload.</div>';
+}
+
+function progressBar(pct, width) {
+  width = width || 20;
+  const filled = Math.round(pct / 100 * width);
+  const empty = width - filled;
+  return '[' + '█'.repeat(filled) + '░'.repeat(empty) + '] ' + pct.toFixed(1) + '%';
+}
+
+function renderServices(services) {
+  if (!services) return;
+  const list = document.getElementById('services-list');
+  const items = [
+    { key: 'openclaw', label: 'OpenClaw' },
+    { key: 'chrome', label: 'Chrome Relay' },
+    { key: 'website', label: 'Website' },
+    { key: 'forex_listener', label: 'Forex Listener' },
+  ];
+  let total = 0, online = 0;
+  let html = '';
+  items.forEach(item => {
+    const s = services[item.key];
+    const isOn = s && (s.running === true || s.online === true);
+    if (isOn) online++;
+    total++;
+    html += `<div class="service-item">
+      <span class="dot ${isOn ? 'online' : 'offline'}">●</span>
+      <span class="service-name">${item.label}</span>
+      <span class="service-status ${isOn ? 'online' : 'offline'}">${isOn ? 'ON' : 'OFF'}</span>
+    </div>`;
+  });
+  list.innerHTML = html;
+  document.getElementById('stat-services').textContent = online + '/' + total;
+}
+
+function renderSystem(d) {
+  const sys = d.system || {};
+  const ram = sys.ram || {};
+  const disk = sys.disk || {};
+  const cpu = sys.cpu || {};
+  const cards = document.getElementById('system-cards');
+  cards.innerHTML = `
+    <div class="card">
+      <div class="card-label">${t('cpu')}</div>
+      <div class="card-value">${(cpu.percent||0).toFixed(1)}<span style="font-size:14px">%</span></div>
+      <div class="card-sub">${cpu.count||0} cores</div>
+      <div class="progress-bar">${progressBar(cpu.percent||0, 16)}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">${t('ram')}</div>
+      <div class="card-value">${(ram.used_gb||0).toFixed(1)}<span style="font-size:14px">GB</span></div>
+      <div class="card-sub">${(ram.used_gb||0).toFixed(1)} / ${(ram.total_gb||0).toFixed(1)} GB</div>
+      <div class="progress-bar">${progressBar(ram.percent||0, 16)}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">${t('disk')}</div>
+      <div class="card-value">${disk.used_gb||0}<span style="font-size:14px">GB</span></div>
+      <div class="card-sub">${disk.used_gb||0} / ${disk.total_gb||0} GB</div>
+      <div class="progress-bar">${progressBar(disk.percent||0, 16)}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">${t('uptime')}</div>
+      <div class="card-value" style="font-size:16px">${sys.uptime||'--'}</div>
+      <div class="card-sub">${sys.hostname||''}</div>
+      <div class="progress-bar" style="color:var(--green-dim)">${t("system-nominal")}</div>
+    </div>
+  `;
+}
+
+function renderBingXSummary(bingx, containerId) {
+  const b = bingx || {};
+  const pnl = b.unrealized_pnl || 0;
+  const pnlClass = pnl >= 0 ? 'pnl-pos' : 'pnl-neg';
+  const pnlSign = pnl >= 0 ? '+' : '';
+  document.getElementById(containerId).innerHTML = `
+    <div class="card">
+      <div class="card-label">${t('balance')}</div>
+      <div class="card-value" style="font-size:18px">$${(b.balance||0).toFixed(2)}</div>
+      <div class="card-sub">${t('mode')}: ${(b.mode||'--').toUpperCase()}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">${t('equity')}</div>
+      <div class="card-value" style="font-size:18px">$${(b.equity||0).toFixed(2)}</div>
+      <div class="card-sub">Available: $${(b.available||0).toFixed(2)}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">${t('pnl')}</div>
+      <div class="card-value ${pnlClass}" style="font-size:18px">${pnlSign}$${pnl.toFixed(2)}</div>
+      <div class="card-sub">Open: ${b.open_positions||0} positions</div>
+    </div>
+    <div class="card">
+      <div class="card-label">${t('winrate')}</div>
+      <div class="card-value" style="font-size:18px">${(b.win_rate||0).toFixed(1)}<span style="font-size:14px">%</span></div>
+      <div class="card-sub">W:${b.win_trades||0} / L:${b.loss_trades||0}</div>
+    </div>
+  `;
+}
+
+// ── Feature 1: renderCron with error badge ──
+function renderCron(jobs) {
+  const tbody = document.getElementById('cron-table');
+  if (!jobs || !jobs.length) { tbody.innerHTML = '<tr><td colspan="5" class="loading">No data</td></tr>'; return; }
+  document.getElementById('stat-crons').textContent = jobs.length;
+
+  // Update error badge
+  const errCount = jobs.filter(j => j.status === 'error').length;
+  const badge = document.getElementById('cron-badge');
+  badge.textContent = errCount > 0 ? String(errCount) : '';
+
+  tbody.innerHTML = jobs.map(j => {
+    let sc = 'status-idle', sl = '● IDLE';
+    if (j.status === 'ok') { sc = 'status-ok'; sl = '● OK'; }
+    else if (j.status === 'error') { sc = 'status-err'; sl = '● ERR'; }
+    const model = (j.model || '--').replace('claudible/', '').replace('openai-codex/', '').replace('google/', '');
+    return `<tr>
+      <td>${j.name}</td>
+      <td style="color:var(--green-dim);font-size:11px">${j.schedule||'--'}</td>
+      <td style="color:var(--green-dim);font-size:10px">${model}</td>
+      <td style="color:var(--green-dim)">${j.last_run||'--'}</td>
+      <td class="${sc}">${sl}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderPositions(bingx) {
+  const tbody = document.getElementById('positions-table');
+  const pos = (bingx || {}).positions_detail || [];
+  if (!pos.length) { tbody.innerHTML = '<tr><td colspan="5" style="color:var(--green-dim)">No open positions</td></tr>'; return; }
+  tbody.innerHTML = pos.map(p => {
+    const pnl = parseFloat(p.unrealized_pnl || 0);
+    const pc = pnl >= 0 ? 'pnl-pos' : 'pnl-neg';
+    const ps = pnl >= 0 ? '+' : '';
+    const sc = p.side === 'LONG' ? 'side-long' : 'side-short';
+    return `<tr>
+      <td>${p.symbol}</td>
+      <td class="${sc}">${p.side}</td>
+      <td>${p.size}</td>
+      <td>$${p.entry_price}</td>
+      <td class="${pc}">${ps}$${pnl.toFixed(4)}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderForex(services) {
+  const fl = (services || {}).forex_listener || {};
+  const panel = document.getElementById('forex-panel');
+  const isOn = fl.running === true;
+  panel.innerHTML = `
+    <div class="forex-row"><span class="forex-key">Status</span><span class="forex-val ${isOn ? 'status-ok' : 'status-err'}">${isOn ? currentLang === 'vi' ? '● ĐANG LẮNG NGHE' : '● ONLINE — LISTENING' : '● OFFLINE'}</span></div>
+    <div class="forex-row"><span class="forex-key">Source</span><span class="forex-val">${fl.source || '--'}</span></div>
+    <div class="forex-row"><span class="forex-key">Destination</span><span class="forex-val">${fl.dest || '--'}</span></div>
+    <div class="forex-row"><span class="forex-key">Mode</span><span class="forex-val">${fl.mode || '--'}</span></div>
+    <div class="forex-row"><span class="forex-key">Protocol</span><span class="forex-val">Telethon MTProto Userbot</span></div>
+    <div class="forex-row"><span class="forex-key">Session</span><span class="forex-val">forex-forwarder/userbot.session</span></div>
+    <div class="forex-row"><span class="forex-key">Service</span><span class="forex-val">forex-listener.service (systemd)</span></div>
+  `;
+}
+
+function renderAll(d) {
+  data = d;
+  const ts = d.generated_at_vn || d.generated_at || '--';
+  document.getElementById('last-updated').textContent = '[' + ts + ']';
+  renderServices(d.services);
+  renderSystem(d);
+  renderBingXSummary(d.bingx_bot, 'bingx-summary');
+  renderCron(d.openclaw_cron);
+  renderCronHeatmap(d.cron_history, d.openclaw_cron);
+  renderBingXSummary(d.bingx_bot, 'bingx-cards');
+  renderPositions(d.bingx_bot);
+  renderForex(d.services);
+  renderModelConfig(d.openclaw_cron);
+  renderSparkline(d.equity_history);
+  renderLogs(d.recent_logs);
+}
+
+function loadData(retries = 3) {
+  fetch('./status.json?t=' + Date.now())
+    .then(r => r.json())
+    .then(d => renderAll(d))
+    .catch(e => {
+      if (retries > 0) {
+        setTimeout(() => loadData(retries - 1), 2000);
+      } else {
+        document.getElementById('last-updated').textContent = '[ERROR: ' + e.message + ']';
+      }
+    });
+  refreshTimer = 60;
+}
+
+// Countdown
+setInterval(() => {
+  refreshTimer--;
+  document.getElementById('refresh-info').textContent = 'Auto-refresh: ' + refreshTimer + 's';
+  if (refreshTimer <= 0) loadData();
+}, 1000);
+
+loadData();
+</script>
+</body>
 </html>
