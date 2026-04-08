@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-08T07:55:59.692670+00:00",
-  "generated_at_vn": "2026-04-08 14:55:59",
+  "generated_at": "2026-04-08T08:00:08.095433+00:00",
+  "generated_at_vn": "2026-04-08 15:00:08",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "6d 5h 21m",
-    "uptime_seconds": 537711,
+    "uptime": "6d 5h 25m",
+    "uptime_seconds": 537959,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 4.29,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 4.2,
+      "percent": 6.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -69,7 +69,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 383
+      "response_time_ms": 378
     },
     "openclaw": {
       "running": true
@@ -1287,26 +1287,6 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-04-08 14:40:29,926 INFO Connecting to 91.108.56.199:443/TcpFull...",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 14:40:29,926 INFO Connecting to 91.108.56.199:443/TcpFull...",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 14:40:29,973 INFO Connection to 91.108.56.199:443/TcpFull complete!",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 14:40:29,973 INFO Connection to 91.108.56.199:443/TcpFull complete!",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-04-08 14:40:30,317 INFO ✅ Userbot connected!",
       "ts": ""
     },
@@ -1383,6 +1363,26 @@
     {
       "label": "FOREX",
       "text": "2026-04-08 14:40:33,749 INFO 👂 Listening to @BoBotfxSignals...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 14:57:02,775 INFO New message #5953 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4819.897 ❌SL: 4806.764 🔷 TP1: 4826.464 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 14:57:02,775 INFO New message #5953 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4819.897 ❌SL: 4806.764 🔷 TP1: 4826.464 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 14:57:03,855 INFO   ✅ SIGNAL posted → dest msg_id=1615",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 14:57:03,855 INFO   ✅ SIGNAL posted → dest msg_id=1615",
       "ts": ""
     },
     {
@@ -1639,7 +1639,7 @@
         "label": "@SignalHuntersCrypto",
         "type": "channel",
         "title": "Signal Hunters",
-        "members": 2853,
+        "members": 2852,
         "ok": true,
         "model": "claudible/claude-sonnet-4.6",
         "username": "SignalHuntersCrypto",
