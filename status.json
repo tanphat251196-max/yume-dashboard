@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-08T13:05:09.342018+00:00",
-  "generated_at_vn": "2026-04-08 20:05:09",
+  "generated_at": "2026-04-08T13:10:16.976182+00:00",
+  "generated_at_vn": "2026-04-08 20:10:16",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "6d 10h 31m",
-    "uptime_seconds": 556260,
+    "uptime": "6d 10h 36m",
+    "uptime_seconds": 556568,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 4.09,
-      "percent": 26.6
+      "used_gb": 4.14,
+      "percent": 27.0
     },
     "disk": {
       "total_gb": 468,
@@ -16,12 +16,16 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 12.0,
+      "percent": 57.5,
       "count": 4,
       "freq_mhz": 0
     }
   },
-  "openclaw_cron": [],
+  "openclaw_cron": [
+    {
+      "error": "Command '['/home/shinyyume/.npm-global/bin/openclaw', 'cron', 'list']' timed out after 15 seconds"
+    }
+  ],
   "bingx_bot": {
     "running": false,
     "mode": "live",
@@ -70,7 +74,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 415
+      "response_time_ms": 451
     },
     "openclaw": {
       "running": true
@@ -1288,102 +1292,102 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:42:48,285 INFO   ✅ UPDATE replied to 1621",
+      "text": "2026-04-08 20:06:49,993 INFO   ✅ UPDATE replied to 1629",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:42:48,285 INFO   ✅ UPDATE replied to 1621",
+      "text": "2026-04-08 20:06:49,993 INFO   ✅ UPDATE replied to 1629",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:47:21,423 INFO New message #5969 → UPDATE: 'TP1 Hit +108.6Pips'",
+      "text": "2026-04-08 20:07:06,284 INFO New message #5973 → UPDATE: 'TP2 Hit +5275.8Pips'",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:47:21,423 INFO New message #5969 → UPDATE: 'TP1 Hit +108.6Pips'",
+      "text": "2026-04-08 20:07:06,284 INFO New message #5973 → UPDATE: 'TP2 Hit +5275.8Pips'",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:47:21,424 INFO   🎯 UPDATE → mapped via reply_to src#5966 → dest#1628",
+      "text": "2026-04-08 20:07:06,284 INFO   🎯 UPDATE → mapped via reply_to src#5967 → dest#1629",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:47:21,424 INFO   🎯 UPDATE → mapped via reply_to src#5966 → dest#1628",
+      "text": "2026-04-08 20:07:06,284 INFO   🎯 UPDATE → mapped via reply_to src#5967 → dest#1629",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:47:22,368 INFO   ✅ UPDATE replied to 1628",
+      "text": "2026-04-08 20:07:07,183 INFO   ✅ UPDATE replied to 1629",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:47:22,368 INFO   ✅ UPDATE replied to 1628",
+      "text": "2026-04-08 20:07:07,183 INFO   ✅ UPDATE replied to 1629",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:47:30,285 INFO New message #5970 → UPDATE: 'TP1 Hit +2514.2Pips'",
+      "text": "2026-04-08 20:07:14,732 INFO New message #5974 → UPDATE: 'TP3 Hit +7542.5Pips'",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:47:30,285 INFO New message #5970 → UPDATE: 'TP1 Hit +2514.2Pips'",
+      "text": "2026-04-08 20:07:14,732 INFO New message #5974 → UPDATE: 'TP3 Hit +7542.5Pips'",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:47:30,286 WARNING   ⚠️ UPDATE có reply_to=5943 không tìm thấy trong map → fallback signal#5967",
+      "text": "2026-04-08 20:07:14,732 WARNING   ⚠️ UPDATE có reply_to=5943 không tìm thấy trong map → fallback signal#5967",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:47:30,286 WARNING   ⚠️ UPDATE có reply_to=5943 không tìm thấy trong map → fallback signal#5967",
+      "text": "2026-04-08 20:07:14,732 WARNING   ⚠️ UPDATE có reply_to=5943 không tìm thấy trong map → fallback signal#5967",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:47:31,209 INFO   ✅ UPDATE replied to 1629",
+      "text": "2026-04-08 20:07:15,592 INFO   ✅ UPDATE replied to 1629",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:47:31,209 INFO   ✅ UPDATE replied to 1629",
+      "text": "2026-04-08 20:07:15,592 INFO   ✅ UPDATE replied to 1629",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:58:11,533 INFO New message #5971 → UPDATE: 'TP1 Hit +2637.9Pips'",
+      "text": "2026-04-08 20:08:52,851 INFO New message #5975 → UPDATE: 'TP3 Hit +7913.7Pips'",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:58:11,533 INFO New message #5971 → UPDATE: 'TP1 Hit +2637.9Pips'",
+      "text": "2026-04-08 20:08:52,851 INFO New message #5975 → UPDATE: 'TP3 Hit +7913.7Pips'",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:58:11,535 INFO   🎯 UPDATE → mapped via reply_to src#5967 → dest#1629",
+      "text": "2026-04-08 20:08:52,852 INFO   🎯 UPDATE → mapped via reply_to src#5967 → dest#1629",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:58:11,535 INFO   🎯 UPDATE → mapped via reply_to src#5967 → dest#1629",
+      "text": "2026-04-08 20:08:52,852 INFO   🎯 UPDATE → mapped via reply_to src#5967 → dest#1629",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:58:12,452 INFO   ✅ UPDATE replied to 1629",
+      "text": "2026-04-08 20:08:53,802 INFO   ✅ UPDATE replied to 1629",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-04-08 19:58:12,452 INFO   ✅ UPDATE replied to 1629",
+      "text": "2026-04-08 20:08:53,802 INFO   ✅ UPDATE replied to 1629",
       "ts": ""
     },
     {
@@ -1493,16 +1497,6 @@
     },
     {
       "label": "DASH",
-      "text": "   63488cb9..15c007fb  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   4a0a8933..096597e8  main -> main",
       "ts": ""
     },
@@ -1584,6 +1578,16 @@
     {
       "label": "DASH",
       "text": "   2f9dd71b..323ca918  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   ce40fdc0..a49b2c85  main -> main",
       "ts": ""
     }
   ],
