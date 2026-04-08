@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-08T19:45:16.009887+00:00",
-  "generated_at_vn": "2026-04-09 02:45:16",
+  "generated_at": "2026-04-08T19:50:15.400243+00:00",
+  "generated_at_vn": "2026-04-09 02:50:15",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "6d 17h 11m",
-    "uptime_seconds": 580267,
+    "uptime": "6d 17h 16m",
+    "uptime_seconds": 580566,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 4.31,
-      "percent": 28.1
+      "used_gb": 4.21,
+      "percent": 27.4
     },
     "disk": {
       "total_gb": 468,
@@ -16,12 +16,21 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 12.0,
+      "percent": 17.2,
       "count": 4,
       "freq_mhz": 0
     }
   },
   "openclaw_cron": [
+    {
+      "id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+      "name": "Whale Tracker",
+      "schedule": "cron 45 */2 * * * (exact)",
+      "next_run": "in 2h",
+      "last_run": "5m ago",
+      "status": "ok",
+      "model": "claudible/claude-haiku-4.5"
+    },
     {
       "id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
       "name": "daily-analysis",
@@ -242,7 +251,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 456
+      "response_time_ms": 421
     },
     "openclaw": {
       "running": true
@@ -259,126 +268,6 @@
       "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
       "name": "monthly-analysis",
       "status": "idle",
-      "ts": 1775674515.219525
-    },
-    {
-      "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
-      "name": "Whale Tracker",
-      "status": "ok",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
-      "name": "daily-analysis",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
-      "name": "x-post-analysis-am",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
-      "name": "x-engage-1",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
-      "name": "x-post-news-1",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
-      "name": "x-engage-2",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
-      "name": "x-post-insight-1",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
-      "name": "x-engage-3",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
-      "name": "x-post-news-2",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
-      "name": "x-engage-4",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
-      "name": "x-post-insight-2",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "80773c29-023b-48da-a967-039b5161337e",
-      "name": "x-post-thread",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
-      "name": "x-engage-5",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
-      "name": "x-post-news-3",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
-      "name": "crypto-education",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
-      "name": "x-post-analysis-pm",
-      "status": "ok",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
-      "name": "x-engage-6",
-      "status": "error",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
-      "name": "weekly-leaderboard",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
-      "name": "weekly-analysis",
-      "status": "idle",
-      "ts": 1775674815.903801
-    },
-    {
-      "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
-      "name": "monthly-analysis",
-      "status": "idle",
       "ts": 1775674815.903801
     },
     {
@@ -1454,6 +1343,126 @@
       "name": "monthly-analysis",
       "status": "idle",
       "ts": 1775677516.008807
+    },
+    {
+      "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+      "name": "Whale Tracker",
+      "status": "ok",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+      "name": "daily-analysis",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
+      "name": "x-post-analysis-am",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
+      "name": "x-engage-1",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
+      "name": "x-post-news-1",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
+      "name": "x-engage-2",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
+      "name": "x-post-insight-1",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
+      "name": "x-engage-3",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
+      "name": "x-post-news-2",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
+      "name": "x-engage-4",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
+      "name": "x-post-insight-2",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "80773c29-023b-48da-a967-039b5161337e",
+      "name": "x-post-thread",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
+      "name": "x-engage-5",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
+      "name": "x-post-news-3",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
+      "name": "crypto-education",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
+      "name": "x-post-analysis-pm",
+      "status": "ok",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
+      "name": "x-engage-6",
+      "status": "error",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+      "name": "weekly-leaderboard",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+      "name": "weekly-analysis",
+      "status": "idle",
+      "ts": 1775677815.39902
+    },
+    {
+      "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+      "name": "monthly-analysis",
+      "status": "idle",
+      "ts": 1775677815.39902
     }
   ],
   "equity_history": [],
@@ -1665,16 +1674,6 @@
     },
     {
       "label": "DASH",
-      "text": "   6f7e4197..b95bc9a0  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   49c9ce03..c30ee895  main -> main",
       "ts": ""
     },
@@ -1756,6 +1755,16 @@
     {
       "label": "DASH",
       "text": "   ab36328a..8d382daf  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   33c9df15..2c734ba6  main -> main",
       "ts": ""
     }
   ],
