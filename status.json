@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-08T12:30:08.728514+00:00",
-  "generated_at_vn": "2026-04-08 19:30:08",
+  "generated_at": "2026-04-08T12:35:08.309605+00:00",
+  "generated_at_vn": "2026-04-08 19:35:08",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "6d 9h 56m",
-    "uptime_seconds": 554160,
+    "uptime": "6d 10h 0m",
+    "uptime_seconds": 554459,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.43,
-      "percent": 22.3
+      "used_gb": 3.68,
+      "percent": 23.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 14.8,
+      "percent": 23.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -70,7 +70,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 480
+      "response_time_ms": 481
     },
     "openclaw": {
       "running": true
@@ -1288,26 +1288,6 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-04-08 18:47:04,411 INFO   ✅ SIGNAL posted → dest msg_id=1624",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 18:47:04,411 INFO   ✅ SIGNAL posted → dest msg_id=1624",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 18:50:14,506 INFO New message #5963 → UPDATE: 'TP2 Hit +101.0Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 18:50:14,506 INFO New message #5963 → UPDATE: 'TP2 Hit +101.0Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-04-08 18:50:14,507 INFO   🎯 UPDATE → mapped via reply_to src#5957 → dest#1619",
       "ts": ""
     },
@@ -1384,6 +1364,26 @@
     {
       "label": "FOREX",
       "text": "2026-04-08 18:58:12,838 INFO   ✅ UPDATE replied to 1619",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:32:04,010 INFO New message #5966 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4790.073 ❌SL: 4768.354 🔷 TP1: 4800.933 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:32:04,010 INFO New message #5966 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4790.073 ❌SL: 4768.354 🔷 TP1: 4800.933 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:32:04,967 INFO   ✅ SIGNAL posted → dest msg_id=1628",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:32:04,967 INFO   ✅ SIGNAL posted → dest msg_id=1628",
       "ts": ""
     },
     {
@@ -1493,16 +1493,6 @@
     },
     {
       "label": "DASH",
-      "text": "   44d59ad4..459be3ac  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   8e8f395e..469d8a9c  main -> main",
       "ts": ""
     },
@@ -1585,6 +1575,16 @@
       "label": "DASH",
       "text": "   71024858..d4003d81  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   0b795aad..a38b7121  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -1596,7 +1596,7 @@
         "title": "X268 | Tin tức",
         "members": 576,
         "ok": true,
-        "model": "claudible/claude-sonnet-4.6",
+        "model": "openai-codex/gpt-5.4",
         "username": "x268Chat",
         "description": "- Thông báo: https://t.me/x268Channel\n- Chia sẻ kiến thức: https://t.me/x268Sign"
       },
@@ -1629,7 +1629,7 @@
         "title": "Signal Hunters Chat",
         "members": 570,
         "ok": true,
-        "model": "claudible/claude-sonnet-4.6",
+        "model": "openai-codex/gpt-5.4",
         "username": "SignalHuntersChat",
         "description": "Chào mừng tất cả anh em tới Signal Hunters 🔥\nChannel @SignalHuntersCrypto\nMON AI"
       }
