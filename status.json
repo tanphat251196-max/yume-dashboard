@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-08T12:45:08.930315+00:00",
-  "generated_at_vn": "2026-04-08 19:45:08",
+  "generated_at": "2026-04-08T12:50:08.566549+00:00",
+  "generated_at_vn": "2026-04-08 19:50:08",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "6d 10h 11m",
-    "uptime_seconds": 555060,
+    "uptime": "6d 10h 15m",
+    "uptime_seconds": 555359,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.43,
-      "percent": 22.3
+      "used_gb": 3.3,
+      "percent": 21.4
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 4.8,
+      "percent": 11.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -70,7 +70,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 440
+      "response_time_ms": 362
     },
     "openclaw": {
       "running": true
@@ -1288,66 +1288,6 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-04-08 18:58:11,916 INFO New message #5965 → UPDATE: 'TP3 Hit +151.5Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 18:58:11,916 INFO New message #5965 → UPDATE: 'TP3 Hit +151.5Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 18:58:11,918 INFO   🎯 UPDATE → mapped via reply_to src#5957 → dest#1619",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 18:58:11,918 INFO   🎯 UPDATE → mapped via reply_to src#5957 → dest#1619",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 18:58:12,838 INFO   ✅ UPDATE replied to 1619",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 18:58:12,838 INFO   ✅ UPDATE replied to 1619",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 19:32:04,010 INFO New message #5966 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4790.073 ❌SL: 4768.354 🔷 TP1: 4800.933 🔷'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 19:32:04,010 INFO New message #5966 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4790.073 ❌SL: 4768.354 🔷 TP1: 4800.933 🔷'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 19:32:04,967 INFO   ✅ SIGNAL posted → dest msg_id=1628",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 19:32:04,967 INFO   ✅ SIGNAL posted → dest msg_id=1628",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 19:40:08,339 INFO New message #5967 → SIGNAL: '💱 Symbol: BTCUSD 📉 Signal: Buy 💠 Entry: 71925.49 ❌SL: 71397.91 🔷 TP1: 72189.28 🔷'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-08 19:40:08,339 INFO New message #5967 → SIGNAL: '💱 Symbol: BTCUSD 📉 Signal: Buy 💠 Entry: 71925.49 ❌SL: 71397.91 🔷 TP1: 72189.28 🔷'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-04-08 19:40:09,290 INFO   ✅ SIGNAL posted → dest msg_id=1629",
       "ts": ""
     },
@@ -1384,6 +1324,66 @@
     {
       "label": "FOREX",
       "text": "2026-04-08 19:42:48,285 INFO   ✅ UPDATE replied to 1621",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:47:21,423 INFO New message #5969 → UPDATE: 'TP1 Hit +108.6Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:47:21,423 INFO New message #5969 → UPDATE: 'TP1 Hit +108.6Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:47:21,424 INFO   🎯 UPDATE → mapped via reply_to src#5966 → dest#1628",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:47:21,424 INFO   🎯 UPDATE → mapped via reply_to src#5966 → dest#1628",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:47:22,368 INFO   ✅ UPDATE replied to 1628",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:47:22,368 INFO   ✅ UPDATE replied to 1628",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:47:30,285 INFO New message #5970 → UPDATE: 'TP1 Hit +2514.2Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:47:30,285 INFO New message #5970 → UPDATE: 'TP1 Hit +2514.2Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:47:30,286 WARNING   ⚠️ UPDATE có reply_to=5943 không tìm thấy trong map → fallback signal#5967",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:47:30,286 WARNING   ⚠️ UPDATE có reply_to=5943 không tìm thấy trong map → fallback signal#5967",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:47:31,209 INFO   ✅ UPDATE replied to 1629",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-08 19:47:31,209 INFO   ✅ UPDATE replied to 1629",
       "ts": ""
     },
     {
@@ -1493,16 +1493,6 @@
     },
     {
       "label": "DASH",
-      "text": "   fa956668..6218c0d8  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   2ba6f456..4f37ef41  main -> main",
       "ts": ""
     },
@@ -1584,6 +1574,16 @@
     {
       "label": "DASH",
       "text": "   60335d20..16423566  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   f6c2133f..21675397  main -> main",
       "ts": ""
     }
   ],
