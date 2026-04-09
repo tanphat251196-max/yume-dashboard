@@ -1,1202 +1,1202 @@
 [
   {
-    "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
-    "name": "x-engage-6",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "2d6c1b84-138f-4208-a0ce-10f86eb58d3b",
-    "name": "x-engage-7",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "b9c55853-b588-4556-b3fe-8bd70201ccc0",
-    "name": "x-engage-8",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "945b5431-064c-48f9-bfba-9e47552521a9",
-    "name": "x-engage-9",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "06793ba7-fe30-4613-949f-1a1b9f290723",
-    "name": "x-engage-10",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "737df1b2-126a-4c98-ba58-a01c1b98175c",
-    "name": "x-post-evening",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "762edf14-ed86-476b-85ee-ccf49db9f322",
-    "name": "fb-personal-evening",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "d6694155-b901-4f4d-a5ef-35d768ebce32",
-    "name": "x-engage-11",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "cf7445f8-cc67-4dbf-a5a4-c305088ecd2a",
-    "name": "x-engage-12",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "7b12fd11-56b0-4972-9341-af2510ad6a62",
-    "name": "x-engage-13",
-    "status": "error",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "c1af40d7-bc57-4f6d-b444-ec569dc8af3f",
-    "name": "x-post-night",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "f2ecf1e4-571b-4eb7-8992-f4952fd90812",
-    "name": "x-engage-14",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "82aab729-7c93-4c11-a90e-bf246975cb34",
-    "name": "x-engage-15",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "35d6219c-ca5d-4bb2-adbe-35204cc324bc",
-    "name": "x-engage-16",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-    "name": "daily-analysis",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "b7a9fe1d-8cd1-4d13-b63b-274e53daccfd",
-    "name": "x-post-morning",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
-    "name": "x-engage-1",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-    "name": "daily-news",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "35410aed-d6e9-478b-88ff-bec1a9d7a7b2",
-    "name": "fb-personal-morning",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-    "name": "commodity-update",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-    "name": "x-engage-2",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-    "name": "crypto-education",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-    "name": "weekly-leaderboard",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-    "name": "weekly-analysis",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-    "name": "weekly-economic-calendar",
-    "status": "ok",
-    "ts": 1775616903.145588
-  },
-  {
-    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
     "name": "monthly-analysis",
-    "status": "ok",
-    "ts": 1775616903.145588
+    "status": "idle",
+    "ts": 1775699115.860272
   },
   {
-    "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
-    "name": "x-engage-3",
-    "status": "ok",
-    "ts": 1775617203.834004
+    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
+    "name": "x-post-news-1",
+    "status": "idle",
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
+    "name": "x-engage-2",
+    "status": "idle",
+    "ts": 1775699415.482373
+  },
+  {
+    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775617203.834004
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
+    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
+    "name": "x-post-insight-1",
+    "status": "idle",
+    "ts": 1775699415.482373
+  },
+  {
+    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
+    "name": "x-engage-3",
+    "status": "idle",
+    "ts": 1775699415.482373
+  },
+  {
+    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
+    "name": "x-post-news-2",
+    "status": "idle",
+    "ts": 1775699415.482373
+  },
+  {
+    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
     "name": "x-engage-4",
-    "status": "ok",
-    "ts": 1775617203.834004
+    "status": "idle",
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "e3bbe17e-5921-4867-9f99-1acbf626f55b",
-    "name": "x-post-noon",
-    "status": "ok",
-    "ts": 1775617203.834004
+    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
+    "name": "x-post-insight-2",
+    "status": "idle",
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
-    "name": "auto-web-post",
-    "status": "ok",
-    "ts": 1775617203.834004
+    "job_id": "80773c29-023b-48da-a967-039b5161337e",
+    "name": "x-post-thread",
+    "status": "idle",
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "b5f94ad6-4c12-4374-bc2d-4dfcb6b0fbae",
-    "name": "fb-group-engage",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
+    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
     "name": "x-engage-5",
-    "status": "ok",
-    "ts": 1775617203.834004
+    "status": "idle",
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "b01fe68e-b684-4822-afa1-0c299230c90f",
-    "name": "fb-personal-afternoon",
-    "status": "ok",
-    "ts": 1775617203.834004
+    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
+    "name": "x-post-news-3",
+    "status": "idle",
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
+    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
+    "name": "crypto-education",
+    "status": "idle",
+    "ts": 1775699415.482373
+  },
+  {
+    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
+    "name": "x-post-analysis-pm",
+    "status": "ok",
+    "ts": 1775699415.482373
+  },
+  {
+    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
     "name": "x-engage-6",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "2d6c1b84-138f-4208-a0ce-10f86eb58d3b",
-    "name": "x-engage-7",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "b9c55853-b588-4556-b3fe-8bd70201ccc0",
-    "name": "x-engage-8",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "945b5431-064c-48f9-bfba-9e47552521a9",
-    "name": "x-engage-9",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "06793ba7-fe30-4613-949f-1a1b9f290723",
-    "name": "x-engage-10",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "737df1b2-126a-4c98-ba58-a01c1b98175c",
-    "name": "x-post-evening",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "762edf14-ed86-476b-85ee-ccf49db9f322",
-    "name": "fb-personal-evening",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "d6694155-b901-4f4d-a5ef-35d768ebce32",
-    "name": "x-engage-11",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "cf7445f8-cc67-4dbf-a5a4-c305088ecd2a",
-    "name": "x-engage-12",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "7b12fd11-56b0-4972-9341-af2510ad6a62",
-    "name": "x-engage-13",
     "status": "error",
-    "ts": 1775617203.834004
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "c1af40d7-bc57-4f6d-b444-ec569dc8af3f",
-    "name": "x-post-night",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "f2ecf1e4-571b-4eb7-8992-f4952fd90812",
-    "name": "x-engage-14",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "82aab729-7c93-4c11-a90e-bf246975cb34",
-    "name": "x-engage-15",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "35d6219c-ca5d-4bb2-adbe-35204cc324bc",
-    "name": "x-engage-16",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775617203.834004
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "b7a9fe1d-8cd1-4d13-b63b-274e53daccfd",
-    "name": "x-post-morning",
+    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
+    "name": "x-post-analysis-am",
     "status": "ok",
-    "ts": 1775617203.834004
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
+    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
     "name": "x-engage-1",
     "status": "ok",
-    "ts": 1775617203.834004
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-    "name": "daily-news",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "35410aed-d6e9-478b-88ff-bec1a9d7a7b2",
-    "name": "fb-personal-morning",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-    "name": "commodity-update",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-    "name": "x-engage-2",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-    "name": "crypto-education",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
     "name": "weekly-leaderboard",
-    "status": "ok",
-    "ts": 1775617203.834004
+    "status": "idle",
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
     "name": "weekly-analysis",
-    "status": "ok",
-    "ts": 1775617203.834004
+    "status": "idle",
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-    "name": "weekly-economic-calendar",
-    "status": "ok",
-    "ts": 1775617203.834004
-  },
-  {
-    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
     "name": "monthly-analysis",
-    "status": "ok",
-    "ts": 1775617203.834004
+    "status": "idle",
+    "ts": 1775699415.482373
   },
   {
-    "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
-    "name": "x-engage-3",
-    "status": "ok",
-    "ts": 1775617503.264977
+    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
+    "name": "x-post-news-1",
+    "status": "idle",
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
+    "name": "x-engage-2",
+    "status": "idle",
+    "ts": 1775699714.91746
+  },
+  {
+    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775617503.264977
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
+    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
+    "name": "x-post-insight-1",
+    "status": "idle",
+    "ts": 1775699714.91746
+  },
+  {
+    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
+    "name": "x-engage-3",
+    "status": "idle",
+    "ts": 1775699714.91746
+  },
+  {
+    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
+    "name": "x-post-news-2",
+    "status": "idle",
+    "ts": 1775699714.91746
+  },
+  {
+    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
     "name": "x-engage-4",
-    "status": "ok",
-    "ts": 1775617503.264977
+    "status": "idle",
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "e3bbe17e-5921-4867-9f99-1acbf626f55b",
-    "name": "x-post-noon",
-    "status": "ok",
-    "ts": 1775617503.264977
+    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
+    "name": "x-post-insight-2",
+    "status": "idle",
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
-    "name": "auto-web-post",
-    "status": "ok",
-    "ts": 1775617503.264977
+    "job_id": "80773c29-023b-48da-a967-039b5161337e",
+    "name": "x-post-thread",
+    "status": "idle",
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "b5f94ad6-4c12-4374-bc2d-4dfcb6b0fbae",
-    "name": "fb-group-engage",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
+    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
     "name": "x-engage-5",
-    "status": "ok",
-    "ts": 1775617503.264977
+    "status": "idle",
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "b01fe68e-b684-4822-afa1-0c299230c90f",
-    "name": "fb-personal-afternoon",
-    "status": "ok",
-    "ts": 1775617503.264977
+    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
+    "name": "x-post-news-3",
+    "status": "idle",
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
+    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
+    "name": "crypto-education",
+    "status": "idle",
+    "ts": 1775699714.91746
+  },
+  {
+    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
+    "name": "x-post-analysis-pm",
+    "status": "ok",
+    "ts": 1775699714.91746
+  },
+  {
+    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
     "name": "x-engage-6",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "2d6c1b84-138f-4208-a0ce-10f86eb58d3b",
-    "name": "x-engage-7",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "4e943de6-0f26-468d-abfd-3479fe3c8af0",
-    "name": "fb-add-friends",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "b9c55853-b588-4556-b3fe-8bd70201ccc0",
-    "name": "x-engage-8",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "945b5431-064c-48f9-bfba-9e47552521a9",
-    "name": "x-engage-9",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "06793ba7-fe30-4613-949f-1a1b9f290723",
-    "name": "x-engage-10",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "737df1b2-126a-4c98-ba58-a01c1b98175c",
-    "name": "x-post-evening",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "762edf14-ed86-476b-85ee-ccf49db9f322",
-    "name": "fb-personal-evening",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "d6694155-b901-4f4d-a5ef-35d768ebce32",
-    "name": "x-engage-11",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "cf7445f8-cc67-4dbf-a5a4-c305088ecd2a",
-    "name": "x-engage-12",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "7b12fd11-56b0-4972-9341-af2510ad6a62",
-    "name": "x-engage-13",
     "status": "error",
-    "ts": 1775617503.264977
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "c1af40d7-bc57-4f6d-b444-ec569dc8af3f",
-    "name": "x-post-night",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "f2ecf1e4-571b-4eb7-8992-f4952fd90812",
-    "name": "x-engage-14",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "82aab729-7c93-4c11-a90e-bf246975cb34",
-    "name": "x-engage-15",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "35d6219c-ca5d-4bb2-adbe-35204cc324bc",
-    "name": "x-engage-16",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775617503.264977
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "b7a9fe1d-8cd1-4d13-b63b-274e53daccfd",
-    "name": "x-post-morning",
+    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
+    "name": "x-post-analysis-am",
     "status": "ok",
-    "ts": 1775617503.264977
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
+    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
     "name": "x-engage-1",
     "status": "ok",
-    "ts": 1775617503.264977
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-    "name": "daily-news",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "35410aed-d6e9-478b-88ff-bec1a9d7a7b2",
-    "name": "fb-personal-morning",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-    "name": "commodity-update",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-    "name": "x-engage-2",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-    "name": "crypto-education",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
     "name": "weekly-leaderboard",
-    "status": "ok",
-    "ts": 1775617503.264977
+    "status": "idle",
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
     "name": "weekly-analysis",
-    "status": "ok",
-    "ts": 1775617503.264977
+    "status": "idle",
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-    "name": "weekly-economic-calendar",
-    "status": "ok",
-    "ts": 1775617503.264977
-  },
-  {
-    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
     "name": "monthly-analysis",
-    "status": "ok",
-    "ts": 1775617503.264977
+    "status": "idle",
+    "ts": 1775699714.91746
   },
   {
-    "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
-    "name": "x-engage-3",
-    "status": "ok",
-    "ts": 1775617803.853168
+    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
+    "name": "x-post-news-1",
+    "status": "idle",
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
+    "name": "x-engage-2",
+    "status": "idle",
+    "ts": 1775700015.463968
+  },
+  {
+    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775617803.853168
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
+    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
+    "name": "x-post-insight-1",
+    "status": "idle",
+    "ts": 1775700015.463968
+  },
+  {
+    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
+    "name": "x-engage-3",
+    "status": "idle",
+    "ts": 1775700015.463968
+  },
+  {
+    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
+    "name": "x-post-news-2",
+    "status": "idle",
+    "ts": 1775700015.463968
+  },
+  {
+    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
     "name": "x-engage-4",
-    "status": "ok",
-    "ts": 1775617803.853168
+    "status": "idle",
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "e3bbe17e-5921-4867-9f99-1acbf626f55b",
-    "name": "x-post-noon",
-    "status": "ok",
-    "ts": 1775617803.853168
+    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
+    "name": "x-post-insight-2",
+    "status": "idle",
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
-    "name": "auto-web-post",
-    "status": "ok",
-    "ts": 1775617803.853168
+    "job_id": "80773c29-023b-48da-a967-039b5161337e",
+    "name": "x-post-thread",
+    "status": "idle",
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "b5f94ad6-4c12-4374-bc2d-4dfcb6b0fbae",
-    "name": "fb-group-engage",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
+    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
     "name": "x-engage-5",
-    "status": "ok",
-    "ts": 1775617803.853168
+    "status": "idle",
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "b01fe68e-b684-4822-afa1-0c299230c90f",
-    "name": "fb-personal-afternoon",
-    "status": "ok",
-    "ts": 1775617803.853168
+    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
+    "name": "x-post-news-3",
+    "status": "idle",
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
+    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
+    "name": "crypto-education",
+    "status": "idle",
+    "ts": 1775700015.463968
+  },
+  {
+    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
+    "name": "x-post-analysis-pm",
+    "status": "ok",
+    "ts": 1775700015.463968
+  },
+  {
+    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
     "name": "x-engage-6",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "2d6c1b84-138f-4208-a0ce-10f86eb58d3b",
-    "name": "x-engage-7",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "4e943de6-0f26-468d-abfd-3479fe3c8af0",
-    "name": "fb-add-friends",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "b9c55853-b588-4556-b3fe-8bd70201ccc0",
-    "name": "x-engage-8",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "945b5431-064c-48f9-bfba-9e47552521a9",
-    "name": "x-engage-9",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "06793ba7-fe30-4613-949f-1a1b9f290723",
-    "name": "x-engage-10",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "737df1b2-126a-4c98-ba58-a01c1b98175c",
-    "name": "x-post-evening",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "762edf14-ed86-476b-85ee-ccf49db9f322",
-    "name": "fb-personal-evening",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "d6694155-b901-4f4d-a5ef-35d768ebce32",
-    "name": "x-engage-11",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "cf7445f8-cc67-4dbf-a5a4-c305088ecd2a",
-    "name": "x-engage-12",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "7b12fd11-56b0-4972-9341-af2510ad6a62",
-    "name": "x-engage-13",
     "status": "error",
-    "ts": 1775617803.853168
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "c1af40d7-bc57-4f6d-b444-ec569dc8af3f",
-    "name": "x-post-night",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "f2ecf1e4-571b-4eb7-8992-f4952fd90812",
-    "name": "x-engage-14",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "82aab729-7c93-4c11-a90e-bf246975cb34",
-    "name": "x-engage-15",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "35d6219c-ca5d-4bb2-adbe-35204cc324bc",
-    "name": "x-engage-16",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775617803.853168
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "b7a9fe1d-8cd1-4d13-b63b-274e53daccfd",
-    "name": "x-post-morning",
+    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
+    "name": "x-post-analysis-am",
     "status": "ok",
-    "ts": 1775617803.853168
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
+    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
     "name": "x-engage-1",
     "status": "ok",
-    "ts": 1775617803.853168
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-    "name": "daily-news",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "35410aed-d6e9-478b-88ff-bec1a9d7a7b2",
-    "name": "fb-personal-morning",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-    "name": "commodity-update",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-    "name": "x-engage-2",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-    "name": "crypto-education",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
     "name": "weekly-leaderboard",
-    "status": "ok",
-    "ts": 1775617803.853168
+    "status": "idle",
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
     "name": "weekly-analysis",
-    "status": "ok",
-    "ts": 1775617803.853168
+    "status": "idle",
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-    "name": "weekly-economic-calendar",
-    "status": "ok",
-    "ts": 1775617803.853168
-  },
-  {
-    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
     "name": "monthly-analysis",
-    "status": "ok",
-    "ts": 1775617803.853168
+    "status": "idle",
+    "ts": 1775700015.463968
   },
   {
-    "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
-    "name": "x-engage-3",
-    "status": "ok",
-    "ts": 1775618103.659542
+    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
+    "name": "x-post-news-1",
+    "status": "idle",
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
+    "name": "x-engage-2",
+    "status": "idle",
+    "ts": 1775700315.209884
+  },
+  {
+    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775618103.659542
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
+    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
+    "name": "x-post-insight-1",
+    "status": "idle",
+    "ts": 1775700315.209884
+  },
+  {
+    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
+    "name": "x-engage-3",
+    "status": "idle",
+    "ts": 1775700315.209884
+  },
+  {
+    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
+    "name": "x-post-news-2",
+    "status": "idle",
+    "ts": 1775700315.209884
+  },
+  {
+    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
     "name": "x-engage-4",
-    "status": "ok",
-    "ts": 1775618103.659542
+    "status": "idle",
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "e3bbe17e-5921-4867-9f99-1acbf626f55b",
-    "name": "x-post-noon",
-    "status": "ok",
-    "ts": 1775618103.659542
+    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
+    "name": "x-post-insight-2",
+    "status": "idle",
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
-    "name": "auto-web-post",
-    "status": "ok",
-    "ts": 1775618103.659542
+    "job_id": "80773c29-023b-48da-a967-039b5161337e",
+    "name": "x-post-thread",
+    "status": "idle",
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "b5f94ad6-4c12-4374-bc2d-4dfcb6b0fbae",
-    "name": "fb-group-engage",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
+    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
     "name": "x-engage-5",
-    "status": "ok",
-    "ts": 1775618103.659542
+    "status": "idle",
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "b01fe68e-b684-4822-afa1-0c299230c90f",
-    "name": "fb-personal-afternoon",
-    "status": "ok",
-    "ts": 1775618103.659542
+    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
+    "name": "x-post-news-3",
+    "status": "idle",
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
+    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
+    "name": "crypto-education",
+    "status": "idle",
+    "ts": 1775700315.209884
+  },
+  {
+    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
+    "name": "x-post-analysis-pm",
+    "status": "ok",
+    "ts": 1775700315.209884
+  },
+  {
+    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
     "name": "x-engage-6",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "2d6c1b84-138f-4208-a0ce-10f86eb58d3b",
-    "name": "x-engage-7",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "4e943de6-0f26-468d-abfd-3479fe3c8af0",
-    "name": "fb-add-friends",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "b9c55853-b588-4556-b3fe-8bd70201ccc0",
-    "name": "x-engage-8",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "945b5431-064c-48f9-bfba-9e47552521a9",
-    "name": "x-engage-9",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "06793ba7-fe30-4613-949f-1a1b9f290723",
-    "name": "x-engage-10",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "737df1b2-126a-4c98-ba58-a01c1b98175c",
-    "name": "x-post-evening",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "762edf14-ed86-476b-85ee-ccf49db9f322",
-    "name": "fb-personal-evening",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "d6694155-b901-4f4d-a5ef-35d768ebce32",
-    "name": "x-engage-11",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "cf7445f8-cc67-4dbf-a5a4-c305088ecd2a",
-    "name": "x-engage-12",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "7b12fd11-56b0-4972-9341-af2510ad6a62",
-    "name": "x-engage-13",
     "status": "error",
-    "ts": 1775618103.659542
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "c1af40d7-bc57-4f6d-b444-ec569dc8af3f",
-    "name": "x-post-night",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "f2ecf1e4-571b-4eb7-8992-f4952fd90812",
-    "name": "x-engage-14",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "82aab729-7c93-4c11-a90e-bf246975cb34",
-    "name": "x-engage-15",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "35d6219c-ca5d-4bb2-adbe-35204cc324bc",
-    "name": "x-engage-16",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775618103.659542
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "b7a9fe1d-8cd1-4d13-b63b-274e53daccfd",
-    "name": "x-post-morning",
+    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
+    "name": "x-post-analysis-am",
     "status": "ok",
-    "ts": 1775618103.659542
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
+    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
     "name": "x-engage-1",
     "status": "ok",
-    "ts": 1775618103.659542
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-    "name": "daily-news",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "35410aed-d6e9-478b-88ff-bec1a9d7a7b2",
-    "name": "fb-personal-morning",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-    "name": "commodity-update",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-    "name": "x-engage-2",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-    "name": "crypto-education",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
     "name": "weekly-leaderboard",
-    "status": "ok",
-    "ts": 1775618103.659542
+    "status": "idle",
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
     "name": "weekly-analysis",
-    "status": "ok",
-    "ts": 1775618103.659542
+    "status": "idle",
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-    "name": "weekly-economic-calendar",
-    "status": "ok",
-    "ts": 1775618103.659542
-  },
-  {
-    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
     "name": "monthly-analysis",
-    "status": "ok",
-    "ts": 1775618103.659542
+    "status": "idle",
+    "ts": 1775700315.209884
   },
   {
-    "job_id": "17d50141-d3ae-4bd2-bd31-df407fd60e0f",
-    "name": "x-engage-3",
-    "status": "ok",
-    "ts": 1775618403.185925
+    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
+    "name": "x-post-news-1",
+    "status": "idle",
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
+    "name": "x-engage-2",
+    "status": "idle",
+    "ts": 1775700615.60327
+  },
+  {
+    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775618403.185925
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "832d0415-71ae-4da3-b4b6-225b07ff9cf6",
+    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
+    "name": "x-post-insight-1",
+    "status": "idle",
+    "ts": 1775700615.60327
+  },
+  {
+    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
+    "name": "x-engage-3",
+    "status": "idle",
+    "ts": 1775700615.60327
+  },
+  {
+    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
+    "name": "x-post-news-2",
+    "status": "idle",
+    "ts": 1775700615.60327
+  },
+  {
+    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
     "name": "x-engage-4",
-    "status": "ok",
-    "ts": 1775618403.185925
+    "status": "idle",
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "e3bbe17e-5921-4867-9f99-1acbf626f55b",
-    "name": "x-post-noon",
-    "status": "ok",
-    "ts": 1775618403.185925
+    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
+    "name": "x-post-insight-2",
+    "status": "idle",
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "2ba6fc94-3668-4722-82a2-3567446040e8",
-    "name": "auto-web-post",
-    "status": "ok",
-    "ts": 1775618403.185925
+    "job_id": "80773c29-023b-48da-a967-039b5161337e",
+    "name": "x-post-thread",
+    "status": "idle",
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "b5f94ad6-4c12-4374-bc2d-4dfcb6b0fbae",
-    "name": "fb-group-engage",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "93088c93-e520-4685-b54f-33fcb9d0908e",
+    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
     "name": "x-engage-5",
-    "status": "ok",
-    "ts": 1775618403.185925
+    "status": "idle",
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "b01fe68e-b684-4822-afa1-0c299230c90f",
-    "name": "fb-personal-afternoon",
-    "status": "ok",
-    "ts": 1775618403.185925
+    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
+    "name": "x-post-news-3",
+    "status": "idle",
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "61fb6272-eb89-4344-bd51-b56f6c88ca10",
+    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
+    "name": "crypto-education",
+    "status": "idle",
+    "ts": 1775700615.60327
+  },
+  {
+    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
+    "name": "x-post-analysis-pm",
+    "status": "ok",
+    "ts": 1775700615.60327
+  },
+  {
+    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
     "name": "x-engage-6",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "2d6c1b84-138f-4208-a0ce-10f86eb58d3b",
-    "name": "x-engage-7",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "4e943de6-0f26-468d-abfd-3479fe3c8af0",
-    "name": "fb-add-friends",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "b9c55853-b588-4556-b3fe-8bd70201ccc0",
-    "name": "x-engage-8",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "945b5431-064c-48f9-bfba-9e47552521a9",
-    "name": "x-engage-9",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "06793ba7-fe30-4613-949f-1a1b9f290723",
-    "name": "x-engage-10",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "737df1b2-126a-4c98-ba58-a01c1b98175c",
-    "name": "x-post-evening",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "762edf14-ed86-476b-85ee-ccf49db9f322",
-    "name": "fb-personal-evening",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "d6694155-b901-4f4d-a5ef-35d768ebce32",
-    "name": "x-engage-11",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "cf7445f8-cc67-4dbf-a5a4-c305088ecd2a",
-    "name": "x-engage-12",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "7b12fd11-56b0-4972-9341-af2510ad6a62",
-    "name": "x-engage-13",
     "status": "error",
-    "ts": 1775618403.185925
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "c1af40d7-bc57-4f6d-b444-ec569dc8af3f",
-    "name": "x-post-night",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "f2ecf1e4-571b-4eb7-8992-f4952fd90812",
-    "name": "x-engage-14",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "82aab729-7c93-4c11-a90e-bf246975cb34",
-    "name": "x-engage-15",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "35d6219c-ca5d-4bb2-adbe-35204cc324bc",
-    "name": "x-engage-16",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775618403.185925
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "b7a9fe1d-8cd1-4d13-b63b-274e53daccfd",
-    "name": "x-post-morning",
+    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
+    "name": "x-post-analysis-am",
     "status": "ok",
-    "ts": 1775618403.185925
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "bfb587eb-ef8e-4dd8-9901-9f6d65466d53",
+    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
     "name": "x-engage-1",
     "status": "ok",
-    "ts": 1775618403.185925
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "1b3d54dd-7e49-49ea-a760-5eb0ed49060f",
-    "name": "daily-news",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "35410aed-d6e9-478b-88ff-bec1a9d7a7b2",
-    "name": "fb-personal-morning",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "36a6e2e0-5175-4d0b-8b7f-f84a58f85d30",
-    "name": "commodity-update",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "1e163b78-b6ea-4fcf-b4a0-62f40d77ae09",
-    "name": "x-engage-2",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-    "name": "crypto-education",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
     "name": "weekly-leaderboard",
-    "status": "ok",
-    "ts": 1775618403.185925
+    "status": "idle",
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
     "name": "weekly-analysis",
-    "status": "ok",
-    "ts": 1775618403.185925
+    "status": "idle",
+    "ts": 1775700615.60327
   },
   {
-    "job_id": "ebbce737-74f9-4b95-a8e6-21c94331a59a",
-    "name": "weekly-economic-calendar",
-    "status": "ok",
-    "ts": 1775618403.185925
-  },
-  {
-    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
     "name": "monthly-analysis",
+    "status": "idle",
+    "ts": 1775700615.60327
+  },
+  {
+    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
+    "name": "x-post-news-1",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
+    "name": "x-engage-2",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775618403.185925
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
+    "name": "x-post-insight-1",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
+    "name": "x-engage-3",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
+    "name": "x-post-news-2",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
+    "name": "x-engage-4",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
+    "name": "x-post-insight-2",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "80773c29-023b-48da-a967-039b5161337e",
+    "name": "x-post-thread",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
+    "name": "x-engage-5",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
+    "name": "x-post-news-3",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
+    "name": "crypto-education",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
+    "name": "x-post-analysis-pm",
+    "status": "ok",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
+    "name": "x-engage-6",
+    "status": "error",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "name": "daily-analysis",
+    "status": "ok",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
+    "name": "x-post-analysis-am",
+    "status": "ok",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
+    "name": "x-engage-1",
+    "status": "ok",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "name": "weekly-leaderboard",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "name": "weekly-analysis",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "name": "monthly-analysis",
+    "status": "idle",
+    "ts": 1775700915.068572
+  },
+  {
+    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
+    "name": "x-post-news-1",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
+    "name": "x-engage-2",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "name": "Whale Tracker",
+    "status": "ok",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
+    "name": "x-post-insight-1",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
+    "name": "x-engage-3",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
+    "name": "x-post-news-2",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
+    "name": "x-engage-4",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
+    "name": "x-post-insight-2",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "80773c29-023b-48da-a967-039b5161337e",
+    "name": "x-post-thread",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
+    "name": "x-engage-5",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
+    "name": "x-post-news-3",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
+    "name": "crypto-education",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
+    "name": "x-post-analysis-pm",
+    "status": "ok",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
+    "name": "x-engage-6",
+    "status": "error",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "name": "daily-analysis",
+    "status": "ok",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
+    "name": "x-post-analysis-am",
+    "status": "ok",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
+    "name": "x-engage-1",
+    "status": "ok",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "name": "weekly-leaderboard",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "name": "weekly-analysis",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "name": "monthly-analysis",
+    "status": "idle",
+    "ts": 1775701215.342596
+  },
+  {
+    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
+    "name": "x-post-news-1",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
+    "name": "x-engage-2",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "name": "Whale Tracker",
+    "status": "ok",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
+    "name": "x-post-insight-1",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
+    "name": "x-engage-3",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
+    "name": "x-post-news-2",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
+    "name": "x-engage-4",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
+    "name": "x-post-insight-2",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "80773c29-023b-48da-a967-039b5161337e",
+    "name": "x-post-thread",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
+    "name": "x-engage-5",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
+    "name": "x-post-news-3",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
+    "name": "crypto-education",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
+    "name": "x-post-analysis-pm",
+    "status": "ok",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
+    "name": "x-engage-6",
+    "status": "error",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "name": "daily-analysis",
+    "status": "ok",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
+    "name": "x-post-analysis-am",
+    "status": "ok",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
+    "name": "x-engage-1",
+    "status": "ok",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "name": "weekly-leaderboard",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "name": "weekly-analysis",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "name": "monthly-analysis",
+    "status": "idle",
+    "ts": 1775701515.552129
+  },
+  {
+    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
+    "name": "x-engage-2",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "name": "Whale Tracker",
+    "status": "ok",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
+    "name": "x-post-insight-1",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
+    "name": "x-engage-3",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
+    "name": "x-post-news-2",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
+    "name": "x-engage-4",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
+    "name": "x-post-insight-2",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "80773c29-023b-48da-a967-039b5161337e",
+    "name": "x-post-thread",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
+    "name": "x-engage-5",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
+    "name": "x-post-news-3",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
+    "name": "crypto-education",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
+    "name": "x-post-analysis-pm",
+    "status": "ok",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
+    "name": "x-engage-6",
+    "status": "error",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "name": "daily-analysis",
+    "status": "ok",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
+    "name": "x-post-analysis-am",
+    "status": "ok",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
+    "name": "x-engage-1",
+    "status": "ok",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "name": "weekly-leaderboard",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "name": "weekly-analysis",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "name": "monthly-analysis",
+    "status": "idle",
+    "ts": 1775701815.691981
+  },
+  {
+    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
+    "name": "x-engage-2",
+    "status": "idle",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "name": "Whale Tracker",
+    "status": "ok",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
+    "name": "x-post-insight-1",
+    "status": "idle",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
+    "name": "x-engage-3",
+    "status": "idle",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
+    "name": "x-post-news-2",
+    "status": "idle",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
+    "name": "x-engage-4",
+    "status": "idle",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
+    "name": "x-post-insight-2",
+    "status": "idle",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "80773c29-023b-48da-a967-039b5161337e",
+    "name": "x-post-thread",
+    "status": "idle",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
+    "name": "x-engage-5",
+    "status": "idle",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
+    "name": "x-post-news-3",
+    "status": "idle",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
+    "name": "crypto-education",
+    "status": "idle",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
+    "name": "x-post-analysis-pm",
+    "status": "ok",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
+    "name": "x-engage-6",
+    "status": "error",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "name": "daily-analysis",
+    "status": "ok",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
+    "name": "x-post-analysis-am",
+    "status": "ok",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
+    "name": "x-engage-1",
+    "status": "ok",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
+    "name": "x-post-news-1",
+    "status": "ok",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "name": "weekly-leaderboard",
+    "status": "idle",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "name": "weekly-analysis",
+    "status": "idle",
+    "ts": 1775702115.047392
+  },
+  {
+    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "name": "monthly-analysis",
+    "status": "idle",
+    "ts": 1775702115.047392
   }
 ]
