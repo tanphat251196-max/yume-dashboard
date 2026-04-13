@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-13T03:30:14.582602+00:00",
-  "generated_at_vn": "2026-04-13 10:30:14",
+  "generated_at": "2026-04-13T03:35:15.237143+00:00",
+  "generated_at_vn": "2026-04-13 10:35:15",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "11d 0h 56m",
-    "uptime_seconds": 953766,
+    "uptime": "11d 1h 1m",
+    "uptime_seconds": 954066,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.43,
-      "percent": 22.3
+      "used_gb": 2.9,
+      "percent": 18.8
     },
     "disk": {
       "total_gb": 468,
@@ -16,67 +16,12 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 7.0,
+      "percent": 9.8,
       "count": 4,
       "freq_mhz": 0
     }
   },
-  "openclaw_cron": [
-    {
-      "id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
-      "name": "Whale Tracker",
-      "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 15m",
-      "last_run": "2h ago",
-      "status": "ok",
-      "model": "claudible/claude-haiku-4.5"
-    },
-    {
-      "id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
-      "name": "daily-analysis",
-      "schedule": "cron 0 7 * * * (exact)",
-      "next_run": "in 20h",
-      "last_run": "4h ago",
-      "status": "ok",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
-      "name": "crypto-education",
-      "schedule": "cron 0 20 * * 2,4,6 (exact)",
-      "next_run": "in 1d",
-      "last_run": "2d ago",
-      "status": "ok",
-      "model": "claudible/claude-haiku-4.5"
-    },
-    {
-      "id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
-      "name": "weekly-leaderboard",
-      "schedule": "cron 30 20 * * 0 (exact)",
-      "next_run": "in 6d",
-      "last_run": "14h ago",
-      "status": "ok",
-      "model": "claudible/claude-haiku-4.5"
-    },
-    {
-      "id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
-      "name": "weekly-analysis",
-      "schedule": "cron 15 7 * * 1 (exact)",
-      "next_run": "in 7d",
-      "last_run": "3h ago",
-      "status": "ok",
-      "model": "claudible/claude-sonnet-4.6"
-    },
-    {
-      "id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
-      "name": "monthly-analysis",
-      "schedule": "cron 15 8 1 * * (exact)",
-      "next_run": "in 18d",
-      "last_run": "-",
-      "status": "idle",
-      "model": "claudible/claude-sonnet-4.6"
-    }
-  ],
+  "openclaw_cron": [],
   "bingx_bot": {
     "running": false,
     "mode": "live",
@@ -121,12 +66,12 @@
   "services": {
     "chrome": {
       "running": true,
-      "process_count": 6
+      "process_count": 2
     },
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 6016
+      "response_time_ms": 326
     },
     "openclaw": {
       "running": true
@@ -1549,16 +1494,6 @@
     },
     {
       "label": "DASH",
-      "text": "   d9c35d27..bd402e0c  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   876068e6..a925f002  main -> main",
       "ts": ""
     },
@@ -1640,6 +1575,16 @@
     {
       "label": "DASH",
       "text": "   7b600fed..dfcf78e4  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   b806993a..21d8f056  main -> main",
       "ts": ""
     }
   ],
@@ -1910,7 +1855,14 @@
     }
   ],
   "alerts": {
-    "alerts": [],
+    "alerts": [
+      {
+        "level": "critical",
+        "icon": "🔴",
+        "title": "Chrome CDP tắt",
+        "msg": "X posts sẽ fail! Chạy: check-x-cdp.sh hoặc systemctl --user start chrome-x-debug"
+      }
+    ],
     "warnings": [
       {
         "level": "warning",
@@ -1919,7 +1871,7 @@
         "msg": "Cần ít nhất 4 bài/ngày"
       }
     ],
-    "total_critical": 0,
+    "total_critical": 1,
     "total_warning": 1,
     "all_clear": false
   }
