@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-13T23:40:15.185221+00:00",
-  "generated_at_vn": "2026-04-14 06:40:15",
+  "generated_at": "2026-04-13T23:45:15.487404+00:00",
+  "generated_at_vn": "2026-04-14 06:45:15",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "11d 21h 6m",
-    "uptime_seconds": 1026366,
+    "uptime": "11d 21h 11m",
+    "uptime_seconds": 1026666,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.88,
-      "percent": 18.7
+      "used_gb": 3.06,
+      "percent": 19.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 5.5,
+      "percent": 7.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -71,7 +71,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 315
+      "response_time_ms": 396
     },
     "openclaw": {
       "running": true
@@ -1289,26 +1289,6 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-04-14 06:00:22,611 INFO New message #6169 → UPDATE: 'TP2 Hit +113.9Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-14 06:00:22,611 INFO New message #6169 → UPDATE: 'TP2 Hit +113.9Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-14 06:00:22,612 INFO   🎯 UPDATE → mapped via reply_to src#6162 → dest#1823",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-14 06:00:22,612 INFO   🎯 UPDATE → mapped via reply_to src#6162 → dest#1823",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-04-14 06:00:23,493 INFO   ✅ UPDATE replied to 1823",
       "ts": ""
     },
@@ -1385,6 +1365,26 @@
     {
       "label": "FOREX",
       "text": "2026-04-14 06:04:21,239 INFO   ✅ UPDATE replied to 1820",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-14 06:44:03,569 INFO New message #6172 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4761.309 ❌SL: 4754.415 🔷 TP1: 4764.756 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-14 06:44:03,569 INFO New message #6172 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4761.309 ❌SL: 4754.415 🔷 TP1: 4764.756 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-14 06:44:04,521 INFO   ✅ SIGNAL posted → dest msg_id=1833",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-14 06:44:04,521 INFO   ✅ SIGNAL posted → dest msg_id=1833",
       "ts": ""
     },
     {
@@ -1494,16 +1494,6 @@
     },
     {
       "label": "DASH",
-      "text": "   9e20ba21..23255550  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   eced9f7c..539f5f30  main -> main",
       "ts": ""
     },
@@ -1585,6 +1575,16 @@
     {
       "label": "DASH",
       "text": "   c839a42b..243dd7e4  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   3676914a..4a9ac00d  main -> main",
       "ts": ""
     }
   ],
