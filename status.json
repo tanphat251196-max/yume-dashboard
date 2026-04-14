@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-14T23:05:14.575050+00:00",
-  "generated_at_vn": "2026-04-15 06:05:14",
+  "generated_at": "2026-04-14T23:10:15.241406+00:00",
+  "generated_at_vn": "2026-04-15 06:10:15",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "12d 20h 31m",
-    "uptime_seconds": 1110666,
+    "uptime": "12d 20h 36m",
+    "uptime_seconds": 1110966,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.04,
-      "percent": 19.8
+      "used_gb": 2.98,
+      "percent": 19.4
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 6.8,
+      "percent": 5.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -71,7 +71,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 323
+      "response_time_ms": 312
     },
     "openclaw": {
       "running": true
@@ -88,26 +88,6 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-04-15 00:38:39,443 INFO   ✅ UPDATE replied to 1877",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-15 00:38:39,443 INFO   ✅ UPDATE replied to 1877",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-15 00:38:39,445 INFO   🔒 Signal 6216 closed",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-15 00:38:39,445 INFO   🔒 Signal 6216 closed",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-04-15 02:02:03,297 INFO New message #6223 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4839.529 ❌SL: 4830.843 🔷 TP1: 4843.872 🔷'",
       "ts": ""
     },
@@ -187,53 +167,38 @@
       "ts": ""
     },
     {
-      "label": "WEB",
-      "text": "    \"message\": \"models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available m",
+      "label": "FOREX",
+      "text": "2026-04-15 06:07:03,267 INFO New message #6226 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4843.001 ❌SL: 4833.395 🔷 TP1: 4847.804 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-15 06:07:03,267 INFO New message #6226 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4843.001 ❌SL: 4833.395 🔷 TP1: 4847.804 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-15 06:07:04,227 INFO   ✅ SIGNAL posted → dest msg_id=1887",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-15 06:07:04,227 INFO   ✅ SIGNAL posted → dest msg_id=1887",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    ⚠️ Gemini gemini-1.5-flash HTTP 404: {",
+      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-tai-sao-gia-bitcoin-ethereum-va-xrp-lai-.jpg (1107KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  \"error\": {",
+      "text": "    ✅ Watermark applied: post-tai-sao-gia-bitcoin-ethereum-va-xrp-lai-.jpg (417KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    \"code\": 404,",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available model",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ⚠️ Gemini unavailable — using structured fallback",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ⚠️ [Gemini Nano Banana 2] error: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    🎨 [Imagen 4 Fast] Generated: post-chien-dich-tran-ap-tien-dien-tu-cua-sec-.jpg (1387KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Watermark applied: post-chien-dich-tran-ap-tien-dien-tu-cua-sec-.jpg (205KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Added: chien-dich-tran-ap-tien-dien-tu-cua-sec-ket",
+      "text": "  ✅ Added: tai-sao-gia-bitcoin-ethereum-va-xrp-lai-tang-manh-hom-nay",
       "ts": ""
     },
     {
@@ -243,7 +208,42 @@
     },
     {
       "label": "WEB",
-      "text": "💾 Saved 5 new posts (total: 279)",
+      "text": "📝 [5/5] Cuộc bỏ phiếu tại Thượng viện về Đạo luật CLARITY......",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Bài mới: published 2026-04-14 16:42 UTC — 6.3h trước",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 3016 words, 6 headings, CTA=True",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-cuoc-bo-phieu-tai-thuong-vien-ve-dao-lua.jpg (872KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Watermark applied: post-cuoc-bo-phieu-tai-thuong-vien-ve-dao-lua.jpg (300KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Added: cuoc-bo-phieu-tai-thuong-vien-ve-dao-luat-clarity",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "💾 Saved 5 new posts (total: 284)",
       "ts": ""
     },
     {
@@ -284,16 +284,6 @@
     {
       "label": "WEB",
       "text": "✅ DONE: Published 5 bài mới lên daututhongminh24h.com",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   60d92760..fc8116fc  main -> main",
       "ts": ""
     },
     {
@@ -384,6 +374,16 @@
     {
       "label": "DASH",
       "text": "   f5518990..4009451f  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   5eaaf417..62528f58  main -> main",
       "ts": ""
     }
   ],
@@ -662,16 +662,9 @@
         "msg": "X posts sẽ fail! Chạy: check-x-cdp.sh hoặc systemctl --user start chrome-x-debug"
       }
     ],
-    "warnings": [
-      {
-        "level": "warning",
-        "icon": "🟡",
-        "title": "Web chỉ có 0 bài hôm nay",
-        "msg": "Cần ít nhất 4 bài/ngày"
-      }
-    ],
+    "warnings": [],
     "total_critical": 1,
-    "total_warning": 1,
+    "total_warning": 0,
     "all_clear": false
   }
 }
