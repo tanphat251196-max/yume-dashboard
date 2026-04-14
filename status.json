@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-14T13:40:15.079251+00:00",
-  "generated_at_vn": "2026-04-14 20:40:15",
+  "generated_at": "2026-04-14T13:45:14.844927+00:00",
+  "generated_at_vn": "2026-04-14 20:45:14",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "12d 11h 6m",
-    "uptime_seconds": 1076766,
+    "uptime": "12d 11h 11m",
+    "uptime_seconds": 1077066,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.01,
-      "percent": 19.6
+      "used_gb": 3.03,
+      "percent": 19.7
     },
     "disk": {
       "total_gb": 468,
@@ -71,7 +71,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 414
+      "response_time_ms": 319
     },
     "openclaw": {
       "running": true
@@ -293,16 +293,6 @@
     },
     {
       "label": "DASH",
-      "text": "   11e45913..f31c58d6  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   7c25e6b5..058a91fe  main -> main",
       "ts": ""
     },
@@ -385,6 +375,16 @@
       "label": "DASH",
       "text": "   3382720c..05e34e40  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   fb6dabab..d20cecf9  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -451,11 +451,12 @@
         "label": "@CallerFOREX",
         "type": "channel",
         "title": "Caller FOREX | Signal Hunters",
-        "members": 27,
+        "members": "--",
         "ok": true,
         "model": "claudible/claude-haiku-4.5",
         "username": "CallerFOREX",
-        "description": "Signals by Gin: @Gin25z\nGroup chat: @SignalHuntersChat\nChannel: @SignalHuntersCr"
+        "description": "Signals by Gin: @Gin25z\nGroup chat: @SignalHuntersChat\nChannel: @SignalHuntersCr",
+        "error": "Remote end closed connection without response"
       }
     ]
   },
