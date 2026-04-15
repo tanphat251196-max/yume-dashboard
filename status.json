@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-15T17:05:14.780486+00:00",
-  "generated_at_vn": "2026-04-16 00:05:14",
+  "generated_at": "2026-04-15T17:10:16.197910+00:00",
+  "generated_at_vn": "2026-04-16 00:10:16",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 14h 31m",
-    "uptime_seconds": 1175466,
+    "uptime": "13d 14h 36m",
+    "uptime_seconds": 1175767,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.03,
-      "percent": 19.7
+      "used_gb": 3.5,
+      "percent": 22.8
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 10.2,
+      "percent": 13.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -71,7 +71,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 300
+      "response_time_ms": 341
     },
     "openclaw": {
       "running": true
@@ -293,16 +293,6 @@
     },
     {
       "label": "DASH",
-      "text": "   7071026c..141d8198  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   892ddefe..ad683397  main -> main",
       "ts": ""
     },
@@ -385,6 +375,16 @@
       "label": "DASH",
       "text": "   d7bc662b..e6d98659  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   95493eca..8027300e  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -393,11 +393,12 @@
         "id": "-1001568972930",
         "label": "@x268Chat",
         "type": "group",
-        "title": "--",
-        "members": "--",
-        "ok": false,
+        "title": "X268 | Tin tức",
+        "members": 567,
+        "ok": true,
         "model": "openai-codex/gpt-5.4",
-        "error": "The read operation timed out"
+        "username": "x268Chat",
+        "description": "- Thông báo: https://t.me/x268Channel\n- Chia sẻ kiến thức: https://t.me/x268Sign"
       },
       {
         "id": "-1003808756386",
