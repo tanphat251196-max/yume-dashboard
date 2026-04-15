@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-15T17:10:16.197910+00:00",
-  "generated_at_vn": "2026-04-16 00:10:16",
+  "generated_at": "2026-04-15T17:15:15.109109+00:00",
+  "generated_at_vn": "2026-04-16 00:15:15",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 14h 36m",
-    "uptime_seconds": 1175767,
+    "uptime": "13d 14h 41m",
+    "uptime_seconds": 1176066,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.5,
-      "percent": 22.8
+      "used_gb": 2.96,
+      "percent": 19.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 13.8,
+      "percent": 12.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -71,7 +71,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 341
+      "response_time_ms": 328
     },
     "openclaw": {
       "running": true
@@ -88,36 +88,6 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-04-15 22:06:21,881 INFO   ✅ UPDATE replied to 1902",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-15 22:06:21,881 INFO   ✅ UPDATE replied to 1902",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-15 22:07:50,172 INFO New message #6246 → UPDATE: 'TP4 Hit +169.1Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-15 22:07:50,172 INFO New message #6246 → UPDATE: 'TP4 Hit +169.1Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-15 22:07:50,173 INFO   🎯 UPDATE → mapped via reply_to src#6241 → dest#1902",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-15 22:07:50,173 INFO   🎯 UPDATE → mapped via reply_to src#6241 → dest#1902",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-04-15 22:07:51,122 INFO   ✅ UPDATE replied to 1902",
       "ts": ""
     },
@@ -184,6 +154,36 @@
     {
       "label": "FOREX",
       "text": "2026-04-15 23:44:07,368 INFO   ✅ SIGNAL posted → dest msg_id=1908",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-16 00:11:27,721 INFO New message #6249 → UPDATE: 'TP1 Hit +41.7Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-16 00:11:27,721 INFO New message #6249 → UPDATE: 'TP1 Hit +41.7Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-16 00:11:27,722 INFO   🎯 UPDATE → mapped via reply_to src#6248 → dest#1908",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-16 00:11:27,722 INFO   🎯 UPDATE → mapped via reply_to src#6248 → dest#1908",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-16 00:11:29,233 INFO   ✅ UPDATE replied to 1908",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-16 00:11:29,233 INFO   ✅ UPDATE replied to 1908",
       "ts": ""
     },
     {
@@ -293,16 +293,6 @@
     },
     {
       "label": "DASH",
-      "text": "   892ddefe..ad683397  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   4e038657..2646e815  main -> main",
       "ts": ""
     },
@@ -385,6 +375,16 @@
       "label": "DASH",
       "text": "   95493eca..8027300e  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   83173d3d..6e5be4ad  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -404,12 +404,11 @@
         "id": "-1003808756386",
         "label": "Chị Em Mỹ Gia",
         "type": "group",
-        "title": "Chị Em Mỹ Gia",
-        "members": 3,
-        "ok": true,
+        "title": "--",
+        "members": "--",
+        "ok": false,
         "model": "claudible/claude-sonnet-4.6",
-        "username": "",
-        "description": ""
+        "error": "<urlopen error _ssl.c:983: The handshake operation timed out"
       },
       {
         "id": "-1003783290422",
