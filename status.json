@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-16T01:25:14.466701+00:00",
-  "generated_at_vn": "2026-04-16 08:25:14",
+  "generated_at": "2026-04-16T01:30:15.255731+00:00",
+  "generated_at_vn": "2026-04-16 08:30:15",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 22h 51m",
-    "uptime_seconds": 1205465,
+    "uptime": "13d 22h 56m",
+    "uptime_seconds": 1205766,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.02,
-      "percent": 19.6
+      "used_gb": 3.1,
+      "percent": 20.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 2.0,
+      "percent": 9.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -71,7 +71,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 289
+      "response_time_ms": 378
     },
     "openclaw": {
       "running": true
@@ -88,36 +88,6 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-04-16 05:20:49,340 INFO   🎯 UPDATE → mapped via reply_to src#6260 → dest#1920",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-16 05:20:49,340 INFO   🎯 UPDATE → mapped via reply_to src#6260 → dest#1920",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-16 05:20:50,205 INFO   ✅ UPDATE replied to 1920",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-16 05:20:50,205 INFO   ✅ UPDATE replied to 1920",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-16 05:20:50,207 INFO   🔒 Signal 6260 closed",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-16 05:20:50,207 INFO   🔒 Signal 6260 closed",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-04-16 07:28:03,304 INFO New message #6262 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Sell 💠 Entry: 4824.816 ❌SL: 4830.861 🔷 TP1: 4821.794 '",
       "ts": ""
     },
@@ -184,6 +154,36 @@
     {
       "label": "FOREX",
       "text": "2026-04-16 08:17:04,655 INFO   ✅ SIGNAL posted → dest msg_id=1924",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-16 08:27:52,903 INFO New message #6265 → UPDATE: 'TP1 Hit +28.5Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-16 08:27:52,903 INFO New message #6265 → UPDATE: 'TP1 Hit +28.5Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-16 08:27:52,904 INFO   🎯 UPDATE → mapped via reply_to src#6264 → dest#1924",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-16 08:27:52,904 INFO   🎯 UPDATE → mapped via reply_to src#6264 → dest#1924",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-16 08:27:53,788 INFO   ✅ UPDATE replied to 1924",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-16 08:27:53,788 INFO   ✅ UPDATE replied to 1924",
       "ts": ""
     },
     {
@@ -293,16 +293,6 @@
     },
     {
       "label": "DASH",
-      "text": "   36bf13c4..c6bc9c2c  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   e377a5a1..16b7685a  main -> main",
       "ts": ""
     },
@@ -384,6 +374,16 @@
     {
       "label": "DASH",
       "text": "   7f122d60..db5dd8cd  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   c44d84b5..c4a43586  main -> main",
       "ts": ""
     }
   ],
