@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-17T16:25:03.789494+00:00",
-  "generated_at_vn": "2026-04-17 23:25:03",
+  "generated_at": "2026-04-17T16:30:03.396659+00:00",
+  "generated_at_vn": "2026-04-17 23:30:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "15d 13h 50m",
-    "uptime_seconds": 1345855,
+    "uptime": "15d 13h 55m",
+    "uptime_seconds": 1346154,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 4.16,
-      "percent": 27.1
+      "used_gb": 4.22,
+      "percent": 27.4
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 6.8,
+      "percent": 2.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -27,7 +27,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 1h",
-      "last_run": "40m ago",
+      "last_run": "45m ago",
       "status": "error",
       "model": "claudible/claude-haiku-4.5"
     },
@@ -35,8 +35,8 @@
       "id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
       "name": "daily-analysis",
       "schedule": "cron 0 7 * * * (exact)",
-      "next_run": "in 8h",
-      "last_run": "16h ago",
+      "next_run": "in 7h",
+      "last_run": "17h ago",
       "status": "ok",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -53,8 +53,8 @@
       "id": "2e478e37-ea78-4da9-b283-595558c675c0",
       "name": "analysis-eth",
       "schedule": "cron 0 10 * * * (exact)",
-      "next_run": "in 11h",
-      "last_run": "13h ago",
+      "next_run": "in 10h",
+      "last_run": "14h ago",
       "status": "ok",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -62,8 +62,8 @@
       "id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
       "name": "news-noon",
       "schedule": "cron 0 12 * * * (exact)",
-      "next_run": "in 13h",
-      "last_run": "11h ago",
+      "next_run": "in 12h",
+      "last_run": "12h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
     },
@@ -71,8 +71,8 @@
       "id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
       "name": "analysis-altcoin-1",
       "schedule": "cron 0 14 * * * (exact)",
-      "next_run": "in 15h",
-      "last_run": "9h ago",
+      "next_run": "in 14h",
+      "last_run": "10h ago",
       "status": "ok",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -80,8 +80,8 @@
       "id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
       "name": "analysis-altcoin-2",
       "schedule": "cron 0 16 * * * (exact)",
-      "next_run": "in 17h",
-      "last_run": "7h ago",
+      "next_run": "in 16h",
+      "last_run": "8h ago",
       "status": "ok",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -89,8 +89,8 @@
       "id": "b0968b94-3513-42d7-9161-400f1943492e",
       "name": "news-evening",
       "schedule": "cron 0 18 * * * (exact)",
-      "next_run": "in 19h",
-      "last_run": "5h ago",
+      "next_run": "in 18h",
+      "last_run": "6h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
     },
@@ -98,7 +98,7 @@
       "id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
       "name": "crypto-education",
       "schedule": "cron 0 20 * * 2,4,6 (exact)",
-      "next_run": "in 21h",
+      "next_run": "in 20h",
       "last_run": "1d ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
@@ -107,8 +107,8 @@
       "id": "70f05613-cad3-4886-8708-043dc98c4876",
       "name": "analysis-altcoin-3",
       "schedule": "cron 0 20 * * * (exact)",
-      "next_run": "in 21h",
-      "last_run": "3h ago",
+      "next_run": "in 20h",
+      "last_run": "4h ago",
       "status": "ok",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -144,7 +144,7 @@
       "name": "monthly-analysis",
       "schedule": "cron 15 8 1 * * (exact)",
       "next_run": "in 13d",
-      "last_run": "1d ago",
+      "last_run": "2d ago",
       "status": "ok",
       "model": "claudible/claude-sonnet-4.6"
     }
@@ -196,9 +196,9 @@
       "process_count": 4
     },
     "website": {
-      "online": true,
-      "status_code": 200,
-      "response_time_ms": 650
+      "online": false,
+      "status_code": 0,
+      "response_time_ms": 10002
     },
     "openclaw": {
       "running": true
@@ -215,90 +215,6 @@
       "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
       "name": "analysis-altcoin-3",
       "status": "ok",
-      "ts": 1776438903.302798
-    },
-    {
-      "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
-      "name": "news-night",
-      "status": "ok",
-      "ts": 1776438903.302798
-    },
-    {
-      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "status": "ok",
-      "ts": 1776438903.302798
-    },
-    {
-      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "status": "ok",
-      "ts": 1776438903.302798
-    },
-    {
-      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "status": "ok",
-      "ts": 1776438903.302798
-    },
-    {
-      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "status": "error",
-      "ts": 1776439203.603606
-    },
-    {
-      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "status": "ok",
-      "ts": 1776439203.603606
-    },
-    {
-      "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
-      "name": "news-morning",
-      "status": "ok",
-      "ts": 1776439203.603606
-    },
-    {
-      "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
-      "name": "analysis-eth",
-      "status": "ok",
-      "ts": 1776439203.603606
-    },
-    {
-      "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
-      "name": "news-noon",
-      "status": "ok",
-      "ts": 1776439203.603606
-    },
-    {
-      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
-      "name": "analysis-altcoin-1",
-      "status": "ok",
-      "ts": 1776439203.603606
-    },
-    {
-      "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
-      "name": "analysis-altcoin-2",
-      "status": "ok",
-      "ts": 1776439203.603606
-    },
-    {
-      "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
-      "name": "news-evening",
-      "status": "ok",
-      "ts": 1776439203.603606
-    },
-    {
-      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "status": "ok",
-      "ts": 1776439203.603606
-    },
-    {
-      "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
-      "name": "analysis-altcoin-3",
-      "status": "ok",
       "ts": 1776439203.603606
     },
     {
@@ -1410,6 +1326,90 @@
       "name": "monthly-analysis",
       "status": "ok",
       "ts": 1776443103.788305
+    },
+    {
+      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "status": "error",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+      "name": "daily-analysis",
+      "status": "ok",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+      "name": "news-morning",
+      "status": "ok",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+      "name": "analysis-eth",
+      "status": "ok",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+      "name": "news-noon",
+      "status": "ok",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+      "name": "analysis-altcoin-1",
+      "status": "ok",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+      "name": "analysis-altcoin-2",
+      "status": "ok",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+      "name": "news-evening",
+      "status": "ok",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+      "name": "crypto-education",
+      "status": "ok",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+      "name": "analysis-altcoin-3",
+      "status": "ok",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+      "name": "news-night",
+      "status": "ok",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+      "name": "weekly-leaderboard",
+      "status": "ok",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+      "name": "weekly-analysis",
+      "status": "ok",
+      "ts": 1776443403.395478
+    },
+    {
+      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+      "name": "monthly-analysis",
+      "status": "ok",
+      "ts": 1776443403.395478
     }
   ],
   "equity_history": [],
@@ -1621,16 +1621,6 @@
     },
     {
       "label": "DASH",
-      "text": "   031b43c2..34bfda47  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   aae9ce09..d21880a8  main -> main",
       "ts": ""
     },
@@ -1712,6 +1702,16 @@
     {
       "label": "DASH",
       "text": "   e9184caa..51031e09  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   512fcf0a..b1ad0ea1  main -> main",
       "ts": ""
     }
   ],
