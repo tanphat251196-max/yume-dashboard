@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-17T10:40:03.263676+00:00",
-  "generated_at_vn": "2026-04-17 17:40:03",
+  "generated_at": "2026-04-17T10:45:03.382085+00:00",
+  "generated_at_vn": "2026-04-17 17:45:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "15d 8h 5m",
-    "uptime_seconds": 1325154,
+    "uptime": "15d 8h 10m",
+    "uptime_seconds": 1325454,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 3.69,
-      "percent": 24.0
+      "used_gb": 3.75,
+      "percent": 24.4
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 0.2,
+      "percent": 6.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "b0968b94-3513-42d7-9161-400f1943492e",
       "name": "news-evening",
       "schedule": "cron 0 18 * * * (exact)",
-      "next_run": "in 20m",
+      "next_run": "in 15m",
       "last_run": "24h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
@@ -35,8 +35,8 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 1h",
-      "last_run": "55m ago",
+      "next_run": "in 60m",
+      "last_run": "1h ago",
       "status": "error",
       "model": "claudible/claude-haiku-4.5"
     },
@@ -198,7 +198,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 427
+      "response_time_ms": 337
     },
     "openclaw": {
       "running": true
@@ -215,90 +215,6 @@
       "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
       "name": "analysis-altcoin-2",
       "status": "ok",
-      "ts": 1776418203.961948
-    },
-    {
-      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "status": "ok",
-      "ts": 1776418203.961948
-    },
-    {
-      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "status": "ok",
-      "ts": 1776418203.961948
-    },
-    {
-      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "status": "ok",
-      "ts": 1776418203.961948
-    },
-    {
-      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "status": "ok",
-      "ts": 1776418203.961948
-    },
-    {
-      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "status": "error",
-      "ts": 1776418503.303385
-    },
-    {
-      "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
-      "name": "news-evening",
-      "status": "ok",
-      "ts": 1776418503.303385
-    },
-    {
-      "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
-      "name": "analysis-altcoin-3",
-      "status": "ok",
-      "ts": 1776418503.303385
-    },
-    {
-      "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
-      "name": "news-night",
-      "status": "ok",
-      "ts": 1776418503.303385
-    },
-    {
-      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "status": "ok",
-      "ts": 1776418503.303385
-    },
-    {
-      "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
-      "name": "news-morning",
-      "status": "ok",
-      "ts": 1776418503.303385
-    },
-    {
-      "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
-      "name": "analysis-eth",
-      "status": "ok",
-      "ts": 1776418503.303385
-    },
-    {
-      "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
-      "name": "news-noon",
-      "status": "ok",
-      "ts": 1776418503.303385
-    },
-    {
-      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
-      "name": "analysis-altcoin-1",
-      "status": "ok",
-      "ts": 1776418503.303385
-    },
-    {
-      "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
-      "name": "analysis-altcoin-2",
-      "status": "ok",
       "ts": 1776418503.303385
     },
     {
@@ -1410,72 +1326,96 @@
       "name": "monthly-analysis",
       "status": "ok",
       "ts": 1776422403.262572
+    },
+    {
+      "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+      "name": "news-evening",
+      "status": "ok",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "status": "error",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+      "name": "analysis-altcoin-3",
+      "status": "ok",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+      "name": "news-night",
+      "status": "ok",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+      "name": "daily-analysis",
+      "status": "ok",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+      "name": "news-morning",
+      "status": "ok",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+      "name": "analysis-eth",
+      "status": "ok",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+      "name": "news-noon",
+      "status": "ok",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+      "name": "analysis-altcoin-1",
+      "status": "ok",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+      "name": "analysis-altcoin-2",
+      "status": "ok",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+      "name": "crypto-education",
+      "status": "ok",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+      "name": "weekly-leaderboard",
+      "status": "ok",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+      "name": "weekly-analysis",
+      "status": "ok",
+      "ts": 1776422703.380613
+    },
+    {
+      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+      "name": "monthly-analysis",
+      "status": "ok",
+      "ts": 1776422703.380613
     }
   ],
   "equity_history": [],
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-04-17 15:41:05,498 INFO   🎯 UPDATE → mapped via reply_to src#6320 → dest#1980",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-17 15:41:05,498 INFO   🎯 UPDATE → mapped via reply_to src#6320 → dest#1980",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-17 15:41:06,431 INFO   ✅ UPDATE replied to 1980",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-17 15:41:06,431 INFO   ✅ UPDATE replied to 1980",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-17 15:41:06,433 INFO   🔒 Signal 6320 closed",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-17 15:41:06,433 INFO   🔒 Signal 6320 closed",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-17 16:15:03,005 INFO New message #6322 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Sell 💠 Entry: 4793.206 ❌SL: 4801.041 🔷 TP1: 4789.289 '",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-17 16:15:03,005 INFO New message #6322 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Sell 💠 Entry: 4793.206 ❌SL: 4801.041 🔷 TP1: 4789.289 '",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-17 16:15:03,913 INFO   ✅ SIGNAL posted → dest msg_id=1982",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-17 16:15:03,913 INFO   ✅ SIGNAL posted → dest msg_id=1982",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-17 17:07:20,216 INFO New message #6323 → UPDATE: 'TP1 Hit +39.2Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-17 17:07:20,216 INFO New message #6323 → UPDATE: 'TP1 Hit +39.2Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-04-17 17:07:20,217 INFO   🎯 UPDATE → mapped via reply_to src#6322 → dest#1982",
       "ts": ""
     },
@@ -1512,6 +1452,66 @@
     {
       "label": "FOREX",
       "text": "2026-04-17 17:33:05,236 INFO   ✅ SIGNAL posted → dest msg_id=1984",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-17 17:40:20,573 INFO New message #6325 → UPDATE: 'TP2 Hit +78.4Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-17 17:40:20,573 INFO New message #6325 → UPDATE: 'TP2 Hit +78.4Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-17 17:40:20,575 INFO   🎯 UPDATE → mapped via reply_to src#6322 → dest#1982",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-17 17:40:20,575 INFO   🎯 UPDATE → mapped via reply_to src#6322 → dest#1982",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-17 17:40:21,635 INFO   ✅ UPDATE replied to 1982",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-17 17:40:21,635 INFO   ✅ UPDATE replied to 1982",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-17 17:40:37,495 INFO New message #6326 → UPDATE: 'TP1 Hit +31.3Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-17 17:40:37,495 INFO New message #6326 → UPDATE: 'TP1 Hit +31.3Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-17 17:40:37,497 INFO   🎯 UPDATE → mapped via reply_to src#6324 → dest#1984",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-17 17:40:37,497 INFO   🎯 UPDATE → mapped via reply_to src#6324 → dest#1984",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-17 17:40:38,394 INFO   ✅ UPDATE replied to 1984",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-17 17:40:38,394 INFO   ✅ UPDATE replied to 1984",
       "ts": ""
     },
     {
@@ -1621,16 +1621,6 @@
     },
     {
       "label": "DASH",
-      "text": "   930895fc..fbd28928  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   6b0a2877..9e47fa18  main -> main",
       "ts": ""
     },
@@ -1712,6 +1702,16 @@
     {
       "label": "DASH",
       "text": "   893edc98..972c211c  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   d46e3230..1c26fc6b  main -> main",
       "ts": ""
     }
   ],
