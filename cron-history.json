@@ -1,1202 +1,1202 @@
 [
   {
-    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776695108.709851
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776695108.709851
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776695108.709851
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+    "name": "weekly-leaderboard",
+    "status": "ok",
+    "ts": 1776695108.709851
+  },
+  {
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+    "name": "weekly-analysis",
+    "status": "ok",
+    "ts": 1776695108.709851
+  },
+  {
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
     "name": "monthly-analysis",
-    "status": "idle",
-    "ts": 1775699115.860272
+    "status": "ok",
+    "ts": 1776695108.709851
   },
   {
-    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
-    "name": "x-post-news-1",
-    "status": "idle",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
-    "name": "x-engage-2",
-    "status": "idle",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775699415.482373
+    "ts": 1776695410.752198
   },
   {
-    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
-    "name": "x-post-insight-1",
-    "status": "idle",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
-    "name": "x-engage-3",
-    "status": "idle",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
-    "name": "x-post-news-2",
-    "status": "idle",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
-    "name": "x-engage-4",
-    "status": "idle",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
-    "name": "x-post-insight-2",
-    "status": "idle",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "80773c29-023b-48da-a967-039b5161337e",
-    "name": "x-post-thread",
-    "status": "idle",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
-    "name": "x-engage-5",
-    "status": "idle",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
-    "name": "x-post-news-3",
-    "status": "idle",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
-    "name": "crypto-education",
-    "status": "idle",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
-    "name": "x-post-analysis-pm",
-    "status": "ok",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
-    "name": "x-engage-6",
-    "status": "error",
-    "ts": 1775699415.482373
-  },
-  {
-    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775699415.482373
+    "ts": 1776695410.752198
   },
   {
-    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
-    "name": "x-post-analysis-am",
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
     "status": "ok",
-    "ts": 1775699415.482373
+    "ts": 1776695410.752198
   },
   {
-    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
-    "name": "x-engage-1",
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
     "status": "ok",
-    "ts": 1775699415.482373
+    "ts": 1776695410.752198
   },
   {
-    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776695410.752198
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776695410.752198
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776695410.752198
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776695410.752198
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776695410.752198
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776695410.752198
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
     "name": "weekly-leaderboard",
-    "status": "idle",
-    "ts": 1775699415.482373
+    "status": "ok",
+    "ts": 1776695410.752198
   },
   {
-    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
     "name": "weekly-analysis",
-    "status": "idle",
-    "ts": 1775699415.482373
+    "status": "ok",
+    "ts": 1776695410.752198
   },
   {
-    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
     "name": "monthly-analysis",
-    "status": "idle",
-    "ts": 1775699415.482373
+    "status": "ok",
+    "ts": 1776695410.752198
   },
   {
-    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
-    "name": "x-post-news-1",
-    "status": "idle",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
-    "name": "x-engage-2",
-    "status": "idle",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775699714.91746
+    "ts": 1776695708.377303
   },
   {
-    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
-    "name": "x-post-insight-1",
-    "status": "idle",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
-    "name": "x-engage-3",
-    "status": "idle",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
-    "name": "x-post-news-2",
-    "status": "idle",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
-    "name": "x-engage-4",
-    "status": "idle",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
-    "name": "x-post-insight-2",
-    "status": "idle",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "80773c29-023b-48da-a967-039b5161337e",
-    "name": "x-post-thread",
-    "status": "idle",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
-    "name": "x-engage-5",
-    "status": "idle",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
-    "name": "x-post-news-3",
-    "status": "idle",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
-    "name": "crypto-education",
-    "status": "idle",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
-    "name": "x-post-analysis-pm",
-    "status": "ok",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
-    "name": "x-engage-6",
-    "status": "error",
-    "ts": 1775699714.91746
-  },
-  {
-    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775699714.91746
+    "ts": 1776695708.377303
   },
   {
-    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
-    "name": "x-post-analysis-am",
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
     "status": "ok",
-    "ts": 1775699714.91746
+    "ts": 1776695708.377303
   },
   {
-    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
-    "name": "x-engage-1",
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
     "status": "ok",
-    "ts": 1775699714.91746
+    "ts": 1776695708.377303
   },
   {
-    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776695708.377303
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776695708.377303
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776695708.377303
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776695708.377303
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776695708.377303
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776695708.377303
+  },
+  {
+    "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+    "name": "news-night",
+    "status": "error",
+    "ts": 1776695708.377303
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
     "name": "weekly-leaderboard",
-    "status": "idle",
-    "ts": 1775699714.91746
+    "status": "ok",
+    "ts": 1776695708.377303
   },
   {
-    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
     "name": "weekly-analysis",
-    "status": "idle",
-    "ts": 1775699714.91746
+    "status": "ok",
+    "ts": 1776695708.377303
   },
   {
-    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
     "name": "monthly-analysis",
-    "status": "idle",
-    "ts": 1775699714.91746
+    "status": "ok",
+    "ts": 1776695708.377303
   },
   {
-    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
-    "name": "x-post-news-1",
-    "status": "idle",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
-    "name": "x-engage-2",
-    "status": "idle",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775700015.463968
+    "ts": 1776696008.451868
   },
   {
-    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
-    "name": "x-post-insight-1",
-    "status": "idle",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
-    "name": "x-engage-3",
-    "status": "idle",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
-    "name": "x-post-news-2",
-    "status": "idle",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
-    "name": "x-engage-4",
-    "status": "idle",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
-    "name": "x-post-insight-2",
-    "status": "idle",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "80773c29-023b-48da-a967-039b5161337e",
-    "name": "x-post-thread",
-    "status": "idle",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
-    "name": "x-engage-5",
-    "status": "idle",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
-    "name": "x-post-news-3",
-    "status": "idle",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
-    "name": "crypto-education",
-    "status": "idle",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
-    "name": "x-post-analysis-pm",
-    "status": "ok",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
-    "name": "x-engage-6",
-    "status": "error",
-    "ts": 1775700015.463968
-  },
-  {
-    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775700015.463968
+    "ts": 1776696008.451868
   },
   {
-    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
-    "name": "x-post-analysis-am",
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
     "status": "ok",
-    "ts": 1775700015.463968
+    "ts": 1776696008.451868
   },
   {
-    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
-    "name": "x-engage-1",
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
     "status": "ok",
-    "ts": 1775700015.463968
+    "ts": 1776696008.451868
   },
   {
-    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776696008.451868
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776696008.451868
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776696008.451868
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776696008.451868
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776696008.451868
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776696008.451868
+  },
+  {
+    "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+    "name": "news-night",
+    "status": "error",
+    "ts": 1776696008.451868
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
     "name": "weekly-leaderboard",
-    "status": "idle",
-    "ts": 1775700015.463968
+    "status": "ok",
+    "ts": 1776696008.451868
   },
   {
-    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
     "name": "weekly-analysis",
-    "status": "idle",
-    "ts": 1775700015.463968
+    "status": "ok",
+    "ts": 1776696008.451868
   },
   {
-    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
     "name": "monthly-analysis",
-    "status": "idle",
-    "ts": 1775700015.463968
+    "status": "ok",
+    "ts": 1776696008.451868
   },
   {
-    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
-    "name": "x-post-news-1",
-    "status": "idle",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
-    "name": "x-engage-2",
-    "status": "idle",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775700315.209884
+    "ts": 1776696308.366402
   },
   {
-    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
-    "name": "x-post-insight-1",
-    "status": "idle",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
-    "name": "x-engage-3",
-    "status": "idle",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
-    "name": "x-post-news-2",
-    "status": "idle",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
-    "name": "x-engage-4",
-    "status": "idle",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
-    "name": "x-post-insight-2",
-    "status": "idle",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "80773c29-023b-48da-a967-039b5161337e",
-    "name": "x-post-thread",
-    "status": "idle",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
-    "name": "x-engage-5",
-    "status": "idle",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
-    "name": "x-post-news-3",
-    "status": "idle",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
-    "name": "crypto-education",
-    "status": "idle",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
-    "name": "x-post-analysis-pm",
-    "status": "ok",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
-    "name": "x-engage-6",
-    "status": "error",
-    "ts": 1775700315.209884
-  },
-  {
-    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775700315.209884
+    "ts": 1776696308.366402
   },
   {
-    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
-    "name": "x-post-analysis-am",
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
     "status": "ok",
-    "ts": 1775700315.209884
+    "ts": 1776696308.366402
   },
   {
-    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
-    "name": "x-engage-1",
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
     "status": "ok",
-    "ts": 1775700315.209884
+    "ts": 1776696308.366402
   },
   {
-    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776696308.366402
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776696308.366402
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776696308.366402
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776696308.366402
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776696308.366402
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776696308.366402
+  },
+  {
+    "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+    "name": "news-night",
+    "status": "error",
+    "ts": 1776696308.366402
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
     "name": "weekly-leaderboard",
-    "status": "idle",
-    "ts": 1775700315.209884
+    "status": "ok",
+    "ts": 1776696308.366402
   },
   {
-    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
     "name": "weekly-analysis",
-    "status": "idle",
-    "ts": 1775700315.209884
+    "status": "ok",
+    "ts": 1776696308.366402
   },
   {
-    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
     "name": "monthly-analysis",
-    "status": "idle",
-    "ts": 1775700315.209884
+    "status": "ok",
+    "ts": 1776696308.366402
   },
   {
-    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
-    "name": "x-post-news-1",
-    "status": "idle",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
-    "name": "x-engage-2",
-    "status": "idle",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775700615.60327
+    "ts": 1776696608.3844
   },
   {
-    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
-    "name": "x-post-insight-1",
-    "status": "idle",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
-    "name": "x-engage-3",
-    "status": "idle",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
-    "name": "x-post-news-2",
-    "status": "idle",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
-    "name": "x-engage-4",
-    "status": "idle",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
-    "name": "x-post-insight-2",
-    "status": "idle",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "80773c29-023b-48da-a967-039b5161337e",
-    "name": "x-post-thread",
-    "status": "idle",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
-    "name": "x-engage-5",
-    "status": "idle",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
-    "name": "x-post-news-3",
-    "status": "idle",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
-    "name": "crypto-education",
-    "status": "idle",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
-    "name": "x-post-analysis-pm",
-    "status": "ok",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
-    "name": "x-engage-6",
-    "status": "error",
-    "ts": 1775700615.60327
-  },
-  {
-    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775700615.60327
+    "ts": 1776696608.3844
   },
   {
-    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
-    "name": "x-post-analysis-am",
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
     "status": "ok",
-    "ts": 1775700615.60327
+    "ts": 1776696608.3844
   },
   {
-    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
-    "name": "x-engage-1",
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
     "status": "ok",
-    "ts": 1775700615.60327
+    "ts": 1776696608.3844
   },
   {
-    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776696608.3844
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776696608.3844
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776696608.3844
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776696608.3844
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776696608.3844
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776696608.3844
+  },
+  {
+    "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+    "name": "news-night",
+    "status": "error",
+    "ts": 1776696608.3844
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
     "name": "weekly-leaderboard",
-    "status": "idle",
-    "ts": 1775700615.60327
+    "status": "ok",
+    "ts": 1776696608.3844
   },
   {
-    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
     "name": "weekly-analysis",
-    "status": "idle",
-    "ts": 1775700615.60327
+    "status": "ok",
+    "ts": 1776696608.3844
   },
   {
-    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
     "name": "monthly-analysis",
-    "status": "idle",
-    "ts": 1775700615.60327
+    "status": "ok",
+    "ts": 1776696608.3844
   },
   {
-    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
-    "name": "x-post-news-1",
-    "status": "idle",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
-    "name": "x-engage-2",
-    "status": "idle",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775700915.068572
+    "ts": 1776696908.599804
   },
   {
-    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
-    "name": "x-post-insight-1",
-    "status": "idle",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
-    "name": "x-engage-3",
-    "status": "idle",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
-    "name": "x-post-news-2",
-    "status": "idle",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
-    "name": "x-engage-4",
-    "status": "idle",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
-    "name": "x-post-insight-2",
-    "status": "idle",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "80773c29-023b-48da-a967-039b5161337e",
-    "name": "x-post-thread",
-    "status": "idle",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
-    "name": "x-engage-5",
-    "status": "idle",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
-    "name": "x-post-news-3",
-    "status": "idle",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
-    "name": "crypto-education",
-    "status": "idle",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
-    "name": "x-post-analysis-pm",
-    "status": "ok",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
-    "name": "x-engage-6",
-    "status": "error",
-    "ts": 1775700915.068572
-  },
-  {
-    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775700915.068572
+    "ts": 1776696908.599804
   },
   {
-    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
-    "name": "x-post-analysis-am",
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
     "status": "ok",
-    "ts": 1775700915.068572
+    "ts": 1776696908.599804
   },
   {
-    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
-    "name": "x-engage-1",
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
     "status": "ok",
-    "ts": 1775700915.068572
+    "ts": 1776696908.599804
   },
   {
-    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776696908.599804
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776696908.599804
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776696908.599804
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776696908.599804
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776696908.599804
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776696908.599804
+  },
+  {
+    "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+    "name": "news-night",
+    "status": "error",
+    "ts": 1776696908.599804
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
     "name": "weekly-leaderboard",
-    "status": "idle",
-    "ts": 1775700915.068572
+    "status": "ok",
+    "ts": 1776696908.599804
   },
   {
-    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
     "name": "weekly-analysis",
-    "status": "idle",
-    "ts": 1775700915.068572
+    "status": "ok",
+    "ts": 1776696908.599804
   },
   {
-    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
     "name": "monthly-analysis",
-    "status": "idle",
-    "ts": 1775700915.068572
+    "status": "ok",
+    "ts": 1776696908.599804
   },
   {
-    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
-    "name": "x-post-news-1",
-    "status": "idle",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
-    "name": "x-engage-2",
-    "status": "idle",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775701215.342596
+    "ts": 1776697208.466632
   },
   {
-    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
-    "name": "x-post-insight-1",
-    "status": "idle",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
-    "name": "x-engage-3",
-    "status": "idle",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
-    "name": "x-post-news-2",
-    "status": "idle",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
-    "name": "x-engage-4",
-    "status": "idle",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
-    "name": "x-post-insight-2",
-    "status": "idle",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "80773c29-023b-48da-a967-039b5161337e",
-    "name": "x-post-thread",
-    "status": "idle",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
-    "name": "x-engage-5",
-    "status": "idle",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
-    "name": "x-post-news-3",
-    "status": "idle",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
-    "name": "crypto-education",
-    "status": "idle",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
-    "name": "x-post-analysis-pm",
-    "status": "ok",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
-    "name": "x-engage-6",
-    "status": "error",
-    "ts": 1775701215.342596
-  },
-  {
-    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775701215.342596
+    "ts": 1776697208.466632
   },
   {
-    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
-    "name": "x-post-analysis-am",
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
     "status": "ok",
-    "ts": 1775701215.342596
+    "ts": 1776697208.466632
   },
   {
-    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
-    "name": "x-engage-1",
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
     "status": "ok",
-    "ts": 1775701215.342596
+    "ts": 1776697208.466632
   },
   {
-    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776697208.466632
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776697208.466632
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776697208.466632
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776697208.466632
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776697208.466632
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776697208.466632
+  },
+  {
+    "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+    "name": "news-night",
+    "status": "error",
+    "ts": 1776697208.466632
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
     "name": "weekly-leaderboard",
-    "status": "idle",
-    "ts": 1775701215.342596
+    "status": "ok",
+    "ts": 1776697208.466632
   },
   {
-    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
     "name": "weekly-analysis",
-    "status": "idle",
-    "ts": 1775701215.342596
+    "status": "ok",
+    "ts": 1776697208.466632
   },
   {
-    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
     "name": "monthly-analysis",
-    "status": "idle",
-    "ts": 1775701215.342596
+    "status": "ok",
+    "ts": 1776697208.466632
   },
   {
-    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
-    "name": "x-post-news-1",
-    "status": "idle",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
-    "name": "x-engage-2",
-    "status": "idle",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775701515.552129
+    "ts": 1776697508.92387
   },
   {
-    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
-    "name": "x-post-insight-1",
-    "status": "idle",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
-    "name": "x-engage-3",
-    "status": "idle",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
-    "name": "x-post-news-2",
-    "status": "idle",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
-    "name": "x-engage-4",
-    "status": "idle",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
-    "name": "x-post-insight-2",
-    "status": "idle",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "80773c29-023b-48da-a967-039b5161337e",
-    "name": "x-post-thread",
-    "status": "idle",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
-    "name": "x-engage-5",
-    "status": "idle",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
-    "name": "x-post-news-3",
-    "status": "idle",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
-    "name": "crypto-education",
-    "status": "idle",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
-    "name": "x-post-analysis-pm",
-    "status": "ok",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
-    "name": "x-engage-6",
-    "status": "error",
-    "ts": 1775701515.552129
-  },
-  {
-    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775701515.552129
+    "ts": 1776697508.92387
   },
   {
-    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
-    "name": "x-post-analysis-am",
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
     "status": "ok",
-    "ts": 1775701515.552129
+    "ts": 1776697508.92387
   },
   {
-    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
-    "name": "x-engage-1",
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
     "status": "ok",
-    "ts": 1775701515.552129
+    "ts": 1776697508.92387
   },
   {
-    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776697508.92387
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776697508.92387
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776697508.92387
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776697508.92387
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776697508.92387
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776697508.92387
+  },
+  {
+    "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+    "name": "news-night",
+    "status": "error",
+    "ts": 1776697508.92387
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
     "name": "weekly-leaderboard",
-    "status": "idle",
-    "ts": 1775701515.552129
+    "status": "ok",
+    "ts": 1776697508.92387
   },
   {
-    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
     "name": "weekly-analysis",
-    "status": "idle",
-    "ts": 1775701515.552129
+    "status": "ok",
+    "ts": 1776697508.92387
   },
   {
-    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
     "name": "monthly-analysis",
-    "status": "idle",
-    "ts": 1775701515.552129
+    "status": "ok",
+    "ts": 1776697508.92387
   },
   {
-    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
-    "name": "x-engage-2",
-    "status": "idle",
-    "ts": 1775701815.691981
-  },
-  {
-    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775701815.691981
+    "ts": 1776697808.224513
   },
   {
-    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
-    "name": "x-post-insight-1",
-    "status": "idle",
-    "ts": 1775701815.691981
-  },
-  {
-    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
-    "name": "x-engage-3",
-    "status": "idle",
-    "ts": 1775701815.691981
-  },
-  {
-    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
-    "name": "x-post-news-2",
-    "status": "idle",
-    "ts": 1775701815.691981
-  },
-  {
-    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
-    "name": "x-engage-4",
-    "status": "idle",
-    "ts": 1775701815.691981
-  },
-  {
-    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
-    "name": "x-post-insight-2",
-    "status": "idle",
-    "ts": 1775701815.691981
-  },
-  {
-    "job_id": "80773c29-023b-48da-a967-039b5161337e",
-    "name": "x-post-thread",
-    "status": "idle",
-    "ts": 1775701815.691981
-  },
-  {
-    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
-    "name": "x-engage-5",
-    "status": "idle",
-    "ts": 1775701815.691981
-  },
-  {
-    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
-    "name": "x-post-news-3",
-    "status": "idle",
-    "ts": 1775701815.691981
-  },
-  {
-    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
-    "name": "crypto-education",
-    "status": "idle",
-    "ts": 1775701815.691981
-  },
-  {
-    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
-    "name": "x-post-analysis-pm",
-    "status": "ok",
-    "ts": 1775701815.691981
-  },
-  {
-    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
-    "name": "x-engage-6",
-    "status": "error",
-    "ts": 1775701815.691981
-  },
-  {
-    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775701815.691981
+    "ts": 1776697808.224513
   },
   {
-    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
-    "name": "x-post-analysis-am",
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
     "status": "ok",
-    "ts": 1775701815.691981
+    "ts": 1776697808.224513
   },
   {
-    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
-    "name": "x-engage-1",
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
     "status": "ok",
-    "ts": 1775701815.691981
+    "ts": 1776697808.224513
   },
   {
-    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776697808.224513
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776697808.224513
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776697808.224513
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776697808.224513
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776697808.224513
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776697808.224513
+  },
+  {
+    "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+    "name": "news-night",
+    "status": "error",
+    "ts": 1776697808.224513
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
     "name": "weekly-leaderboard",
-    "status": "idle",
-    "ts": 1775701815.691981
+    "status": "ok",
+    "ts": 1776697808.224513
   },
   {
-    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
     "name": "weekly-analysis",
-    "status": "idle",
-    "ts": 1775701815.691981
+    "status": "ok",
+    "ts": 1776697808.224513
   },
   {
-    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
     "name": "monthly-analysis",
-    "status": "idle",
-    "ts": 1775701815.691981
+    "status": "ok",
+    "ts": 1776697808.224513
   },
   {
-    "job_id": "7b0053c7-65a9-43fe-b409-7588dbe84136",
-    "name": "x-engage-2",
-    "status": "idle",
-    "ts": 1775702115.047392
-  },
-  {
-    "job_id": "ab0e24e9-7aa9-4db6-b549-86894ec37baa",
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
     "name": "Whale Tracker",
     "status": "ok",
-    "ts": 1775702115.047392
+    "ts": 1776698109.317348
   },
   {
-    "job_id": "d07af6cb-19d6-4763-af20-dc1cf8466cb5",
-    "name": "x-post-insight-1",
-    "status": "idle",
-    "ts": 1775702115.047392
-  },
-  {
-    "job_id": "d154c7fa-c73f-4b30-9b7b-995589787faa",
-    "name": "x-engage-3",
-    "status": "idle",
-    "ts": 1775702115.047392
-  },
-  {
-    "job_id": "68ab9768-ba66-4206-8788-e145b43b1798",
-    "name": "x-post-news-2",
-    "status": "idle",
-    "ts": 1775702115.047392
-  },
-  {
-    "job_id": "95990564-81b2-4908-ad1d-07e6cbcc3eb9",
-    "name": "x-engage-4",
-    "status": "idle",
-    "ts": 1775702115.047392
-  },
-  {
-    "job_id": "72d7fba3-3518-4c6e-a91b-792d7e7e1497",
-    "name": "x-post-insight-2",
-    "status": "idle",
-    "ts": 1775702115.047392
-  },
-  {
-    "job_id": "80773c29-023b-48da-a967-039b5161337e",
-    "name": "x-post-thread",
-    "status": "idle",
-    "ts": 1775702115.047392
-  },
-  {
-    "job_id": "8bd2a00c-19b5-4320-926c-880225caaf87",
-    "name": "x-engage-5",
-    "status": "idle",
-    "ts": 1775702115.047392
-  },
-  {
-    "job_id": "40c2abf4-1bff-4be9-8998-62605f0eda5b",
-    "name": "x-post-news-3",
-    "status": "idle",
-    "ts": 1775702115.047392
-  },
-  {
-    "job_id": "8392d63a-0412-41c7-ace5-2a241d68dc4e",
-    "name": "crypto-education",
-    "status": "idle",
-    "ts": 1775702115.047392
-  },
-  {
-    "job_id": "55081860-7681-4a6f-ac30-a4bcd864a2eb",
-    "name": "x-post-analysis-pm",
-    "status": "ok",
-    "ts": 1775702115.047392
-  },
-  {
-    "job_id": "bcce6480-89ef-4cab-ab9b-20d61c71d554",
-    "name": "x-engage-6",
-    "status": "error",
-    "ts": 1775702115.047392
-  },
-  {
-    "job_id": "4307ce1e-a568-42ee-969e-7f76c801cc4f",
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
     "name": "daily-analysis",
     "status": "ok",
-    "ts": 1775702115.047392
+    "ts": 1776698109.317348
   },
   {
-    "job_id": "fbb20f77-6e31-4098-b3dd-70bd6193dcfe",
-    "name": "x-post-analysis-am",
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
     "status": "ok",
-    "ts": 1775702115.047392
+    "ts": 1776698109.317348
   },
   {
-    "job_id": "1e6fa028-4f33-4893-bb4b-f5e22bb85ee3",
-    "name": "x-engage-1",
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
     "status": "ok",
-    "ts": 1775702115.047392
+    "ts": 1776698109.317348
   },
   {
-    "job_id": "67da524e-82e9-4532-9655-cf752db072d4",
-    "name": "x-post-news-1",
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
     "status": "ok",
-    "ts": 1775702115.047392
+    "ts": 1776698109.317348
   },
   {
-    "job_id": "5241ddad-64e1-4ad7-8b48-a4a251783415",
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776698109.317348
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776698109.317348
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776698109.317348
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776698109.317348
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776698109.317348
+  },
+  {
+    "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+    "name": "news-night",
+    "status": "error",
+    "ts": 1776698109.317348
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
     "name": "weekly-leaderboard",
-    "status": "idle",
-    "ts": 1775702115.047392
+    "status": "ok",
+    "ts": 1776698109.317348
   },
   {
-    "job_id": "ce2ef496-954c-4295-b8e9-843ad4c007f2",
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
     "name": "weekly-analysis",
-    "status": "idle",
-    "ts": 1775702115.047392
+    "status": "ok",
+    "ts": 1776698109.317348
   },
   {
-    "job_id": "c0ff5ea7-1915-4684-a63f-af683c107b03",
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
     "name": "monthly-analysis",
-    "status": "idle",
-    "ts": 1775702115.047392
+    "status": "ok",
+    "ts": 1776698109.317348
+  },
+  {
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+    "name": "Whale Tracker",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+    "name": "daily-analysis",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+    "name": "news-night",
+    "status": "error",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+    "name": "weekly-leaderboard",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+    "name": "weekly-analysis",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+    "name": "monthly-analysis",
+    "status": "ok",
+    "ts": 1776698409.126907
+  },
+  {
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+    "name": "Whale Tracker",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+    "name": "daily-analysis",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+    "name": "news-night",
+    "status": "error",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+    "name": "weekly-leaderboard",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+    "name": "weekly-analysis",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+    "name": "monthly-analysis",
+    "status": "ok",
+    "ts": 1776698708.398261
+  },
+  {
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+    "name": "Whale Tracker",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+    "name": "daily-analysis",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+    "name": "news-night",
+    "status": "error",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+    "name": "weekly-leaderboard",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+    "name": "weekly-analysis",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+    "name": "monthly-analysis",
+    "status": "ok",
+    "ts": 1776699008.84696
+  },
+  {
+    "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+    "name": "Whale Tracker",
+    "status": "ok",
+    "ts": 1776699308.604587
+  },
+  {
+    "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+    "name": "daily-analysis",
+    "status": "ok",
+    "ts": 1776699308.604587
+  },
+  {
+    "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+    "name": "news-morning",
+    "status": "ok",
+    "ts": 1776699308.604587
+  },
+  {
+    "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+    "name": "analysis-eth",
+    "status": "ok",
+    "ts": 1776699308.604587
+  },
+  {
+    "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+    "name": "news-noon",
+    "status": "ok",
+    "ts": 1776699308.604587
+  },
+  {
+    "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+    "name": "analysis-altcoin-1",
+    "status": "ok",
+    "ts": 1776699308.604587
+  },
+  {
+    "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+    "name": "analysis-altcoin-2",
+    "status": "ok",
+    "ts": 1776699308.604587
+  },
+  {
+    "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+    "name": "news-evening",
+    "status": "ok",
+    "ts": 1776699308.604587
+  },
+  {
+    "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+    "name": "crypto-education",
+    "status": "ok",
+    "ts": 1776699308.604587
+  },
+  {
+    "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+    "name": "analysis-altcoin-3",
+    "status": "ok",
+    "ts": 1776699308.604587
+  },
+  {
+    "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+    "name": "weekly-leaderboard",
+    "status": "ok",
+    "ts": 1776699308.604587
+  },
+  {
+    "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+    "name": "weekly-analysis",
+    "status": "ok",
+    "ts": 1776699308.604587
+  },
+  {
+    "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+    "name": "monthly-analysis",
+    "status": "ok",
+    "ts": 1776699308.604587
   }
 ]
