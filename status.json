@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-20T23:00:09.151613+00:00",
-  "generated_at_vn": "2026-04-21 06:00:09",
+  "generated_at": "2026-04-20T23:05:08.421809+00:00",
+  "generated_at_vn": "2026-04-21 06:05:08",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "6h 44m",
-    "uptime_seconds": 24256,
+    "uptime": "6h 49m",
+    "uptime_seconds": 24555,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.89,
-      "percent": 18.8
+      "used_gb": 2.84,
+      "percent": 18.5
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 7.5,
+      "percent": 5.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 45m",
+      "next_run": "in 40m",
       "last_run": "1h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
@@ -35,7 +35,7 @@
       "id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
       "name": "daily-analysis",
       "schedule": "cron 0 7 * * * (exact)",
-      "next_run": "in 60m",
+      "next_run": "in 55m",
       "last_run": "23h ago",
       "status": "ok",
       "model": "claudible/claude-sonnet-4.6"
@@ -117,7 +117,7 @@
       "name": "news-night",
       "schedule": "cron 30 21 * * * (exact)",
       "next_run": "in 15h",
-      "last_run": "7h ago",
+      "last_run": "8h ago",
       "status": "error",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -197,7 +197,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 396
+      "response_time_ms": 356
     },
     "openclaw": {
       "running": true
@@ -214,90 +214,6 @@
       "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
       "name": "news-night",
       "status": "error",
-      "ts": 1776721808.87849
-    },
-    {
-      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "status": "ok",
-      "ts": 1776721808.87849
-    },
-    {
-      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "status": "ok",
-      "ts": 1776721808.87849
-    },
-    {
-      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "status": "ok",
-      "ts": 1776721808.87849
-    },
-    {
-      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "status": "ok",
-      "ts": 1776722108.603654
-    },
-    {
-      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "status": "ok",
-      "ts": 1776722108.603654
-    },
-    {
-      "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
-      "name": "news-morning",
-      "status": "ok",
-      "ts": 1776722108.603654
-    },
-    {
-      "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
-      "name": "analysis-eth",
-      "status": "ok",
-      "ts": 1776722108.603654
-    },
-    {
-      "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
-      "name": "news-noon",
-      "status": "ok",
-      "ts": 1776722108.603654
-    },
-    {
-      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
-      "name": "analysis-altcoin-1",
-      "status": "ok",
-      "ts": 1776722108.603654
-    },
-    {
-      "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
-      "name": "analysis-altcoin-2",
-      "status": "ok",
-      "ts": 1776722108.603654
-    },
-    {
-      "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
-      "name": "news-evening",
-      "status": "ok",
-      "ts": 1776722108.603654
-    },
-    {
-      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "status": "ok",
-      "ts": 1776722108.603654
-    },
-    {
-      "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
-      "name": "analysis-altcoin-3",
-      "status": "ok",
-      "ts": 1776722108.603654
-    },
-    {
-      "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
-      "name": "news-night",
-      "status": "error",
       "ts": 1776722108.603654
     },
     {
@@ -1409,6 +1325,90 @@
       "name": "monthly-analysis",
       "status": "ok",
       "ts": 1776726009.150376
+    },
+    {
+      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "status": "ok",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+      "name": "daily-analysis",
+      "status": "ok",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+      "name": "news-morning",
+      "status": "ok",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+      "name": "analysis-eth",
+      "status": "ok",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+      "name": "news-noon",
+      "status": "ok",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+      "name": "analysis-altcoin-1",
+      "status": "ok",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+      "name": "analysis-altcoin-2",
+      "status": "ok",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+      "name": "news-evening",
+      "status": "ok",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+      "name": "crypto-education",
+      "status": "ok",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+      "name": "analysis-altcoin-3",
+      "status": "ok",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+      "name": "news-night",
+      "status": "error",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+      "name": "weekly-leaderboard",
+      "status": "ok",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+      "name": "weekly-analysis",
+      "status": "ok",
+      "ts": 1776726308.420688
+    },
+    {
+      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+      "name": "monthly-analysis",
+      "status": "ok",
+      "ts": 1776726308.420688
     }
   ],
   "equity_history": [],
@@ -1515,27 +1515,12 @@
     },
     {
       "label": "WEB",
-      "text": "  ✅ Added: cuu-pho-chu-tich-ripple-ra-mat-quy-dau-tu-tri-gia-100-trieu-do-la-my-cung-voi-sb",
+      "text": "    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available model",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "📝 [5/5] Tom Lee của Fundstrat gọi đợt sụt giảm tiền điện......",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Bài mới: published 2026-04-19 16:57 UTC — 6.0h trước",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Gemini (gemini-2.5-flash): 3355 words, 15 headings, CTA=True",
+      "text": "    ⚠️ Gemini unavailable — using structured fallback",
       "ts": ""
     },
     {
@@ -1545,17 +1530,17 @@
     },
     {
       "label": "WEB",
-      "text": "    🎨 [Imagen 4 Fast] Generated: post-tom-lee-cua-fundstrat-goi-dot-sut-giam-t.jpg (1417KB)",
+      "text": "    🎨 [Imagen 4 Fast] Generated: post-binance-he-lo-buoc-di-lon-richard-teng-t.jpg (1380KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    ✅ Watermark applied: post-tom-lee-cua-fundstrat-goi-dot-sut-giam-t.jpg (214KB)",
+      "text": "    ✅ Watermark applied: post-binance-he-lo-buoc-di-lon-richard-teng-t.jpg (213KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ✅ Added: tom-lee-cua-fundstrat-goi-dot-sut-giam-tien-dien",
+      "text": "  ✅ Added: binance-he-lo-buoc-di-lon-richard-teng-tuyen-bo-tang-manh-futures-dua-tren-tai-s",
       "ts": ""
     },
     {
@@ -1565,12 +1550,27 @@
     },
     {
       "label": "WEB",
-      "text": "💾 Saved 4 new posts (total: 306)",
+      "text": "📝 [5/5] Cựu Phó Chủ tịch Ripple ra mắt quỹ đầu tư......",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "ℹ️  Skipped 1 bài cũ (>24h hoặc không xác định được ngày)",
+      "text": "  ⏩ SKIP (bài cũ): published 2026-04-19 16:58 UTC — 30.0h trước (>24h)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "💾 Saved 2 new posts (total: 308)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "ℹ️  Skipped 3 bài cũ (>24h hoặc không xác định được ngày)",
       "ts": ""
     },
     {
@@ -1610,17 +1610,7 @@
     },
     {
       "label": "WEB",
-      "text": "✅ DONE: Published 4 bài mới lên daututhongminh24h.com",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   7602ca30..4646fa2b  main -> main",
+      "text": "✅ DONE: Published 2 bài mới lên daututhongminh24h.com",
       "ts": ""
     },
     {
@@ -1711,6 +1701,16 @@
     {
       "label": "DASH",
       "text": "   2181c5bf..2eabea26  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   8ad6e29a..169b1921  main -> main",
       "ts": ""
     }
   ],
@@ -1993,7 +1993,7 @@
       {
         "level": "warning",
         "icon": "🟡",
-        "title": "Web chỉ có 0 bài hôm nay",
+        "title": "Web chỉ có 2 bài hôm nay",
         "msg": "Cần ít nhất 4 bài/ngày"
       }
     ],
