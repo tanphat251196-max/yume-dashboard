@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-21T00:05:08.736853+00:00",
-  "generated_at_vn": "2026-04-21 07:05:08",
+  "generated_at": "2026-04-21T00:10:08.447051+00:00",
+  "generated_at_vn": "2026-04-21 07:10:08",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "7h 49m",
-    "uptime_seconds": 28155,
+    "uptime": "7h 54m",
+    "uptime_seconds": 28455,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.96,
-      "percent": 19.3
+      "used_gb": 2.95,
+      "percent": 19.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 11.2,
+      "percent": 3.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -36,7 +36,7 @@
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
       "next_run": "in 2h",
-      "last_run": "20m ago",
+      "last_run": "25m ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
     },
@@ -117,7 +117,7 @@
       "name": "daily-analysis",
       "schedule": "cron 0 7 * * * (exact)",
       "next_run": "in 24h",
-      "last_run": "5m ago",
+      "last_run": "10m ago",
       "status": "ok",
       "model": "claudible/claude-sonnet-4.6"
     },
@@ -197,7 +197,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 362
+      "response_time_ms": 558
     },
     "openclaw": {
       "running": true
@@ -214,90 +214,6 @@
       "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
       "name": "crypto-education",
       "status": "ok",
-      "ts": 1776725709.167867
-    },
-    {
-      "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
-      "name": "analysis-altcoin-3",
-      "status": "ok",
-      "ts": 1776725709.167867
-    },
-    {
-      "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
-      "name": "news-night",
-      "status": "error",
-      "ts": 1776725709.167867
-    },
-    {
-      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "status": "ok",
-      "ts": 1776725709.167867
-    },
-    {
-      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "status": "ok",
-      "ts": 1776725709.167867
-    },
-    {
-      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "status": "ok",
-      "ts": 1776725709.167867
-    },
-    {
-      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "status": "ok",
-      "ts": 1776726009.150376
-    },
-    {
-      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "status": "ok",
-      "ts": 1776726009.150376
-    },
-    {
-      "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
-      "name": "news-morning",
-      "status": "ok",
-      "ts": 1776726009.150376
-    },
-    {
-      "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
-      "name": "analysis-eth",
-      "status": "ok",
-      "ts": 1776726009.150376
-    },
-    {
-      "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
-      "name": "news-noon",
-      "status": "ok",
-      "ts": 1776726009.150376
-    },
-    {
-      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
-      "name": "analysis-altcoin-1",
-      "status": "ok",
-      "ts": 1776726009.150376
-    },
-    {
-      "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
-      "name": "analysis-altcoin-2",
-      "status": "ok",
-      "ts": 1776726009.150376
-    },
-    {
-      "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
-      "name": "news-evening",
-      "status": "ok",
-      "ts": 1776726009.150376
-    },
-    {
-      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "status": "ok",
       "ts": 1776726009.150376
     },
     {
@@ -1409,72 +1325,96 @@
       "name": "monthly-analysis",
       "status": "ok",
       "ts": 1776729908.735662
+    },
+    {
+      "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+      "name": "news-morning",
+      "status": "ok",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "status": "ok",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+      "name": "analysis-eth",
+      "status": "ok",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+      "name": "news-noon",
+      "status": "ok",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+      "name": "analysis-altcoin-1",
+      "status": "ok",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+      "name": "analysis-altcoin-2",
+      "status": "ok",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+      "name": "news-evening",
+      "status": "ok",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+      "name": "crypto-education",
+      "status": "ok",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+      "name": "analysis-altcoin-3",
+      "status": "ok",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+      "name": "news-night",
+      "status": "error",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+      "name": "daily-analysis",
+      "status": "ok",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+      "name": "weekly-leaderboard",
+      "status": "ok",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+      "name": "weekly-analysis",
+      "status": "ok",
+      "ts": 1776730208.445978
+    },
+    {
+      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+      "name": "monthly-analysis",
+      "status": "ok",
+      "ts": 1776730208.445978
     }
   ],
   "equity_history": [],
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-04-21 05:00:35,859 INFO   ✅ UPDATE replied to 2027",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-21 05:00:35,859 INFO   ✅ UPDATE replied to 2027",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-21 05:00:35,861 INFO New message #6373 → UPDATE: 'TP4 Hit +96.8Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-21 05:00:35,861 INFO New message #6373 → UPDATE: 'TP4 Hit +96.8Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-21 05:00:35,862 INFO   🎯 UPDATE → mapped via reply_to src#6368 → dest#2027",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-21 05:00:35,862 INFO   🎯 UPDATE → mapped via reply_to src#6368 → dest#2027",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-21 05:00:36,800 INFO   ✅ UPDATE replied to 2027",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-21 05:00:36,800 INFO   ✅ UPDATE replied to 2027",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-21 05:01:17,498 INFO New message #6374 → UPDATE: 'TP5 Hit +145.2Pips All Target Done!'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-21 05:01:17,498 INFO New message #6374 → UPDATE: 'TP5 Hit +145.2Pips All Target Done!'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-21 05:01:17,499 INFO   🎯 UPDATE → mapped via reply_to src#6368 → dest#2027",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-21 05:01:17,499 INFO   🎯 UPDATE → mapped via reply_to src#6368 → dest#2027",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-04-21 05:01:18,396 INFO   ✅ UPDATE replied to 2027",
       "ts": ""
     },
@@ -1511,6 +1451,66 @@
     {
       "label": "FOREX",
       "text": "2026-04-21 07:02:10,704 INFO   ✅ SIGNAL posted → dest msg_id=2034",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-21 07:05:16,846 INFO New message #6376 → UPDATE: 'TP1 Hit +19.9Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-21 07:05:16,846 INFO New message #6376 → UPDATE: 'TP1 Hit +19.9Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-21 07:05:16,848 INFO   🎯 UPDATE → mapped via reply_to src#6375 → dest#2034",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-21 07:05:16,848 INFO   🎯 UPDATE → mapped via reply_to src#6375 → dest#2034",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-21 07:05:17,729 INFO   ✅ UPDATE replied to 2034",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-21 07:05:17,729 INFO   ✅ UPDATE replied to 2034",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-21 07:06:16,255 INFO New message #6377 → UPDATE: 'TP2 Hit +39.9Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-21 07:06:16,255 INFO New message #6377 → UPDATE: 'TP2 Hit +39.9Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-21 07:06:16,257 INFO   🎯 UPDATE → mapped via reply_to src#6375 → dest#2034",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-21 07:06:16,257 INFO   🎯 UPDATE → mapped via reply_to src#6375 → dest#2034",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-21 07:06:17,212 INFO   ✅ UPDATE replied to 2034",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-04-21 07:06:17,212 INFO   ✅ UPDATE replied to 2034",
       "ts": ""
     },
     {
@@ -1620,16 +1620,6 @@
     },
     {
       "label": "DASH",
-      "text": "   2e45427e..4574656f  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   6dad5575..c1d503ec  main -> main",
       "ts": ""
     },
@@ -1711,6 +1701,16 @@
     {
       "label": "DASH",
       "text": "   f85f7861..23f67396  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   a4e2b556..d8cbedec  main -> main",
       "ts": ""
     }
   ],
