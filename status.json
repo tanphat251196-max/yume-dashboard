@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-26T23:05:08.695920+00:00",
-  "generated_at_vn": "2026-04-27 06:05:08",
+  "generated_at": "2026-04-26T23:10:08.275383+00:00",
+  "generated_at_vn": "2026-04-27 06:10:08",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "6d 6h 49m",
-    "uptime_seconds": 542955,
+    "uptime": "6d 6h 54m",
+    "uptime_seconds": 543255,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.97,
-      "percent": 19.3
+      "used_gb": 2.95,
+      "percent": 19.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 3.8,
+      "percent": 5.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 40m",
+      "next_run": "in 35m",
       "last_run": "1h ago",
       "status": "error",
       "model": "claudible/claude-haiku-4.5"
@@ -35,7 +35,7 @@
       "id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
       "name": "daily-analysis",
       "schedule": "cron 0 7 * * * (exact)",
-      "next_run": "in 55m",
+      "next_run": "in 50m",
       "last_run": "23h ago",
       "status": "ok",
       "model": "claudible/claude-haiku-4.5"
@@ -200,7 +200,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 374
+      "response_time_ms": 462
     },
     "openclaw": {
       "running": true
@@ -217,90 +217,6 @@
       "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
       "name": "news-night",
       "status": "ok",
-      "ts": 1777240508.458896
-    },
-    {
-      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "status": "ok",
-      "ts": 1777240508.458896
-    },
-    {
-      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "status": "ok",
-      "ts": 1777240508.458896
-    },
-    {
-      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "status": "ok",
-      "ts": 1777240508.458896
-    },
-    {
-      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
-      "name": "Whale Tracker",
-      "status": "error",
-      "ts": 1777240808.761012
-    },
-    {
-      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "status": "ok",
-      "ts": 1777240808.761012
-    },
-    {
-      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "status": "ok",
-      "ts": 1777240808.761012
-    },
-    {
-      "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
-      "name": "news-morning",
-      "status": "ok",
-      "ts": 1777240808.761012
-    },
-    {
-      "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
-      "name": "analysis-eth",
-      "status": "ok",
-      "ts": 1777240808.761012
-    },
-    {
-      "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
-      "name": "news-noon",
-      "status": "ok",
-      "ts": 1777240808.761012
-    },
-    {
-      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
-      "name": "analysis-altcoin-1",
-      "status": "ok",
-      "ts": 1777240808.761012
-    },
-    {
-      "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
-      "name": "analysis-altcoin-2",
-      "status": "ok",
-      "ts": 1777240808.761012
-    },
-    {
-      "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
-      "name": "news-evening",
-      "status": "ok",
-      "ts": 1777240808.761012
-    },
-    {
-      "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
-      "name": "analysis-altcoin-3",
-      "status": "ok",
-      "ts": 1777240808.761012
-    },
-    {
-      "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
-      "name": "news-night",
-      "status": "ok",
       "ts": 1777240808.761012
     },
     {
@@ -1412,6 +1328,90 @@
       "name": "weekly-leaderboard",
       "status": "ok",
       "ts": 1777244708.694593
+    },
+    {
+      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "status": "error",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+      "name": "daily-analysis",
+      "status": "ok",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+      "name": "weekly-analysis",
+      "status": "ok",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+      "name": "news-morning",
+      "status": "ok",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+      "name": "analysis-eth",
+      "status": "ok",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+      "name": "news-noon",
+      "status": "ok",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+      "name": "analysis-altcoin-1",
+      "status": "ok",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+      "name": "analysis-altcoin-2",
+      "status": "ok",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+      "name": "news-evening",
+      "status": "ok",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+      "name": "analysis-altcoin-3",
+      "status": "ok",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+      "name": "news-night",
+      "status": "ok",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+      "name": "crypto-education",
+      "status": "ok",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+      "name": "monthly-analysis",
+      "status": "ok",
+      "ts": 1777245008.274191
+    },
+    {
+      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+      "name": "weekly-leaderboard",
+      "status": "ok",
+      "ts": 1777245008.274191
     }
   ],
   "equity_history": [],
@@ -1518,47 +1518,12 @@
     },
     {
       "label": "WEB",
-      "text": "    ✅ Watermark applied: post-dao-luat-clarity-vi-sao-du-luat-quan-tro.jpg (376KB)",
+      "text": "    ✅ Watermark applied: post-pantera-capital-muon-satsuma-ban-het-so-.jpg (268KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ✅ Added: dao-luat-clarity-vi-sao-du-luat-quan-trong-nhat-ve-tien-dien-tu-dang-bi-dinh-tre",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "📝 [5/5] CryptoQuant: Đợt tăng giá của BTC là do hiện tượng “Short Sq...",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Bài mới: published 2026-04-25 16:00 UTC — 7.0h trước",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Gemini (gemini-2.5-flash): 3611 words, 8 headings, CTA=True",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-cryptoquant-dot-tang-gia-cua-btc-la-do-h.jpg (1037KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Watermark applied: post-cryptoquant-dot-tang-gia-cua-btc-la-do-h.jpg (381KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Added: cryptoquant-dot-tang-gia-cua-btc-la-do-hien-tuong-short-squeeze-khong-phai-do-mu",
+      "text": "  ✅ Added: pantera-capital-muon-satsuma-ban-het-so-bitcoin-tri-gia-50-trieu-usd-con-lai-cua",
       "ts": ""
     },
     {
@@ -1568,7 +1533,42 @@
     },
     {
       "label": "WEB",
-      "text": "💾 Saved 4 new posts (total: 328)",
+      "text": "📝 [5/5] Nhà sáng lập CoinEx cho rằng sự sụp đổ của tiền điện tử là đ...",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Bài mới: published 2026-04-26 16:57 UTC — 6.0h trước",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 3079 words, 7 headings, CTA=True",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-nha-sang-lap-coinex-cho-rang-su-sup-do-c.jpg (1028KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Watermark applied: post-nha-sang-lap-coinex-cho-rang-su-sup-do-c.jpg (374KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Added: nha-sang-lap-coinex-cho-rang-su-sup-do-cua-tien-dien-tu-la-dieu-khong-the-tranh-",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "💾 Saved 4 new posts (total: 332)",
       "ts": ""
     },
     {
@@ -1614,16 +1614,6 @@
     {
       "label": "WEB",
       "text": "✅ DONE: Published 4 bài mới lên daututhongminh24h.com",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   b7426c58..f091e98f  main -> main",
       "ts": ""
     },
     {
@@ -1714,6 +1704,16 @@
     {
       "label": "DASH",
       "text": "   21e0feb4..0c91c3cd  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   26089045..03eb1571  main -> main",
       "ts": ""
     }
   ],
@@ -1992,16 +1992,9 @@
         "msg": "X posts sẽ fail! Chạy: check-x-cdp.sh hoặc systemctl --user start chrome-x-debug"
       }
     ],
-    "warnings": [
-      {
-        "level": "warning",
-        "icon": "🟡",
-        "title": "Web chỉ có 0 bài hôm nay",
-        "msg": "Cần ít nhất 4 bài/ngày"
-      }
-    ],
+    "warnings": [],
     "total_critical": 1,
-    "total_warning": 1,
+    "total_warning": 0,
     "all_clear": false
   }
 }
