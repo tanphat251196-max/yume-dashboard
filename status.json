@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-03T23:05:03.992769+00:00",
-  "generated_at_vn": "2026-05-04 06:05:03",
+  "generated_at": "2026-05-03T23:10:03.918238+00:00",
+  "generated_at_vn": "2026-05-04 06:10:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 6h 49m",
-    "uptime_seconds": 1147750,
+    "uptime": "13d 6h 54m",
+    "uptime_seconds": 1148050,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.69,
-      "percent": 17.5
+      "used_gb": 2.66,
+      "percent": 17.3
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 2.5,
+      "percent": 4.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 336
+      "response_time_ms": 302
     },
     "openclaw": {
       "running": true
@@ -1385,7 +1385,12 @@
     },
     {
       "label": "WEB",
-      "text": "  ✅ Added: ark-invest-he-lo-gia-bitcoin-nam-2030-con-so-khien-thi-truong-choang-vang",
+      "text": "    ✅ Watermark applied: post-luong-ca-voi-dogecoin-tich-luy-dat-muc-c.jpg (379KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Added: luong-ca-voi-dogecoin-tich-luy-dat-muc-cao-ky",
       "ts": ""
     },
     {
@@ -1395,37 +1400,32 @@
     },
     {
       "label": "WEB",
-      "text": "📝 [5/5] Tin bất ngờ từ Brazil: Ngân hàng Trung ương cấm......",
+      "text": "📝 [5/5] Cập nhật về Đạo luật CLARITY: Thượng viện đưa ra......",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ✅ Bài mới: published 2026-05-02 15:04 UTC — 7.9h trước",
+      "text": "  ✅ Bài mới: published 2026-05-03 16:08 UTC — 6.9h trước",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    ✅ Gemini (gemini-2.5-flash): 2824 words, 7 headings, CTA=True",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 3142 words, 8 headings, CTA=True",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    ⚠️ [Gemini Nano Banana 2] error: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)",
+      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-cap-nhat-ve-dao-luat-clarity-thuong-vien.jpg (819KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    🎨 [Imagen 4 Fast] Generated: post-tin-bat-ngo-tu-brazil-ngan-hang-trung-uo.jpg (1334KB)",
+      "text": "    ✅ Watermark applied: post-cap-nhat-ve-dao-luat-clarity-thuong-vien.jpg (282KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    ✅ Watermark applied: post-tin-bat-ngo-tu-brazil-ngan-hang-trung-uo.jpg (200KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Added: tin-bat-ngo-tu-brazil-ngan-hang-trung-uong-cam",
+      "text": "  ✅ Added: cap-nhat-ve-dao-luat-clarity-thuong-vien-dua-ra",
       "ts": ""
     },
     {
@@ -1435,12 +1435,12 @@
     },
     {
       "label": "WEB",
-      "text": "💾 Saved 3 new posts (total: 356)",
+      "text": "💾 Saved 4 new posts (total: 360)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "ℹ️  Skipped 2 bài cũ (>24h hoặc không xác định được ngày)",
+      "text": "ℹ️  Skipped 1 bài cũ (>24h hoặc không xác định được ngày)",
       "ts": ""
     },
     {
@@ -1480,17 +1480,7 @@
     },
     {
       "label": "WEB",
-      "text": "✅ DONE: Published 3 bài mới lên daututhongminh24h.com",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   fec1cf73..051748ac  main -> main",
+      "text": "✅ DONE: Published 4 bài mới lên daututhongminh24h.com",
       "ts": ""
     },
     {
@@ -1581,6 +1571,16 @@
     {
       "label": "DASH",
       "text": "   5cc91a8a..8b9ee06e  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   f5ce83c9..15f6eec3  main -> main",
       "ts": ""
     }
   ],
@@ -1859,16 +1859,9 @@
         "msg": "X posts sẽ fail! Chạy: check-x-cdp.sh hoặc systemctl --user start chrome-x-debug"
       }
     ],
-    "warnings": [
-      {
-        "level": "warning",
-        "icon": "🟡",
-        "title": "Web chỉ có 0 bài hôm nay",
-        "msg": "Cần ít nhất 4 bài/ngày"
-      }
-    ],
+    "warnings": [],
     "total_critical": 1,
-    "total_warning": 1,
+    "total_warning": 0,
     "all_clear": false
   }
 }
