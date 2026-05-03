@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-03T12:50:04.835090+00:00",
-  "generated_at_vn": "2026-05-03 19:50:04",
+  "generated_at": "2026-05-03T12:55:04.370655+00:00",
+  "generated_at_vn": "2026-05-03 19:55:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "12d 20h 34m",
-    "uptime_seconds": 1110851,
+    "uptime": "12d 20h 39m",
+    "uptime_seconds": 1111151,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 4.55,
-      "percent": 29.6
+      "used_gb": 4.46,
+      "percent": 29.0
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 26.5,
+      "percent": 18.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -26,7 +26,7 @@
       "id": "70f05613-cad3-4886-8708-043dc98c4876",
       "name": "analysis-altcoin-3",
       "schedule": "cron 0 20 * * * (exact)",
-      "next_run": "in 10m",
+      "next_run": "in 5m",
       "last_run": "24h ago",
       "status": "error",
       "model": "openai-codex/gpt-5.4"
@@ -35,7 +35,7 @@
       "id": "ba546e69-6295-4046-948c-789fb5b9daa9",
       "name": "weekly-leaderboard",
       "schedule": "cron 30 20 * * 0 (exact)",
-      "next_run": "in 40m",
+      "next_run": "in 35m",
       "last_run": "7d ago",
       "status": "ok",
       "model": "openai-codex/gpt-5.5"
@@ -44,7 +44,7 @@
       "id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
       "name": "Whale Tracker",
       "schedule": "cron 45 */2 * * * (exact)",
-      "next_run": "in 55m",
+      "next_run": "in 50m",
       "last_run": "1h ago",
       "status": "error",
       "model": "openai-codex/gpt-5.5"
@@ -178,19 +178,13 @@
     ]
   },
   "linux_cron": [
-    "0 14 * * * /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/scripts/facebook-personal-post.py afternoon >> /home/shinyyume/.openclaw/workspace/logs/facebook-post.log 2>&1",
-    "0 20 * * * /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/scripts/facebook-personal-post.py evening >> /home/shinyyume/.openclaw/workspace/logs/facebook-post.log 2>&1",
     "0 3 * * 1 bash /home/shinyyume/.openclaw/workspace/scripts/backup-to-github.sh >> /home/shinyyume/.openclaw/logs/backup.log 2>&1",
     "0 6 * * * /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/signal-hunters-web/scripts/auto-web-post.py >> /home/shinyyume/.openclaw/workspace/logs/auto-web-post.log 2>&1",
     "0 7 * * 1 /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/scripts/weekly-economic-calendar.py --fetch >> /home/shinyyume/.openclaw/workspace/logs/weekly-economic-calendar.log 2>&1",
-    "0 8 * * * /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/scripts/facebook-personal-post.py morning >> /home/shinyyume/.openclaw/workspace/logs/facebook-post.log 2>&1",
     "30 8 * * * /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/scripts/commodity-update.py >> /home/shinyyume/.openclaw/workspace/logs/commodity-update.log 2>&1",
     "*/3 * * * * /bin/bash /home/shinyyume/.openclaw/workspace/scripts/telegram-health-check.sh",
     "*/5 * * * * /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/scripts/dashboard-status.py && cd /home/shinyyume/.openclaw/workspace/yume-dashboard && git add status.json && git commit -m \"status update\" --allow-empty && git push origin main >> /home/shinyyume/.openclaw/workspace/logs/dashboard.log 2>&1",
-    "30 3 * * 1 bash /home/shinyyume/.openclaw/workspace/scripts/cleanup-sessions.sh >> /home/shinyyume/.openclaw/workspace/logs/cleanup-sessions.log 2>&1",
-    "30 9 * * * /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/scripts/facebook-group-post.py >> /home/shinyyume/.openclaw/workspace/logs/facebook-group-post.log 2>&1",
-    "0 12 * * * /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/scripts/facebook-group-reply.py >> /home/shinyyume/.openclaw/workspace/logs/facebook-group-reply.log 2>&1",
-    "0 20 * * * /home/shinyyume/.openclaw/venvs/crypto-tools/bin/python3 /home/shinyyume/.openclaw/workspace/scripts/facebook-group-reply.py >> /home/shinyyume/.openclaw/workspace/logs/facebook-group-reply.log 2>&1"
+    "30 3 * * 1 bash /home/shinyyume/.openclaw/workspace/scripts/cleanup-sessions.sh >> /home/shinyyume/.openclaw/workspace/logs/cleanup-sessions.log 2>&1"
   ],
   "services": {
     "chrome": {
@@ -200,7 +194,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 437
+      "response_time_ms": 331
     },
     "openclaw": {
       "running": true
@@ -214,90 +208,6 @@
   },
   "cron_history": [
     {
-      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
-      "name": "analysis-altcoin-1",
-      "status": "error",
-      "ts": 1777808408.895623
-    },
-    {
-      "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
-      "name": "analysis-altcoin-2",
-      "status": "error",
-      "ts": 1777808408.895623
-    },
-    {
-      "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
-      "name": "news-evening",
-      "status": "error",
-      "ts": 1777808408.895623
-    },
-    {
-      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
-      "name": "crypto-education",
-      "status": "error",
-      "ts": 1777808408.895623
-    },
-    {
-      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
-      "name": "monthly-analysis",
-      "status": "error",
-      "ts": 1777808408.895623
-    },
-    {
-      "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
-      "name": "analysis-altcoin-3",
-      "status": "error",
-      "ts": 1777808710.01987
-    },
-    {
-      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
-      "name": "weekly-leaderboard",
-      "status": "ok",
-      "ts": 1777808710.01987
-    },
-    {
-      "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
-      "name": "news-night",
-      "status": "error",
-      "ts": 1777808710.01987
-    },
-    {
-      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
-      "name": "daily-analysis",
-      "status": "error",
-      "ts": 1777808710.01987
-    },
-    {
-      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
-      "name": "weekly-analysis",
-      "status": "error",
-      "ts": 1777808710.01987
-    },
-    {
-      "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
-      "name": "news-morning",
-      "status": "error",
-      "ts": 1777808710.01987
-    },
-    {
-      "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
-      "name": "analysis-eth",
-      "status": "error",
-      "ts": 1777808710.01987
-    },
-    {
-      "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
-      "name": "news-noon",
-      "status": "error",
-      "ts": 1777808710.01987
-    },
-    {
-      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
-      "name": "analysis-altcoin-1",
-      "status": "error",
-      "ts": 1777808710.01987
-    },
-    {
       "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
       "name": "analysis-altcoin-2",
       "status": "error",
@@ -1412,42 +1322,96 @@
       "name": "monthly-analysis",
       "status": "error",
       "ts": 1777812604.834006
+    },
+    {
+      "job_id": "70f05613-cad3-4886-8708-043dc98c4876",
+      "name": "analysis-altcoin-3",
+      "status": "error",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "ba546e69-6295-4046-948c-789fb5b9daa9",
+      "name": "weekly-leaderboard",
+      "status": "ok",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "01c19479-ad74-452d-bf0e-bd93e8fde17a",
+      "name": "Whale Tracker",
+      "status": "error",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "eaabc832-e9e5-435e-ac2f-2fb786446643",
+      "name": "news-night",
+      "status": "error",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "bcde418e-a0bd-40b9-8ff2-7378e4bbcf5c",
+      "name": "daily-analysis",
+      "status": "error",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "fb0a0f84-aa97-475d-8e18-e07964c57a44",
+      "name": "weekly-analysis",
+      "status": "error",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "a5e3935e-096c-4d80-8580-a2d56e63bb35",
+      "name": "news-morning",
+      "status": "error",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "2e478e37-ea78-4da9-b283-595558c675c0",
+      "name": "analysis-eth",
+      "status": "error",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "9b0d6abe-ee51-468e-972c-a1470f796b5c",
+      "name": "news-noon",
+      "status": "error",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "5c96f170-ee71-475f-97d6-20e06eced7b4",
+      "name": "analysis-altcoin-1",
+      "status": "error",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "b0c961ca-8b4d-452a-b0eb-a5dd223fce45",
+      "name": "analysis-altcoin-2",
+      "status": "error",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "b0968b94-3513-42d7-9161-400f1943492e",
+      "name": "news-evening",
+      "status": "error",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "0ecbd0e3-773c-4f2c-8cb7-d03b8c396968",
+      "name": "crypto-education",
+      "status": "error",
+      "ts": 1777812904.369497
+    },
+    {
+      "job_id": "5dcd133c-79d1-4c1e-9d99-8fe54f131df1",
+      "name": "monthly-analysis",
+      "status": "error",
+      "ts": 1777812904.369497
     }
   ],
   "equity_history": [],
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-04-22 16:43:04,336 INFO   ✅ SIGNAL posted → dest msg_id=2101",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-22 16:43:04,336 INFO   ✅ SIGNAL posted → dest msg_id=2101",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-22 16:54:06,759 INFO New message #6443 → UPDATE: 'Hit SL Wait for recovery'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-22 16:54:06,759 INFO New message #6443 → UPDATE: 'Hit SL Wait for recovery'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-22 16:54:06,761 INFO   🎯 UPDATE → mapped via reply_to src#6442 → dest#2101",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-04-22 16:54:06,761 INFO   🎯 UPDATE → mapped via reply_to src#6442 → dest#2101",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-04-22 16:54:07,718 INFO   ✅ UPDATE replied to 2101",
       "ts": ""
     },
@@ -1514,6 +1478,36 @@
     {
       "label": "FOREX",
       "text": "2026-04-22 17:34:56,375 INFO   ✅ UPDATE replied to 2103",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-03 19:50:50,138 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-03 19:50:50,174 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-03 19:50:50,461 INFO ✅ Userbot connected!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-03 19:50:50,508 INFO Logged in as: None (Yume)",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-03 19:50:50,571 INFO Latest @BoBotfxSignals message: #6726 mapped=True",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-03 19:50:50,572 INFO 👂 Listening to @BoBotfxSignals...",
       "ts": ""
     },
     {
@@ -1623,16 +1617,6 @@
     },
     {
       "label": "DASH",
-      "text": "   65e7b67f..3af01803  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   a34d7e8e..ca795bd3  main -> main",
       "ts": ""
     },
@@ -1714,6 +1698,16 @@
     {
       "label": "DASH",
       "text": "   bae890a1..831206ab  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   76a95bcc..3f7bfb2d  main -> main",
       "ts": ""
     }
   ],
