@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-04T16:50:04.138890+00:00",
-  "generated_at_vn": "2026-05-04 23:50:04",
+  "generated_at": "2026-05-04T16:55:03.911933+00:00",
+  "generated_at_vn": "2026-05-04 23:55:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "14d 0h 34m",
-    "uptime_seconds": 1211651,
+    "uptime": "14d 0h 39m",
+    "uptime_seconds": 1211950,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 2.68,
-      "percent": 17.4
+      "percent": 17.5
     },
     "disk": {
       "total_gb": 468,
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 327
+      "response_time_ms": 284
     },
     "openclaw": {
       "running": true
@@ -284,16 +284,6 @@
     },
     {
       "label": "DASH",
-      "text": " ! [remote rejected]   main -> main (failure)",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "error: failed to push some refs to 'https://github.com/tanphat251196-max/yume-dashboard.git'",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   07c1cd77..f02e46aa  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   fa3af953..61522aa7  main -> main",
       "ts": ""
     }
   ],
