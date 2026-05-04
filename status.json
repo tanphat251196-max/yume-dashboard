@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-04T23:05:04.270103+00:00",
-  "generated_at_vn": "2026-05-05 06:05:04",
+  "generated_at": "2026-05-04T23:10:03.768759+00:00",
+  "generated_at_vn": "2026-05-05 06:10:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "14d 6h 49m",
-    "uptime_seconds": 1234151,
+    "uptime": "14d 6h 54m",
+    "uptime_seconds": 1234450,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.72,
+      "used_gb": 2.71,
       "percent": 17.7
     },
     "disk": {
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 0.0,
+      "percent": 1.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 383
+      "response_time_ms": 299
     },
     "openclaw": {
       "running": true
@@ -184,47 +184,12 @@
     },
     {
       "label": "WEB",
-      "text": "    ✅ Watermark applied: post-luong-ca-voi-dogecoin-tich-luy-dat-muc-c.jpg (379KB)",
+      "text": "    ✅ Watermark applied: post-tin-tuc-ve-dao-luat-clarity-thuong-nghi-.jpg (401KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ✅ Added: luong-ca-voi-dogecoin-tich-luy-dat-muc-cao-ky",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "📝 [5/5] Cập nhật về Đạo luật CLARITY: Thượng viện đưa ra......",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Bài mới: published 2026-05-03 16:08 UTC — 6.9h trước",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Gemini (gemini-2.5-flash): 3142 words, 8 headings, CTA=True",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-cap-nhat-ve-dao-luat-clarity-thuong-vien.jpg (819KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Watermark applied: post-cap-nhat-ve-dao-luat-clarity-thuong-vien.jpg (282KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Added: cap-nhat-ve-dao-luat-clarity-thuong-vien-dua-ra",
+      "text": "  ✅ Added: tin-tuc-ve-dao-luat-clarity-thuong-nghi-si-tillis-cam-ket-thuc-day-viec-thong-qu",
       "ts": ""
     },
     {
@@ -234,7 +199,42 @@
     },
     {
       "label": "WEB",
-      "text": "💾 Saved 4 new posts (total: 360)",
+      "text": "📝 [5/5] Diễn biến thị trường tuần 27/04 – 01/05/2026: Chứng khoán Mỹ...",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Bài mới: published 2026-05-04 10:16 UTC — 12.7h trước",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 2497 words, 9 headings, CTA=True",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-dien-bien-thi-truong-tuan-2704-01052026-.jpg (995KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Watermark applied: post-dien-bien-thi-truong-tuan-2704-01052026-.jpg (365KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Added: dien-bien-thi-truong-tuan-2704-01052026-chung-khoan-my-tang-nho-ket-qua-kinh-doa",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "💾 Saved 4 new posts (total: 364)",
       "ts": ""
     },
     {
@@ -280,16 +280,6 @@
     {
       "label": "WEB",
       "text": "✅ DONE: Published 4 bài mới lên daututhongminh24h.com",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   74d63963..fd3bee90  main -> main",
       "ts": ""
     },
     {
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   143481f9..41b6986b  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   5f1afbc1..73aa26a2  main -> main",
       "ts": ""
     }
   ],
