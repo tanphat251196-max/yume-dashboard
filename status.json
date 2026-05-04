@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-04T10:00:03.837920+00:00",
-  "generated_at_vn": "2026-05-04 17:00:03",
+  "generated_at": "2026-05-04T10:05:03.628430+00:00",
+  "generated_at_vn": "2026-05-04 17:05:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 17h 44m",
-    "uptime_seconds": 1187050,
+    "uptime": "13d 17h 49m",
+    "uptime_seconds": 1187350,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.71,
-      "percent": 17.7
+      "used_gb": 2.69,
+      "percent": 17.5
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 1.5,
+      "percent": 0.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 352
+      "response_time_ms": 382
     },
     "openclaw": {
       "running": true
@@ -1285,56 +1285,6 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-05-04 12:26:05,007 INFO   🎯 UPDATE → mapped via reply_to src#6745 → dest#2404",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 12:26:05,937 INFO   ✅ UPDATE replied to 2404",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 12:26:05,938 INFO   🔒 Signal 6745 closed",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 14:07:56,560 WARNING Server closed the connection: [Errno 104] Connection reset by peer",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 14:07:56,561 INFO Connection closed while receiving data: [Errno 104] Connection reset by peer",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 14:07:56,561 INFO Closing current connection to begin reconnect...",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 14:07:56,562 INFO <class 'ConnectionResetError'> during disconnect: [Errno 104] Connection reset by peer",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 14:07:56,562 INFO Connecting to 91.108.56.199:443/TcpFull...",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 14:07:56,644 INFO Connection to 91.108.56.199:443/TcpFull complete!",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 14:09:36,046 INFO Closing current connection to begin reconnect...",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-05-04 14:09:36,047 INFO Connecting to 91.108.56.199:443/TcpFull...",
       "ts": ""
     },
@@ -1381,6 +1331,56 @@
     {
       "label": "FOREX",
       "text": "2026-05-04 16:58:13,000 INFO   ✅ UPDATE replied to 2406",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 17:02:14,485 INFO New message #6750 → UPDATE: 'TP3 Hit +85.5Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 17:02:14,486 INFO   🎯 UPDATE → mapped via reply_to src#6747 → dest#2406",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 17:02:15,420 INFO   ✅ UPDATE replied to 2406",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 17:02:18,109 INFO New message #6751 → UPDATE: 'TP4 Hit +113.9Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 17:02:18,111 INFO   🎯 UPDATE → mapped via reply_to src#6747 → dest#2406",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 17:02:19,051 INFO   ✅ UPDATE replied to 2406",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 17:03:53,544 INFO New message #6752 → UPDATE: 'TP5 Hit +170.9Pips All Target Done!'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 17:03:53,545 INFO   🎯 UPDATE → mapped via reply_to src#6747 → dest#2406",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 17:03:54,476 INFO   ✅ UPDATE replied to 2406",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 17:03:54,478 INFO   🔒 Signal 6747 closed",
       "ts": ""
     },
     {
@@ -1490,16 +1490,6 @@
     },
     {
       "label": "DASH",
-      "text": "   f0e93e79..c02a9ccb  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   f65120b7..0cf6aabe  main -> main",
       "ts": ""
     },
@@ -1581,6 +1571,16 @@
     {
       "label": "DASH",
       "text": "   48327f06..36ace8a7  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   8bf2ab62..89a8b9de  main -> main",
       "ts": ""
     }
   ],
