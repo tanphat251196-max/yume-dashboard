@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-04T07:05:03.986058+00:00",
-  "generated_at_vn": "2026-05-04 14:05:03",
+  "generated_at": "2026-05-04T07:10:03.790728+00:00",
+  "generated_at_vn": "2026-05-04 14:10:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 14h 49m",
-    "uptime_seconds": 1176550,
+    "uptime": "13d 14h 54m",
+    "uptime_seconds": 1176850,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.66,
-      "percent": 17.3
+      "used_gb": 2.67,
+      "percent": 17.4
     },
     "disk": {
       "total_gb": 468,
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 398
+      "response_time_ms": 302
     },
     "openclaw": {
       "running": true
@@ -1285,51 +1285,6 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-05-04 09:00:19,754 INFO   ✅ UPDATE replied to 2395",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 09:45:04,947 INFO New message #6740 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4604.098 ❌SL: 4591.029 🔷 TP1: 4610.633 🔷'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 09:45:05,856 INFO   ✅ SIGNAL posted → dest msg_id=2399",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 09:55:45,684 INFO New message #6741 → UPDATE: 'TP1 Hit +65.3Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 09:55:45,685 INFO   🎯 UPDATE → mapped via reply_to src#6740 → dest#2399",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 09:55:46,587 INFO   ✅ UPDATE replied to 2399",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 10:46:05,281 INFO New message #6742 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4608.811 ❌SL: 4598.422 🔷 TP1: 4614.006 🔷'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 10:46:06,222 INFO   ✅ SIGNAL posted → dest msg_id=2401",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 10:53:38,315 INFO New message #6743 → UPDATE: 'TP1 Hit +52.0Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-05-04 10:53:38,317 INFO   🎯 UPDATE → mapped via reply_to src#6742 → dest#2401",
       "ts": ""
     },
@@ -1381,6 +1336,51 @@
     {
       "label": "FOREX",
       "text": "2026-05-04 12:26:05,938 INFO   🔒 Signal 6745 closed",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 14:07:56,560 WARNING Server closed the connection: [Errno 104] Connection reset by peer",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 14:07:56,561 INFO Connection closed while receiving data: [Errno 104] Connection reset by peer",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 14:07:56,561 INFO Closing current connection to begin reconnect...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 14:07:56,562 INFO <class 'ConnectionResetError'> during disconnect: [Errno 104] Connection reset by peer",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 14:07:56,562 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 14:07:56,644 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 14:09:36,046 INFO Closing current connection to begin reconnect...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 14:09:36,047 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 14:09:36,103 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
@@ -1490,16 +1490,6 @@
     },
     {
       "label": "DASH",
-      "text": "   4873c6d4..0175c432  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   6e63e5e2..c1d6d441  main -> main",
       "ts": ""
     },
@@ -1581,6 +1571,16 @@
     {
       "label": "DASH",
       "text": "   e93cadd2..a3208578  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   218c25d4..61a42b9d  main -> main",
       "ts": ""
     }
   ],
