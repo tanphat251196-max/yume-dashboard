@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-04T01:50:03.875372+00:00",
-  "generated_at_vn": "2026-05-04 08:50:03",
+  "generated_at": "2026-05-04T01:55:04.027335+00:00",
+  "generated_at_vn": "2026-05-04 08:55:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 9h 34m",
-    "uptime_seconds": 1157650,
+    "uptime": "13d 9h 39m",
+    "uptime_seconds": 1157950,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.67,
-      "percent": 17.4
+      "used_gb": 2.64,
+      "percent": 17.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 0.2,
+      "percent": 0.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 276
+      "response_time_ms": 356
     },
     "openclaw": {
       "running": true
@@ -1285,16 +1285,6 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-05-04 05:03:16,722 INFO   ✅ UPDATE replied to 2385",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-04 05:03:16,725 INFO New message #6730 → UPDATE: 'TP4 Hit +92.1Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
       "text": "2026-05-04 05:03:16,725 INFO   🎯 UPDATE → mapped via reply_to src#6726 → dest#2385",
       "ts": ""
     },
@@ -1381,6 +1371,16 @@
     {
       "label": "FOREX",
       "text": "2026-05-04 07:21:13,851 INFO   🔒 Signal 6734 closed",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 08:52:03,344 INFO New message #6736 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4606.102 ❌SL: 4598.975 🔷 TP1: 4609.666 🔷'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-04 08:52:04,332 INFO   ✅ SIGNAL posted → dest msg_id=2395",
       "ts": ""
     },
     {
@@ -1490,16 +1490,6 @@
     },
     {
       "label": "DASH",
-      "text": "   c7c3b332..bbac8f09  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   6ded62bb..dd4a4f0c  main -> main",
       "ts": ""
     },
@@ -1581,6 +1571,16 @@
     {
       "label": "DASH",
       "text": "   48e01e60..d962e53e  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   5710f630..b4ce8fb3  main -> main",
       "ts": ""
     }
   ],
