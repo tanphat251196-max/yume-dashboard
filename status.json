@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-04T16:00:03.773031+00:00",
-  "generated_at_vn": "2026-05-04 23:00:03",
+  "generated_at": "2026-05-04T16:05:03.749092+00:00",
+  "generated_at_vn": "2026-05-04 23:05:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "13d 23h 44m",
-    "uptime_seconds": 1208650,
+    "uptime": "13d 23h 49m",
+    "uptime_seconds": 1208950,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.63,
-      "percent": 17.1
+      "used_gb": 2.67,
+      "percent": 17.4
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 0.0,
+      "percent": 3.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 318
+      "response_time_ms": 342
     },
     "openclaw": {
       "running": true
@@ -289,26 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   3ffa0199..f03ab368  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   388c459e..5c0f20c6  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   aab9bf91..f69125c6  main -> main",
       "ts": ""
     },
@@ -380,6 +360,26 @@
     {
       "label": "DASH",
       "text": "   529613c4..9d0ea2b8  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "remote: fatal error in commit_refs        ",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": " ! [remote rejected]   main -> main (failure)",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "error: failed to push some refs to 'https://github.com/tanphat251196-max/yume-dashboard.git'",
       "ts": ""
     }
   ],
