@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-05T08:55:03.636274+00:00",
-  "generated_at_vn": "2026-05-05 15:55:03",
+  "generated_at": "2026-05-05T09:00:04.310661+00:00",
+  "generated_at_vn": "2026-05-05 16:00:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "14d 16h 39m",
-    "uptime_seconds": 1269550,
+    "uptime": "14d 16h 44m",
+    "uptime_seconds": 1269851,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.71,
+      "used_gb": 2.7,
       "percent": 17.6
     },
     "disk": {
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 4.5,
+      "percent": 2.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 288
+      "response_time_ms": 327
     },
     "openclaw": {
       "running": true
@@ -82,26 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-05 12:34:55,837 INFO   🔒 Signal 6781 closed",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-05 13:07:03,887 INFO New message #6783 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Sell 💠 Entry: 4543.319 ❌SL: 4552.211 🔷 TP1: 4538.873 '",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-05 13:07:04,845 INFO   ✅ SIGNAL posted → dest msg_id=2442",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-05 13:20:05,616 INFO New message #6784 → UPDATE: 'TP1 Hit +44.5Pips'",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-05 13:20:05,617 INFO   🎯 UPDATE → mapped via reply_to src#6783 → dest#2442",
@@ -180,6 +160,26 @@
     {
       "label": "FOREX",
       "text": "2026-05-05 15:15:37,201 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-05 15:57:09,250 INFO New message #6787 → UPDATE: 'Hit SL Wait for recovery'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-05 15:57:09,251 INFO   🎯 UPDATE → mapped via reply_to src#6786 → dest#2445",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-05 15:57:10,371 INFO   ✅ UPDATE replied to 2445",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-05 15:57:10,372 INFO   🔒 Signal 6786 closed",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   2d788eeb..1c041191  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   5b82b3ad..a2f9eb5e  main -> main",
       "ts": ""
     },
@@ -381,6 +371,16 @@
       "label": "DASH",
       "text": "   f9a50b1d..c1f40a5c  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   23c00e2c..a6aba5b1  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -436,7 +436,7 @@
         "label": "@SignalHuntersCrypto",
         "type": "channel",
         "title": "Signal Hunters",
-        "members": 2443,
+        "members": 2442,
         "ok": true,
         "model": "openai-codex/gpt-5.5",
         "username": "SignalHuntersCrypto",
