@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-05T13:25:04.202393+00:00",
-  "generated_at_vn": "2026-05-05 20:25:04",
+  "generated_at": "2026-05-05T13:30:04.279266+00:00",
+  "generated_at_vn": "2026-05-05 20:30:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "14d 21h 9m",
-    "uptime_seconds": 1285751,
+    "uptime": "14d 21h 14m",
+    "uptime_seconds": 1286051,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.68,
-      "percent": 17.4
+      "used_gb": 2.64,
+      "percent": 17.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 0.2,
+      "percent": 0.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 440
+      "response_time_ms": 471
     },
     "openclaw": {
       "running": true
@@ -82,21 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-05 17:28:55,215 INFO   🎯 UPDATE → mapped via reply_to src#6788 → dest#2447",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-05 17:28:56,168 INFO   ✅ UPDATE replied to 2447",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-05 17:43:55,373 INFO New message #6790 → UPDATE: 'TP2 Hit +53.7Pips'",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-05 17:43:55,375 INFO   🎯 UPDATE → mapped via reply_to src#6788 → dest#2447",
@@ -180,6 +165,21 @@
     {
       "label": "FOREX",
       "text": "2026-05-05 19:29:47,315 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-05 20:29:49,789 INFO Closing current connection to begin reconnect...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-05 20:29:49,790 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-05 20:29:49,852 INFO Connection to 91.108.56.199:443/TcpFull complete!",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   c7794a82..7698271e  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   ba6e2994..45592840  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   1f4e5ca5..65409d96  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   2022791a..fa8d85f2  main -> main",
       "ts": ""
     }
   ],
