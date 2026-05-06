@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-06T16:55:03.888590+00:00",
-  "generated_at_vn": "2026-05-06 23:55:03",
+  "generated_at": "2026-05-06T17:00:03.552809+00:00",
+  "generated_at_vn": "2026-05-07 00:00:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "16d 0h 39m",
-    "uptime_seconds": 1384750,
+    "uptime": "16d 0h 44m",
+    "uptime_seconds": 1385050,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.7,
-      "percent": 17.6
+      "used_gb": 2.69,
+      "percent": 17.5
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 5.2,
+      "percent": 0.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 308
+      "response_time_ms": 345
     },
     "openclaw": {
       "running": true
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   a53a32f2..fbda52f6  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   39cd97bf..62ecf94e  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   7321e81b..99534cd2  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   42b8d2f4..5d28805f  main -> main",
       "ts": ""
     }
   ],
@@ -658,9 +658,16 @@
         "msg": "X posts sẽ fail! Chạy: check-x-cdp.sh hoặc systemctl --user start chrome-x-debug"
       }
     ],
-    "warnings": [],
+    "warnings": [
+      {
+        "level": "warning",
+        "icon": "🟡",
+        "title": "Web chỉ có 0 bài hôm nay",
+        "msg": "Cần ít nhất 4 bài/ngày"
+      }
+    ],
     "total_critical": 1,
-    "total_warning": 0,
+    "total_warning": 1,
     "all_clear": false
   }
 }
