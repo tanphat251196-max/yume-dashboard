@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-06T06:25:04.466973+00:00",
-  "generated_at_vn": "2026-05-06 13:25:04",
+  "generated_at": "2026-05-06T06:30:04.154776+00:00",
+  "generated_at_vn": "2026-05-06 13:30:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "15d 14h 9m",
-    "uptime_seconds": 1346951,
+    "uptime": "15d 14h 14m",
+    "uptime_seconds": 1347251,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.74,
-      "percent": 17.8
+      "used_gb": 2.67,
+      "percent": 17.4
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 2.0,
+      "percent": 4.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 520
+      "response_time_ms": 295
     },
     "openclaw": {
       "running": true
@@ -82,26 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-06 09:47:29,575 INFO New message #6813 → UPDATE: 'TP2 Hit +143.0Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-06 09:47:29,576 INFO   🎯 UPDATE → mapped via reply_to src#6811 → dest#2470",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-06 09:47:30,685 INFO   ✅ UPDATE replied to 2470",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-06 10:07:10,232 INFO New message #6814 → UPDATE: 'TP3 Hit +214.5Pips'",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-06 10:07:10,234 INFO   🎯 UPDATE → mapped via reply_to src#6811 → dest#2470",
@@ -180,6 +160,26 @@
     {
       "label": "FOREX",
       "text": "2026-05-06 13:08:45,777 INFO   ✅ UPDATE replied to 2475",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-06 13:26:42,495 INFO New message #6820 → UPDATE: 'TP5 Hit +429.0Pips All Target Done!'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-06 13:26:42,496 INFO   🎯 UPDATE → mapped via reply_to src#6811 → dest#2470",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-06 13:26:43,596 INFO   ✅ UPDATE replied to 2470",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-06 13:26:43,598 INFO   🔒 Signal 6811 closed",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   524e33e3..2b9e6c8e  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   467f19b6..cfcee60b  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   8761b44a..4387a973  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   9bf00161..63670b35  main -> main",
       "ts": ""
     }
   ],
