@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-07T03:30:03.965208+00:00",
-  "generated_at_vn": "2026-05-07 10:30:03",
+  "generated_at": "2026-05-07T03:35:03.534448+00:00",
+  "generated_at_vn": "2026-05-07 10:35:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "16d 11h 14m",
-    "uptime_seconds": 1422850,
+    "uptime": "16d 11h 19m",
+    "uptime_seconds": 1423150,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.67,
-      "percent": 17.4
+      "used_gb": 2.7,
+      "percent": 17.6
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 6.8,
+      "percent": 9.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 331
+      "response_time_ms": 290
     },
     "openclaw": {
       "running": true
@@ -82,26 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 08:16:08,238 INFO   🎯 UPDATE → mapped via reply_to src#6844 → dest#2503",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 08:16:09,158 INFO   ✅ UPDATE replied to 2503",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 08:16:09,160 INFO   🔒 Signal 6844 closed",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 08:16:30,804 INFO New message #6857 → UPDATE: 'TP3 Hit +179.7Pips'",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-07 08:16:30,806 INFO   🎯 UPDATE → mapped via reply_to src#6851 → dest#2510",
@@ -180,6 +160,26 @@
     {
       "label": "FOREX",
       "text": "2026-05-07 09:59:05,367 INFO   ✅ SIGNAL posted → dest msg_id=2521",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 10:30:09,040 INFO New message #6863 → UPDATE: 'Hit SL Wait for recovery'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 10:30:09,041 INFO   🎯 UPDATE → mapped via reply_to src#6862 → dest#2521",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 10:30:09,933 INFO   ✅ UPDATE replied to 2521",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 10:30:09,935 INFO   🔒 Signal 6862 closed",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   c4a6a8c4..dbb12d1c  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   3404a13d..24782cd5  main -> main",
       "ts": ""
     },
@@ -381,6 +371,16 @@
       "label": "DASH",
       "text": "   375c9338..defbe6b4  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   c37fc938..bbdbba88  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -390,7 +390,7 @@
         "label": "@x268Chat",
         "type": "group",
         "title": "X268 | Tin tức",
-        "members": 568,
+        "members": 567,
         "ok": true,
         "model": "google/gemini-2.0-flash",
         "username": "x268Chat",
@@ -436,7 +436,7 @@
         "label": "@SignalHuntersCrypto",
         "type": "channel",
         "title": "Signal Hunters",
-        "members": 2431,
+        "members": 2430,
         "ok": true,
         "model": "openai-codex/gpt-5.5",
         "username": "SignalHuntersCrypto",
