@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-07T14:55:03.984436+00:00",
-  "generated_at_vn": "2026-05-07 21:55:03",
+  "generated_at": "2026-05-07T15:00:04.378775+00:00",
+  "generated_at_vn": "2026-05-07 22:00:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "16d 22h 39m",
-    "uptime_seconds": 1463950,
+    "uptime": "16d 22h 44m",
+    "uptime_seconds": 1464251,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.74,
-      "percent": 17.8
+      "used_gb": 2.78,
+      "percent": 18.1
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 3.0,
+      "percent": 19.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 488
+      "response_time_ms": 533
     },
     "openclaw": {
       "running": true
@@ -82,41 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 19:41:53,488 INFO   ✅ UPDATE replied to 2549",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 20:25:05,178 INFO New message #6894 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4744.607 ❌SL: 4730.992 🔷 TP1: 4751.415 🔷'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 20:25:06,098 INFO   ✅ SIGNAL posted → dest msg_id=2553",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 20:32:51,411 INFO New message #6895 → UPDATE: 'TP1 Hit +68.1Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 20:32:51,412 INFO   🎯 UPDATE → mapped via reply_to src#6894 → dest#2553",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 20:32:52,359 INFO   ✅ UPDATE replied to 2553",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 20:32:57,763 INFO New message #6896 → UPDATE: 'TP4 Hit +181.3Pips'",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-07 20:32:57,765 INFO   🎯 UPDATE → mapped via reply_to src#6886 → dest#2545",
@@ -180,6 +145,41 @@
     {
       "label": "FOREX",
       "text": "2026-05-07 21:25:19,039 INFO   ✅ UPDATE replied to 2553",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 21:57:37,527 INFO New message #6902 → UPDATE: 'TP1 Hit +70.6Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 21:57:37,529 INFO   🎯 UPDATE → mapped via reply_to src#6900 → dest#2557",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 21:57:38,596 INFO   ✅ UPDATE replied to 2557",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 21:58:10,306 INFO New message #6903 → UPDATE: 'TP5 Hit +271.9Pips All Target Done!'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 21:58:10,307 INFO   🎯 UPDATE → mapped via reply_to src#6886 → dest#2545",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 21:58:11,405 INFO   ✅ UPDATE replied to 2545",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 21:58:11,407 INFO   🔒 Signal 6886 closed",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   ccb7c292..42f27a0e  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   aa8bba36..45eb7c41  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   bf5d9672..7630f060  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   73eb3c8e..1c960ce2  main -> main",
       "ts": ""
     }
   ],
