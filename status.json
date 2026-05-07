@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-07T13:30:03.974867+00:00",
-  "generated_at_vn": "2026-05-07 20:30:03",
+  "generated_at": "2026-05-07T13:35:03.891144+00:00",
+  "generated_at_vn": "2026-05-07 20:35:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "16d 21h 14m",
-    "uptime_seconds": 1458850,
+    "uptime": "16d 21h 19m",
+    "uptime_seconds": 1459150,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.72,
-      "percent": 17.7
+      "used_gb": 2.76,
+      "percent": 18.0
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 0.0,
+      "percent": 17.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 291
+      "response_time_ms": 341
     },
     "openclaw": {
       "running": true
@@ -82,51 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 18:55:56,124 INFO   ✅ UPDATE replied to 2545",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 18:57:32,109 INFO New message #6888 → UPDATE: 'TP1 Hit +71.7Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 18:57:32,110 INFO   🎯 UPDATE → mapped via reply_to src#6883 → dest#2542",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 18:57:33,200 INFO   ✅ UPDATE replied to 2542",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 19:00:31,491 INFO New message #6889 → UPDATE: 'TP2 Hit +90.6Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 19:00:31,492 INFO   🎯 UPDATE → mapped via reply_to src#6886 → dest#2545",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 19:00:32,437 INFO   ✅ UPDATE replied to 2545",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 19:32:06,381 INFO New message #6890 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4745.162 ❌SL: 4733.207 🔷 TP1: 4751.140 🔷'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 19:32:07,307 INFO   ✅ SIGNAL posted → dest msg_id=2549",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-07 19:38:40,793 INFO New message #6891 → UPDATE: 'TP3 Hit +136.0Pips'",
@@ -180,6 +135,51 @@
     {
       "label": "FOREX",
       "text": "2026-05-07 20:25:06,098 INFO   ✅ SIGNAL posted → dest msg_id=2553",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 20:32:51,411 INFO New message #6895 → UPDATE: 'TP1 Hit +68.1Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 20:32:51,412 INFO   🎯 UPDATE → mapped via reply_to src#6894 → dest#2553",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 20:32:52,359 INFO   ✅ UPDATE replied to 2553",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 20:32:57,763 INFO New message #6896 → UPDATE: 'TP4 Hit +181.3Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 20:32:57,765 INFO   🎯 UPDATE → mapped via reply_to src#6886 → dest#2545",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 20:32:59,015 INFO   ✅ UPDATE replied to 2545",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 20:33:48,327 INFO New message #6897 → UPDATE: 'TP3 Hit +215.1Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 20:33:48,328 INFO   🎯 UPDATE → mapped via reply_to src#6883 → dest#2542",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 20:33:49,448 INFO   ✅ UPDATE replied to 2542",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   8e582c8b..cc29c342  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   38796383..b4fabf09  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   b6193714..26dbc255  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   193a0ecc..81eac3ff  main -> main",
       "ts": ""
     }
   ],
