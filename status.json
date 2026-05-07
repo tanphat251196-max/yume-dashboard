@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-07T06:25:04.000059+00:00",
-  "generated_at_vn": "2026-05-07 13:25:04",
+  "generated_at": "2026-05-07T06:30:03.618914+00:00",
+  "generated_at_vn": "2026-05-07 13:30:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "16d 14h 9m",
-    "uptime_seconds": 1433350,
+    "uptime": "16d 14h 14m",
+    "uptime_seconds": 1433650,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 2.73,
-      "percent": 17.8
+      "percent": 17.7
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 0.0,
+      "percent": 1.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 330
+      "response_time_ms": 388
     },
     "openclaw": {
       "running": true
@@ -82,41 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 12:32:03,877 INFO New message #6866 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4701.439 ❌SL: 4694.701 🔷 TP1: 4704.808 🔷'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 12:32:04,789 INFO   ✅ SIGNAL posted → dest msg_id=2525",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 12:32:49,047 INFO New message #6867 → UPDATE: 'TP2 Hit +60.3Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 12:32:49,048 INFO   🎯 UPDATE → mapped via reply_to src#6864 → dest#2523",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 12:32:49,956 INFO   ✅ UPDATE replied to 2523",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 12:32:58,234 INFO New message #6868 → UPDATE: 'TP1 Hit +33.7Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 12:32:58,235 INFO   🎯 UPDATE → mapped via reply_to src#6866 → dest#2525",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-07 12:32:59,142 INFO   ✅ UPDATE replied to 2525",
@@ -180,6 +145,41 @@
     {
       "label": "FOREX",
       "text": "2026-05-07 13:20:44,513 INFO   ✅ UPDATE replied to 2525",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 13:27:52,434 INFO New message #6873 → UPDATE: 'TP4 Hit +134.8Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 13:27:52,435 INFO   🎯 UPDATE → mapped via reply_to src#6866 → dest#2525",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 13:27:53,449 INFO   ✅ UPDATE replied to 2525",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 13:29:25,089 INFO New message #6874 → UPDATE: 'TP5 Hit +181.0Pips All Target Done!'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 13:29:25,091 INFO   🎯 UPDATE → mapped via reply_to src#6864 → dest#2523",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 13:29:26,031 INFO   ✅ UPDATE replied to 2523",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-07 13:29:26,032 INFO   🔒 Signal 6864 closed",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   7f88e1d5..d0cab8e7  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   fee96b41..79c5b9f5  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   24a72ae0..04214157  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   abffa556..239c4972  main -> main",
       "ts": ""
     }
   ],
