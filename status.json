@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-07T23:00:04.533379+00:00",
-  "generated_at_vn": "2026-05-08 06:00:04",
+  "generated_at": "2026-05-07T23:05:04.154306+00:00",
+  "generated_at_vn": "2026-05-08 06:05:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "17d 6h 44m",
-    "uptime_seconds": 1493051,
+    "uptime": "17d 6h 49m",
+    "uptime_seconds": 1493351,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.76,
+      "used_gb": 2.75,
       "percent": 17.9
     },
     "disk": {
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 0.5,
+      "percent": 5.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 465
+      "response_time_ms": 327
     },
     "openclaw": {
       "running": true
@@ -184,52 +184,32 @@
     },
     {
       "label": "WEB",
-      "text": "    \"code\": 404,",
+      "text": "📝 [4/5] Bitcoin có thể đạt 100.000 USD? Hai tỷ phú crypto vừa lên ti...",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    \"message\": \"This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improve",
+      "text": "  ✅ Bài mới: published 2026-05-07 03:53 UTC — 19.1h trước",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    ⚠️ Gemini gemini-2.0-flash-exp HTTP 404: {",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 3064 words, 9 headings, CTA=True",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  \"error\": {",
+      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-bitcoin-co-the-dat-100000-usd-hai-ty-phu.jpg (916KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    \"code\": 404,",
+      "text": "    ✅ Watermark applied: post-bitcoin-co-the-dat-100000-usd-hai-ty-phu.jpg (317KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    \"message\": \"models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available m",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ⚠️ Gemini unavailable — using structured fallback",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-nha-kinh-te-nik-bhatia-bitcoin-co-the-da.jpg (1163KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Watermark applied: post-nha-kinh-te-nik-bhatia-bitcoin-co-the-da.jpg (449KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Added: nha-kinh-te-nik-bhatia-bitcoin-co-the-dat-1-trieu-usd-nhanh-hon-tuong-tuong",
+      "text": "  ✅ Added: bitcoin-co-the-dat-100000-usd-hai-ty-phu-crypto-vua-len-tieng",
       "ts": ""
     },
     {
@@ -239,7 +219,27 @@
     },
     {
       "label": "WEB",
-      "text": "💾 Saved 5 new posts (total: 373)",
+      "text": "📝 [5/5] Pi Coin có thể bứt phá 23% khi “cá voi”......",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ⏩ SKIP (bài cũ): published 2026-05-06 09:27 UTC — 37.5h trước (>24h)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "💾 Saved 4 new posts (total: 377)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "ℹ️  Skipped 1 bài cũ (>24h hoặc không xác định được ngày)",
       "ts": ""
     },
     {
@@ -279,17 +279,7 @@
     },
     {
       "label": "WEB",
-      "text": "✅ DONE: Published 5 bài mới lên daututhongminh24h.com",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   8289937f..7356946e  main -> main",
+      "text": "✅ DONE: Published 4 bài mới lên daututhongminh24h.com",
       "ts": ""
     },
     {
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   7603386d..6b3f01fc  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   2d865230..d7634f50  main -> main",
       "ts": ""
     }
   ],
@@ -664,16 +664,10 @@
         "icon": "🟡",
         "title": "Facebook Token còn 14 ngày",
         "msg": "Sắp hết hạn, chuẩn bị gia hạn"
-      },
-      {
-        "level": "warning",
-        "icon": "🟡",
-        "title": "Web chỉ có 0 bài hôm nay",
-        "msg": "Cần ít nhất 4 bài/ngày"
       }
     ],
     "total_critical": 1,
-    "total_warning": 2,
+    "total_warning": 1,
     "all_clear": false
   }
 }
