@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-08T23:05:03.571178+00:00",
-  "generated_at_vn": "2026-05-09 06:05:03",
+  "generated_at": "2026-05-08T23:10:04.303237+00:00",
+  "generated_at_vn": "2026-05-09 06:10:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "18d 6h 49m",
-    "uptime_seconds": 1579750,
+    "uptime": "18d 6h 54m",
+    "uptime_seconds": 1580051,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.79,
-      "percent": 18.2
+      "used_gb": 2.76,
+      "percent": 17.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 3.2,
+      "percent": 2.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 299
+      "response_time_ms": 473
     },
     "openclaw": {
       "running": true
@@ -184,32 +184,12 @@
     },
     {
       "label": "WEB",
-      "text": "📝 [4/5] Bitcoin có thể đạt 100.000 USD? Hai tỷ phú crypto vừa lên ti...",
+      "text": "    ✅ Watermark applied: post-cap-nhat-moi-nhat-ve-dao-luat-clarity-uy.jpg (210KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ✅ Bài mới: published 2026-05-07 03:53 UTC — 19.1h trước",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Gemini (gemini-2.5-flash): 3064 words, 9 headings, CTA=True",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-bitcoin-co-the-dat-100000-usd-hai-ty-phu.jpg (916KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Watermark applied: post-bitcoin-co-the-dat-100000-usd-hai-ty-phu.jpg (317KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Added: bitcoin-co-the-dat-100000-usd-hai-ty-phu-crypto-vua-len-tieng",
+      "text": "  ✅ Added: cap-nhat-moi-nhat-ve-dao-luat-clarity-uy-ban-ngan-hang-thuong-vien-duoc-cho-la-d",
       "ts": ""
     },
     {
@@ -219,12 +199,32 @@
     },
     {
       "label": "WEB",
-      "text": "📝 [5/5] Pi Coin có thể bứt phá 23% khi “cá voi”......",
+      "text": "📝 [5/5] Tổng hợp thị trường crypto tuần 04/05 – 08/05/2026: Tâm......",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ⏩ SKIP (bài cũ): published 2026-05-06 09:27 UTC — 37.5h trước (>24h)",
+      "text": "  ✅ Bài mới: published 2026-05-08 08:13 UTC — 14.8h trước",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 2630 words, 5 headings, CTA=True",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-tong-hop-thi-truong-crypto-tuan-0405-080.jpg (999KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Watermark applied: post-tong-hop-thi-truong-crypto-tuan-0405-080.jpg (361KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Added: tong-hop-thi-truong-crypto-tuan-0405-08052026-tam",
       "ts": ""
     },
     {
@@ -234,7 +234,7 @@
     },
     {
       "label": "WEB",
-      "text": "💾 Saved 4 new posts (total: 377)",
+      "text": "💾 Saved 4 new posts (total: 381)",
       "ts": ""
     },
     {
@@ -280,16 +280,6 @@
     {
       "label": "WEB",
       "text": "✅ DONE: Published 4 bài mới lên daututhongminh24h.com",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   9776f593..583c5b2b  main -> main",
       "ts": ""
     },
     {
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   6858f9a5..7f81a69d  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   7e7cf13a..6b311c0f  main -> main",
       "ts": ""
     }
   ],
@@ -664,16 +664,10 @@
         "icon": "🟡",
         "title": "Facebook Token còn 13 ngày",
         "msg": "Sắp hết hạn, chuẩn bị gia hạn"
-      },
-      {
-        "level": "warning",
-        "icon": "🟡",
-        "title": "Web chỉ có 0 bài hôm nay",
-        "msg": "Cần ít nhất 4 bài/ngày"
       }
     ],
     "total_critical": 1,
-    "total_warning": 2,
+    "total_warning": 1,
     "all_clear": false
   }
 }
