@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-08T16:55:04.008728+00:00",
-  "generated_at_vn": "2026-05-08 23:55:04",
+  "generated_at": "2026-05-08T17:00:03.683125+00:00",
+  "generated_at_vn": "2026-05-09 00:00:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "18d 0h 39m",
-    "uptime_seconds": 1557550,
+    "uptime": "18d 0h 44m",
+    "uptime_seconds": 1557850,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.76,
-      "percent": 18.0
+      "used_gb": 2.75,
+      "percent": 17.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 0.8,
+      "percent": 6.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 336
+      "response_time_ms": 282
     },
     "openclaw": {
       "running": true
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   8f2f5482..47ab868a  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   03266b8b..8dfcd55a  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   a372aaa4..e9cab5df  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   70127c0b..076300fa  main -> main",
       "ts": ""
     }
   ],
@@ -662,12 +662,18 @@
       {
         "level": "warning",
         "icon": "🟡",
-        "title": "Facebook Token còn 14 ngày",
+        "title": "Facebook Token còn 13 ngày",
         "msg": "Sắp hết hạn, chuẩn bị gia hạn"
+      },
+      {
+        "level": "warning",
+        "icon": "🟡",
+        "title": "Web chỉ có 0 bài hôm nay",
+        "msg": "Cần ít nhất 4 bài/ngày"
       }
     ],
     "total_critical": 1,
-    "total_warning": 1,
+    "total_warning": 2,
     "all_clear": false
   }
 }
