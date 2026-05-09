@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-09T09:00:04.416003+00:00",
-  "generated_at_vn": "2026-05-09 16:00:04",
+  "generated_at": "2026-05-09T09:05:04.250351+00:00",
+  "generated_at_vn": "2026-05-09 16:05:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "18d 16h 44m",
-    "uptime_seconds": 1615451,
+    "uptime": "18d 16h 49m",
+    "uptime_seconds": 1615751,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.76,
-      "percent": 17.9
+      "used_gb": 2.71,
+      "percent": 17.6
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 10
     },
     "cpu": {
-      "percent": 0.0,
+      "percent": 1.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 328
+      "response_time_ms": 316
     },
     "openclaw": {
       "running": true
@@ -82,21 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 22:00:16,871 INFO New message #6904 → UPDATE: 'TP4 Hit +286.8Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 22:00:16,873 INFO   🎯 UPDATE → mapped via reply_to src#6883 → dest#2542",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-07 22:00:17,932 INFO   ✅ UPDATE replied to 2542",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-08 14:25:10,615 INFO New message #6905 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Sell 💠 Entry: 4706.326 ❌SL: 4734.661 🔷 TP1: 4692.159 '",
@@ -180,6 +165,21 @@
     {
       "label": "FOREX",
       "text": "2026-05-08 22:14:09,020 INFO   ✅ UPDATE replied to 2566",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-09 16:00:45,599 INFO New message #6911 → OTHER: 'EA đơn lệnh Trailing theo tỉ lệ RR Update Loki v1.1 có thể chơi trên tất cả các '",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-09 16:00:45,600 INFO   ⏭ Skipped (OTHER)",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-09 16:00:51,072 INFO Got difference for channel 2094877023 updates",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   9439819e..7aac5933  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   0c5b3f31..8423ba8a  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   ace1e0ab..d3ba8e84  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   e3fd4ed2..f1e9d081  main -> main",
       "ts": ""
     }
   ],
