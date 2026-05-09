@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-09T23:05:04.433647+00:00",
-  "generated_at_vn": "2026-05-10 06:05:04",
+  "generated_at": "2026-05-09T23:10:03.712044+00:00",
+  "generated_at_vn": "2026-05-10 06:10:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "19d 6h 49m",
-    "uptime_seconds": 1666151,
+    "uptime": "19d 6h 54m",
+    "uptime_seconds": 1666450,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.81,
-      "percent": 18.3
+      "used_gb": 2.78,
+      "percent": 18.1
     },
     "disk": {
       "total_gb": 468,
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 362
+      "response_time_ms": 286
     },
     "openclaw": {
       "running": true
@@ -184,47 +184,12 @@
     },
     {
       "label": "WEB",
-      "text": "    ✅ Watermark applied: post-cap-nhat-moi-nhat-ve-dao-luat-clarity-uy.jpg (210KB)",
+      "text": "    ✅ Watermark applied: post-aave-thu-hoi-duoc-so-tien-rseth-bi-khai-.jpg (287KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ✅ Added: cap-nhat-moi-nhat-ve-dao-luat-clarity-uy-ban-ngan-hang-thuong-vien-duoc-cho-la-d",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "📝 [5/5] Tổng hợp thị trường crypto tuần 04/05 – 08/05/2026: Tâm......",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Bài mới: published 2026-05-08 08:13 UTC — 14.8h trước",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Gemini (gemini-2.5-flash): 2630 words, 5 headings, CTA=True",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-tong-hop-thi-truong-crypto-tuan-0405-080.jpg (999KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Watermark applied: post-tong-hop-thi-truong-crypto-tuan-0405-080.jpg (361KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Added: tong-hop-thi-truong-crypto-tuan-0405-08052026-tam",
+      "text": "  ✅ Added: aave-thu-hoi-duoc-so-tien-rseth-bi-khai-thac-khi-qua-trinh-hoan-tra-eth-tri-gia-",
       "ts": ""
     },
     {
@@ -234,7 +199,42 @@
     },
     {
       "label": "WEB",
-      "text": "💾 Saved 4 new posts (total: 381)",
+      "text": "📝 [5/5] Tỷ lệ thống trị của Ethereum trong DeFi giảm xuống......",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Bài mới: published 2026-05-09 16:45 UTC — 6.3h trước",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 2712 words, 7 headings, CTA=True",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-ty-le-thong-tri-cua-ethereum-trong-defi-.jpg (954KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Watermark applied: post-ty-le-thong-tri-cua-ethereum-trong-defi-.jpg (325KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Added: ty-le-thong-tri-cua-ethereum-trong-defi-giam-xuong",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "💾 Saved 4 new posts (total: 385)",
       "ts": ""
     },
     {
@@ -280,16 +280,6 @@
     {
       "label": "WEB",
       "text": "✅ DONE: Published 4 bài mới lên daututhongminh24h.com",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   416e7406..8ed9a5b1  main -> main",
       "ts": ""
     },
     {
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   c94d01f9..c0a17cd8  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   8f93a025..0b19c99d  main -> main",
       "ts": ""
     }
   ],
@@ -664,16 +664,10 @@
         "icon": "🟡",
         "title": "Facebook Token còn 12 ngày",
         "msg": "Sắp hết hạn, chuẩn bị gia hạn"
-      },
-      {
-        "level": "warning",
-        "icon": "🟡",
-        "title": "Web chỉ có 0 bài hôm nay",
-        "msg": "Cần ít nhất 4 bài/ngày"
       }
     ],
     "total_critical": 1,
-    "total_warning": 2,
+    "total_warning": 1,
     "all_clear": false
   }
 }
