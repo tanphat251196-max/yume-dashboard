@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-10T23:00:03.831542+00:00",
-  "generated_at_vn": "2026-05-11 06:00:03",
+  "generated_at": "2026-05-10T23:05:03.637708+00:00",
+  "generated_at_vn": "2026-05-11 06:05:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "10h 25m",
-    "uptime_seconds": 37547,
+    "uptime": "10h 30m",
+    "uptime_seconds": 37847,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.88,
-      "percent": 18.7
+      "used_gb": 2.86,
+      "percent": 18.6
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 16
     },
     "cpu": {
-      "percent": 4.0,
+      "percent": 0.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 470
+      "response_time_ms": 522
     },
     "openclaw": {
       "running": true
@@ -184,47 +184,12 @@
     },
     {
       "label": "WEB",
-      "text": "    ✅ Watermark applied: post-aave-thu-hoi-duoc-so-tien-rseth-bi-khai-.jpg (287KB)",
+      "text": "    ✅ Watermark applied: post-han-quoc-se-ap-thue-tien-dien-tu-bat-dau.jpg (333KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ✅ Added: aave-thu-hoi-duoc-so-tien-rseth-bi-khai-thac-khi-qua-trinh-hoan-tra-eth-tri-gia-",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "📝 [5/5] Tỷ lệ thống trị của Ethereum trong DeFi giảm xuống......",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Bài mới: published 2026-05-09 16:45 UTC — 6.3h trước",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Gemini (gemini-2.5-flash): 2712 words, 7 headings, CTA=True",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-ty-le-thong-tri-cua-ethereum-trong-defi-.jpg (954KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Watermark applied: post-ty-le-thong-tri-cua-ethereum-trong-defi-.jpg (325KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Added: ty-le-thong-tri-cua-ethereum-trong-defi-giam-xuong",
+      "text": "  ✅ Added: han-quoc-se-ap-thue-tien-dien-tu-bat-dau-tu-thang-1-nam-2027",
       "ts": ""
     },
     {
@@ -234,7 +199,42 @@
     },
     {
       "label": "WEB",
-      "text": "💾 Saved 4 new posts (total: 385)",
+      "text": "📝 [5/5] Nhóm vận động hành lang ngân hàng tìm cách ngăn chặn Đạo luậ...",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Bài mới: published 2026-05-10 16:57 UTC — 6.0h trước",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 2886 words, 7 headings, CTA=True",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-nhom-van-dong-hanh-lang-ngan-hang-tim-ca.jpg (1075KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Watermark applied: post-nhom-van-dong-hanh-lang-ngan-hang-tim-ca.jpg (404KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Added: nhom-van-dong-hanh-lang-ngan-hang-tim-cach-ngan-chan-dao-luat-clarity",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "💾 Saved 4 new posts (total: 389)",
       "ts": ""
     },
     {
@@ -280,16 +280,6 @@
     {
       "label": "WEB",
       "text": "✅ DONE: Published 4 bài mới lên daututhongminh24h.com",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   b973ddfc..7414ac40  main -> main",
       "ts": ""
     },
     {
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   e2905a15..014b3c1f  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   3291b54d..81f324f5  main -> main",
       "ts": ""
     }
   ],
@@ -664,16 +664,10 @@
         "icon": "🟡",
         "title": "Facebook Token còn 11 ngày",
         "msg": "Sắp hết hạn, chuẩn bị gia hạn"
-      },
-      {
-        "level": "warning",
-        "icon": "🟡",
-        "title": "Web chỉ có 0 bài hôm nay",
-        "msg": "Cần ít nhất 4 bài/ngày"
       }
     ],
     "total_critical": 1,
-    "total_warning": 2,
+    "total_warning": 1,
     "all_clear": false
   }
 }
