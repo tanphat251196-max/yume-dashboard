@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-10T16:55:03.649118+00:00",
-  "generated_at_vn": "2026-05-10 23:55:03",
+  "generated_at": "2026-05-10T17:00:03.579140+00:00",
+  "generated_at_vn": "2026-05-11 00:00:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "4h 20m",
-    "uptime_seconds": 15647,
+    "uptime": "4h 25m",
+    "uptime_seconds": 15947,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 2.15,
@@ -16,7 +16,7 @@
       "percent": 14
     },
     "cpu": {
-      "percent": 4.5,
+      "percent": 1.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 328
+      "response_time_ms": 526
     },
     "openclaw": {
       "running": true
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   d86bf3e6..a7467e26  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   1bd1e234..f67ec2fb  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   e8e8dfcf..918b6792  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   8519862e..a09a6b2e  main -> main",
       "ts": ""
     }
   ],
@@ -662,12 +662,18 @@
       {
         "level": "warning",
         "icon": "🟡",
-        "title": "Facebook Token còn 12 ngày",
+        "title": "Facebook Token còn 11 ngày",
         "msg": "Sắp hết hạn, chuẩn bị gia hạn"
+      },
+      {
+        "level": "warning",
+        "icon": "🟡",
+        "title": "Web chỉ có 0 bài hôm nay",
+        "msg": "Cần ít nhất 4 bài/ngày"
       }
     ],
     "total_critical": 1,
-    "total_warning": 1,
+    "total_warning": 2,
     "all_clear": false
   }
 }
