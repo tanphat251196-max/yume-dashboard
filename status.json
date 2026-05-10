@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-05-10T18:55:03.899425+00:00",
-  "generated_at_vn": "2026-05-11 01:55:03",
+  "generated_at": "2026-05-10T19:00:03.780442+00:00",
+  "generated_at_vn": "2026-05-11 02:00:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "6h 20m",
-    "uptime_seconds": 22847,
+    "uptime": "6h 25m",
+    "uptime_seconds": 23147,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.69,
-      "percent": 17.5
+      "used_gb": 5.71,
+      "percent": 37.1
     },
     "disk": {
       "total_gb": 468,
-      "used_gb": 65,
-      "percent": 15
+      "used_gb": 68,
+      "percent": 16
     },
     "cpu": {
-      "percent": 51.5,
+      "percent": 12.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 978
+      "response_time_ms": 348
     },
     "openclaw": {
       "running": true
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   ef8a603a..e8bbfc8a  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   430d3c4b..24df8748  main -> main",
       "ts": ""
     },
@@ -381,6 +371,16 @@
       "label": "DASH",
       "text": "   f06b8e8c..f2571cfd  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   2438cbd7..988fad0f  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -392,7 +392,7 @@
         "title": "X268 | Tin tức",
         "members": 570,
         "ok": true,
-        "model": "ollama/qwen3:8b",
+        "model": "ollama/qwen-fast",
         "username": "x268Chat",
         "description": "- Thông báo: https://t.me/x268Channel\n- Chia sẻ kiến thức: https://t.me/x268Sign"
       },
@@ -403,7 +403,7 @@
         "title": "Chị Em Mỹ Gia",
         "members": 3,
         "ok": true,
-        "model": "ollama/qwen3:8b",
+        "model": "ollama/qwen-fast",
         "username": "",
         "description": ""
       },
@@ -414,7 +414,7 @@
         "title": "Admin Signal Hunters",
         "members": 3,
         "ok": true,
-        "model": "ollama/qwen3:8b",
+        "model": "ollama/qwen-fast",
         "username": "ADSignalHunters25",
         "description": ""
       },
@@ -425,7 +425,7 @@
         "title": "Signal Hunters Chat",
         "members": 563,
         "ok": true,
-        "model": "ollama/qwen3:8b",
+        "model": "ollama/qwen-fast",
         "username": "SignalHuntersChat",
         "description": "Chào mừng tất cả anh em tới Signal Hunters 🔥\nChannel @SignalHuntersCrypto\nMON AI"
       }
