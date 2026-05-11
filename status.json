@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-11T08:10:03.238367+00:00",
-  "generated_at_vn": "2026-05-11 15:10:03",
+  "generated_at": "2026-05-11T08:15:04.180114+00:00",
+  "generated_at_vn": "2026-05-11 15:15:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "19h 35m",
-    "uptime_seconds": 70547,
+    "uptime": "19h 40m",
+    "uptime_seconds": 70848,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.63,
-      "percent": 17.1
+      "used_gb": 2.65,
+      "percent": 17.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 13
     },
     "cpu": {
-      "percent": 1.0,
+      "percent": 0.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 369
+      "response_time_ms": 492
     },
     "openclaw": {
       "running": true
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   415b0ec8..8566b220  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   0ff8b1fa..6731d271  main -> main",
       "ts": ""
     },
@@ -381,6 +371,16 @@
       "label": "DASH",
       "text": "   22a93f5a..bd1d9bd8  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   80eb5b58..80d0cc07  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -436,7 +436,7 @@
         "label": "@SignalHuntersCrypto",
         "type": "channel",
         "title": "Signal Hunters",
-        "members": 2378,
+        "members": 2377,
         "ok": true,
         "model": "openai-codex/gpt-5.5",
         "username": "SignalHuntersCrypto",
