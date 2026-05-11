@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-11T16:55:03.524209+00:00",
-  "generated_at_vn": "2026-05-11 23:55:03",
+  "generated_at": "2026-05-11T17:00:03.616467+00:00",
+  "generated_at_vn": "2026-05-12 00:00:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "1d 4h 20m",
-    "uptime_seconds": 102047,
+    "uptime": "1d 4h 25m",
+    "uptime_seconds": 102347,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.71,
-      "percent": 17.6
+      "used_gb": 2.74,
+      "percent": 17.8
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 13
     },
     "cpu": {
-      "percent": 2.2,
+      "percent": 2.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 517
+      "response_time_ms": 654
     },
     "openclaw": {
       "running": true
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   0160d8f8..3005c2a9  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   af472352..1e68a429  main -> main",
       "ts": ""
     },
@@ -381,6 +371,16 @@
       "label": "DASH",
       "text": "   4c2bee83..5bae6401  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   574bd7c9..070c470e  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -436,7 +436,7 @@
         "label": "@SignalHuntersCrypto",
         "type": "channel",
         "title": "Signal Hunters",
-        "members": 2372,
+        "members": 2371,
         "ok": true,
         "model": "openai-codex/gpt-5.5",
         "username": "SignalHuntersCrypto",
@@ -662,12 +662,18 @@
       {
         "level": "warning",
         "icon": "🟡",
-        "title": "Facebook Token còn 11 ngày",
+        "title": "Facebook Token còn 10 ngày",
         "msg": "Sắp hết hạn, chuẩn bị gia hạn"
+      },
+      {
+        "level": "warning",
+        "icon": "🟡",
+        "title": "Web chỉ có 0 bài hôm nay",
+        "msg": "Cần ít nhất 4 bài/ngày"
       }
     ],
     "total_critical": 1,
-    "total_warning": 1,
+    "total_warning": 2,
     "all_clear": false
   }
 }
