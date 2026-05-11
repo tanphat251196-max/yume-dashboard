@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-11T15:30:03.805266+00:00",
-  "generated_at_vn": "2026-05-11 22:30:03",
+  "generated_at": "2026-05-11T15:35:03.683085+00:00",
+  "generated_at_vn": "2026-05-11 22:35:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "1d 2h 55m",
-    "uptime_seconds": 96947,
+    "uptime": "1d 3h 0m",
+    "uptime_seconds": 97247,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.73,
-      "percent": 17.8
+      "used_gb": 2.64,
+      "percent": 17.2
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 13
     },
     "cpu": {
-      "percent": 24.2,
+      "percent": 1.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 597
+      "response_time_ms": 485
     },
     "openclaw": {
       "running": true
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   29429f62..08d758a6  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   43482e9f..633889a8  main -> main",
       "ts": ""
     },
@@ -381,6 +371,16 @@
       "label": "DASH",
       "text": "   6b1fb752..d9a63f91  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   3fcf4320..7a55ced8  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -390,7 +390,7 @@
         "label": "@x268Chat",
         "type": "group",
         "title": "X268 | Tin tức",
-        "members": 569,
+        "members": 568,
         "ok": true,
         "model": "ollama/qwen-fast",
         "username": "x268Chat",
