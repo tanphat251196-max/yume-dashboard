@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-11T01:30:03.578882+00:00",
-  "generated_at_vn": "2026-05-11 08:30:03",
+  "generated_at": "2026-05-11T01:35:03.728539+00:00",
+  "generated_at_vn": "2026-05-11 08:35:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "12h 55m",
-    "uptime_seconds": 46547,
+    "uptime": "13h 0m",
+    "uptime_seconds": 46847,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.98,
-      "percent": 19.4
+      "used_gb": 2.82,
+      "percent": 18.4
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 14
     },
     "cpu": {
-      "percent": 0.0,
+      "percent": 37.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 385
+      "response_time_ms": 626
     },
     "openclaw": {
       "running": true
@@ -82,11 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-08 22:14:09,020 INFO   ✅ UPDATE replied to 2566",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-09 16:00:45,599 INFO New message #6911 → OTHER: 'EA đơn lệnh Trailing theo tỉ lệ RR Update Loki v1.1 có thể chơi trên tất cả các '",
@@ -180,6 +175,11 @@
     {
       "label": "FOREX",
       "text": "2026-05-11 05:03:35,725 INFO   ✅ UPDATE replied to 2566",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-11 08:30:21,128 INFO Got difference for channel 1891953279 updates",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   e0d434df..b8bcc89f  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   3c57957b..95eb0c4c  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   618092df..6ade9db7  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   82122d19..93e6873a  main -> main",
       "ts": ""
     }
   ],
