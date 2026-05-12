@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-12T23:10:04.233482+00:00",
-  "generated_at_vn": "2026-05-13 06:10:04",
+  "generated_at": "2026-05-12T23:15:03.551504+00:00",
+  "generated_at_vn": "2026-05-13 06:15:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "2d 10h 35m",
-    "uptime_seconds": 210948,
+    "uptime": "2d 10h 40m",
+    "uptime_seconds": 211247,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.69,
-      "percent": 17.5
+      "used_gb": 2.7,
+      "percent": 17.6
     },
     "disk": {
       "total_gb": 468,
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 497
+      "response_time_ms": 402
     },
     "openclaw": {
       "running": true
@@ -184,17 +184,12 @@
     },
     {
       "label": "WEB",
-      "text": "    🎨 [Imagen 4 Fast] Generated: post-dao-luat-clarity-phien-thao-luan-du-kien.jpg (1322KB)",
+      "text": "    ✅ Watermark applied: post-cryptoquant-du-doan-btc-tang-len-93000-u.jpg (300KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    ✅ Watermark applied: post-dao-luat-clarity-phien-thao-luan-du-kien.jpg (189KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Added: dao-luat-clarity-phien-thao-luan-du-kien-dien-ra-vao-thu-nam-nhung-phieu-bau-cua",
+      "text": "  ✅ Added: cryptoquant-du-doan-btc-tang-len-93000-usd",
       "ts": ""
     },
     {
@@ -204,32 +199,37 @@
     },
     {
       "label": "WEB",
-      "text": "📝 [5/5] Ripple Prime huy động được 200 triệu đô la từ Neuberger để m...",
+      "text": "📝 [5/5] Công ty bảo mật crypto phát cảnh báo khẩn: Hacker......",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ✅ Bài mới: published 2026-05-11 16:57 UTC — 6.0h trước",
+      "text": "  ✅ Bài mới: published 2026-05-12 09:42 UTC — 13.3h trước",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    ✅ Gemini (gemini-2.5-flash): 2840 words, 7 headings, CTA=True",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 2548 words, 16 headings, CTA=True",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-ripple-prime-huy-dong-duoc-200-trieu-do-.jpg (1076KB)",
+      "text": "    ⚠️ [Gemini Nano Banana 2] error: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    ✅ Watermark applied: post-ripple-prime-huy-dong-duoc-200-trieu-do-.jpg (396KB)",
+      "text": "    🎨 [Imagen 4 Fast] Generated: post-cong-ty-bao-mat-crypto-phat-canh-bao-kha.jpg (1385KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ✅ Added: ripple-prime-huy-dong-duoc-200-trieu-do-la-tu-neuberger-de-mo-rong-hoat-dong-cho",
+      "text": "    ✅ Watermark applied: post-cong-ty-bao-mat-crypto-phat-canh-bao-kha.jpg (207KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Added: cong-ty-bao-mat-crypto-phat-canh-bao-khan-hacker",
       "ts": ""
     },
     {
@@ -239,7 +239,7 @@
     },
     {
       "label": "WEB",
-      "text": "💾 Saved 5 new posts (total: 394)",
+      "text": "💾 Saved 5 new posts (total: 399)",
       "ts": ""
     },
     {
@@ -280,16 +280,6 @@
     {
       "label": "WEB",
       "text": "✅ DONE: Published 5 bài mới lên daututhongminh24h.com",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   f18f76f8..1d49ec7e  main -> main",
       "ts": ""
     },
     {
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   d943bd50..f424f4d0  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   0810a694..bf757a73  main -> main",
       "ts": ""
     }
   ],
@@ -664,16 +664,10 @@
         "icon": "🟡",
         "title": "Facebook Token còn 9 ngày",
         "msg": "Sắp hết hạn, chuẩn bị gia hạn"
-      },
-      {
-        "level": "warning",
-        "icon": "🟡",
-        "title": "Web chỉ có 0 bài hôm nay",
-        "msg": "Cần ít nhất 4 bài/ngày"
       }
     ],
     "total_critical": 1,
-    "total_warning": 2,
+    "total_warning": 1,
     "all_clear": false
   }
 }
