@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-12T19:30:03.573030+00:00",
-  "generated_at_vn": "2026-05-13 02:30:03",
+  "generated_at": "2026-05-12T19:35:03.727303+00:00",
+  "generated_at_vn": "2026-05-13 02:35:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "2d 6h 55m",
-    "uptime_seconds": 197747,
+    "uptime": "2d 7h 0m",
+    "uptime_seconds": 198047,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.66,
-      "percent": 17.3
+      "used_gb": 2.75,
+      "percent": 17.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 13
     },
     "cpu": {
-      "percent": 1.8,
+      "percent": 0.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 309
+      "response_time_ms": 501
     },
     "openclaw": {
       "running": true
@@ -82,16 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-12 14:47:20,405 INFO New message #6939 → UPDATE: 'TP4 Hit +89.6Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-12 14:47:20,406 INFO   🎯 UPDATE → mapped via reply_to src#6927 → dest#2582",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-12 14:47:21,767 INFO   ✅ UPDATE replied to 2582",
@@ -180,6 +170,16 @@
     {
       "label": "FOREX",
       "text": "2026-05-12 22:35:32,627 INFO Got difference for channel 1891953279 updates",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-13 02:30:06,724 INFO New message #6945 → SIGNAL: '💱 Symbol: AUDUSD 📉 Signal: Buy 💠 Entry: 0.72376 ❌SL: 0.72142 🔷 TP1: 0.72493 🔷 TP'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-13 02:30:07,606 INFO   ✅ SIGNAL posted → dest msg_id=2600",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   d96a0e95..0f3b6e0b  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   19914763..46f01ba7  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   8171cc66..2fe8b64c  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   ec54d15d..a836d15a  main -> main",
       "ts": ""
     }
   ],
