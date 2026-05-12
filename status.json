@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-12T12:20:03.997711+00:00",
-  "generated_at_vn": "2026-05-12 19:20:03",
+  "generated_at": "2026-05-12T12:25:03.648326+00:00",
+  "generated_at_vn": "2026-05-12 19:25:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "1d 23h 45m",
-    "uptime_seconds": 171947,
+    "uptime": "1d 23h 50m",
+    "uptime_seconds": 172247,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 2.72,
@@ -16,7 +16,7 @@
       "percent": 13
     },
     "cpu": {
-      "percent": 37.5,
+      "percent": 1.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 534
+      "response_time_ms": 474
     },
     "openclaw": {
       "running": true
@@ -82,11 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-12 08:29:29,518 INFO New message #6934 → UPDATE: 'TP1 Hit +22.4Pips'",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-12 08:29:29,520 INFO   🎯 UPDATE → mapped via reply_to src#6927 → dest#2582",
@@ -180,6 +175,11 @@
     {
       "label": "FOREX",
       "text": "2026-05-12 14:47:21,767 INFO   ✅ UPDATE replied to 2582",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-12 19:20:30,971 INFO Got difference for channel 1891953279 updates",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   b7b8c1c0..04e44588  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   56c4f80e..8fecfba3  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   6bf55c09..41b9a75a  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   909f3e5f..1a2c93b7  main -> main",
       "ts": ""
     }
   ],
