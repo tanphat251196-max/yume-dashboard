@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-13T23:05:03.335155+00:00",
-  "generated_at_vn": "2026-05-14 06:05:03",
+  "generated_at": "2026-05-13T23:10:03.544484+00:00",
+  "generated_at_vn": "2026-05-14 06:10:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "3d 10h 30m",
-    "uptime_seconds": 297047,
+    "uptime": "3d 10h 35m",
+    "uptime_seconds": 297347,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.83,
-      "percent": 18.4
+      "used_gb": 2.72,
+      "percent": 17.7
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 13
     },
     "cpu": {
-      "percent": 4.5,
+      "percent": 0.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 467
+      "response_time_ms": 512
     },
     "openclaw": {
       "running": true
@@ -184,52 +184,17 @@
     },
     {
       "label": "WEB",
-      "text": "    ✅ Watermark applied: post-cryptoquant-du-doan-btc-tang-len-93000-u.jpg (300KB)",
+      "text": "    🎨 [Imagen 4 Fast] Generated: post-tom-lee-gay-soc-voi-3-du-bao-gia-ethereu.jpg (1361KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ✅ Added: cryptoquant-du-doan-btc-tang-len-93000-usd",
+      "text": "    ✅ Watermark applied: post-tom-lee-gay-soc-voi-3-du-bao-gia-ethereu.jpg (212KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "📝 [5/5] Công ty bảo mật crypto phát cảnh báo khẩn: Hacker......",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Bài mới: published 2026-05-12 09:42 UTC — 13.3h trước",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Gemini (gemini-2.5-flash): 2548 words, 16 headings, CTA=True",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ⚠️ [Gemini Nano Banana 2] error: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    🎨 [Imagen 4 Fast] Generated: post-cong-ty-bao-mat-crypto-phat-canh-bao-kha.jpg (1385KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "    ✅ Watermark applied: post-cong-ty-bao-mat-crypto-phat-canh-bao-kha.jpg (207KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Added: cong-ty-bao-mat-crypto-phat-canh-bao-khan-hacker",
+      "text": "  ✅ Added: tom-lee-gay-soc-voi-3-du-bao-gia-ethereum-12000-usd-22000-usd-va-tham-chi-62000-",
       "ts": ""
     },
     {
@@ -239,7 +204,42 @@
     },
     {
       "label": "WEB",
-      "text": "💾 Saved 5 new posts (total: 399)",
+      "text": "📝 [5/5] Nhà vật lý nổi tiếng đưa ra dự báo giá Bitcoin trong 8 năm v...",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Bài mới: published 2026-05-13 15:23 UTC — 7.6h trước",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 2916 words, 10 headings, CTA=True",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-nha-vat-ly-noi-tieng-dua-ra-du-bao-gia-b.jpg (904KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "    ✅ Watermark applied: post-nha-vat-ly-noi-tieng-dua-ra-du-bao-gia-b.jpg (314KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Added: nha-vat-ly-noi-tieng-dua-ra-du-bao-gia-bitcoin-trong-8-nam-va-20-nam-toi-bang-mo",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "💾 Saved 5 new posts (total: 404)",
       "ts": ""
     },
     {
@@ -280,16 +280,6 @@
     {
       "label": "WEB",
       "text": "✅ DONE: Published 5 bài mới lên daututhongminh24h.com",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   a1621f89..96015279  main -> main",
       "ts": ""
     },
     {
@@ -381,6 +371,16 @@
       "label": "DASH",
       "text": "   0cc5a810..a099fcf2  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   5064ab12..73757d20  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -436,7 +436,7 @@
         "label": "@SignalHuntersCrypto",
         "type": "channel",
         "title": "Signal Hunters",
-        "members": 2351,
+        "members": 2350,
         "ok": true,
         "model": "openai-codex/gpt-5.5",
         "username": "SignalHuntersCrypto",
@@ -664,16 +664,10 @@
         "icon": "🟡",
         "title": "Facebook Token còn 8 ngày",
         "msg": "Sắp hết hạn, chuẩn bị gia hạn"
-      },
-      {
-        "level": "warning",
-        "icon": "🟡",
-        "title": "Web chỉ có 0 bài hôm nay",
-        "msg": "Cần ít nhất 4 bài/ngày"
       }
     ],
     "total_critical": 1,
-    "total_warning": 2,
+    "total_warning": 1,
     "all_clear": false
   }
 }
