@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-14T13:00:03.782574+00:00",
-  "generated_at_vn": "2026-05-14 20:00:03",
+  "generated_at": "2026-05-14T13:05:03.641638+00:00",
+  "generated_at_vn": "2026-05-14 20:05:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "4h 0m",
-    "uptime_seconds": 14453,
+    "uptime": "4h 5m",
+    "uptime_seconds": 14753,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.06,
-      "percent": 13.4
+      "used_gb": 1.99,
+      "percent": 13.0
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 12
     },
     "cpu": {
-      "percent": 3.8,
+      "percent": 6.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 766
+      "response_time_ms": 473
     },
     "openclaw": {
       "running": true
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   7b3bd330..72c86b83  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   ac49cf11..1829409d  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   86b8f63c..6f87ea93  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   0ff76fc8..80b71910  main -> main",
       "ts": ""
     }
   ],
