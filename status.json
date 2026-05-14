@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-05-14T00:20:03.242912+00:00",
-  "generated_at_vn": "2026-05-14 07:20:03",
+  "generated_at": "2026-05-14T09:00:04.423436+00:00",
+  "generated_at_vn": "2026-05-14 16:00:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "3d 11h 45m",
-    "uptime_seconds": 301547,
+    "uptime": "0m",
+    "uptime_seconds": 54,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.8,
-      "percent": 18.2
+      "used_gb": 2.04,
+      "percent": 13.3
     },
     "disk": {
       "total_gb": 468,
-      "used_gb": 57,
-      "percent": 13
+      "used_gb": 52,
+      "percent": 12
     },
     "cpu": {
-      "percent": 4.2,
+      "percent": 37.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 355
+      "response_time_ms": 507
     },
     "openclaw": {
       "running": true
@@ -82,56 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-13 18:50:41,298 INFO Got difference for channel 1891953279 updates",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-13 19:22:43,351 INFO New message #6952 → UPDATE: 'Hit SL Wait for recovery'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-13 19:22:43,352 INFO   🎯 UPDATE → mapped via reply_to src#6950 → dest#2605",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-13 19:22:44,603 INFO   ✅ UPDATE replied to 2605",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-13 19:22:44,605 INFO   🔒 Signal 6950 closed",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-13 22:22:57,894 INFO New message #6953 → UPDATE: 'TP2 Hit +23.4Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-13 22:22:57,895 INFO   🎯 UPDATE → mapped via reply_to src#6945 → dest#2600",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-13 22:22:59,224 INFO   ✅ UPDATE replied to 2600",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-13 22:40:08,453 INFO New message #6954 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Buy 💠 Entry: 4698.931 ❌SL: 4677.214 🔷 TP1: 4709.790 🔷'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-13 22:40:09,399 INFO   ✅ SIGNAL posted → dest msg_id=2609",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-13 23:28:54,642 INFO New message #6955 → UPDATE: 'TP1 Hit +108.6Pips'",
@@ -180,6 +130,56 @@
     {
       "label": "FOREX",
       "text": "2026-05-14 07:17:18,249 INFO   ✅ UPDATE replied to 2612",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-14 15:59:19,210 INFO Connecting to 91.108.56.199:443/TcpFull...",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-14 15:59:19,212 WARNING Attempt 1 at connecting failed: OSError: [Errno 101] Network is unreachable",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-14 15:59:20,214 WARNING Attempt 2 at connecting failed: OSError: [Errno 101] Network is unreachable",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-14 15:59:21,216 WARNING Attempt 3 at connecting failed: OSError: [Errno 101] Network is unreachable",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-14 15:59:22,217 WARNING Attempt 4 at connecting failed: OSError: [Errno 101] Network is unreachable",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-14 15:59:23,274 INFO Connection to 91.108.56.199:443/TcpFull complete!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-14 15:59:23,642 INFO ✅ Userbot connected!",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-14 15:59:23,725 INFO Logged in as: None (Yume)",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-14 15:59:23,802 INFO Latest @BoBotfxSignals message: #6960 mapped=False",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-14 15:59:23,802 INFO 👂 Listening to @BoBotfxSignals...",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   4055726a..18c23904  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   37a21443..9c1a42de  main -> main",
       "ts": ""
     },
@@ -381,6 +371,16 @@
       "label": "DASH",
       "text": "   2087d545..0c1780ca  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   1e816fc0..5d929438  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -436,7 +436,7 @@
         "label": "@SignalHuntersCrypto",
         "type": "channel",
         "title": "Signal Hunters",
-        "members": 2348,
+        "members": 2347,
         "ok": true,
         "model": "openai-codex/gpt-5.5",
         "username": "SignalHuntersCrypto",
