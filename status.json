@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-14T23:05:03.465306+00:00",
-  "generated_at_vn": "2026-05-15 06:05:03",
+  "generated_at": "2026-05-14T23:10:03.349304+00:00",
+  "generated_at_vn": "2026-05-15 06:10:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "14h 5m",
-    "uptime_seconds": 50753,
+    "uptime": "14h 10m",
+    "uptime_seconds": 51052,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.07,
-      "percent": 13.5
+      "used_gb": 1.99,
+      "percent": 13.0
     },
     "disk": {
       "total_gb": 468,
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 708
+      "response_time_ms": 437
     },
     "openclaw": {
       "running": true
@@ -184,17 +184,12 @@
     },
     {
       "label": "WEB",
-      "text": "    🎨 [Imagen 4 Fast] Generated: post-tom-lee-gay-soc-voi-3-du-bao-gia-ethereu.jpg (1361KB)",
+      "text": "    ✅ Watermark applied: post-xrp-ledger-dat-muc-cao-ky-luc-khi-luong-.jpg (432KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    ✅ Watermark applied: post-tom-lee-gay-soc-voi-3-du-bao-gia-ethereu.jpg (212KB)",
-      "ts": ""
-    },
-    {
-      "label": "WEB",
-      "text": "  ✅ Added: tom-lee-gay-soc-voi-3-du-bao-gia-ethereum-12000-usd-22000-usd-va-tham-chi-62000-",
+      "text": "  ✅ Added: xrp-ledger-dat-muc-cao-ky-luc-khi-luong-xrp-tich-luy-trong-vi-tang-vot",
       "ts": ""
     },
     {
@@ -204,32 +199,37 @@
     },
     {
       "label": "WEB",
-      "text": "📝 [5/5] Nhà vật lý nổi tiếng đưa ra dự báo giá Bitcoin trong 8 năm v...",
+      "text": "📝 [5/5] Bitcoin giảm xuống dưới 80.000 USD khi cuộc đàm phán giữa Tr...",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ✅ Bài mới: published 2026-05-13 15:23 UTC — 7.6h trước",
+      "text": "  ✅ Bài mới: published 2026-05-14 16:57 UTC — 6.0h trước",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    ✅ Gemini (gemini-2.5-flash): 2916 words, 10 headings, CTA=True",
+      "text": "    ✅ Gemini (gemini-2.5-flash): 3051 words, 15 headings, CTA=True",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    🎨 [Gemini Nano Banana 2] Generated: post-nha-vat-ly-noi-tieng-dua-ra-du-bao-gia-b.jpg (904KB)",
+      "text": "    ⚠️ [Gemini Nano Banana 2] error: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "    ✅ Watermark applied: post-nha-vat-ly-noi-tieng-dua-ra-du-bao-gia-b.jpg (314KB)",
+      "text": "    🎨 [Imagen 4 Fast] Generated: post-bitcoin-giam-xuong-duoi-80000-usd-khi-cu.jpg (1725KB)",
       "ts": ""
     },
     {
       "label": "WEB",
-      "text": "  ✅ Added: nha-vat-ly-noi-tieng-dua-ra-du-bao-gia-bitcoin-trong-8-nam-va-20-nam-toi-bang-mo",
+      "text": "    ✅ Watermark applied: post-bitcoin-giam-xuong-duoi-80000-usd-khi-cu.jpg (298KB)",
+      "ts": ""
+    },
+    {
+      "label": "WEB",
+      "text": "  ✅ Added: bitcoin-giam-xuong-duoi-80000-usd-khi-cuoc-dam-phan-giua-trump-va-tap-can-binh-c",
       "ts": ""
     },
     {
@@ -239,7 +239,7 @@
     },
     {
       "label": "WEB",
-      "text": "💾 Saved 5 new posts (total: 404)",
+      "text": "💾 Saved 5 new posts (total: 409)",
       "ts": ""
     },
     {
@@ -280,16 +280,6 @@
     {
       "label": "WEB",
       "text": "✅ DONE: Published 5 bài mới lên daututhongminh24h.com",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "   b0d0dc2c..a97e2de5  main -> main",
       "ts": ""
     },
     {
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   1e992b48..df53b0ea  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   a7330a2c..73468f16  main -> main",
       "ts": ""
     }
   ],
@@ -664,16 +664,9 @@
         "msg": "Lấy token mới tại developers.facebook.com"
       }
     ],
-    "warnings": [
-      {
-        "level": "warning",
-        "icon": "🟡",
-        "title": "Web chỉ có 0 bài hôm nay",
-        "msg": "Cần ít nhất 4 bài/ngày"
-      }
-    ],
+    "warnings": [],
     "total_critical": 2,
-    "total_warning": 1,
+    "total_warning": 0,
     "all_clear": false
   }
 }
