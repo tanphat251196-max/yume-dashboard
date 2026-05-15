@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-15T09:10:04.213460+00:00",
-  "generated_at_vn": "2026-05-15 16:10:04",
+  "generated_at": "2026-05-15T09:15:03.299994+00:00",
+  "generated_at_vn": "2026-05-15 16:15:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "1d 0h 10m",
-    "uptime_seconds": 87053,
+    "uptime": "1d 0h 15m",
+    "uptime_seconds": 87352,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.07,
-      "percent": 13.5
+      "used_gb": 2.02,
+      "percent": 13.1
     },
     "disk": {
       "total_gb": 468,
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 621
+      "response_time_ms": 540
     },
     "openclaw": {
       "running": true
@@ -82,11 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 08:59:28,644 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-15 08:59:28,644 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
@@ -180,6 +175,11 @@
     {
       "label": "FOREX",
       "text": "2026-05-15 12:07:35,194 INFO   ✅ UPDATE replied to 2581",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 16:14:34,608 INFO Got difference for channel 1891953279 updates",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   552a72e7..30776744  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   e6f56b4a..960dc2d2  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   c10698f1..d46baced  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   6d9c0242..f2e21a80  main -> main",
       "ts": ""
     }
   ],
