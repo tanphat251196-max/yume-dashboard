@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-15T01:55:04.004496+00:00",
-  "generated_at_vn": "2026-05-15 08:55:04",
+  "generated_at": "2026-05-15T02:00:03.935908+00:00",
+  "generated_at_vn": "2026-05-15 09:00:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "16h 55m",
-    "uptime_seconds": 60953,
+    "uptime": "17h 0m",
+    "uptime_seconds": 61253,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.07,
+      "used_gb": 2.08,
       "percent": 13.5
     },
     "disk": {
@@ -16,7 +16,7 @@
       "percent": 12
     },
     "cpu": {
-      "percent": 2.0,
+      "percent": 2.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 618
+      "response_time_ms": 367
     },
     "openclaw": {
       "running": true
@@ -84,102 +84,102 @@
   "recent_logs": [
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:05:07,589 INFO New message #6982 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Sell 💠 Entry: 4649.558 ❌SL: 4665.346 🔷 TP1: 4641.664 '",
+      "text": "2026-05-15 08:59:28,633 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:05:08,616 INFO   ✅ SIGNAL posted → dest msg_id=2635",
+      "text": "2026-05-15 08:59:28,633 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:25:18,903 INFO New message #6983 → UPDATE: 'TP1 Hit +78.9Pips'",
+      "text": "2026-05-15 08:59:28,633 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:25:18,904 INFO   🎯 UPDATE → mapped via reply_to src#6982 → dest#2635",
+      "text": "2026-05-15 08:59:28,634 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:25:19,826 INFO   ✅ UPDATE replied to 2635",
+      "text": "2026-05-15 08:59:28,634 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:25:22,159 INFO New message #6984 → UPDATE: 'TP2 Hit +157.9Pips'",
+      "text": "2026-05-15 08:59:28,634 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:25:22,161 INFO   🎯 UPDATE → mapped via reply_to src#6982 → dest#2635",
+      "text": "2026-05-15 08:59:28,637 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:25:23,198 INFO   ✅ UPDATE replied to 2635",
+      "text": "2026-05-15 08:59:28,637 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:30:09,927 INFO New message #6985 → UPDATE: 'TP5 Hit +389.6Pips All Target Done!'",
+      "text": "2026-05-15 08:59:28,638 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:30:09,929 INFO   🎯 UPDATE → mapped via reply_to src#6976 → dest#2629",
+      "text": "2026-05-15 08:59:28,638 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:30:10,952 INFO   ✅ UPDATE replied to 2629",
+      "text": "2026-05-15 08:59:28,639 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:30:10,954 INFO   🔒 Signal 6976 closed",
+      "text": "2026-05-15 08:59:28,639 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:30:55,577 INFO New message #6986 → UPDATE: 'TP3 Hit +236.8Pips'",
+      "text": "2026-05-15 08:59:28,639 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:30:55,578 INFO   🎯 UPDATE → mapped via reply_to src#6982 → dest#2635",
+      "text": "2026-05-15 08:59:28,640 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:30:56,521 INFO   ✅ UPDATE replied to 2635",
+      "text": "2026-05-15 08:59:28,641 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:40:24,543 INFO New message #6987 → UPDATE: 'TP4 Hit +315.8Pips'",
+      "text": "2026-05-15 08:59:28,642 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:40:24,544 INFO   🎯 UPDATE → mapped via reply_to src#6982 → dest#2635",
+      "text": "2026-05-15 08:59:28,643 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 07:40:25,645 INFO   ✅ UPDATE replied to 2635",
+      "text": "2026-05-15 08:59:28,644 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 08:19:34,278 INFO Got difference for channel 1891953279 updates",
+      "text": "2026-05-15 08:59:28,644 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
       "label": "FOREX",
-      "text": "2026-05-15 08:34:34,358 INFO Got difference for channel 1891953279 updates",
+      "text": "2026-05-15 08:59:28,645 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   0d0a819b..4aa77147  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   c1f331d4..36458d4a  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   c6e737c8..1eb37b19  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   35fd1a44..1242aa82  main -> main",
       "ts": ""
     }
   ],
