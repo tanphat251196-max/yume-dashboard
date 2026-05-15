@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-15T12:35:03.533053+00:00",
-  "generated_at_vn": "2026-05-15 19:35:03",
+  "generated_at": "2026-05-15T12:40:04.235754+00:00",
+  "generated_at_vn": "2026-05-15 19:40:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "1d 3h 35m",
-    "uptime_seconds": 99353,
+    "uptime": "1d 3h 40m",
+    "uptime_seconds": 99653,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.09,
+      "used_gb": 2.08,
       "percent": 13.6
     },
     "disk": {
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 2783
+      "response_time_ms": 2109
     },
     "openclaw": {
       "running": true
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   ba2e9927..b7da37c5  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   d40765f8..805dd103  main -> main",
       "ts": ""
     },
@@ -381,6 +371,16 @@
       "label": "DASH",
       "text": "   641cf601..e5b4e81a  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   c6d6e7fa..208c386b  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -400,12 +400,11 @@
         "id": "-1003808756386",
         "label": "Chị Em Mỹ Gia",
         "type": "group",
-        "title": "Chị Em Mỹ Gia",
-        "members": 3,
-        "ok": true,
+        "title": "--",
+        "members": "--",
+        "ok": false,
         "model": "ollama/gemma3:4b",
-        "username": "",
-        "description": ""
+        "error": "The read operation timed out"
       },
       {
         "id": "-1003783290422",
