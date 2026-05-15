@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-15T00:30:04.226916+00:00",
-  "generated_at_vn": "2026-05-15 07:30:04",
+  "generated_at": "2026-05-15T00:35:03.947971+00:00",
+  "generated_at_vn": "2026-05-15 07:35:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "15h 30m",
-    "uptime_seconds": 55853,
+    "uptime": "15h 35m",
+    "uptime_seconds": 56153,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.04,
-      "percent": 13.3
+      "used_gb": 2.08,
+      "percent": 13.5
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 12
     },
     "cpu": {
-      "percent": 0.0,
+      "percent": 2.5,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 677
+      "response_time_ms": 348
     },
     "openclaw": {
       "running": true
@@ -82,41 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 02:32:40,722 INFO New message #6978 → UPDATE: 'TP1 Hit +64.9Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 02:32:40,723 INFO   🎯 UPDATE → mapped via reply_to src#6976 → dest#2629",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 02:32:42,048 INFO   ✅ UPDATE replied to 2629",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 02:43:54,865 INFO New message #6979 → UPDATE: 'TP2 Hit +129.9Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 02:43:54,867 INFO   🎯 UPDATE → mapped via reply_to src#6976 → dest#2629",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 02:43:55,972 INFO   ✅ UPDATE replied to 2629",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 03:16:43,104 INFO New message #6980 → UPDATE: 'TP3 Hit +194.8Pips'",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-15 03:16:43,106 INFO   🎯 UPDATE → mapped via reply_to src#6976 → dest#2629",
@@ -180,6 +145,41 @@
     {
       "label": "FOREX",
       "text": "2026-05-15 07:25:23,198 INFO   ✅ UPDATE replied to 2635",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 07:30:09,927 INFO New message #6985 → UPDATE: 'TP5 Hit +389.6Pips All Target Done!'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 07:30:09,929 INFO   🎯 UPDATE → mapped via reply_to src#6976 → dest#2629",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 07:30:10,952 INFO   ✅ UPDATE replied to 2629",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 07:30:10,954 INFO   🔒 Signal 6976 closed",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 07:30:55,577 INFO New message #6986 → UPDATE: 'TP3 Hit +236.8Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 07:30:55,578 INFO   🎯 UPDATE → mapped via reply_to src#6982 → dest#2635",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 07:30:56,521 INFO   ✅ UPDATE replied to 2635",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   f4b0c700..ffb2df8a  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   5bfbb900..706d1c55  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   93570849..40494c79  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   dad4c0c3..83795cc4  main -> main",
       "ts": ""
     }
   ],
