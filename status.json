@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-15T05:00:03.956944+00:00",
-  "generated_at_vn": "2026-05-15 12:00:03",
+  "generated_at": "2026-05-15T05:05:03.573524+00:00",
+  "generated_at_vn": "2026-05-15 12:05:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "20h 0m",
-    "uptime_seconds": 72053,
+    "uptime": "20h 5m",
+    "uptime_seconds": 72353,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 2.06,
@@ -16,7 +16,7 @@
       "percent": 12
     },
     "cpu": {
-      "percent": 1.2,
+      "percent": 0.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 501
+      "response_time_ms": 419
     },
     "openclaw": {
       "running": true
@@ -82,41 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 08:59:28,637 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 08:59:28,638 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 08:59:28,638 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 08:59:28,639 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 08:59:28,639 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 08:59:28,639 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 08:59:28,640 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-15 08:59:28,641 INFO Sleeping for 3s (0:00:03) on GetUsersRequest flood wait",
@@ -180,6 +145,41 @@
     {
       "label": "FOREX",
       "text": "2026-05-15 09:34:34,764 INFO Got difference for channel 1891953279 updates",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 12:01:11,239 INFO New message #6988 → UPDATE: 'TP3 Hit +34.7Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 12:01:11,240 INFO   🎯 UPDATE → mapped via reply_to src#6956 → dest#2611",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 12:01:12,669 INFO   ✅ UPDATE replied to 2611",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 12:01:30,285 INFO New message #6989 → UPDATE: 'TP5 Hit +473.6Pips All Target Done!'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 12:01:30,287 INFO   🎯 UPDATE → mapped via reply_to src#6982 → dest#2635",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 12:01:31,496 INFO   ✅ UPDATE replied to 2635",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-15 12:01:31,497 INFO   🔒 Signal 6982 closed",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   de67869b..85032985  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   436a8aa4..3c8fc443  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   797e7bf4..42fc9431  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   83b2b2d9..499d9ace  main -> main",
       "ts": ""
     }
   ],
