@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-15T23:00:03.642086+00:00",
-  "generated_at_vn": "2026-05-16 06:00:03",
+  "generated_at": "2026-05-15T23:05:03.970435+00:00",
+  "generated_at_vn": "2026-05-16 06:05:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "1d 14h 0m",
-    "uptime_seconds": 136853,
+    "uptime": "1d 14h 5m",
+    "uptime_seconds": 137153,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 2.11,
-      "percent": 13.7
+      "percent": 13.8
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 12
     },
     "cpu": {
-      "percent": 7.2,
+      "percent": 2.0,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 341
+      "response_time_ms": 703
     },
     "openclaw": {
       "running": true
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   193bc6da..1df0d6ff  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   ce30c735..7323f039  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   673a7359..74a342e2  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   84737ee7..82b041f9  main -> main",
       "ts": ""
     }
   ],
@@ -664,16 +664,9 @@
         "msg": "Lấy token mới tại developers.facebook.com"
       }
     ],
-    "warnings": [
-      {
-        "level": "warning",
-        "icon": "🟡",
-        "title": "Web chỉ có 0 bài hôm nay",
-        "msg": "Cần ít nhất 4 bài/ngày"
-      }
-    ],
+    "warnings": [],
     "total_critical": 2,
-    "total_warning": 1,
+    "total_warning": 0,
     "all_clear": false
   }
 }
