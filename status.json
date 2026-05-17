@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-17T16:55:03.994399+00:00",
-  "generated_at_vn": "2026-05-17 23:55:03",
+  "generated_at": "2026-05-17T17:00:03.788772+00:00",
+  "generated_at_vn": "2026-05-18 00:00:03",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "3d 7h 55m",
-    "uptime_seconds": 287753,
+    "uptime": "3d 8h 0m",
+    "uptime_seconds": 288053,
     "ram": {
       "total_gb": 15.37,
       "used_gb": 2.06,
@@ -16,7 +16,7 @@
       "percent": 12
     },
     "cpu": {
-      "percent": 2.8,
+      "percent": 7.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 620
+      "response_time_ms": 411
     },
     "openclaw": {
       "running": true
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   f6cba406b..e09d1971e  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   a1679f927..ab4539009  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   10c498db1..9c3f22bb2  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   49116cdff..a8247ab59  main -> main",
       "ts": ""
     }
   ],
@@ -660,13 +660,20 @@
       {
         "level": "critical",
         "icon": "🔴",
-        "title": "Facebook Token hết hạn trong 5 ngày!",
+        "title": "Facebook Token hết hạn trong 4 ngày!",
         "msg": "Lấy token mới tại developers.facebook.com"
       }
     ],
-    "warnings": [],
+    "warnings": [
+      {
+        "level": "warning",
+        "icon": "🟡",
+        "title": "Web chỉ có 0 bài hôm nay",
+        "msg": "Cần ít nhất 4 bài/ngày"
+      }
+    ],
     "total_critical": 2,
-    "total_warning": 0,
+    "total_warning": 1,
     "all_clear": false
   }
 }
