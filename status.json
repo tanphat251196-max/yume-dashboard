@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-18T00:15:03.905601+00:00",
-  "generated_at_vn": "2026-05-18 07:15:03",
+  "generated_at": "2026-05-18T00:20:04.080508+00:00",
+  "generated_at_vn": "2026-05-18 07:20:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "3d 15h 15m",
-    "uptime_seconds": 314153,
+    "uptime": "3d 15h 20m",
+    "uptime_seconds": 314453,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.1,
-      "percent": 13.7
+      "used_gb": 2.07,
+      "percent": 13.5
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 12
     },
     "cpu": {
-      "percent": 4.2,
+      "percent": 2.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 690
+      "response_time_ms": 345
     },
     "openclaw": {
       "running": true
@@ -82,11 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-15 20:45:42,166 INFO New message #6993 → UPDATE: 'TP1 Hit +146.5Pips'",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-15 20:45:42,167 INFO   🎯 UPDATE → mapped via reply_to src#6992 → dest#2645",
@@ -180,6 +175,11 @@
     {
       "label": "FOREX",
       "text": "2026-05-18 07:15:03,593 INFO Got difference for channel 1891953279 updates",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:20:02,177 INFO Got difference for channel 1891953279 updates",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   c3886b6d7..22ce89295  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   459dd7e7b..a4813f195  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   225fd3548..533091a8b  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   d66fba298..e58a21089  main -> main",
       "ts": ""
     }
   ],
