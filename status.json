@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-18T00:30:03.255795+00:00",
-  "generated_at_vn": "2026-05-18 07:30:03",
+  "generated_at": "2026-05-18T00:35:04.154312+00:00",
+  "generated_at_vn": "2026-05-18 07:35:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "3d 15h 30m",
-    "uptime_seconds": 315052,
+    "uptime": "3d 15h 35m",
+    "uptime_seconds": 315353,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.1,
-      "percent": 13.7
+      "used_gb": 2.14,
+      "percent": 13.9
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 12
     },
     "cpu": {
-      "percent": 0.8,
+      "percent": 4.2,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 319
+      "response_time_ms": 464
     },
     "openclaw": {
       "running": true
@@ -82,76 +82,6 @@
   "cron_history": [],
   "equity_history": [],
   "recent_logs": [
-    {
-      "label": "FOREX",
-      "text": "2026-05-16 22:14:48,817 INFO Got difference for channel 1891953279 updates",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 06:45:07,572 INFO New message #6996 → SIGNAL: '💱 Symbol: XAUUSD 📉 Signal: Sell 💠 Entry: 4539.250 ❌SL: 4554.305 🔷 TP1: 4531.723 '",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 06:45:08,487 INFO   ✅ SIGNAL posted → dest msg_id=2649",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 07:02:05,927 INFO New message #6997 → UPDATE: 'TP1 Hit +75.3Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 07:02:05,929 INFO   🎯 UPDATE → mapped via reply_to src#6996 → dest#2649",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 07:02:07,180 INFO   ✅ UPDATE replied to 2649",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 07:05:06,771 INFO New message #6998 → UPDATE: 'TP1 Hit +105.7Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 07:05:06,773 INFO   🎯 UPDATE → mapped via reply_to src#6995 → dest#2648",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 07:05:08,024 INFO   ✅ UPDATE replied to 2648",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 07:09:32,732 INFO New message #6999 → UPDATE: 'TP2 Hit +150.6Pips'",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 07:09:32,734 INFO   🎯 UPDATE → mapped via reply_to src#6996 → dest#2649",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 07:09:33,759 INFO   ✅ UPDATE replied to 2649",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 07:15:03,593 INFO Got difference for channel 1891953279 updates",
-      "ts": ""
-    },
-    {
-      "label": "FOREX",
-      "text": "2026-05-18 07:20:02,177 INFO Got difference for channel 1891953279 updates",
-      "ts": ""
-    },
     {
       "label": "FOREX",
       "text": "2026-05-18 07:24:28,034 INFO New message #7000 → UPDATE: 'TP2 Hit +211.4Pips'",
@@ -180,6 +110,76 @@
     {
       "label": "FOREX",
       "text": "2026-05-18 07:28:51,208 INFO   ✅ UPDATE replied to 2649",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:33:22,965 INFO New message #7002 → UPDATE: 'TP4 Hit +301.1Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:33:22,966 INFO   🎯 UPDATE → mapped via reply_to src#6996 → dest#2649",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:33:24,088 INFO   ✅ UPDATE replied to 2649",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:33:58,113 INFO New message #7003 → UPDATE: 'TP3 Hit +317.2Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:33:58,114 INFO   🎯 UPDATE → mapped via reply_to src#6995 → dest#2648",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:33:59,088 INFO   ✅ UPDATE replied to 2648",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:34:02,362 INFO New message #7004 → UPDATE: 'TP4 Hit +422.9Pips'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:34:02,364 INFO   🎯 UPDATE → mapped via reply_to src#6995 → dest#2648",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:34:03,325 INFO   ✅ UPDATE replied to 2648",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:34:12,930 INFO New message #7005 → UPDATE: 'TP5 Hit +451.6Pips All Target Done!'",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:34:12,931 INFO   🎯 UPDATE → mapped via reply_to src#6996 → dest#2649",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:34:14,059 INFO   ✅ UPDATE replied to 2649",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:34:14,061 INFO   🔒 Signal 6996 closed",
+      "ts": ""
+    },
+    {
+      "label": "FOREX",
+      "text": "2026-05-18 07:35:02,285 INFO Got difference for channel 1891953279 updates",
       "ts": ""
     },
     {
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   c3a3678da..3de3ff63d  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   d99b1a20c..e8c9b71b7  main -> main",
       "ts": ""
     },
@@ -380,6 +370,16 @@
     {
       "label": "DASH",
       "text": "   751b52bb1..1450e415c  main -> main",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   7126a5c15..08ff9f9ab  main -> main",
       "ts": ""
     }
   ],
