@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-18T01:10:04.143056+00:00",
-  "generated_at_vn": "2026-05-18 08:10:04",
+  "generated_at": "2026-05-18T01:15:04.107793+00:00",
+  "generated_at_vn": "2026-05-18 08:15:04",
   "system": {
     "hostname": "shinyyume-OpenClaw",
-    "uptime": "3d 16h 10m",
-    "uptime_seconds": 317453,
+    "uptime": "3d 16h 15m",
+    "uptime_seconds": 317753,
     "ram": {
       "total_gb": 15.37,
-      "used_gb": 2.13,
-      "percent": 13.8
+      "used_gb": 2.08,
+      "percent": 13.5
     },
     "disk": {
       "total_gb": 468,
@@ -16,7 +16,7 @@
       "percent": 12
     },
     "cpu": {
-      "percent": 2.2,
+      "percent": 3.8,
       "count": 4,
       "freq_mhz": 0
     }
@@ -67,7 +67,7 @@
     "website": {
       "online": true,
       "status_code": 200,
-      "response_time_ms": 403
+      "response_time_ms": 427
     },
     "openclaw": {
       "running": true
@@ -289,16 +289,6 @@
     },
     {
       "label": "DASH",
-      "text": "   e3d5440b9..80b7147b7  main -> main",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
-      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
-      "ts": ""
-    },
-    {
-      "label": "DASH",
       "text": "   751b52bb1..1450e415c  main -> main",
       "ts": ""
     },
@@ -381,6 +371,16 @@
       "label": "DASH",
       "text": "   5f4cc7f35..41f56ffe7  main -> main",
       "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "To https://github.com/tanphat251196-max/yume-dashboard.git",
+      "ts": ""
+    },
+    {
+      "label": "DASH",
+      "text": "   d4029effc..8b6c7d268  main -> main",
+      "ts": ""
     }
   ],
   "telegram": {
@@ -447,7 +447,7 @@
         "label": "@CallerFOREX",
         "type": "channel",
         "title": "Caller FOREX | Signal Hunters",
-        "members": 28,
+        "members": 27,
         "ok": true,
         "model": "openai-codex/gpt-5.5",
         "username": "CallerFOREX",
